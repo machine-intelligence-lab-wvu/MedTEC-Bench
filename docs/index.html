@@ -40,11 +40,8 @@ h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:20px 0 8px;letter-spac
 .btn.todo{opacity:.5;pointer-events:none}
 
 .meme{max-width:620px;margin:22px auto 6px}
-.meme svg{border-radius:14px;box-shadow:0 1px 0 var(--line),0 8px 24px rgba(0,0,0,.08)}
+.meme img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line);background:#fff}
 .meme figcaption{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin-top:8px}
-.meme .qm{animation:qm 2.4s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
-@keyframes qm{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-@media (prefers-reduced-motion: reduce){.meme .qm{animation:none}}
 .hero{max-width:860px;margin:30px auto 0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 12px;text-align:left}
 .hero-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font:14px system-ui,sans-serif}
 .hero-dots{display:flex;gap:6px}
@@ -113,69 +110,7 @@ footer{margin-top:60px;padding:28px 0 48px;border-top:1px solid var(--line);colo
     <span class="venue">NeurIPS 2026 · Evaluations &amp; Datasets Track · Poster</span>
 
     <figure class="meme">
-      <svg viewBox="0 0 800 470" role="img" aria-label="Cartoon: a robot labelled Medical VLM points at a chest radiograph and asks, Is this an apple?">
-        <defs>
-          <linearGradient id="mSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4c58a"/><stop offset=".55" stop-color="#e9a07a"/><stop offset="1" stop-color="#7a5c7e"/></linearGradient>
-          <radialGradient id="mBody" cx="50%" cy="48%" r="62%"><stop offset="0" stop-color="#9aa1ad"/><stop offset=".7" stop-color="#5d636e"/><stop offset="1" stop-color="#22252c"/></radialGradient>
-          <linearGradient id="mMetal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8edf3"/><stop offset="1" stop-color="#9aa6b5"/></linearGradient>
-          <filter id="mGlow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-        </defs>
-        <rect width="800" height="470" fill="url(#mSky)"/>
-        <rect y="360" width="800" height="110" fill="#5b4466" opacity=".55"/>
-
-        <!-- chest radiograph -->
-        <g transform="translate(70 62) rotate(-4 130 150)">
-          <rect x="-10" y="-10" width="280" height="320" rx="10" fill="#0d0f14"/>
-          <rect x="0" y="0" width="260" height="300" rx="6" fill="#16191f"/>
-          <path d="M40 300 C30 210 40 120 70 70 Q130 30 190 70 C220 120 230 210 220 300 Z" fill="url(#mBody)"/>
-          <ellipse cx="88" cy="160" rx="44" ry="92" fill="#1b1e25"/>
-          <ellipse cx="174" cy="160" rx="44" ry="92" fill="#1b1e25"/>
-          <path d="M140 150 C175 160 192 210 180 250 C160 262 138 250 132 225 Z" fill="#8c929d" opacity=".85"/>
-          <rect x="122" y="40" width="16" height="255" rx="6" fill="#c9ced6" opacity=".9"/>
-          <g fill="none" stroke="#d6dae1" stroke-width="5" stroke-linecap="round" opacity=".75">
-            <path d="M126 92 C95 86 62 102 50 132"/><path d="M134 92 C165 86 198 102 210 132"/>
-            <path d="M126 118 C92 112 58 130 46 162"/><path d="M134 118 C168 112 202 130 214 162"/>
-            <path d="M126 144 C90 140 56 160 46 194"/><path d="M134 144 C170 140 204 160 214 194"/>
-            <path d="M126 170 C92 168 60 190 52 224"/><path d="M134 170 C168 168 200 190 208 224"/>
-            <path d="M126 196 C96 196 68 216 62 248"/><path d="M134 196 C164 196 192 216 198 248"/>
-          </g>
-          <g fill="none" stroke="#e3e6eb" stroke-width="7" stroke-linecap="round" opacity=".85">
-            <path d="M118 70 C96 60 70 62 48 76"/><path d="M142 70 C164 60 190 62 212 76"/>
-          </g>
-          <text x="14" y="28" font-size="20" font-weight="800" style="fill:#e8eaee">R</text>
-        </g>
-        <text x="200" y="400" text-anchor="middle" font-size="22" font-weight="800" style="fill:#fff" stroke="#111" stroke-width="5" paint-order="stroke" font-family="Impact,'Arial Black',system-ui,sans-serif" letter-spacing=".5">chest radiograph</text>
-
-        <!-- robot -->
-        <g>
-          <line x1="640" y1="78" x2="640" y2="48" stroke="#7d8796" stroke-width="5"/>
-          <circle cx="640" cy="42" r="9" fill="#ff6b5a" filter="url(#mGlow)"/>
-          <rect x="565" y="78" width="150" height="112" rx="26" fill="url(#mMetal)" stroke="#5f6b7a" stroke-width="3"/>
-          <rect x="582" y="98" width="116" height="62" rx="18" fill="#1c2430"/>
-          <circle cx="615" cy="129" r="11" fill="#5fe0ff" filter="url(#mGlow)"/>
-          <circle cx="665" cy="129" r="11" fill="#5fe0ff" filter="url(#mGlow)"/>
-          <path d="M622 175 Q640 182 658 175" fill="none" stroke="#5f6b7a" stroke-width="4" stroke-linecap="round"/>
-          <rect x="626" y="190" width="28" height="16" fill="#8d98a7"/>
-          <rect x="575" y="204" width="130" height="150" rx="22" fill="url(#mMetal)" stroke="#5f6b7a" stroke-width="3"/>
-          <rect x="592" y="226" width="96" height="52" rx="8" fill="#1c2430"/>
-          <text x="640" y="249" text-anchor="middle" font-size="14" font-weight="700" style="fill:#5fe0ff" font-family="ui-monospace,Consolas,monospace">MEDICAL</text>
-          <text x="640" y="268" text-anchor="middle" font-size="14" font-weight="700" style="fill:#5fe0ff" font-family="ui-monospace,Consolas,monospace">VLM</text>
-          <circle cx="612" cy="306" r="7" fill="#ffb347"/><circle cx="640" cy="306" r="7" fill="#7ee08a"/><circle cx="668" cy="306" r="7" fill="#ff6b5a"/>
-          <!-- pointing arm -->
-          <path d="M582 236 C520 236 470 220 420 200" fill="none" stroke="#8d98a7" stroke-width="20" stroke-linecap="round"/>
-          <circle cx="582" cy="236" r="14" fill="#6f7a89"/>
-          <circle cx="490" cy="222" r="10" fill="#6f7a89"/>
-          <circle cx="412" cy="196" r="17" fill="url(#mMetal)" stroke="#5f6b7a" stroke-width="3"/>
-          <path d="M400 190 L374 178" stroke="#8d98a7" stroke-width="9" stroke-linecap="round"/>
-          <!-- other arm -->
-          <path d="M700 240 C735 270 738 310 725 340" fill="none" stroke="#8d98a7" stroke-width="20" stroke-linecap="round"/>
-          <rect x="595" y="354" width="30" height="40" rx="8" fill="#8d98a7"/><rect x="655" y="354" width="30" height="40" rx="8" fill="#8d98a7"/>
-          <text class="qm" x="735" y="80" font-size="56" font-weight="900" style="fill:#fff" stroke="#111" stroke-width="5" paint-order="stroke" font-family="Impact,'Arial Black',system-ui,sans-serif">?</text>
-        </g>
-        <text x="640" y="400" text-anchor="middle" font-size="22" font-weight="800" style="fill:#fff" stroke="#111" stroke-width="5" paint-order="stroke" font-family="Impact,'Arial Black',system-ui,sans-serif" letter-spacing=".5">medical VLM</text>
-
-        <text x="400" y="452" text-anchor="middle" font-size="44" font-weight="900" style="fill:#fff" stroke="#111" stroke-width="7" paint-order="stroke" font-family="Impact,'Arial Black',system-ui,sans-serif" letter-spacing="1">IS THIS AN APPLE?</text>
-      </svg>
+      <img src="assets/is_this_an_apple.jpg" width="1024" height="640" alt="Cartoon: a robot labelled medical VLM looks at a chest radiograph and asks, Is this an apple?">
       <figcaption>Level 1 of MedTEC-Bench asks the most basic question: is the image medical at all? Chest-radiograph specialists fail it. MedCLIP, for example, scores “acoustic guitar” above “chest x-ray” for a frontal chest radiograph.</figcaption>
     </figure>
 
