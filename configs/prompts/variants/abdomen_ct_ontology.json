@@ -1,0 +1,257 @@
+{
+  "modality": "abdomen_ct",
+  "variant": "ontology",
+  "description": "Exp A prompt-robustness variant (ontology) for abdomen_ct, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/abdomen_ct_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "Liver",
+            "hepatic parenchyma",
+            "the hepatic lobe",
+            "Liver, present"
+          ],
+          "negatives": [
+            "Spleen",
+            "Left kidney",
+            "Right kidney",
+            "Pancreas",
+            "Gallbladder",
+            "Stomach",
+            "Aorta",
+            "Adrenal gland",
+            "Colon",
+            "Small bowel"
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "Spleen",
+            "splenic parenchyma",
+            "the splenic tissue",
+            "Spleen, present"
+          ],
+          "negatives": [
+            "Liver",
+            "Left kidney",
+            "Right kidney",
+            "Pancreas",
+            "Gallbladder",
+            "Stomach",
+            "Aorta",
+            "Adrenal gland",
+            "Colon",
+            "Small bowel"
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "Left kidney",
+            "the left renal parenchyma",
+            "the left renal unit",
+            "Left kidney, present"
+          ],
+          "negatives": [
+            "Liver",
+            "Spleen",
+            "Right kidney",
+            "Pancreas",
+            "Gallbladder",
+            "Stomach",
+            "Aorta",
+            "Adrenal gland",
+            "Colon",
+            "Small bowel"
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "Right kidney",
+            "the right renal parenchyma",
+            "the right renal unit",
+            "Right kidney, present"
+          ],
+          "negatives": [
+            "Liver",
+            "Spleen",
+            "Left kidney",
+            "Pancreas",
+            "Gallbladder",
+            "Stomach",
+            "Aorta",
+            "Adrenal gland",
+            "Colon",
+            "Small bowel"
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "Pancreas",
+            "the pancreatic parenchyma",
+            "the pancreatic gland",
+            "Pancreas, present"
+          ],
+          "negatives": [
+            "Liver",
+            "Spleen",
+            "Left kidney",
+            "Right kidney",
+            "Gallbladder",
+            "Stomach",
+            "Aorta",
+            "Adrenal gland",
+            "Colon",
+            "Small bowel"
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "Gallbladder",
+            "the gallbladder fossa",
+            "the biliary reservoir",
+            "Gallbladder, present"
+          ],
+          "negatives": [
+            "Liver",
+            "Spleen",
+            "Left kidney",
+            "Right kidney",
+            "Pancreas",
+            "Stomach",
+            "Aorta",
+            "Adrenal gland",
+            "Colon",
+            "Small bowel"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "Liver",
+            "hepatic parenchyma",
+            "Liver, present",
+            "the hepatic lobe"
+          ],
+          "negatives": [
+            "No liver",
+            "Absence of liver",
+            "Liver absent",
+            "No evidence of liver",
+            "Liver excluded",
+            "Liver not present",
+            "Negative for liver",
+            "Without liver",
+            "No liver identified",
+            "Liver ruled out"
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "Spleen",
+            "splenic parenchyma",
+            "Spleen, present",
+            "the splenic tissue"
+          ],
+          "negatives": [
+            "No spleen",
+            "Absence of spleen",
+            "Spleen absent",
+            "No evidence of spleen",
+            "Spleen excluded",
+            "Spleen not present",
+            "Negative for spleen",
+            "Without spleen",
+            "No spleen identified",
+            "Spleen ruled out"
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "Left kidney",
+            "the left renal parenchyma",
+            "Left kidney, present",
+            "the left renal unit"
+          ],
+          "negatives": [
+            "No left kidney",
+            "Absence of left kidney",
+            "Left kidney absent",
+            "No evidence of left kidney",
+            "Left kidney excluded",
+            "Left kidney not present",
+            "Negative for left kidney",
+            "Without left kidney",
+            "No left kidney identified",
+            "Left kidney ruled out"
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "Right kidney",
+            "the right renal parenchyma",
+            "Right kidney, present",
+            "the right renal unit"
+          ],
+          "negatives": [
+            "No right kidney",
+            "Absence of right kidney",
+            "Right kidney absent",
+            "No evidence of right kidney",
+            "Right kidney excluded",
+            "Right kidney not present",
+            "Negative for right kidney",
+            "Without right kidney",
+            "No right kidney identified",
+            "Right kidney ruled out"
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "Pancreas",
+            "the pancreatic parenchyma",
+            "Pancreas, present",
+            "the pancreatic gland"
+          ],
+          "negatives": [
+            "No pancreas",
+            "Absence of pancreas",
+            "Pancreas absent",
+            "No evidence of pancreas",
+            "Pancreas excluded",
+            "Pancreas not present",
+            "Negative for pancreas",
+            "Without pancreas",
+            "No pancreas identified",
+            "Pancreas ruled out"
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "Gallbladder",
+            "the gallbladder fossa",
+            "Gallbladder, present",
+            "the biliary reservoir"
+          ],
+          "negatives": [
+            "No gallbladder",
+            "Absence of gallbladder",
+            "Gallbladder absent",
+            "No evidence of gallbladder",
+            "Gallbladder excluded",
+            "Gallbladder not present",
+            "Negative for gallbladder",
+            "Without gallbladder",
+            "No gallbladder identified",
+            "Gallbladder ruled out"
+          ]
+        }
+      }
+    }
+  }
+}

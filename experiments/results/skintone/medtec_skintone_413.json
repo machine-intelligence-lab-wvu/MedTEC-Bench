@@ -1,0 +1,128 @@
+{
+ "biomedclip": {
+  "display_name": "BiomedCLIP",
+  "L1": {
+   "avg_discrimination_score": 0.15853195064597658,
+   "avg_collapse_ratio": 0.38135191876579216,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.10289933595944334,
+   "avg_collapse_ratio": 0.5942201567689578,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.11739508368902736,
+   "avg_collapse_ratio": 0.6332370798676102,
+   "n_probes": 2700
+  }
+ },
+ "pubmedclip": {
+  "display_name": "PubMedCLIP",
+  "L1": {
+   "avg_discrimination_score": 0.03305104101145709,
+   "avg_collapse_ratio": 0.8091390986575021,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.017783880769102662,
+   "avg_collapse_ratio": 0.8677854606178071,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.027152702068841017,
+   "avg_collapse_ratio": 0.8138825052093577,
+   "n_probes": 2700
+  }
+ },
+ "medclip": {
+  "display_name": "MedCLIP",
+  "L1": {
+   "avg_discrimination_score": -0.017938483489835764,
+   "avg_collapse_ratio": 1.5678748738320751,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": -0.007730608451723431,
+   "avg_collapse_ratio": 1.201113753361386,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": -0.020017542194324993,
+   "avg_collapse_ratio": 0.9987997601226111,
+   "n_probes": 2700
+  }
+ },
+ "pmc_clip": {
+  "display_name": "PMC-CLIP",
+  "L1": {
+   "avg_discrimination_score": 0.14326784056093958,
+   "avg_collapse_ratio": 0.4930485635775107,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.07644881064693133,
+   "avg_collapse_ratio": 0.6958342552185058,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.1506587069288448,
+   "avg_collapse_ratio": 0.5279612855116527,
+   "n_probes": 2700
+  }
+ },
+ "openclip_vitb32": {
+  "display_name": "OpenCLIP ViT-B-32",
+  "L1": {
+   "avg_discrimination_score": 0.1315578286073826,
+   "avg_collapse_ratio": 0.382352606990823,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.01731475043076056,
+   "avg_collapse_ratio": 0.8115964879813018,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.04780075516413759,
+   "avg_collapse_ratio": 0.7279411148693826,
+   "n_probes": 2700
+  }
+ },
+ "openclip_vitl14": {
+  "display_name": "OpenCLIP ViT-L-14",
+  "L1": {
+   "avg_discrimination_score": 0.15673358449781383,
+   "avg_collapse_ratio": 0.2485560931596491,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.0018410350051191117,
+   "avg_collapse_ratio": 0.8572846075340553,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.04528867497488304,
+   "avg_collapse_ratio": 0.6931331362768456,
+   "n_probes": 2700
+  }
+ },
+ "siglip": {
+  "display_name": "SigLIP",
+  "L1": {
+   "avg_discrimination_score": 0.11243504246334649,
+   "avg_collapse_ratio": -0.4049543953358079,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.025896096755233074,
+   "avg_collapse_ratio": 0.5199089073082777,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.03189705140707601,
+   "avg_collapse_ratio": 0.4683287226272794,
+   "n_probes": 2700
+  }
+ }
+}

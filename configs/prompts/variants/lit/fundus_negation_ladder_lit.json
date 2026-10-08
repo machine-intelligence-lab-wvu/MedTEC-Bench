@@ -1,0 +1,307 @@
+{
+  "modality": "fundus",
+  "description": "LITERATURE-GROUNDED negation ladder for fundus. Cue terms verbatim from Panicek & Hricak (AJR 2016) certainty lexicon and NegEx/ConText (Chapman 2001; Harkema 2009).",
+  "provenance": "Panicek&Hricak2016; NegEx Chapman2001; ConText Harkema2009",
+  "ordinal": {
+    "present": 2,
+    "probable": 1,
+    "possible": 0,
+    "unlikely": -1,
+    "absent_plain": -2,
+    "absent_evidential": -2
+  },
+  "subtype_map": {
+    "definite": [
+      "absent_plain"
+    ],
+    "hedged": [
+      "possible",
+      "unlikely"
+    ],
+    "ruled_out": [
+      "absent_evidential"
+    ],
+    "historical": [
+      "historical"
+    ]
+  },
+  "absent_anchor_category": "normal",
+  "findings": {
+    "diabetic_retinopathy": {
+      "rungs": {
+        "present": [
+          "fundus consistent with diabetic retinopathy",
+          "findings consistent with diabetic retinopathy on fundus",
+          "fundus demonstrating diabetic retinopathy"
+        ],
+        "probable": [
+          "fundus suspicious for diabetic retinopathy",
+          "probable diabetic retinopathy on fundus",
+          "findings probably representing diabetic retinopathy on fundus"
+        ],
+        "possible": [
+          "possible diabetic retinopathy on fundus",
+          "fundus possibly showing diabetic retinopathy",
+          "diabetic retinopathy cannot be excluded on fundus"
+        ],
+        "unlikely": [
+          "diabetic retinopathy less likely on fundus",
+          "diabetic retinopathy unlikely on fundus",
+          "fundus findings unlikely to represent diabetic retinopathy"
+        ],
+        "absent_plain": [
+          "fundus negative for diabetic retinopathy",
+          "no diabetic retinopathy on fundus",
+          "fundus without diabetic retinopathy",
+          "diabetic retinopathy absent on fundus"
+        ],
+        "absent_evidential": [
+          "no evidence of diabetic retinopathy on fundus",
+          "diabetic retinopathy ruled out on fundus",
+          "diabetic retinopathy excluded on fundus",
+          "fundus shows no evidence of diabetic retinopathy"
+        ],
+        "historical": [
+          "history of diabetic retinopathy, resolved on fundus",
+          "prior diabetic retinopathy, no longer seen on fundus",
+          "previously documented diabetic retinopathy, resolved"
+        ]
+      },
+      "historical": [
+        "history of diabetic retinopathy, resolved on fundus",
+        "prior diabetic retinopathy, no longer seen on fundus",
+        "previously documented diabetic retinopathy, resolved"
+      ]
+    },
+    "glaucoma": {
+      "rungs": {
+        "present": [
+          "fundus consistent with glaucoma",
+          "findings consistent with glaucoma on fundus",
+          "fundus demonstrating glaucoma"
+        ],
+        "probable": [
+          "fundus suspicious for glaucoma",
+          "probable glaucoma on fundus",
+          "findings probably representing glaucoma on fundus"
+        ],
+        "possible": [
+          "possible glaucoma on fundus",
+          "fundus possibly showing glaucoma",
+          "glaucoma cannot be excluded on fundus"
+        ],
+        "unlikely": [
+          "glaucoma less likely on fundus",
+          "glaucoma unlikely on fundus",
+          "fundus findings unlikely to represent glaucoma"
+        ],
+        "absent_plain": [
+          "fundus negative for glaucoma",
+          "no glaucoma on fundus",
+          "fundus without glaucoma",
+          "glaucoma absent on fundus"
+        ],
+        "absent_evidential": [
+          "no evidence of glaucoma on fundus",
+          "glaucoma ruled out on fundus",
+          "glaucoma excluded on fundus",
+          "fundus shows no evidence of glaucoma"
+        ],
+        "historical": [
+          "history of glaucoma, resolved on fundus",
+          "prior glaucoma, no longer seen on fundus",
+          "previously documented glaucoma, resolved"
+        ]
+      },
+      "historical": [
+        "history of glaucoma, resolved on fundus",
+        "prior glaucoma, no longer seen on fundus",
+        "previously documented glaucoma, resolved"
+      ]
+    },
+    "cataract": {
+      "rungs": {
+        "present": [
+          "fundus consistent with cataract",
+          "findings consistent with cataract on fundus",
+          "fundus demonstrating cataract"
+        ],
+        "probable": [
+          "fundus suspicious for cataract",
+          "probable cataract on fundus",
+          "findings probably representing cataract on fundus"
+        ],
+        "possible": [
+          "possible cataract on fundus",
+          "fundus possibly showing cataract",
+          "cataract cannot be excluded on fundus"
+        ],
+        "unlikely": [
+          "cataract less likely on fundus",
+          "cataract unlikely on fundus",
+          "fundus findings unlikely to represent cataract"
+        ],
+        "absent_plain": [
+          "fundus negative for cataract",
+          "no cataract on fundus",
+          "fundus without cataract",
+          "cataract absent on fundus"
+        ],
+        "absent_evidential": [
+          "no evidence of cataract on fundus",
+          "cataract ruled out on fundus",
+          "cataract excluded on fundus",
+          "fundus shows no evidence of cataract"
+        ],
+        "historical": [
+          "history of cataract, resolved on fundus",
+          "prior cataract, no longer seen on fundus",
+          "previously documented cataract, resolved"
+        ]
+      },
+      "historical": [
+        "history of cataract, resolved on fundus",
+        "prior cataract, no longer seen on fundus",
+        "previously documented cataract, resolved"
+      ]
+    },
+    "amd": {
+      "rungs": {
+        "present": [
+          "fundus consistent with age-related macular degeneration",
+          "findings consistent with age-related macular degeneration on fundus",
+          "fundus demonstrating age-related macular degeneration"
+        ],
+        "probable": [
+          "fundus suspicious for age-related macular degeneration",
+          "probable age-related macular degeneration on fundus",
+          "findings probably representing age-related macular degeneration on fundus"
+        ],
+        "possible": [
+          "possible age-related macular degeneration on fundus",
+          "fundus possibly showing age-related macular degeneration",
+          "age-related macular degeneration cannot be excluded on fundus"
+        ],
+        "unlikely": [
+          "age-related macular degeneration less likely on fundus",
+          "age-related macular degeneration unlikely on fundus",
+          "fundus findings unlikely to represent age-related macular degeneration"
+        ],
+        "absent_plain": [
+          "fundus negative for age-related macular degeneration",
+          "no age-related macular degeneration on fundus",
+          "fundus without age-related macular degeneration",
+          "age-related macular degeneration absent on fundus"
+        ],
+        "absent_evidential": [
+          "no evidence of age-related macular degeneration on fundus",
+          "age-related macular degeneration ruled out on fundus",
+          "age-related macular degeneration excluded on fundus",
+          "fundus shows no evidence of age-related macular degeneration"
+        ],
+        "historical": [
+          "history of age-related macular degeneration, resolved on fundus",
+          "prior age-related macular degeneration, no longer seen on fundus",
+          "previously documented age-related macular degeneration, resolved"
+        ]
+      },
+      "historical": [
+        "history of age-related macular degeneration, resolved on fundus",
+        "prior age-related macular degeneration, no longer seen on fundus",
+        "previously documented age-related macular degeneration, resolved"
+      ]
+    },
+    "hypertensive_retinopathy": {
+      "rungs": {
+        "present": [
+          "fundus consistent with hypertensive retinopathy",
+          "findings consistent with hypertensive retinopathy on fundus",
+          "fundus demonstrating hypertensive retinopathy"
+        ],
+        "probable": [
+          "fundus suspicious for hypertensive retinopathy",
+          "probable hypertensive retinopathy on fundus",
+          "findings probably representing hypertensive retinopathy on fundus"
+        ],
+        "possible": [
+          "possible hypertensive retinopathy on fundus",
+          "fundus possibly showing hypertensive retinopathy",
+          "hypertensive retinopathy cannot be excluded on fundus"
+        ],
+        "unlikely": [
+          "hypertensive retinopathy less likely on fundus",
+          "hypertensive retinopathy unlikely on fundus",
+          "fundus findings unlikely to represent hypertensive retinopathy"
+        ],
+        "absent_plain": [
+          "fundus negative for hypertensive retinopathy",
+          "no hypertensive retinopathy on fundus",
+          "fundus without hypertensive retinopathy",
+          "hypertensive retinopathy absent on fundus"
+        ],
+        "absent_evidential": [
+          "no evidence of hypertensive retinopathy on fundus",
+          "hypertensive retinopathy ruled out on fundus",
+          "hypertensive retinopathy excluded on fundus",
+          "fundus shows no evidence of hypertensive retinopathy"
+        ],
+        "historical": [
+          "history of hypertensive retinopathy, resolved on fundus",
+          "prior hypertensive retinopathy, no longer seen on fundus",
+          "previously documented hypertensive retinopathy, resolved"
+        ]
+      },
+      "historical": [
+        "history of hypertensive retinopathy, resolved on fundus",
+        "prior hypertensive retinopathy, no longer seen on fundus",
+        "previously documented hypertensive retinopathy, resolved"
+      ]
+    },
+    "pathological_myopia": {
+      "rungs": {
+        "present": [
+          "fundus consistent with pathological myopia",
+          "findings consistent with pathological myopia on fundus",
+          "fundus demonstrating pathological myopia"
+        ],
+        "probable": [
+          "fundus suspicious for pathological myopia",
+          "probable pathological myopia on fundus",
+          "findings probably representing pathological myopia on fundus"
+        ],
+        "possible": [
+          "possible pathological myopia on fundus",
+          "fundus possibly showing pathological myopia",
+          "pathological myopia cannot be excluded on fundus"
+        ],
+        "unlikely": [
+          "pathological myopia less likely on fundus",
+          "pathological myopia unlikely on fundus",
+          "fundus findings unlikely to represent pathological myopia"
+        ],
+        "absent_plain": [
+          "fundus negative for pathological myopia",
+          "no pathological myopia on fundus",
+          "fundus without pathological myopia",
+          "pathological myopia absent on fundus"
+        ],
+        "absent_evidential": [
+          "no evidence of pathological myopia on fundus",
+          "pathological myopia ruled out on fundus",
+          "pathological myopia excluded on fundus",
+          "fundus shows no evidence of pathological myopia"
+        ],
+        "historical": [
+          "history of pathological myopia, resolved on fundus",
+          "prior pathological myopia, no longer seen on fundus",
+          "previously documented pathological myopia, resolved"
+        ]
+      },
+      "historical": [
+        "history of pathological myopia, resolved on fundus",
+        "prior pathological myopia, no longer seen on fundus",
+        "previously documented pathological myopia, resolved"
+      ]
+    }
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "modality": "abdomen_ct_disease",
+  "description": "LITERATURE-GROUNDED negation ladder for abdomen_ct_disease. Cue terms verbatim from Panicek & Hricak (AJR 2016) certainty lexicon and NegEx/ConText (Chapman 2001; Harkema 2009).",
+  "provenance": "Panicek&Hricak2016; NegEx Chapman2001; ConText Harkema2009",
+  "ordinal": {
+    "present": 2,
+    "probable": 1,
+    "possible": 0,
+    "unlikely": -1,
+    "absent_plain": -2,
+    "absent_evidential": -2
+  },
+  "subtype_map": {
+    "definite": [
+      "absent_plain"
+    ],
+    "hedged": [
+      "possible",
+      "unlikely"
+    ],
+    "ruled_out": [
+      "absent_evidential"
+    ],
+    "historical": [
+      "historical"
+    ]
+  },
+  "absent_anchor_category": "no_finding",
+  "findings": {
+    "hepatic_steatosis": {
+      "rungs": {
+        "present": [
+          "abdominal CT consistent with hepatic steatosis",
+          "findings consistent with hepatic steatosis on abdominal CT",
+          "abdominal CT demonstrating hepatic steatosis"
+        ],
+        "probable": [
+          "abdominal CT suspicious for hepatic steatosis",
+          "probable hepatic steatosis on abdominal CT",
+          "findings probably representing hepatic steatosis on abdominal CT"
+        ],
+        "possible": [
+          "possible hepatic steatosis on abdominal CT",
+          "abdominal CT possibly showing hepatic steatosis",
+          "hepatic steatosis cannot be excluded on abdominal CT"
+        ],
+        "unlikely": [
+          "hepatic steatosis less likely on abdominal CT",
+          "hepatic steatosis unlikely on abdominal CT",
+          "abdominal CT findings unlikely to represent hepatic steatosis"
+        ],
+        "absent_plain": [
+          "abdominal CT negative for hepatic steatosis",
+          "no hepatic steatosis on abdominal CT",
+          "abdominal CT without hepatic steatosis",
+          "hepatic steatosis absent on abdominal CT"
+        ],
+        "absent_evidential": [
+          "no evidence of hepatic steatosis on abdominal CT",
+          "hepatic steatosis ruled out on abdominal CT",
+          "hepatic steatosis excluded on abdominal CT",
+          "abdominal CT shows no evidence of hepatic steatosis"
+        ],
+        "historical": [
+          "history of hepatic steatosis, resolved on abdominal CT",
+          "prior hepatic steatosis, no longer seen on abdominal CT",
+          "previously documented hepatic steatosis, resolved"
+        ]
+      },
+      "historical": [
+        "history of hepatic steatosis, resolved on abdominal CT",
+        "prior hepatic steatosis, no longer seen on abdominal CT",
+        "previously documented hepatic steatosis, resolved"
+      ]
+    },
+    "renal_cyst": {
+      "rungs": {
+        "present": [
+          "abdominal CT consistent with renal cyst",
+          "findings consistent with renal cyst on abdominal CT",
+          "abdominal CT demonstrating renal cyst"
+        ],
+        "probable": [
+          "abdominal CT suspicious for renal cyst",
+          "probable renal cyst on abdominal CT",
+          "findings probably representing renal cyst on abdominal CT"
+        ],
+        "possible": [
+          "possible renal cyst on abdominal CT",
+          "abdominal CT possibly showing renal cyst",
+          "renal cyst cannot be excluded on abdominal CT"
+        ],
+        "unlikely": [
+          "renal cyst less likely on abdominal CT",
+          "renal cyst unlikely on abdominal CT",
+          "abdominal CT findings unlikely to represent renal cyst"
+        ],
+        "absent_plain": [
+          "abdominal CT negative for renal cyst",
+          "no renal cyst on abdominal CT",
+          "abdominal CT without renal cyst",
+          "renal cyst absent on abdominal CT"
+        ],
+        "absent_evidential": [
+          "no evidence of renal cyst on abdominal CT",
+          "renal cyst ruled out on abdominal CT",
+          "renal cyst excluded on abdominal CT",
+          "abdominal CT shows no evidence of renal cyst"
+        ],
+        "historical": [
+          "history of renal cyst, resolved on abdominal CT",
+          "prior renal cyst, no longer seen on abdominal CT",
+          "previously documented renal cyst, resolved"
+        ]
+      },
+      "historical": [
+        "history of renal cyst, resolved on abdominal CT",
+        "prior renal cyst, no longer seen on abdominal CT",
+        "previously documented renal cyst, resolved"
+      ]
+    },
+    "gallstones": {
+      "rungs": {
+        "present": [
+          "abdominal CT consistent with gallstones",
+          "findings consistent with gallstones on abdominal CT",
+          "abdominal CT demonstrating gallstones"
+        ],
+        "probable": [
+          "abdominal CT suspicious for gallstones",
+          "probable gallstones on abdominal CT",
+          "findings probably representing gallstones on abdominal CT"
+        ],
+        "possible": [
+          "possible gallstones on abdominal CT",
+          "abdominal CT possibly showing gallstones",
+          "gallstones cannot be excluded on abdominal CT"
+        ],
+        "unlikely": [
+          "gallstones less likely on abdominal CT",
+          "gallstones unlikely on abdominal CT",
+          "abdominal CT findings unlikely to represent gallstones"
+        ],
+        "absent_plain": [
+          "abdominal CT negative for gallstones",
+          "no gallstones on abdominal CT",
+          "abdominal CT without gallstones",
+          "gallstones absent on abdominal CT"
+        ],
+        "absent_evidential": [
+          "no evidence of gallstones on abdominal CT",
+          "gallstones ruled out on abdominal CT",
+          "gallstones excluded on abdominal CT",
+          "abdominal CT shows no evidence of gallstones"
+        ],
+        "historical": [
+          "history of gallstones, resolved on abdominal CT",
+          "prior gallstones, no longer seen on abdominal CT",
+          "previously documented gallstones, resolved"
+        ]
+      },
+      "historical": [
+        "history of gallstones, resolved on abdominal CT",
+        "prior gallstones, no longer seen on abdominal CT",
+        "previously documented gallstones, resolved"
+      ]
+    },
+    "ascites": {
+      "rungs": {
+        "present": [
+          "abdominal CT consistent with ascites",
+          "findings consistent with ascites on abdominal CT",
+          "abdominal CT demonstrating ascites"
+        ],
+        "probable": [
+          "abdominal CT suspicious for ascites",
+          "probable ascites on abdominal CT",
+          "findings probably representing ascites on abdominal CT"
+        ],
+        "possible": [
+          "possible ascites on abdominal CT",
+          "abdominal CT possibly showing ascites",
+          "ascites cannot be excluded on abdominal CT"
+        ],
+        "unlikely": [
+          "ascites less likely on abdominal CT",
+          "ascites unlikely on abdominal CT",
+          "abdominal CT findings unlikely to represent ascites"
+        ],
+        "absent_plain": [
+          "abdominal CT negative for ascites",
+          "no ascites on abdominal CT",
+          "abdominal CT without ascites",
+          "ascites absent on abdominal CT"
+        ],
+        "absent_evidential": [
+          "no evidence of ascites on abdominal CT",
+          "ascites ruled out on abdominal CT",
+          "ascites excluded on abdominal CT",
+          "abdominal CT shows no evidence of ascites"
+        ],
+        "historical": [
+          "history of ascites, resolved on abdominal CT",
+          "prior ascites, no longer seen on abdominal CT",
+          "previously documented ascites, resolved"
+        ]
+      },
+      "historical": [
+        "history of ascites, resolved on abdominal CT",
+        "prior ascites, no longer seen on abdominal CT",
+        "previously documented ascites, resolved"
+      ]
+    },
+    "pleural_effusion": {
+      "rungs": {
+        "present": [
+          "abdominal CT consistent with pleural effusion",
+          "findings consistent with pleural effusion on abdominal CT",
+          "abdominal CT demonstrating pleural effusion"
+        ],
+        "probable": [
+          "abdominal CT suspicious for pleural effusion",
+          "probable pleural effusion on abdominal CT",
+          "findings probably representing pleural effusion on abdominal CT"
+        ],
+        "possible": [
+          "possible pleural effusion on abdominal CT",
+          "abdominal CT possibly showing pleural effusion",
+          "pleural effusion cannot be excluded on abdominal CT"
+        ],
+        "unlikely": [
+          "pleural effusion less likely on abdominal CT",
+          "pleural effusion unlikely on abdominal CT",
+          "abdominal CT findings unlikely to represent pleural effusion"
+        ],
+        "absent_plain": [
+          "abdominal CT negative for pleural effusion",
+          "no pleural effusion on abdominal CT",
+          "abdominal CT without pleural effusion",
+          "pleural effusion absent on abdominal CT"
+        ],
+        "absent_evidential": [
+          "no evidence of pleural effusion on abdominal CT",
+          "pleural effusion ruled out on abdominal CT",
+          "pleural effusion excluded on abdominal CT",
+          "abdominal CT shows no evidence of pleural effusion"
+        ],
+        "historical": [
+          "history of pleural effusion, resolved on abdominal CT",
+          "prior pleural effusion, no longer seen on abdominal CT",
+          "previously documented pleural effusion, resolved"
+        ]
+      },
+      "historical": [
+        "history of pleural effusion, resolved on abdominal CT",
+        "prior pleural effusion, no longer seen on abdominal CT",
+        "previously documented pleural effusion, resolved"
+      ]
+    }
+  }
+}

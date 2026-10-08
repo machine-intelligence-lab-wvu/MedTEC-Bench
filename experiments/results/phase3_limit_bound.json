@@ -1,0 +1,150 @@
+{
+ "n": 12,
+ "k": 2,
+ "n_choose_k": 66,
+ "gamma_candidates": {
+  "n_per_image_obs": 1350,
+  "n_passing": 1091,
+  "frac_passing": 0.8081481481481482,
+  "gamma_p5_passing": 0.0008074836805462837,
+  "gamma_p25_passing": 0.04246821254491806,
+  "gamma_median_passing": 0.06913428008556366,
+  "gamma_min_model_avg": 0.008205479265501102
+ },
+ "headline_gamma": 0.06913428008556366,
+ "headline_d_floor": 1.5298785512691713,
+ "rows": [
+  {
+   "model": "biomedclip",
+   "display_name": "BiomedCLIP",
+   "embedding_dim_D": 512,
+   "D_eff": 45.12955589422065,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 43.59967734295148,
+   "L4_avg_DS_observed": -0.019591378569602965,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "pubmedclip",
+   "display_name": "PubMedCLIP",
+   "embedding_dim_D": 512,
+   "D_eff": 36.97286060643688,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 35.44298205516771,
+   "L4_avg_DS_observed": -0.0009926480054855346,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "medclip",
+   "display_name": "MedCLIP",
+   "embedding_dim_D": 512,
+   "D_eff": 7.131060541250995,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 5.601181989981823,
+   "L4_avg_DS_observed": -0.0006584257539361715,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "chexzero",
+   "display_name": "CheXzero",
+   "embedding_dim_D": 512,
+   "D_eff": 60.81814904376451,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 59.288270492495336,
+   "L4_avg_DS_observed": -0.007872505187988281,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "biovil",
+   "display_name": "BioViL",
+   "embedding_dim_D": 128,
+   "D_eff": 6.3019896566982885,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 4.772111105429117,
+   "L4_avg_DS_observed": -0.2577697065472603,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "pmc_clip",
+   "display_name": "PMC-CLIP",
+   "embedding_dim_D": 768,
+   "D_eff": 83.92654820361462,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 82.39666965234544,
+   "L4_avg_DS_observed": -0.02755284547805786,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "conch",
+   "display_name": "CONCH",
+   "embedding_dim_D": 512,
+   "D_eff": 33.64913576618402,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 32.119257214914846,
+   "L4_avg_DS_observed": null,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "?",
+   "agree": "?"
+  },
+  {
+   "model": "plip",
+   "display_name": "PLIP",
+   "embedding_dim_D": 512,
+   "D_eff": 76.49956621634476,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 74.96968766507558,
+   "L4_avg_DS_observed": null,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "?",
+   "agree": "?"
+  },
+  {
+   "model": "openclip_vitb32",
+   "display_name": "OpenCLIP ViT-B-32",
+   "embedding_dim_D": 512,
+   "D_eff": 52.550419578943455,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 51.020541027674284,
+   "L4_avg_DS_observed": -0.004173207879066467,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "openclip_vitl14",
+   "display_name": "OpenCLIP ViT-L-14",
+   "embedding_dim_D": 768,
+   "D_eff": 57.69854544903497,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 56.168666897765796,
+   "L4_avg_DS_observed": -0.0037842440605163575,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  },
+  {
+   "model": "siglip",
+   "display_name": "SigLIP",
+   "embedding_dim_D": 768,
+   "D_eff": 38.207618693852694,
+   "d_floor": 1.53,
+   "gap_Deff_minus_dfloor": 36.677740142583524,
+   "L4_avg_DS_observed": -0.00320063591003418,
+   "predicted_by_LIMIT": "PASS",
+   "observed_in_MedTEC": "FAIL",
+   "agree": "NO"
+  }
+ ]
+}

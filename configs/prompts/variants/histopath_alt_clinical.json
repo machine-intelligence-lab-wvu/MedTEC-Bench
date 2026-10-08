@@ -1,0 +1,377 @@
+{
+  "modality": "histopath",
+  "variant": "alt_clinical",
+  "description": "Exp A prompt-robustness variant (alt_clinical) for histopath, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/histopath_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "a histopathology image with features of tumor epithelium",
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image compatible with colorectal adenocarcinoma",
+            "a histopathology image showing features of tumor epithelium"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "norm": {
+          "positives": [
+            "a histopathology image with normal colonic mucosa",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image compatible with normal colonic mucosa",
+            "a histopathology image showing normal colonic mucosa"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "str": {
+          "positives": [
+            "a histopathology image with cancer-associated stroma",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image compatible with cancer-associated stroma",
+            "a histopathology image showing cancer-associated stroma"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "lym": {
+          "positives": [
+            "a histopathology image with a lymphocytic infiltrate",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image compatible with lymphocytes",
+            "a histopathology image showing a lymphocytic infiltrate"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "mus": {
+          "positives": [
+            "a histopathology image with smooth muscle",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image compatible with smooth muscle",
+            "a histopathology image showing smooth muscle"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "adi": {
+          "positives": [
+            "a histopathology image with adipose tissue",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image compatible with adipose tissue",
+            "a histopathology image showing adipose tissue"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "muc": {
+          "positives": [
+            "a histopathology image with mucus",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image compatible with mucus",
+            "a histopathology image showing mucus"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating debris",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "deb": {
+          "positives": [
+            "a histopathology image with debris",
+            "a histopathology image demonstrating debris",
+            "a histopathology image compatible with debris",
+            "a histopathology image showing debris"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating background",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        },
+        "back": {
+          "positives": [
+            "a histopathology image with background",
+            "a histopathology image demonstrating background",
+            "a histopathology image compatible with background",
+            "a histopathology image showing background"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image demonstrating normal colonic mucosa",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image demonstrating debris",
+            "a histopathology image with blood vessels",
+            "a histopathology image with a nerve bundle"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "a histopathology image with features of tumor epithelium",
+            "a histopathology image demonstrating colorectal adenocarcinoma",
+            "a histopathology image positive for colorectal adenocarcinoma",
+            "a histopathology image showing features of tumor epithelium"
+          ],
+          "negatives": [
+            "a histopathology image without adenocarcinoma epithelium",
+            "a histopathology image negative for adenocarcinoma epithelium",
+            "a histopathology image showing no adenocarcinoma epithelium",
+            "a histopathology image with no evidence of adenocarcinoma epithelium",
+            "a histopathology image with adenocarcinoma epithelium excluded",
+            "a histopathology image free of adenocarcinoma epithelium",
+            "a histopathology image in which adenocarcinoma epithelium is not seen",
+            "a histopathology image with adenocarcinoma epithelium ruled out",
+            "a histopathology image without adenocarcinoma epithelium identified",
+            "a histopathology image with no adenocarcinoma epithelium"
+          ]
+        },
+        "norm": {
+          "positives": [
+            "a histopathology image read as normal",
+            "a histopathology image free of disease",
+            "a histopathology image with no abnormality",
+            "a histopathology image within normal limits"
+          ],
+          "negatives": [
+            "a histopathology image demonstrating disease",
+            "a histopathology image read as abnormal",
+            "a histopathology image with pathology present",
+            "a histopathology image positive for disease",
+            "a histopathology image with an abnormality present",
+            "a histopathology image showing active disease",
+            "a histopathology image with a significant abnormality",
+            "a histopathology image outside normal limits",
+            "a histopathology image with underlying pathology",
+            "a histopathology image demonstrating an abnormality"
+          ]
+        },
+        "str": {
+          "positives": [
+            "a histopathology image with cancer-associated stroma",
+            "a histopathology image demonstrating cancer-associated stroma",
+            "a histopathology image positive for cancer-associated stroma",
+            "a histopathology image showing cancer-associated stroma"
+          ],
+          "negatives": [
+            "a histopathology image without cancer-associated stroma",
+            "a histopathology image negative for cancer-associated stroma",
+            "a histopathology image showing no cancer-associated stroma",
+            "a histopathology image with no evidence of cancer-associated stroma",
+            "a histopathology image with cancer-associated stroma excluded",
+            "a histopathology image free of cancer-associated stroma",
+            "a histopathology image in which cancer-associated stroma is not seen",
+            "a histopathology image with cancer-associated stroma ruled out",
+            "a histopathology image without cancer-associated stroma identified",
+            "a histopathology image with no cancer-associated stroma"
+          ]
+        },
+        "lym": {
+          "positives": [
+            "a histopathology image with a lymphocytic infiltrate",
+            "a histopathology image demonstrating lymphocytes",
+            "a histopathology image positive for lymphocytes",
+            "a histopathology image showing a lymphocytic infiltrate"
+          ],
+          "negatives": [
+            "a histopathology image without lymphocytes",
+            "a histopathology image negative for lymphocytes",
+            "a histopathology image showing no lymphocytes",
+            "a histopathology image with no evidence of lymphocytes",
+            "a histopathology image with lymphocytes excluded",
+            "a histopathology image free of lymphocytes",
+            "a histopathology image in which lymphocytes is not seen",
+            "a histopathology image with lymphocytes ruled out",
+            "a histopathology image without lymphocytes identified",
+            "a histopathology image with no lymphocytes"
+          ]
+        },
+        "mus": {
+          "positives": [
+            "a histopathology image with smooth muscle",
+            "a histopathology image demonstrating smooth muscle",
+            "a histopathology image positive for smooth muscle",
+            "a histopathology image showing smooth muscle"
+          ],
+          "negatives": [
+            "a histopathology image without smooth muscle",
+            "a histopathology image negative for smooth muscle",
+            "a histopathology image showing no smooth muscle",
+            "a histopathology image with no evidence of smooth muscle",
+            "a histopathology image with smooth muscle excluded",
+            "a histopathology image free of smooth muscle",
+            "a histopathology image in which smooth muscle is not seen",
+            "a histopathology image with smooth muscle ruled out",
+            "a histopathology image without smooth muscle identified",
+            "a histopathology image with no smooth muscle"
+          ]
+        },
+        "adi": {
+          "positives": [
+            "a histopathology image with adipose tissue",
+            "a histopathology image demonstrating adipose tissue",
+            "a histopathology image positive for adipose tissue",
+            "a histopathology image showing adipose tissue"
+          ],
+          "negatives": [
+            "a histopathology image without adipose tissue",
+            "a histopathology image negative for adipose tissue",
+            "a histopathology image showing no adipose tissue",
+            "a histopathology image with no evidence of adipose tissue",
+            "a histopathology image with adipose tissue excluded",
+            "a histopathology image free of adipose tissue",
+            "a histopathology image in which adipose tissue is not seen",
+            "a histopathology image with adipose tissue ruled out",
+            "a histopathology image without adipose tissue identified",
+            "a histopathology image with no adipose tissue"
+          ]
+        },
+        "muc": {
+          "positives": [
+            "a histopathology image with mucus",
+            "a histopathology image demonstrating mucus",
+            "a histopathology image positive for mucus",
+            "a histopathology image showing mucus"
+          ],
+          "negatives": [
+            "a histopathology image without mucus",
+            "a histopathology image negative for mucus",
+            "a histopathology image showing no mucus",
+            "a histopathology image with no evidence of mucus",
+            "a histopathology image with mucus excluded",
+            "a histopathology image free of mucus",
+            "a histopathology image in which mucus is not seen",
+            "a histopathology image with mucus ruled out",
+            "a histopathology image without mucus identified",
+            "a histopathology image with no mucus"
+          ]
+        },
+        "deb": {
+          "positives": [
+            "a histopathology image with debris",
+            "a histopathology image demonstrating debris",
+            "a histopathology image positive for debris",
+            "a histopathology image showing debris"
+          ],
+          "negatives": [
+            "a histopathology image without debris",
+            "a histopathology image negative for debris",
+            "a histopathology image showing no debris",
+            "a histopathology image with no evidence of debris",
+            "a histopathology image with debris excluded",
+            "a histopathology image free of debris",
+            "a histopathology image in which debris is not seen",
+            "a histopathology image with debris ruled out",
+            "a histopathology image without debris identified",
+            "a histopathology image with no debris"
+          ]
+        },
+        "back": {
+          "positives": [
+            "a histopathology image with background",
+            "a histopathology image demonstrating background",
+            "a histopathology image positive for background",
+            "a histopathology image showing background"
+          ],
+          "negatives": [
+            "a histopathology image without background",
+            "a histopathology image negative for background",
+            "a histopathology image showing no background",
+            "a histopathology image with no evidence of background",
+            "a histopathology image with background excluded",
+            "a histopathology image free of background",
+            "a histopathology image in which background is not seen",
+            "a histopathology image with background ruled out",
+            "a histopathology image without background identified",
+            "a histopathology image with no background"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "modality": "dermoscopy",
+  "description": "Dermoscopy (dermatoscopy) prompt templates for MedTEC-Bench levels 1-6. Levels 4-5 use per-image disease-specific prompts; levels 1-3 and 6 are shared across all images.",
+  "disease_categories": {
+    "mel": {
+      "display": "Melanoma",
+      "ham10000_col": "MEL",
+      "description": "Malignant melanocytic lesion"
+    },
+    "nv": {
+      "display": "Melanocytic Nevus",
+      "ham10000_col": "NV",
+      "description": "Benign melanocytic nevus (mole)"
+    },
+    "bcc": {
+      "display": "Basal Cell Carcinoma",
+      "ham10000_col": "BCC",
+      "description": "Basal cell carcinoma \u2014 most common skin cancer"
+    },
+    "akiec": {
+      "display": "Actinic Keratosis",
+      "ham10000_col": "AKIEC",
+      "description": "Actinic keratosis / intraepithelial carcinoma (Bowen's disease)"
+    },
+    "bkl": {
+      "display": "Benign Keratosis",
+      "ham10000_col": "BKL",
+      "description": "Benign keratosis (seborrheic keratosis, solar lentigo, lichen planus-like keratosis)"
+    }
+  },
+  "sampling": {
+    "n_per_category": 10,
+    "total": 50,
+    "seed": 42,
+    "csv_file": "ISIC2018_Task3_Training_GroundTruth.csv",
+    "image_dir": "ISIC2018_Task1-2_Training_Input"
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Dermoscopy image vs everyday objects \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "derm_l1_001",
+          "positives": [
+            "a dermoscopy image of skin",
+            "a dermatoscopic photograph of a skin lesion"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "derm_l1_002",
+          "positives": [
+            "a polarized light dermoscopy image",
+            "a close-up dermatoscopy view of a skin lesion"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a park bench in autumn",
+            "a baseball glove on grass",
+            "a wristwatch on a surface"
+          ]
+        },
+        {
+          "probe_id": "derm_l1_003",
+          "positives": [
+            "a dermoscopy photograph showing pigmented skin structure",
+            "a dermatoscopic image of a mole or skin growth"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a cup of coffee",
+            "a garden with flowers",
+            "a bicycle helmet",
+            "a running shoe on a white background"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Dermoscopy vs other skin imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "derm_l2_001",
+          "positives": [
+            "a dermoscopy image of skin",
+            "a dermatoscopy photograph of a lesion"
+          ],
+          "negatives": [
+            "a clinical photograph of skin",
+            "a reflectance confocal microscopy image of skin",
+            "an optical coherence tomography image of skin",
+            "a skin ultrasound image",
+            "a fluorescence microscopy image of skin"
+          ]
+        },
+        {
+          "probe_id": "derm_l2_002",
+          "positives": [
+            "a polarized dermoscopy image showing subsurface skin structures",
+            "a non-contact dermoscopy photograph"
+          ],
+          "negatives": [
+            "a contact dermoscopy image with gel medium",
+            "a total body photography image of skin",
+            "a 3D reconstruction of a skin lesion",
+            "a multispectral imaging scan of skin",
+            "a photoacoustic microscopy image of skin"
+          ]
+        },
+        {
+          "probe_id": "derm_l2_003",
+          "positives": [
+            "a dermatoscopic image with visible pigment network",
+            "a dermoscopy image showing dermoscopic structures"
+          ],
+          "negatives": [
+            "a histopathology slide of skin tissue",
+            "a scanning electron microscopy image of skin",
+            "a transmission electron microscopy image",
+            "an immunofluorescence image of skin",
+            "a Raman spectroscopy map of skin"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Dermoscopy of skin vs other medical imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "derm_l3_001",
+          "positives": [
+            "a dermoscopy image of skin",
+            "a dermatoscopy photograph of a skin lesion"
+          ],
+          "negatives": [
+            "a chest x-ray",
+            "a brain MRI scan",
+            "a retinal fundus photograph",
+            "an abdominal CT scan",
+            "a histopathology slide"
+          ]
+        },
+        {
+          "probe_id": "derm_l3_002",
+          "positives": [
+            "a dermoscopy of a skin lesion on the trunk",
+            "a dermatoscopy image of a back skin lesion"
+          ],
+          "negatives": [
+            "a dermoscopy of the nail plate",
+            "a dermoscopy of a mucous membrane",
+            "a dermoscopy of the scalp",
+            "a dermoscopy of the palm",
+            "a dermoscopy of the lip"
+          ]
+        },
+        {
+          "probe_id": "derm_l3_003",
+          "positives": [
+            "a dermoscopy showing a skin lesion",
+            "a dermatoscopic image of cutaneous pathology"
+          ],
+          "negatives": [
+            "a colonoscopy image of the colon",
+            "a fundoscopy image of the retina",
+            "a laryngoscopy image of the larynx",
+            "a cystoscopy image of the bladder",
+            "an arthroscopy image of a joint"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Image-specific prompts based on true diagnosis. 2 positives describe the true diagnosis; 10 negatives describe other skin conditions.",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "a dermoscopy image showing melanoma",
+            "a dermatoscopy photograph of a malignant melanoma lesion",
+            "a pigmented skin lesion with asymmetry, irregular borders, and color variegation suggestive of melanoma",
+            "a dermoscopy image with atypical pigment network and blue-white veil consistent with melanoma"
+          ],
+          "negatives": [
+            "a dermoscopy image showing a benign melanocytic nevus",
+            "a dermoscopy image showing basal cell carcinoma",
+            "a dermoscopy image showing actinic keratosis",
+            "a dermoscopy image showing seborrheic keratosis",
+            "a dermoscopy image showing dermatofibroma",
+            "a dermoscopy image showing a vascular lesion",
+            "a dermoscopy image showing squamous cell carcinoma",
+            "a normal dermoscopy image with no abnormal lesion",
+            "a dermoscopy image showing lichen planus-like keratosis",
+            "a dermoscopy image showing solar lentigo"
+          ]
+        },
+        "nv": {
+          "positives": [
+            "a dermoscopy image showing a benign melanocytic nevus",
+            "a dermoscopy photograph of a common mole",
+            "a dermoscopy image of a symmetric pigmented macule with regular pigment network",
+            "a dermoscopy photograph of a benign-appearing nevus with uniform color and globular pattern"
+          ],
+          "negatives": [
+            "a dermoscopy image showing melanoma",
+            "a dermoscopy image showing basal cell carcinoma",
+            "a dermoscopy image showing actinic keratosis",
+            "a dermoscopy image showing seborrheic keratosis",
+            "a dermoscopy image showing dermatofibroma",
+            "a dermoscopy image showing a vascular lesion",
+            "a dermoscopy image showing squamous cell carcinoma",
+            "a normal dermoscopy image with no lesion",
+            "a dermoscopy image showing dysplastic nevus",
+            "a dermoscopy image showing Spitz nevus"
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "a dermoscopy image showing basal cell carcinoma",
+            "a dermoscopy photograph of a basal cell carcinoma lesion",
+            "a dermoscopy image with arborizing telangiectasias and blue-gray ovoid nests consistent with basal cell carcinoma",
+            "a dermoscopy photograph of a pearly translucent papule with surface vessels suggestive of basal cell carcinoma"
+          ],
+          "negatives": [
+            "a dermoscopy image showing melanoma",
+            "a dermoscopy image showing a benign melanocytic nevus",
+            "a dermoscopy image showing actinic keratosis",
+            "a dermoscopy image showing seborrheic keratosis",
+            "a dermoscopy image showing dermatofibroma",
+            "a dermoscopy image showing a vascular lesion",
+            "a dermoscopy image showing squamous cell carcinoma",
+            "a normal dermoscopy image with no abnormal lesion",
+            "a dermoscopy image showing Merkel cell carcinoma",
+            "a dermoscopy image showing amelanotic melanoma"
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "a dermoscopy image showing actinic keratosis",
+            "a dermoscopy photograph of intraepithelial carcinoma (Bowen's disease)",
+            "a dermoscopy image with strawberry pattern and white halos around hair follicles consistent with actinic keratosis",
+            "a dermoscopy photograph of an erythematous keratotic plaque on sun-damaged skin"
+          ],
+          "negatives": [
+            "a dermoscopy image showing melanoma",
+            "a dermoscopy image showing a benign melanocytic nevus",
+            "a dermoscopy image showing basal cell carcinoma",
+            "a dermoscopy image showing seborrheic keratosis",
+            "a dermoscopy image showing dermatofibroma",
+            "a dermoscopy image showing a vascular lesion",
+            "a dermoscopy image showing squamous cell carcinoma",
+            "a normal dermoscopy image with no abnormal lesion",
+            "a dermoscopy image showing psoriasis plaque",
+            "a dermoscopy image showing eczema"
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "a dermoscopy image showing benign keratosis",
+            "a dermoscopy photograph of a seborrheic keratosis lesion",
+            "a dermoscopy image with milia-like cysts and comedo-like openings consistent with seborrheic keratosis",
+            "a dermoscopy photograph of a stuck-on appearing pigmented papule with cerebriform pattern"
+          ],
+          "negatives": [
+            "a dermoscopy image showing melanoma",
+            "a dermoscopy image showing a benign melanocytic nevus",
+            "a dermoscopy image showing basal cell carcinoma",
+            "a dermoscopy image showing actinic keratosis",
+            "a dermoscopy image showing dermatofibroma",
+            "a dermoscopy image showing a vascular lesion",
+            "a dermoscopy image showing squamous cell carcinoma",
+            "a normal dermoscopy image with no abnormal lesion",
+            "a dermoscopy image showing wart (verruca vulgaris)",
+            "a dermoscopy image showing clear cell acanthoma"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Image-specific: presence vs absence of the true diagnosis. 2 positives affirm the diagnosis; 10 negatives are linguistic negations of the same diagnosis.",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "dermoscopy showing melanoma",
+            "melanoma visible on dermoscopy",
+            "melanoma identified on dermoscopic examination",
+            "atypical pigmented lesion consistent with melanoma"
+          ],
+          "negatives": [
+            "dermoscopy showing no melanoma",
+            "no evidence of melanoma on dermoscopy",
+            "dermoscopy negative for melanoma",
+            "melanoma absent on dermoscopy",
+            "dermoscopy without melanoma",
+            "no melanoma visible on dermoscopy",
+            "dermoscopy clear of melanoma",
+            "melanoma excluded on dermoscopy",
+            "no signs of melanoma on dermoscopy",
+            "melanoma not seen on dermoscopy"
+          ]
+        },
+        "nv": {
+          "positives": [
+            "dermoscopy showing a melanocytic nevus",
+            "benign nevus visible on dermoscopy",
+            "a benign nevus identified on dermoscopy",
+            "dermoscopic features of a melanocytic nevus"
+          ],
+          "negatives": [
+            "dermoscopy showing no melanocytic nevus",
+            "no evidence of nevus on dermoscopy",
+            "dermoscopy negative for melanocytic nevus",
+            "nevus absent on dermoscopy",
+            "dermoscopy without a nevus",
+            "no nevus visible on dermoscopy",
+            "dermoscopy clear of melanocytic nevus",
+            "nevus excluded on dermoscopy",
+            "no signs of nevus on dermoscopy",
+            "melanocytic nevus not seen on dermoscopy"
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "dermoscopy showing basal cell carcinoma",
+            "basal cell carcinoma visible on dermoscopy",
+            "basal cell carcinoma identified on dermoscopy",
+            "dermoscopic features of basal cell carcinoma"
+          ],
+          "negatives": [
+            "dermoscopy showing no basal cell carcinoma",
+            "no evidence of basal cell carcinoma on dermoscopy",
+            "dermoscopy negative for basal cell carcinoma",
+            "basal cell carcinoma absent on dermoscopy",
+            "dermoscopy without basal cell carcinoma",
+            "no basal cell carcinoma visible on dermoscopy",
+            "dermoscopy clear of basal cell carcinoma",
+            "basal cell carcinoma excluded on dermoscopy",
+            "no signs of basal cell carcinoma on dermoscopy",
+            "basal cell carcinoma not seen on dermoscopy"
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "dermoscopy showing actinic keratosis",
+            "actinic keratosis visible on dermoscopy",
+            "actinic keratosis identified on dermoscopy",
+            "dermoscopic features of intraepithelial keratinocyte atypia"
+          ],
+          "negatives": [
+            "dermoscopy showing no actinic keratosis",
+            "no evidence of actinic keratosis on dermoscopy",
+            "dermoscopy negative for actinic keratosis",
+            "actinic keratosis absent on dermoscopy",
+            "dermoscopy without actinic keratosis",
+            "no actinic keratosis visible on dermoscopy",
+            "dermoscopy clear of actinic keratosis",
+            "actinic keratosis excluded on dermoscopy",
+            "no signs of actinic keratosis on dermoscopy",
+            "actinic keratosis not seen on dermoscopy"
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "dermoscopy showing benign keratosis",
+            "seborrheic keratosis visible on dermoscopy",
+            "seborrheic keratosis identified on dermoscopy",
+            "dermoscopic features of a benign keratotic lesion"
+          ],
+          "negatives": [
+            "dermoscopy showing no benign keratosis",
+            "no evidence of benign keratosis on dermoscopy",
+            "dermoscopy negative for benign keratosis",
+            "benign keratosis absent on dermoscopy",
+            "dermoscopy without benign keratosis",
+            "no benign keratosis visible on dermoscopy",
+            "dermoscopy clear of benign keratosis",
+            "benign keratosis excluded on dermoscopy",
+            "no signs of benign keratosis on dermoscopy",
+            "seborrheic keratosis not seen on dermoscopy"
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Attribute binding",
+      "description": "Modifier sensitivity (size, color, border irregularity). Shared template probes.",
+      "probes": [
+        {
+          "probe_id": "derm_l6_001",
+          "positives": [
+            "dermoscopy showing a large asymmetric pigmented lesion"
+          ],
+          "negatives": [
+            "dermoscopy showing a small asymmetric pigmented lesion",
+            "dermoscopy showing a large symmetric pigmented lesion",
+            "dermoscopy showing a large uniformly pigmented lesion",
+            "dermoscopy showing a large non-pigmented lesion"
+          ]
+        },
+        {
+          "probe_id": "derm_l6_002",
+          "positives": [
+            "dermoscopy showing a lesion with irregular borders"
+          ],
+          "negatives": [
+            "dermoscopy showing a lesion with regular borders",
+            "dermoscopy showing a lesion with well-defined borders",
+            "dermoscopy showing a lesion with smooth margins",
+            "dermoscopy showing a lesion with scalloped but regular borders"
+          ]
+        },
+        {
+          "probe_id": "derm_l6_003",
+          "positives": [
+            "dermoscopy showing a lesion with multiple colors including blue-white veil"
+          ],
+          "negatives": [
+            "dermoscopy showing a uniformly brown lesion",
+            "dermoscopy showing a tan-colored lesion with one color",
+            "dermoscopy showing a pink lesion without pigmentation",
+            "dermoscopy showing a black lesion with homogeneous pattern"
+          ]
+        }
+      ]
+    }
+  }
+}

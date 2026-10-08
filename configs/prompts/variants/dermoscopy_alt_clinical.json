@@ -1,0 +1,217 @@
+{
+  "modality": "dermoscopy",
+  "variant": "alt_clinical",
+  "description": "Exp A prompt-robustness variant (alt_clinical) for dermoscopy, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/dermoscopy_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "a dermoscopy image with features of melanoma",
+            "a dermoscopy image demonstrating melanoma",
+            "a dermoscopy image compatible with melanoma",
+            "a dermoscopy image showing features of melanoma"
+          ],
+          "negatives": [
+            "a dermoscopy image demonstrating a melanocytic nevus",
+            "a dermoscopy image demonstrating basal cell carcinoma",
+            "a dermoscopy image demonstrating actinic keratosis",
+            "a dermoscopy image demonstrating a benign keratosis",
+            "a dermoscopy image with a dermatofibroma",
+            "a dermoscopy image with features of squamous cell carcinoma",
+            "a dermoscopy image with a vascular lesion",
+            "a dermoscopy image with a solar lentigo",
+            "a dermoscopy image with an angioma",
+            "a dermoscopy image with sebaceous hyperplasia"
+          ]
+        },
+        "nv": {
+          "positives": [
+            "a dermoscopy image with features of a melanocytic nevus",
+            "a dermoscopy image demonstrating a melanocytic nevus",
+            "a dermoscopy image compatible with a melanocytic nevus",
+            "a dermoscopy image showing features of a melanocytic nevus"
+          ],
+          "negatives": [
+            "a dermoscopy image demonstrating melanoma",
+            "a dermoscopy image demonstrating basal cell carcinoma",
+            "a dermoscopy image demonstrating actinic keratosis",
+            "a dermoscopy image demonstrating a benign keratosis",
+            "a dermoscopy image with a dermatofibroma",
+            "a dermoscopy image with features of squamous cell carcinoma",
+            "a dermoscopy image with a vascular lesion",
+            "a dermoscopy image with a solar lentigo",
+            "a dermoscopy image with an angioma",
+            "a dermoscopy image with sebaceous hyperplasia"
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "a dermoscopy image with features of basal cell carcinoma",
+            "a dermoscopy image demonstrating basal cell carcinoma",
+            "a dermoscopy image compatible with basal cell carcinoma",
+            "a dermoscopy image showing features of basal cell carcinoma"
+          ],
+          "negatives": [
+            "a dermoscopy image demonstrating melanoma",
+            "a dermoscopy image demonstrating a melanocytic nevus",
+            "a dermoscopy image demonstrating actinic keratosis",
+            "a dermoscopy image demonstrating a benign keratosis",
+            "a dermoscopy image with a dermatofibroma",
+            "a dermoscopy image with features of squamous cell carcinoma",
+            "a dermoscopy image with a vascular lesion",
+            "a dermoscopy image with a solar lentigo",
+            "a dermoscopy image with an angioma",
+            "a dermoscopy image with sebaceous hyperplasia"
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "a dermoscopy image with features of actinic keratosis",
+            "a dermoscopy image demonstrating actinic keratosis",
+            "a dermoscopy image compatible with actinic keratosis",
+            "a dermoscopy image showing features of actinic keratosis"
+          ],
+          "negatives": [
+            "a dermoscopy image demonstrating melanoma",
+            "a dermoscopy image demonstrating a melanocytic nevus",
+            "a dermoscopy image demonstrating basal cell carcinoma",
+            "a dermoscopy image demonstrating a benign keratosis",
+            "a dermoscopy image with a dermatofibroma",
+            "a dermoscopy image with features of squamous cell carcinoma",
+            "a dermoscopy image with a vascular lesion",
+            "a dermoscopy image with a solar lentigo",
+            "a dermoscopy image with an angioma",
+            "a dermoscopy image with sebaceous hyperplasia"
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "a dermoscopy image with features of a benign keratosis",
+            "a dermoscopy image demonstrating a benign keratosis",
+            "a dermoscopy image compatible with a benign keratosis",
+            "a dermoscopy image showing features of a benign keratosis"
+          ],
+          "negatives": [
+            "a dermoscopy image demonstrating melanoma",
+            "a dermoscopy image demonstrating a melanocytic nevus",
+            "a dermoscopy image demonstrating basal cell carcinoma",
+            "a dermoscopy image demonstrating actinic keratosis",
+            "a dermoscopy image with a dermatofibroma",
+            "a dermoscopy image with features of squamous cell carcinoma",
+            "a dermoscopy image with a vascular lesion",
+            "a dermoscopy image with a solar lentigo",
+            "a dermoscopy image with an angioma",
+            "a dermoscopy image with sebaceous hyperplasia"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "a dermoscopy image with features of melanoma",
+            "a dermoscopy image demonstrating melanoma",
+            "a dermoscopy image positive for melanoma",
+            "a dermoscopy image showing features of melanoma"
+          ],
+          "negatives": [
+            "a dermoscopy image without melanoma",
+            "a dermoscopy image negative for melanoma",
+            "a dermoscopy image showing no melanoma",
+            "a dermoscopy image with no evidence of melanoma",
+            "a dermoscopy image with melanoma excluded",
+            "a dermoscopy image free of melanoma",
+            "a dermoscopy image in which melanoma is not seen",
+            "a dermoscopy image with melanoma ruled out",
+            "a dermoscopy image without melanoma identified",
+            "a dermoscopy image with no melanoma"
+          ]
+        },
+        "nv": {
+          "positives": [
+            "a dermoscopy image with features of a melanocytic nevus",
+            "a dermoscopy image demonstrating a melanocytic nevus",
+            "a dermoscopy image positive for a melanocytic nevus",
+            "a dermoscopy image showing features of a melanocytic nevus"
+          ],
+          "negatives": [
+            "a dermoscopy image without melanocytic nevus",
+            "a dermoscopy image negative for melanocytic nevus",
+            "a dermoscopy image showing no melanocytic nevus",
+            "a dermoscopy image with no evidence of melanocytic nevus",
+            "a dermoscopy image with melanocytic nevus excluded",
+            "a dermoscopy image free of melanocytic nevus",
+            "a dermoscopy image in which melanocytic nevus is not seen",
+            "a dermoscopy image with melanocytic nevus ruled out",
+            "a dermoscopy image without melanocytic nevus identified",
+            "a dermoscopy image with no melanocytic nevus"
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "a dermoscopy image with features of basal cell carcinoma",
+            "a dermoscopy image demonstrating basal cell carcinoma",
+            "a dermoscopy image positive for basal cell carcinoma",
+            "a dermoscopy image showing features of basal cell carcinoma"
+          ],
+          "negatives": [
+            "a dermoscopy image without basal cell carcinoma",
+            "a dermoscopy image negative for basal cell carcinoma",
+            "a dermoscopy image showing no basal cell carcinoma",
+            "a dermoscopy image with no evidence of basal cell carcinoma",
+            "a dermoscopy image with basal cell carcinoma excluded",
+            "a dermoscopy image free of basal cell carcinoma",
+            "a dermoscopy image in which basal cell carcinoma is not seen",
+            "a dermoscopy image with basal cell carcinoma ruled out",
+            "a dermoscopy image without basal cell carcinoma identified",
+            "a dermoscopy image with no basal cell carcinoma"
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "a dermoscopy image with features of actinic keratosis",
+            "a dermoscopy image demonstrating actinic keratosis",
+            "a dermoscopy image positive for actinic keratosis",
+            "a dermoscopy image showing features of actinic keratosis"
+          ],
+          "negatives": [
+            "a dermoscopy image without actinic keratosis",
+            "a dermoscopy image negative for actinic keratosis",
+            "a dermoscopy image showing no actinic keratosis",
+            "a dermoscopy image with no evidence of actinic keratosis",
+            "a dermoscopy image with actinic keratosis excluded",
+            "a dermoscopy image free of actinic keratosis",
+            "a dermoscopy image in which actinic keratosis is not seen",
+            "a dermoscopy image with actinic keratosis ruled out",
+            "a dermoscopy image without actinic keratosis identified",
+            "a dermoscopy image with no actinic keratosis"
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "a dermoscopy image with features of a benign keratosis",
+            "a dermoscopy image demonstrating a benign keratosis",
+            "a dermoscopy image positive for a benign keratosis",
+            "a dermoscopy image showing features of a benign keratosis"
+          ],
+          "negatives": [
+            "a dermoscopy image without benign keratosis",
+            "a dermoscopy image negative for benign keratosis",
+            "a dermoscopy image showing no benign keratosis",
+            "a dermoscopy image with no evidence of benign keratosis",
+            "a dermoscopy image with benign keratosis excluded",
+            "a dermoscopy image free of benign keratosis",
+            "a dermoscopy image in which benign keratosis is not seen",
+            "a dermoscopy image with benign keratosis ruled out",
+            "a dermoscopy image without benign keratosis identified",
+            "a dermoscopy image with no benign keratosis"
+          ]
+        }
+      }
+    }
+  }
+}

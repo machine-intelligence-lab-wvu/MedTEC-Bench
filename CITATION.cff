@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this code or benchmark, please cite the paper below."
+title: "When Medical VLMs Stop Understanding: MedTEC-Bench for Probing Semantic Specificity"
+authors:
+  - family-names: Akash
+    given-names: Ahsan Habib
+  - family-names: Devkota
+    given-names: Alina
+  - family-names: Adjeroh
+    given-names: Donald A.
+  - family-names: Bhattarai
+    given-names: Binod
+  - family-names: Gyawali
+    given-names: Prashnna Kumar
+    email: prashnna.gyawali@mail.wvu.edu
+preferred-citation:
+  type: conference-paper
+  title: "When Medical VLMs Stop Understanding: MedTEC-Bench for Probing Semantic Specificity"
+  collection-title: "Advances in Neural Information Processing Systems (Evaluations and Datasets Track)"
+  authors:
+    - family-names: Akash
+      given-names: Ahsan Habib
+    - family-names: Devkota
+      given-names: Alina
+    - family-names: Adjeroh
+      given-names: Donald A.
+    - family-names: Bhattarai
+      given-names: Binod
+    - family-names: Gyawali
+      given-names: Prashnna Kumar
+  year: 2026

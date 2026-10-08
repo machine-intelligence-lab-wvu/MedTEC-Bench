@@ -1,0 +1,458 @@
+{
+ "biomedclip": {
+  "display_name": "BiomedCLIP",
+  "L4": {
+   "avg_discrimination_score": -0.000957924485206604,
+   "avg_collapse_ratio": 0.7987176213264465,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.006985441446304321,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": 0.01442933663725853,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.05344186946749687,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.03019597679376602,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.03547941029071808,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.009329268977046013,
+   "avg_collapse_ratio": 0.889647466301918,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.048897155374288556,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.026557066291570664,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.09172986909747123,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.03820211641490459,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.024719875901937485,
+     "n": 200
+    }
+   }
+  }
+ },
+ "pubmedclip": {
+  "display_name": "PubMedCLIP",
+  "L4": {
+   "avg_discrimination_score": -0.008235417172312737,
+   "avg_collapse_ratio": 0.9669427667856216,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.0020146186649799345,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": 0.0009926995635032654,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": -0.0032801170647144317,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.023745121583342552,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.01312992811203003,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.006182345807552338,
+   "avg_collapse_ratio": 0.9620786387324333,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.008273159861564636,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.0064527283608913424,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.0041797953844070436,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.010533999651670456,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.009831636548042297,
+     "n": 200
+    }
+   }
+  }
+ },
+ "medclip": {
+  "display_name": "MedCLIP",
+  "L4": {
+   "avg_discrimination_score": 3.266226773848757e-05,
+   "avg_collapse_ratio": 0.9535875473469496,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": 1.3517409097403288e-05,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": 0.00030131166335195303,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": -0.00024994862993480636,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.0002883123129140586,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": 0.0003867432090919465,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 9.693773905746639e-05,
+   "avg_collapse_ratio": 0.9562971495389938,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -9.286819957196713e-05,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": 6.958452751860023e-05,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 4.6097452286630866e-05,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.00012800544733181595,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": 0.000589880362385884,
+     "n": 200
+    }
+   }
+  }
+ },
+ "chexzero": {
+  "display_name": "CheXzero",
+  "L4": {
+   "avg_discrimination_score": -0.007009647786617279,
+   "avg_collapse_ratio": 0.8760983664989471,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.013492563515901565,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.008339916169643403,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": -0.02008720740675926,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.020143587440252304,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.013272139281034469,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.003688480615615845,
+   "avg_collapse_ratio": 0.9400561273694038,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.0032758766412734983,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.010005950182676315,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": -0.020546162873506545,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.01780101075768471,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.0024154241383075713,
+     "n": 200
+    }
+   }
+  }
+ },
+ "pmc_clip": {
+  "display_name": "PMC-CLIP",
+  "L4": {
+   "avg_discrimination_score": -0.02351612065732479,
+   "avg_collapse_ratio": 0.8700045189261436,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.03189676932990551,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.05512585364282131,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.03248753696680069,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.02691746525466442,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.0361280520260334,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.013589859813451767,
+   "avg_collapse_ratio": 0.93857448720932,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.04775115042924881,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.028840147629380225,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.05451191626489162,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.02354748860001564,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.022322428673505784,
+     "n": 200
+    }
+   }
+  }
+ },
+ "openclip_vitb32": {
+  "display_name": "OpenCLIP ViT-B-32",
+  "L4": {
+   "avg_discrimination_score": -0.023496814250946046,
+   "avg_collapse_ratio": 0.966308158159256,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.04468625888228416,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.03849676266312599,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.011628972291946411,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.023591585159301758,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.022338436841964723,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.013400186628103257,
+   "avg_collapse_ratio": 0.929347993671894,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.04567560404539108,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.011250210255384445,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.00785011038184166,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.011852685511112213,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.0060725437104702,
+     "n": 200
+    }
+   }
+  }
+ },
+ "openclip_vitl14": {
+  "display_name": "OpenCLIP ViT-L-14",
+  "L4": {
+   "avg_discrimination_score": -0.006980221062898636,
+   "avg_collapse_ratio": 0.9192391939759255,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.015457818359136581,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.03359579756855965,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.014083054214715958,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.010466130375862122,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.01039667397737503,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.010307913273572921,
+   "avg_collapse_ratio": 0.8608938244581222,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.010097333639860153,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": 0.006366759389638901,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": 0.04633038014173508,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.005186791568994522,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": 0.0037529689073562624,
+     "n": 200
+    }
+   }
+  }
+ },
+ "siglip": {
+  "display_name": "SigLIP",
+  "L4": {
+   "avg_discrimination_score": -0.008965465106070042,
+   "avg_collapse_ratio": 0.9692223901152611,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.009417037777602673,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.005689057894051075,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": -0.018639226593077183,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.00895616114139557,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": -0.002125842124223709,
+     "n": 200
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.005866355337202549,
+   "avg_collapse_ratio": 0.7797676463127137,
+   "n_probes": 1000,
+   "by_category": {
+    "atelectasis": {
+     "avg_DS": -0.0045295731723308565,
+     "n": 200
+    },
+    "cardiomegaly": {
+     "avg_DS": -0.011584412902593613,
+     "n": 200
+    },
+    "no_finding": {
+     "avg_DS": -0.012304873950779439,
+     "n": 200
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.005032877251505852,
+     "n": 200
+    },
+    "pneumonia": {
+     "avg_DS": 0.004119960591197014,
+     "n": 200
+    }
+   }
+  }
+ }
+}

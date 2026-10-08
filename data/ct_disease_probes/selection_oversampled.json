@@ -1,0 +1,5930 @@
+[
+ {
+  "study_id": "AC424162a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214d01",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242748",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244105",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc96",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424014c",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc15",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42164e9",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243c2f",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42146f9",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42157d5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e7c5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c614",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242a53",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241c7f",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214fa8",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d462",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f037",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424113a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215e0f",
+  "disease_category": "hepatic_steatosis",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215d62",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c023",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424221e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216b5e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243bc7",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423eeb3",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215dd0",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244e7d",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42139c9",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424096e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42435f3",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fca9",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42442de",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216ac6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42453f6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215cde",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240aeb",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42440f5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216c11",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215d68",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4240f63",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4215efb",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42446f8",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215c35",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc38",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215ca4",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215789",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f720",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424410a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243aaa",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242763",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42147db",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc91",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241b87",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2aa",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240979",
+  "disease_category": "hepatic_steatosis",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213e01",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243ba5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213eb1",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244e21",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e2e2",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213665",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214053",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42413c6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242ccd",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214fd0",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42447cd",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240370",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42415e9",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e82e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243ff0",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243adf",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC421459f",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e1f6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423f713",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42445f4",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214d94",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42407d3",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244f02",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216b2e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e06e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241092",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424485b",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42140f1",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214ebf",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d8d",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42457af",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423c4e9",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42162cc",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215059",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc6d",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421413e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213fe1",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421569f",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4243358",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fdf7",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214724",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215e4d",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241a99",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216e2b",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d9a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d35",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42162da",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc89",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42427a6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243fb1",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC42423d7",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc2c",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42165f5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243415",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213883",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214ebc",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc2a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf28",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243aaf",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240f15",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f71",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244597",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243591",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424222e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC42137ee",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213ff6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245b07",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215447",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423eeea",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f45b",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423da1a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215580",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a83",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240f93",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fcf3",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42146e6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e278",
+  "disease_category": "hepatic_steatosis",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e915",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC42145d4",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213996",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42448f5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a16",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424093b",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244742",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216b6e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216ae3",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241655",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c7e5",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f600",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42426f4",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242809",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cd52",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244233",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423da7d",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC424400d",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c63e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423c3",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f76a",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d61e",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42433b4",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a21",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e738",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c733",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ee04",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc13",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241af8",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42453a6",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215e33",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242dae",
+  "disease_category": "hepatic_steatosis",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42440bd",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423dc61",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e6d4",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244853",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423be81",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d98e",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216c3b",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214dc4",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f66",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e20f",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240f01",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2c7",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421387a",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243092",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421548f",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fcb2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424338c",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243613",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423db07",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241423",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d473",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241529",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216bcc",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244866",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf26",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42440ed",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42414a9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424409b",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215e0c",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242990",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e3a",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245ae6",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214f54",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215cfa",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42148f3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e2ce",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215ce9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214e5c",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421370f",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214794",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42410a2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f3f4",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc20",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc26",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cd63",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e336",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42400c5",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f31",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef93",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e269",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244270",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e9f2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f3f0",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214ff1",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dabe",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42163c2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cbdf",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241cd9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42145a9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ccdb",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240da3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215cd1",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243a26",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421633e",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243b31",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424276a",
+  "disease_category": "renal_cyst",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214d37",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f4bb",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42146b3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214f60",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42453e8",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42140e4",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cccc",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e20a",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42137e1",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42433d1",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215095",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42400cd",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4245ccf",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423daf4",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e8d7",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240e19",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42441c1",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423daee",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42447d8",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a48",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e7f3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421414e",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c62a",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fd70",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42147f8",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245cff",
+  "disease_category": "renal_cyst",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d3b6",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240946",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cbcb",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215b89",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213e30",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42439c3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c6c6",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf35",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421502b",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244ee7",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244ea2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214f5d",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e2a",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214e1b",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42407a7",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c893",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d5fd",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e888",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42148a9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421633d",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240fb5",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f024",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42446c2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244c66",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242ef3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c6c9",
+  "disease_category": "renal_cyst"
+ },
+ {
+  "study_id": "AC423e7f8",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42445ac",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241445",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241d47",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42436a3",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240f99",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f2b",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42442c2",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216474",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241576",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240d78",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d9c9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424143f",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424149d",
+  "disease_category": "renal_cyst",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241b49",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423c075",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f3c5",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241d8d",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241dd1",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244883",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244b7d",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424536d",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d9c5",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ceb6",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242059",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215bd9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215d89",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216aa5",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cbd5",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42137e4",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240894",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d66",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f089",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241698",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef95",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245a04",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216ca0",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421657f",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424152a",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214556",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421419d",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214e76",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216cb6",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244136",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214d38",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42138b9",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cbf6",
+  "disease_category": "renal_cyst",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4245d3d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e692",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ccc9",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242757",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243ae5",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214652",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dff3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42434fc",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42415c3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244b9d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42439b7",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf8a",
+  "disease_category": "gallstones",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243f5a",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42154fc",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c7a3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4214692",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243f7d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244bf0",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e924",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214828",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241603",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240e2b",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42139d3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242f19",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214eb9",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42433c3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f8a",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42427b3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423a3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243b4e",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214801",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244703",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423e04b",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d454",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d563",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42163b1",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f5bd",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d78",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f529",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d621",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42403c7",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42154e3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241c5d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c073",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241621",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215539",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214153",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423be65",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d283",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424338e",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f562",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42426f1",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215082",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216aa6",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2f0",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42434ba",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fa2d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241ca0",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244ce8",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213801",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240a5d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c0ec",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d4d7",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d3e9",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424092f",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423fc0a",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240e9b",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a3c",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240334",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421490d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424083e",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42457ac",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240e77",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214119",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42407a1",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e6d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213de9",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421509f",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f61e",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213893",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215584",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e8e0",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42422c4",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f3ac",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42422af",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421404c",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42415db",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423efcd",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424428a",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42136f1",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243fc9",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42428ec",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d9ea",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f751",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d3af",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c008",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4240832",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215464",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4216ce3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424299e",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242a75",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214f51",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214e80",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242897",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e82c",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e6fc",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e912",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216b85",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240df0",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e931",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e0d4",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424537b",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243662",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c620",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f41f",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424294a",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244811",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d323",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc44",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215c05",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bfa9",
+  "disease_category": "gallstones"
+ },
+ {
+  "study_id": "AC42428dd",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242dde",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d328",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4245cc3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242051",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421383a",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fcab",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc44",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4244197",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244708",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c6f3",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e730",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215e80",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213e99",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240456",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f056",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e8fd",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243c52",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244198",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ee3d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213eb5",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421418f",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2ce",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243a06",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242273",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421479f",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423db6d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243bda",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423a1",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42435c5",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244700",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d364",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc66",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42402ea",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c71f",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245a43",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2a4",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423c6b6",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ea3e",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421489d",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d28b",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243a48",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42452e2",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC42420b1",
+  "disease_category": "gallstones",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215d38",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42435bd",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241676",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d43b",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c85d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245b13",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216cf3",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42445a1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213e32",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f00e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241107",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42447f4",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42428be",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d5c0",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214889",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244f4c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242f9e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214f6f",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245df6",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423db9e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d521",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c55d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242175",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC424592b",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42422c0",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241bf0",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215750",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f48c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42148ff",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243b92",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241077",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240848",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f6bf",
+  "disease_category": "ascites"
+ },
+ {
+  "study_id": "AC423ce9c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d404",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242086",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42441f9",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e8f2",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42447f6",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e37d",
+  "disease_category": "ascites",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc17",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e36",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d3b",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240862",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f698",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ceaf",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d951",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e945",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f034",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42165e7",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215699",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42445ca",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fd1d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215b67",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421504f",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244625",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e7bf",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ce9a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ce4e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213911",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424336a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c574",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e98e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242949",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244dd0",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cdf1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42401db",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42440dd",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4215dbb",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421455c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC42164af",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215b5f",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216ada",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42410e2",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d9f",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241c0c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423befb",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240120",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424338f",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d457",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42169af",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424351b",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d4e9",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42407b8",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215754",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241a95",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423f77c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240a6d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213818",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d46d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216dcb",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424092d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fa63",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e053",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dabc",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241b9d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42164d2",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240194",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c88b",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215614",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241467",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fa59",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42162e7",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213fc1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42458a9",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242fe1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213998",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42157da",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244bf5",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42452ac",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241cac",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC421386e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216251",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fcd3",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242732",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4245176",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423e6",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fa7c",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f25",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cbc5",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4240732",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242764",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243a6d",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42137c8",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244817",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4242cde",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cf8a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e5a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cd09",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216b6a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42413de",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42169aa",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240433",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215655",
+  "disease_category": "ascites"
+ },
+ {
+  "study_id": "AC4242a07",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242782",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d574",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216605",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243bbd",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216e03",
+  "disease_category": "ascites",
+  "phase": "nan",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e6cf",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d27",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216b57",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241cbd",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213830",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f5c2",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c018",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240ac1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244891",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242ed1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d6a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bde5",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d55e",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42163af",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42139c5",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f703",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e29a",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d5d2",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42452e5",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42448f1",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dffe",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213de3",
+  "disease_category": "ascites",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214698",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c829",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42442c0",
+  "disease_category": "ascites",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc70",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC42440bf",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242320",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240711",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423edc4",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245de9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d3e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424044b",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fa8b",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216356",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215d49",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef4e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241ae9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42403a4",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424393a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421558b",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214fcd",
+  "disease_category": "pleural_effusion"
+ },
+ {
+  "study_id": "AC4242255",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423db05",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240420",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216cbc",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240a09",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42441af",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424478d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42436c0",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e797",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fdb3",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc00",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f607",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215c26",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424350c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243917",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424225d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c582",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c592",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216bb8",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215bd2",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244bcb",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213dda",
+  "disease_category": "pleural_effusion"
+ },
+ {
+  "study_id": "AC42458ee",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243f40",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e6a8",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42146b8",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2d1",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC424165b",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fbe7",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242fbb",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf91",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214fe9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243939",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f537",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42442c1",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215c77",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244dd6",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215ca9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244ee5",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f63c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242796",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42415e1",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cceb",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42442da",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bfa0",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213677",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d02",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240ee6",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245d3c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240449",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f09a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421552a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c54a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42146b4",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42156dc",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423f475",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d97a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214d5a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421575f",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42400ca",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42439f9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ce11",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42407e6",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241b0a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244f35",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef94",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42155f8",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240740",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214e97",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c854",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fb3c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214850",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d0e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f0c9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421381d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245d08",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245d55",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2fc",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42410a7",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c185",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc97",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc6a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cdde",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215eb7",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42427a9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423efc1",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e99",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42448ab",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f47e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424421b",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42148bc",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244d78",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216cae",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dbb0",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421507d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424011e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc38",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f020",
+  "disease_category": "pleural_effusion",
+  "phase": "arterial_late",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c511",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC424417e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245500",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214554",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423da50",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f603",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242072",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e729",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241c11",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bde6",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241c80",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215d70",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42434bb",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424228d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243506",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241700",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e76e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dac6",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214024",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e780",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240e48",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d591",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421552b",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c7af",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240305",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42146a3",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240aae",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423faef",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423db1c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f6ca",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424231e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240300",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424484e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424343e",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f687",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244628",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d412",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243fc1",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244c07",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424171c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424430c",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fb0d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e946",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424461d",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216be9",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423befd",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ce1a",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e1d1",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e86f",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42138ca",
+  "disease_category": "pleural_effusion",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423d1",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242216",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d426",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e76",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213f0e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fd58",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc65",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e2e7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ee1c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242193",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e204",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243ae0",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42447d0",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245ad1",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f49a",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421541b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245309",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424238b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424308a",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423dac5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424098f",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243c5f",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f560",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216cff",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42433de",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215ca5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424146c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242263",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242d05",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421500d",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216bdc",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243356",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cbe5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c58b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424456c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245524",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215434",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423edb2",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214198",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf45",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d60b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef98",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240a2c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243437",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc03",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214178",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42169bd",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215ba5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216dd3",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214eed",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c0b1",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244f19",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4243374",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424491e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244db7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42415fb",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e8fa",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d379",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243c77",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241d1c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243ff8",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241d5f",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240fc5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c7b1",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244ce2",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244c5f",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423f627",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4215db4",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d50b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214d03",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f74d",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243f58",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc9a",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42426c8",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214f98",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4215487",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e105",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42422d7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244630",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423fd9b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d93b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424292c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423cb",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240e2e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4241762",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214ea8",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fc6e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421640a",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243a67",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213e1a",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bfac",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f04e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dcd1",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c841",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42413eb",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d3db",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42147c7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bf1a",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4243f3b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244557",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423dc50",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e99c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4240813",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244669",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216536",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216cfb",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42422a7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e11e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4240a71",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42403e9",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216aae",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424476c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c622",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42402bc",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214ddf",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242836",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d2e0",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ce30",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fa79",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243c8b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ee1e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423daf3",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423daa8",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42148f9",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423d26d",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42422aa",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a90",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef74",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42423d9",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216aea",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ea30",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4241bf8",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e0d2",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421643d",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245194",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc4c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ef73",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245223",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216989",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214de5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4244eea",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC421574f",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423c162",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fb36",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423f093",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424302e",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42402a2",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242e48",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4242874",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC423f062",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423e1cb",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4245499",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4213a11",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424345c",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423fbb7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423ea4f",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4214583",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC42447e1",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423cc21",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424594d",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": false
+ },
+ {
+  "study_id": "AC4240993",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC423bfe7",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC424043b",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4243bd5",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ },
+ {
+  "study_id": "AC4216a98",
+  "disease_category": "no_finding",
+  "phase": "portal_venous",
+  "contrast": true
+ }
+]

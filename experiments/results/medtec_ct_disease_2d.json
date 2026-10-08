@@ -1,0 +1,562 @@
+{
+ "biomedclip": {
+  "display_name": "BiomedCLIP",
+  "L1": {
+   "avg_discrimination_score": 0.19316843326996874,
+   "avg_collapse_ratio": 0.2888336149851481,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.090460271636645,
+   "avg_collapse_ratio": 0.6422305682853416,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.10285859685805109,
+   "avg_collapse_ratio": 0.6208199418363748,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.03552409236629804,
+   "avg_collapse_ratio": 0.8829166923628913,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.0017454481124877929,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.049667422771453855,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.05547875841458638,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": 0.020219947894414267,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.08327156136433284,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.04320131142934163,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.007397687600718604,
+   "avg_collapse_ratio": 0.9279842084646225,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.013738669157028198,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.03250297824541728,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": 0.016670379837354025,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": 0.010752872824668884,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.0319779376188914,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.021067131559054056,
+     "n": 150
+    }
+   }
+  }
+ },
+ "pubmedclip": {
+  "display_name": "PubMedCLIP",
+  "L1": {
+   "avg_discrimination_score": 0.03992141215889542,
+   "avg_collapse_ratio": 0.772421184932744,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.04030365549303867,
+   "avg_collapse_ratio": 0.7868452622934624,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.021106298438928747,
+   "avg_collapse_ratio": 0.7685482899347941,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.022145200984345543,
+   "avg_collapse_ratio": 0.9758379919661416,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.0002477975686391195,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.015967105825742085,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.04589370459318161,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.003436356782913208,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.04846041997273763,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.0188658211628596,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0010267573595046998,
+   "avg_collapse_ratio": 0.9665279175837834,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.008894538879394532,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.00044252296288808187,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.014824114044507345,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.003301466902097066,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.00012778908014297486,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.003640809953212738,
+     "n": 150
+    }
+   }
+  }
+ },
+ "medclip": {
+  "display_name": "MedCLIP",
+  "L1": {
+   "avg_discrimination_score": -0.011705210307802728,
+   "avg_collapse_ratio": 1.1326356726940032,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": -0.0033547141248817312,
+   "avg_collapse_ratio": 1.0121918021915135,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": -5.807619848012648e-05,
+   "avg_collapse_ratio": 0.9541692663508433,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.004533209196395344,
+   "avg_collapse_ratio": 0.8477665275418096,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.010014045629650354,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.00558130611355106,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.003432028852403164,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.005793709103018046,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.004149316418915987,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.0065274818986654284,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 3.669720789831546e-05,
+   "avg_collapse_ratio": 0.8269963748421933,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.001102057040358583,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.00019610592474540074,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": 0.002928339143594106,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.005194420187423627,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.0008982921360681454,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.0006820210395380855,
+     "n": 150
+    }
+   }
+  }
+ },
+ "pmc_clip": {
+  "display_name": "PMC-CLIP",
+  "L1": {
+   "avg_discrimination_score": 0.10987434005295789,
+   "avg_collapse_ratio": 0.3771186809021014,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.07394064498720346,
+   "avg_collapse_ratio": 0.5410502652989494,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.09929823938895155,
+   "avg_collapse_ratio": 0.44387119847867224,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.0472325387928221,
+   "avg_collapse_ratio": 0.8690962886479165,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.00023349970579147338,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.04044890175263087,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.07795075903336207,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": 0.018028651475906373,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.09129918177922566,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.09195854137341182,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.031897486398617426,
+   "avg_collapse_ratio": 0.9899739367432064,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.021137944161891936,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.040965468386809034,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.04229039639234543,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": 0.023669221301873523,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.062603220641613,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.048057110110918684,
+     "n": 150
+    }
+   }
+  }
+ },
+ "openclip_vitb32": {
+  "display_name": "OpenCLIP ViT-B-32",
+  "L1": {
+   "avg_discrimination_score": 0.18988964044937381,
+   "avg_collapse_ratio": 0.30600064442665487,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.020664339429802364,
+   "avg_collapse_ratio": 0.8396365442099395,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.01643780959977044,
+   "avg_collapse_ratio": 0.8646059209991385,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.013094499740335677,
+   "avg_collapse_ratio": 0.9963499544726477,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.024470931887626647,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.015238446394602458,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.006717034777005513,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.01929564118385315,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.014773260354995727,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.0019283161560694378,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.0006401637196540833,
+   "avg_collapse_ratio": 0.9656153041786618,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.004367978175481161,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": 0.01669865389664968,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": 0.004480534394582112,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.03212568501631419,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.0024525572856267295,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.007966943581899007,
+     "n": 150
+    }
+   }
+  }
+ },
+ "openclip_vitl14": {
+  "display_name": "OpenCLIP ViT-L-14",
+  "L1": {
+   "avg_discrimination_score": 0.2141835622655021,
+   "avg_collapse_ratio": 0.17063759390126776,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.016215980913903978,
+   "avg_collapse_ratio": 0.8188715726799435,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.04598623721135987,
+   "avg_collapse_ratio": 0.7662443126793261,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.00629999922381507,
+   "avg_collapse_ratio": 0.9798426680432426,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.008084037701288859,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.008849068880081176,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": 0.004965781768163045,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.009680832227071126,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.02674295743306478,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.010591119130452475,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0005695075790087382,
+   "avg_collapse_ratio": 0.9312558456924227,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.0034740678469340007,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": 0.011142193873723349,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": 0.01792600711186727,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.04077532529830932,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.007796731193860372,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.012612742185592652,
+     "n": 150
+    }
+   }
+  }
+ },
+ "siglip": {
+  "display_name": "SigLIP",
+  "L1": {
+   "avg_discrimination_score": 0.1332940449124133,
+   "avg_collapse_ratio": -0.4936114408130999,
+   "n_probes": 2700
+  },
+  "L2": {
+   "avg_discrimination_score": 0.0348797651545869,
+   "avg_collapse_ratio": 0.5727185803762188,
+   "n_probes": 2700
+  },
+  "L3": {
+   "avg_discrimination_score": 0.036544459195876566,
+   "avg_collapse_ratio": 0.3582613644765661,
+   "n_probes": 2700
+  },
+  "L4": {
+   "avg_discrimination_score": -0.010357078032361137,
+   "avg_collapse_ratio": 0.9769774348868264,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.0027917734781901043,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.01098506048321724,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.019031599511702857,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.003946171502272288,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.02694575066367785,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.0015578874448935191,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0028091246551937526,
+   "avg_collapse_ratio": 0.9494512663284937,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.003445102373758952,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.005861671715974808,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.0024590550859769186,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.007924474080403646,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.0050548166036605835,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": 0.0010001671810944874,
+     "n": 150
+    }
+   }
+  }
+ }
+}

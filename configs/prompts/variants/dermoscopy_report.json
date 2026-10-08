@@ -1,0 +1,217 @@
+{
+  "modality": "dermoscopy",
+  "variant": "report",
+  "description": "Exp A prompt-robustness variant (report) for dermoscopy, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/dermoscopy_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "Findings: an asymmetric pigmented lesion with irregular borders and color variegation. Impression: melanoma.",
+            "Impression: melanoma.",
+            "Findings consistent with melanoma. Impression: melanoma.",
+            "Impression: melanoma, showing an asymmetric pigmented lesion with irregular borders and color variegation."
+          ],
+          "negatives": [
+            "Impression: a melanocytic nevus.",
+            "Impression: basal cell carcinoma.",
+            "Impression: actinic keratosis.",
+            "Impression: a benign keratosis.",
+            "Impression: a dermatofibroma.",
+            "Impression: squamous cell carcinoma.",
+            "Impression: a vascular lesion.",
+            "Impression: a solar lentigo.",
+            "Impression: an angioma.",
+            "Impression: sebaceous hyperplasia."
+          ]
+        },
+        "nv": {
+          "positives": [
+            "Findings: a symmetric pigmented lesion with uniform color and a regular pigment network. Impression: a melanocytic nevus.",
+            "Impression: a melanocytic nevus.",
+            "Findings consistent with a melanocytic nevus. Impression: a melanocytic nevus.",
+            "Impression: a melanocytic nevus, showing a symmetric pigmented lesion with uniform color and a regular pigment network."
+          ],
+          "negatives": [
+            "Impression: melanoma.",
+            "Impression: basal cell carcinoma.",
+            "Impression: actinic keratosis.",
+            "Impression: a benign keratosis.",
+            "Impression: a dermatofibroma.",
+            "Impression: squamous cell carcinoma.",
+            "Impression: a vascular lesion.",
+            "Impression: a solar lentigo.",
+            "Impression: an angioma.",
+            "Impression: sebaceous hyperplasia."
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "Findings: a pearly lesion with arborizing telangiectasia. Impression: basal cell carcinoma.",
+            "Impression: basal cell carcinoma.",
+            "Findings consistent with basal cell carcinoma. Impression: basal cell carcinoma.",
+            "Impression: basal cell carcinoma, showing a pearly lesion with arborizing telangiectasia."
+          ],
+          "negatives": [
+            "Impression: melanoma.",
+            "Impression: a melanocytic nevus.",
+            "Impression: actinic keratosis.",
+            "Impression: a benign keratosis.",
+            "Impression: a dermatofibroma.",
+            "Impression: squamous cell carcinoma.",
+            "Impression: a vascular lesion.",
+            "Impression: a solar lentigo.",
+            "Impression: an angioma.",
+            "Impression: sebaceous hyperplasia."
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "Findings: an erythematous scaly lesion with surface keratosis. Impression: actinic keratosis.",
+            "Impression: actinic keratosis.",
+            "Findings consistent with actinic keratosis. Impression: actinic keratosis.",
+            "Impression: actinic keratosis, showing an erythematous scaly lesion with surface keratosis."
+          ],
+          "negatives": [
+            "Impression: melanoma.",
+            "Impression: a melanocytic nevus.",
+            "Impression: basal cell carcinoma.",
+            "Impression: a benign keratosis.",
+            "Impression: a dermatofibroma.",
+            "Impression: squamous cell carcinoma.",
+            "Impression: a vascular lesion.",
+            "Impression: a solar lentigo.",
+            "Impression: an angioma.",
+            "Impression: sebaceous hyperplasia."
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "Findings: a well-demarcated keratotic lesion with milia-like cysts. Impression: a benign keratosis.",
+            "Impression: a benign keratosis.",
+            "Findings consistent with a benign keratosis. Impression: a benign keratosis.",
+            "Impression: a benign keratosis, showing a well-demarcated keratotic lesion with milia-like cysts."
+          ],
+          "negatives": [
+            "Impression: melanoma.",
+            "Impression: a melanocytic nevus.",
+            "Impression: basal cell carcinoma.",
+            "Impression: actinic keratosis.",
+            "Impression: a dermatofibroma.",
+            "Impression: squamous cell carcinoma.",
+            "Impression: a vascular lesion.",
+            "Impression: a solar lentigo.",
+            "Impression: an angioma.",
+            "Impression: sebaceous hyperplasia."
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "Findings: an asymmetric pigmented lesion with irregular borders and color variegation. Impression: melanoma.",
+            "Impression: melanoma is present.",
+            "Impression: melanoma.",
+            "Findings consistent with melanoma."
+          ],
+          "negatives": [
+            "Findings: no melanoma. Impression: no melanoma.",
+            "Impression: negative for melanoma.",
+            "Impression: no evidence of melanoma.",
+            "Impression: melanoma is excluded.",
+            "Findings: no melanoma. Impression: melanoma not identified.",
+            "Impression: no findings of melanoma.",
+            "Impression: without melanoma.",
+            "Impression: melanoma is ruled out.",
+            "Impression: no melanoma seen.",
+            "Impression: melanoma not present."
+          ]
+        },
+        "nv": {
+          "positives": [
+            "Findings: a symmetric pigmented lesion with uniform color and a regular pigment network. Impression: a melanocytic nevus.",
+            "Impression: a melanocytic nevus is present.",
+            "Impression: a melanocytic nevus.",
+            "Findings consistent with a melanocytic nevus."
+          ],
+          "negatives": [
+            "Findings: no melanocytic nevus. Impression: no melanocytic nevus.",
+            "Impression: negative for melanocytic nevus.",
+            "Impression: no evidence of melanocytic nevus.",
+            "Impression: melanocytic nevus is excluded.",
+            "Findings: no melanocytic nevus. Impression: melanocytic nevus not identified.",
+            "Impression: no findings of melanocytic nevus.",
+            "Impression: without melanocytic nevus.",
+            "Impression: melanocytic nevus is ruled out.",
+            "Impression: no melanocytic nevus seen.",
+            "Impression: melanocytic nevus not present."
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "Findings: a pearly lesion with arborizing telangiectasia. Impression: basal cell carcinoma.",
+            "Impression: basal cell carcinoma is present.",
+            "Impression: basal cell carcinoma.",
+            "Findings consistent with basal cell carcinoma."
+          ],
+          "negatives": [
+            "Findings: no basal cell carcinoma. Impression: no basal cell carcinoma.",
+            "Impression: negative for basal cell carcinoma.",
+            "Impression: no evidence of basal cell carcinoma.",
+            "Impression: basal cell carcinoma is excluded.",
+            "Findings: no basal cell carcinoma. Impression: basal cell carcinoma not identified.",
+            "Impression: no findings of basal cell carcinoma.",
+            "Impression: without basal cell carcinoma.",
+            "Impression: basal cell carcinoma is ruled out.",
+            "Impression: no basal cell carcinoma seen.",
+            "Impression: basal cell carcinoma not present."
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "Findings: an erythematous scaly lesion with surface keratosis. Impression: actinic keratosis.",
+            "Impression: actinic keratosis is present.",
+            "Impression: actinic keratosis.",
+            "Findings consistent with actinic keratosis."
+          ],
+          "negatives": [
+            "Findings: no actinic keratosis. Impression: no actinic keratosis.",
+            "Impression: negative for actinic keratosis.",
+            "Impression: no evidence of actinic keratosis.",
+            "Impression: actinic keratosis is excluded.",
+            "Findings: no actinic keratosis. Impression: actinic keratosis not identified.",
+            "Impression: no findings of actinic keratosis.",
+            "Impression: without actinic keratosis.",
+            "Impression: actinic keratosis is ruled out.",
+            "Impression: no actinic keratosis seen.",
+            "Impression: actinic keratosis not present."
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "Findings: a well-demarcated keratotic lesion with milia-like cysts. Impression: a benign keratosis.",
+            "Impression: a benign keratosis is present.",
+            "Impression: a benign keratosis.",
+            "Findings consistent with a benign keratosis."
+          ],
+          "negatives": [
+            "Findings: no benign keratosis. Impression: no benign keratosis.",
+            "Impression: negative for benign keratosis.",
+            "Impression: no evidence of benign keratosis.",
+            "Impression: benign keratosis is excluded.",
+            "Findings: no benign keratosis. Impression: benign keratosis not identified.",
+            "Impression: no findings of benign keratosis.",
+            "Impression: without benign keratosis.",
+            "Impression: benign keratosis is ruled out.",
+            "Impression: no benign keratosis seen.",
+            "Impression: benign keratosis not present."
+          ]
+        }
+      }
+    }
+  }
+}

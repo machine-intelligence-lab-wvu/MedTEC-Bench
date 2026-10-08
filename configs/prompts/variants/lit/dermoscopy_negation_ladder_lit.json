@@ -1,0 +1,169 @@
+{
+  "modality": "dermoscopy",
+  "description": "LITERATURE-GROUNDED negation ladder for dermoscopy. Cue terms verbatim from Panicek & Hricak (AJR 2016) certainty lexicon and NegEx/ConText (Chapman 2001; Harkema 2009).",
+  "provenance": "Panicek&Hricak2016; NegEx Chapman2001; ConText Harkema2009",
+  "ordinal": {
+    "present": 2,
+    "probable": 1,
+    "possible": 0,
+    "unlikely": -1,
+    "absent_plain": -2,
+    "absent_evidential": -2
+  },
+  "subtype_map": {
+    "definite": [
+      "absent_plain"
+    ],
+    "hedged": [
+      "possible",
+      "unlikely"
+    ],
+    "ruled_out": [
+      "absent_evidential"
+    ],
+    "historical": [
+      "historical"
+    ]
+  },
+  "absent_anchor_category": "nv",
+  "findings": {
+    "mel": {
+      "rungs": {
+        "present": [
+          "dermoscopy consistent with melanoma",
+          "findings consistent with melanoma on dermoscopy",
+          "dermoscopy demonstrating melanoma"
+        ],
+        "probable": [
+          "dermoscopy suspicious for melanoma",
+          "probable melanoma on dermoscopy",
+          "findings probably representing melanoma on dermoscopy"
+        ],
+        "possible": [
+          "possible melanoma on dermoscopy",
+          "dermoscopy possibly showing melanoma",
+          "melanoma cannot be excluded on dermoscopy"
+        ],
+        "unlikely": [
+          "melanoma less likely on dermoscopy",
+          "melanoma unlikely on dermoscopy",
+          "dermoscopy findings unlikely to represent melanoma"
+        ],
+        "absent_plain": [
+          "dermoscopy negative for melanoma",
+          "no melanoma on dermoscopy",
+          "dermoscopy without melanoma",
+          "melanoma absent on dermoscopy"
+        ],
+        "absent_evidential": [
+          "no evidence of melanoma on dermoscopy",
+          "melanoma ruled out on dermoscopy",
+          "melanoma excluded on dermoscopy",
+          "dermoscopy shows no evidence of melanoma"
+        ],
+        "historical": [
+          "history of melanoma, resolved on dermoscopy",
+          "prior melanoma, no longer seen on dermoscopy",
+          "previously documented melanoma, resolved"
+        ]
+      },
+      "historical": [
+        "history of melanoma, resolved on dermoscopy",
+        "prior melanoma, no longer seen on dermoscopy",
+        "previously documented melanoma, resolved"
+      ]
+    },
+    "bcc": {
+      "rungs": {
+        "present": [
+          "dermoscopy consistent with basal cell carcinoma",
+          "findings consistent with basal cell carcinoma on dermoscopy",
+          "dermoscopy demonstrating basal cell carcinoma"
+        ],
+        "probable": [
+          "dermoscopy suspicious for basal cell carcinoma",
+          "probable basal cell carcinoma on dermoscopy",
+          "findings probably representing basal cell carcinoma on dermoscopy"
+        ],
+        "possible": [
+          "possible basal cell carcinoma on dermoscopy",
+          "dermoscopy possibly showing basal cell carcinoma",
+          "basal cell carcinoma cannot be excluded on dermoscopy"
+        ],
+        "unlikely": [
+          "basal cell carcinoma less likely on dermoscopy",
+          "basal cell carcinoma unlikely on dermoscopy",
+          "dermoscopy findings unlikely to represent basal cell carcinoma"
+        ],
+        "absent_plain": [
+          "dermoscopy negative for basal cell carcinoma",
+          "no basal cell carcinoma on dermoscopy",
+          "dermoscopy without basal cell carcinoma",
+          "basal cell carcinoma absent on dermoscopy"
+        ],
+        "absent_evidential": [
+          "no evidence of basal cell carcinoma on dermoscopy",
+          "basal cell carcinoma ruled out on dermoscopy",
+          "basal cell carcinoma excluded on dermoscopy",
+          "dermoscopy shows no evidence of basal cell carcinoma"
+        ],
+        "historical": [
+          "history of basal cell carcinoma, resolved on dermoscopy",
+          "prior basal cell carcinoma, no longer seen on dermoscopy",
+          "previously documented basal cell carcinoma, resolved"
+        ]
+      },
+      "historical": [
+        "history of basal cell carcinoma, resolved on dermoscopy",
+        "prior basal cell carcinoma, no longer seen on dermoscopy",
+        "previously documented basal cell carcinoma, resolved"
+      ]
+    },
+    "akiec": {
+      "rungs": {
+        "present": [
+          "dermoscopy consistent with actinic keratosis",
+          "findings consistent with actinic keratosis on dermoscopy",
+          "dermoscopy demonstrating actinic keratosis"
+        ],
+        "probable": [
+          "dermoscopy suspicious for actinic keratosis",
+          "probable actinic keratosis on dermoscopy",
+          "findings probably representing actinic keratosis on dermoscopy"
+        ],
+        "possible": [
+          "possible actinic keratosis on dermoscopy",
+          "dermoscopy possibly showing actinic keratosis",
+          "actinic keratosis cannot be excluded on dermoscopy"
+        ],
+        "unlikely": [
+          "actinic keratosis less likely on dermoscopy",
+          "actinic keratosis unlikely on dermoscopy",
+          "dermoscopy findings unlikely to represent actinic keratosis"
+        ],
+        "absent_plain": [
+          "dermoscopy negative for actinic keratosis",
+          "no actinic keratosis on dermoscopy",
+          "dermoscopy without actinic keratosis",
+          "actinic keratosis absent on dermoscopy"
+        ],
+        "absent_evidential": [
+          "no evidence of actinic keratosis on dermoscopy",
+          "actinic keratosis ruled out on dermoscopy",
+          "actinic keratosis excluded on dermoscopy",
+          "dermoscopy shows no evidence of actinic keratosis"
+        ],
+        "historical": [
+          "history of actinic keratosis, resolved on dermoscopy",
+          "prior actinic keratosis, no longer seen on dermoscopy",
+          "previously documented actinic keratosis, resolved"
+        ]
+      },
+      "historical": [
+        "history of actinic keratosis, resolved on dermoscopy",
+        "prior actinic keratosis, no longer seen on dermoscopy",
+        "previously documented actinic keratosis, resolved"
+      ]
+    }
+  }
+}

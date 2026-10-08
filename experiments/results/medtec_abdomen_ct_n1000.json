@@ -1,0 +1,597 @@
+{
+ "biomedclip": {
+  "display_name": "BiomedCLIP",
+  "L1": {
+   "avg_discrimination_score": 0.05520652013961585,
+   "avg_collapse_ratio": 0.49931396245064136,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": 0.03332868507423166,
+   "avg_collapse_ratio": 0.7762292625205325,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": -0.008588951509830084,
+   "avg_collapse_ratio": 0.8866155999089905,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": -0.02776858650757643,
+   "avg_collapse_ratio": 0.9022268491114923,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.03234578267542902,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.03361135792589473,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.03405278323296301,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": 0.005696929411259954,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.06262920591645613,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.009669318705975653,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.04015058374214553,
+   "avg_collapse_ratio": 0.9848270476340296,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.022449524192039123,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.04234449494027806,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.04873295699407954,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.049725026338400244,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.04143415016685417,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.036217349821222045,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.04338862167960076,
+   "avg_collapse_ratio": 1.0194083858511882,
+   "n_probes": 3006
+  }
+ },
+ "pubmedclip": {
+  "display_name": "PubMedCLIP",
+  "L1": {
+   "avg_discrimination_score": -0.025122218329709765,
+   "avg_collapse_ratio": 0.978312734179868,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": 0.012936014977004317,
+   "avg_collapse_ratio": 0.8594518360977401,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": -0.0042300039502040435,
+   "avg_collapse_ratio": 0.9418478570457148,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": -0.015952824133479905,
+   "avg_collapse_ratio": 0.9731426516811766,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.015038106077445481,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.020675957649053927,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.020995610131475027,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.011482161854555507,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.016610501679831635,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.01091460740851785,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0006040387197644887,
+   "avg_collapse_ratio": 0.9488350840623745,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": 0.01934465194890599,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.011901668981163802,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.004990028228588447,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": 0.000766824730142148,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.0037904139942751673,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.0030535977936076548,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.011776260302928155,
+   "avg_collapse_ratio": 0.9962021987674559,
+   "n_probes": 3006
+  }
+ },
+ "medclip": {
+  "display_name": "MedCLIP",
+  "L1": {
+   "avg_discrimination_score": -0.007424362912044147,
+   "avg_collapse_ratio": 1.0907399330389793,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": -0.0018244332773080382,
+   "avg_collapse_ratio": 0.9886045283225878,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": -0.000783680622302168,
+   "avg_collapse_ratio": 0.9580683436737961,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": -0.0029253921403685312,
+   "avg_collapse_ratio": 1.0008716921056222,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": 0.0009526093462537863,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": 0.000902031962397302,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.007458624641918494,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.0008187424015075325,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.0062760652745599875,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.004853561832876263,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.00022408891864378422,
+   "avg_collapse_ratio": 0.9448463666139397,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -3.6996336163071815e-05,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.00021016637482373658,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.00029088619505306205,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.0005267278380513548,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.00016241487740221137,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.00011734189036926868,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.0001687466800342985,
+   "avg_collapse_ratio": 0.9630348482382988,
+   "n_probes": 3006
+  }
+ },
+ "pmc_clip": {
+  "display_name": "PMC-CLIP",
+  "L1": {
+   "avg_discrimination_score": -0.050010989719403244,
+   "avg_collapse_ratio": 1.0102958694764637,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": 0.04715302802191047,
+   "avg_collapse_ratio": 0.600240546796057,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": 0.021906018500040945,
+   "avg_collapse_ratio": 0.7430107825010004,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": 0.01613551341071576,
+   "avg_collapse_ratio": 0.7581444510264311,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": 0.032586990626986154,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": 0.009222621064700053,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": 0.037500465969125665,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": 0.013531813364542887,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.02678816065102994,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": 0.030759350089969748,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.0030592517730242716,
+   "avg_collapse_ratio": 0.8333711465913617,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": 0.009937154675672154,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.009483697171696646,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": 0.008474117892231056,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.008057731978907556,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": 0.02109413304014834,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.0036084658193017193,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.04425581452434886,
+   "avg_collapse_ratio": 0.9937782657201973,
+   "n_probes": 3006
+  }
+ },
+ "openclip_vitb32": {
+  "display_name": "OpenCLIP ViT-B-32",
+  "L1": {
+   "avg_discrimination_score": 0.10062287341374519,
+   "avg_collapse_ratio": 0.4769966977184325,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": 0.010342998969221782,
+   "avg_collapse_ratio": 0.8831879978011785,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": -0.0003522326816579777,
+   "avg_collapse_ratio": 0.9161707763464072,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": 0.002229306259436046,
+   "avg_collapse_ratio": 0.9535112179325013,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.0018566377505570828,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": 0.0059788310956098364,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": 0.007847880531927783,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.0023151548679717286,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.003967632076697435,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": 0.007688550624304903,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.00611161546197956,
+   "avg_collapse_ratio": 0.9565774932830872,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.015086885787055878,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.0024605331842057006,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.002401707058181306,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.004834361508220969,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.014373487162732793,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": 0.002487281928519289,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.0027459300385263867,
+   "avg_collapse_ratio": 0.985898148811268,
+   "n_probes": 3006
+  }
+ },
+ "openclip_vitl14": {
+  "display_name": "OpenCLIP ViT-L-14",
+  "L1": {
+   "avg_discrimination_score": 0.1254021320504422,
+   "avg_collapse_ratio": 0.3472523722650157,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": -0.00224571625986499,
+   "avg_collapse_ratio": 0.8902405592019924,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": 0.023500167586885924,
+   "avg_collapse_ratio": 0.8284642901011332,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": 0.008661182667918786,
+   "avg_collapse_ratio": 0.9227032112980079,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": 0.012960163865260735,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": 0.004867913837204437,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": 0.005561911774252703,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": 0.01467381319599951,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": 0.007578140871967384,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": 0.006325152462827945,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.010242005412331123,
+   "avg_collapse_ratio": 0.9635824926361114,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.01251869376548036,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.0045713255862276,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.010418780192643582,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.013090301862733807,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.018067196725371354,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.002785734341530029,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.0026526192943017164,
+   "avg_collapse_ratio": 0.982174826259226,
+   "n_probes": 3006
+  }
+ },
+ "siglip": {
+  "display_name": "SigLIP",
+  "L1": {
+   "avg_discrimination_score": 0.05336380275651064,
+   "avg_collapse_ratio": 1.5655677199815041,
+   "n_probes": 3006
+  },
+  "L2": {
+   "avg_discrimination_score": -0.006102878287904267,
+   "avg_collapse_ratio": 1.2310340037833991,
+   "n_probes": 3006
+  },
+  "L3": {
+   "avg_discrimination_score": -0.016193214576680236,
+   "avg_collapse_ratio": 0.6115457146343015,
+   "n_probes": 3006
+  },
+  "L4": {
+   "avg_discrimination_score": -0.020559803235108504,
+   "avg_collapse_ratio": 0.9382365408377673,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.018990164633818016,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": -0.013974958595758426,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": -0.015310275597040525,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.025096070523301286,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.03440690048395874,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.015580449576774043,
+     "n": 167
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.005338399592943177,
+   "avg_collapse_ratio": 0.9092567320829424,
+   "n_probes": 1002,
+   "by_category": {
+    "gallbladder": {
+     "avg_DS": -0.004783358898928423,
+     "n": 167
+    },
+    "kidney_left": {
+     "avg_DS": 0.0006724441937076117,
+     "n": 167
+    },
+    "kidney_right": {
+     "avg_DS": 0.00044362984240768914,
+     "n": 167
+    },
+    "liver": {
+     "avg_DS": -0.011401207359161919,
+     "n": 167
+    },
+    "pancreas": {
+     "avg_DS": -0.011555275796148592,
+     "n": 167
+    },
+    "spleen": {
+     "avg_DS": -0.005406629539535431,
+     "n": 167
+    }
+   }
+  },
+  "L6": {
+   "avg_discrimination_score": -0.012105479458636955,
+   "avg_collapse_ratio": 1.0852879272332057,
+   "n_probes": 3006
+  }
+ }
+}

@@ -1,0 +1,377 @@
+{
+  "modality": "histopath",
+  "variant": "report",
+  "description": "Exp A prompt-robustness variant (report) for histopath, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/histopath_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "Findings: crowded atypical glands with a high nuclear-to-cytoplasmic ratio. Impression: colorectal adenocarcinoma.",
+            "Impression: colorectal adenocarcinoma.",
+            "Findings consistent with colorectal adenocarcinoma. Impression: colorectal adenocarcinoma.",
+            "Impression: colorectal adenocarcinoma, showing crowded atypical glands with a high nuclear-to-cytoplasmic ratio."
+          ],
+          "negatives": [
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "norm": {
+          "positives": [
+            "Findings: regular crypt architecture with goblet cells. Impression: normal colonic mucosa.",
+            "Impression: normal colonic mucosa.",
+            "Findings consistent with normal colonic mucosa. Impression: normal colonic mucosa.",
+            "Impression: normal colonic mucosa, showing regular crypt architecture with goblet cells."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "str": {
+          "positives": [
+            "Findings: reactive fibroblastic stroma. Impression: cancer-associated stroma.",
+            "Impression: cancer-associated stroma.",
+            "Findings consistent with cancer-associated stroma. Impression: cancer-associated stroma.",
+            "Impression: cancer-associated stroma, showing reactive fibroblastic stroma."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "lym": {
+          "positives": [
+            "Findings: dense small round lymphocytes. Impression: lymphocytes.",
+            "Impression: lymphocytes.",
+            "Findings consistent with lymphocytes. Impression: lymphocytes.",
+            "Impression: lymphocytes, showing dense small round lymphocytes."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "mus": {
+          "positives": [
+            "Findings: eosinophilic smooth muscle fascicles. Impression: smooth muscle.",
+            "Impression: smooth muscle.",
+            "Findings consistent with smooth muscle. Impression: smooth muscle.",
+            "Impression: smooth muscle, showing eosinophilic smooth muscle fascicles."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "adi": {
+          "positives": [
+            "Findings: clear adipocytes with peripheral nuclei. Impression: adipose tissue.",
+            "Impression: adipose tissue.",
+            "Findings consistent with adipose tissue. Impression: adipose tissue.",
+            "Impression: adipose tissue, showing clear adipocytes with peripheral nuclei."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "muc": {
+          "positives": [
+            "Findings: extracellular mucin pools. Impression: mucus.",
+            "Impression: mucus.",
+            "Findings consistent with mucus. Impression: mucus.",
+            "Impression: mucus, showing extracellular mucin pools."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: debris.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "deb": {
+          "positives": [
+            "Findings: necrotic cellular debris. Impression: debris.",
+            "Impression: debris.",
+            "Findings consistent with debris. Impression: debris.",
+            "Impression: debris, showing necrotic cellular debris."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: background.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        },
+        "back": {
+          "positives": [
+            "Findings: empty slide background without tissue. Impression: background.",
+            "Impression: background.",
+            "Findings consistent with background. Impression: background.",
+            "Impression: background, showing empty slide background without tissue."
+          ],
+          "negatives": [
+            "Impression: colorectal adenocarcinoma.",
+            "Impression: normal colonic mucosa.",
+            "Impression: cancer-associated stroma.",
+            "Impression: lymphocytes.",
+            "Impression: smooth muscle.",
+            "Impression: adipose tissue.",
+            "Impression: mucus.",
+            "Impression: debris.",
+            "Impression: blood vessels.",
+            "Impression: a nerve bundle."
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "Findings: crowded atypical glands with a high nuclear-to-cytoplasmic ratio. Impression: colorectal adenocarcinoma.",
+            "Impression: colorectal adenocarcinoma is present.",
+            "Impression: colorectal adenocarcinoma.",
+            "Findings consistent with colorectal adenocarcinoma."
+          ],
+          "negatives": [
+            "Findings: no adenocarcinoma epithelium. Impression: no adenocarcinoma epithelium.",
+            "Impression: negative for adenocarcinoma epithelium.",
+            "Impression: no evidence of adenocarcinoma epithelium.",
+            "Impression: adenocarcinoma epithelium is excluded.",
+            "Findings: no adenocarcinoma epithelium. Impression: adenocarcinoma epithelium not identified.",
+            "Impression: no findings of adenocarcinoma epithelium.",
+            "Impression: without adenocarcinoma epithelium.",
+            "Impression: adenocarcinoma epithelium is ruled out.",
+            "Impression: no adenocarcinoma epithelium seen.",
+            "Impression: adenocarcinoma epithelium not present."
+          ]
+        },
+        "norm": {
+          "positives": [
+            "Impression: normal study.",
+            "Impression: no acute abnormality.",
+            "Impression: negative for disease.",
+            "Impression: no pathology identified."
+          ],
+          "negatives": [
+            "Impression: positive for disease.",
+            "Impression: abnormal.",
+            "Impression: pathologic findings present.",
+            "Impression: active disease.",
+            "Impression: a significant abnormality is identified.",
+            "Impression: abnormal findings.",
+            "Impression: an imaging abnormality is demonstrated.",
+            "Impression: not within normal limits.",
+            "Impression: underlying pathology is present.",
+            "Impression: positive for an abnormality."
+          ]
+        },
+        "str": {
+          "positives": [
+            "Findings: reactive fibroblastic stroma. Impression: cancer-associated stroma.",
+            "Impression: cancer-associated stroma is present.",
+            "Impression: cancer-associated stroma.",
+            "Findings consistent with cancer-associated stroma."
+          ],
+          "negatives": [
+            "Findings: no cancer-associated stroma. Impression: no cancer-associated stroma.",
+            "Impression: negative for cancer-associated stroma.",
+            "Impression: no evidence of cancer-associated stroma.",
+            "Impression: cancer-associated stroma is excluded.",
+            "Findings: no cancer-associated stroma. Impression: cancer-associated stroma not identified.",
+            "Impression: no findings of cancer-associated stroma.",
+            "Impression: without cancer-associated stroma.",
+            "Impression: cancer-associated stroma is ruled out.",
+            "Impression: no cancer-associated stroma seen.",
+            "Impression: cancer-associated stroma not present."
+          ]
+        },
+        "lym": {
+          "positives": [
+            "Findings: dense small round lymphocytes. Impression: lymphocytes.",
+            "Impression: lymphocytes is present.",
+            "Impression: lymphocytes.",
+            "Findings consistent with lymphocytes."
+          ],
+          "negatives": [
+            "Findings: no lymphocytes. Impression: no lymphocytes.",
+            "Impression: negative for lymphocytes.",
+            "Impression: no evidence of lymphocytes.",
+            "Impression: lymphocytes is excluded.",
+            "Findings: no lymphocytes. Impression: lymphocytes not identified.",
+            "Impression: no findings of lymphocytes.",
+            "Impression: without lymphocytes.",
+            "Impression: lymphocytes is ruled out.",
+            "Impression: no lymphocytes seen.",
+            "Impression: lymphocytes not present."
+          ]
+        },
+        "mus": {
+          "positives": [
+            "Findings: eosinophilic smooth muscle fascicles. Impression: smooth muscle.",
+            "Impression: smooth muscle is present.",
+            "Impression: smooth muscle.",
+            "Findings consistent with smooth muscle."
+          ],
+          "negatives": [
+            "Findings: no smooth muscle. Impression: no smooth muscle.",
+            "Impression: negative for smooth muscle.",
+            "Impression: no evidence of smooth muscle.",
+            "Impression: smooth muscle is excluded.",
+            "Findings: no smooth muscle. Impression: smooth muscle not identified.",
+            "Impression: no findings of smooth muscle.",
+            "Impression: without smooth muscle.",
+            "Impression: smooth muscle is ruled out.",
+            "Impression: no smooth muscle seen.",
+            "Impression: smooth muscle not present."
+          ]
+        },
+        "adi": {
+          "positives": [
+            "Findings: clear adipocytes with peripheral nuclei. Impression: adipose tissue.",
+            "Impression: adipose tissue is present.",
+            "Impression: adipose tissue.",
+            "Findings consistent with adipose tissue."
+          ],
+          "negatives": [
+            "Findings: no adipose tissue. Impression: no adipose tissue.",
+            "Impression: negative for adipose tissue.",
+            "Impression: no evidence of adipose tissue.",
+            "Impression: adipose tissue is excluded.",
+            "Findings: no adipose tissue. Impression: adipose tissue not identified.",
+            "Impression: no findings of adipose tissue.",
+            "Impression: without adipose tissue.",
+            "Impression: adipose tissue is ruled out.",
+            "Impression: no adipose tissue seen.",
+            "Impression: adipose tissue not present."
+          ]
+        },
+        "muc": {
+          "positives": [
+            "Findings: extracellular mucin pools. Impression: mucus.",
+            "Impression: mucus is present.",
+            "Impression: mucus.",
+            "Findings consistent with mucus."
+          ],
+          "negatives": [
+            "Findings: no mucus. Impression: no mucus.",
+            "Impression: negative for mucus.",
+            "Impression: no evidence of mucus.",
+            "Impression: mucus is excluded.",
+            "Findings: no mucus. Impression: mucus not identified.",
+            "Impression: no findings of mucus.",
+            "Impression: without mucus.",
+            "Impression: mucus is ruled out.",
+            "Impression: no mucus seen.",
+            "Impression: mucus not present."
+          ]
+        },
+        "deb": {
+          "positives": [
+            "Findings: necrotic cellular debris. Impression: debris.",
+            "Impression: debris is present.",
+            "Impression: debris.",
+            "Findings consistent with debris."
+          ],
+          "negatives": [
+            "Findings: no debris. Impression: no debris.",
+            "Impression: negative for debris.",
+            "Impression: no evidence of debris.",
+            "Impression: debris is excluded.",
+            "Findings: no debris. Impression: debris not identified.",
+            "Impression: no findings of debris.",
+            "Impression: without debris.",
+            "Impression: debris is ruled out.",
+            "Impression: no debris seen.",
+            "Impression: debris not present."
+          ]
+        },
+        "back": {
+          "positives": [
+            "Findings: empty slide background without tissue. Impression: background.",
+            "Impression: background is present.",
+            "Impression: background.",
+            "Findings consistent with background."
+          ],
+          "negatives": [
+            "Findings: no background. Impression: no background.",
+            "Impression: negative for background.",
+            "Impression: no evidence of background.",
+            "Impression: background is excluded.",
+            "Findings: no background. Impression: background not identified.",
+            "Impression: no findings of background.",
+            "Impression: without background.",
+            "Impression: background is ruled out.",
+            "Impression: no background seen.",
+            "Impression: background not present."
+          ]
+        }
+      }
+    }
+  }
+}

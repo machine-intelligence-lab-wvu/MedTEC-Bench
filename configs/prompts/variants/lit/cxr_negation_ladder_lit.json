@@ -1,0 +1,215 @@
+{
+  "modality": "cxr",
+  "description": "LITERATURE-GROUNDED negation ladder for cxr. Cue terms verbatim from Panicek & Hricak (AJR 2016) certainty lexicon and NegEx/ConText (Chapman 2001; Harkema 2009).",
+  "provenance": "Panicek&Hricak2016; NegEx Chapman2001; ConText Harkema2009",
+  "ordinal": {
+    "present": 2,
+    "probable": 1,
+    "possible": 0,
+    "unlikely": -1,
+    "absent_plain": -2,
+    "absent_evidential": -2
+  },
+  "subtype_map": {
+    "definite": [
+      "absent_plain"
+    ],
+    "hedged": [
+      "possible",
+      "unlikely"
+    ],
+    "ruled_out": [
+      "absent_evidential"
+    ],
+    "historical": [
+      "historical"
+    ]
+  },
+  "absent_anchor_category": "no_finding",
+  "findings": {
+    "pneumonia": {
+      "rungs": {
+        "present": [
+          "chest x-ray consistent with pneumonia",
+          "findings consistent with pneumonia on chest x-ray",
+          "chest x-ray demonstrating pneumonia"
+        ],
+        "probable": [
+          "chest x-ray suspicious for pneumonia",
+          "probable pneumonia on chest x-ray",
+          "findings probably representing pneumonia on chest x-ray"
+        ],
+        "possible": [
+          "possible pneumonia on chest x-ray",
+          "chest x-ray possibly showing pneumonia",
+          "pneumonia cannot be excluded on chest x-ray"
+        ],
+        "unlikely": [
+          "pneumonia less likely on chest x-ray",
+          "pneumonia unlikely on chest x-ray",
+          "chest x-ray findings unlikely to represent pneumonia"
+        ],
+        "absent_plain": [
+          "chest x-ray negative for pneumonia",
+          "no pneumonia on chest x-ray",
+          "chest x-ray without pneumonia",
+          "pneumonia absent on chest x-ray"
+        ],
+        "absent_evidential": [
+          "no evidence of pneumonia on chest x-ray",
+          "pneumonia ruled out on chest x-ray",
+          "pneumonia excluded on chest x-ray",
+          "chest x-ray shows no evidence of pneumonia"
+        ],
+        "historical": [
+          "history of pneumonia, resolved on chest x-ray",
+          "prior pneumonia, no longer seen on chest x-ray",
+          "previously documented pneumonia, resolved"
+        ]
+      },
+      "historical": [
+        "history of pneumonia, resolved on chest x-ray",
+        "prior pneumonia, no longer seen on chest x-ray",
+        "previously documented pneumonia, resolved"
+      ]
+    },
+    "cardiomegaly": {
+      "rungs": {
+        "present": [
+          "chest x-ray consistent with cardiomegaly",
+          "findings consistent with cardiomegaly on chest x-ray",
+          "chest x-ray demonstrating cardiomegaly"
+        ],
+        "probable": [
+          "chest x-ray suspicious for cardiomegaly",
+          "probable cardiomegaly on chest x-ray",
+          "findings probably representing cardiomegaly on chest x-ray"
+        ],
+        "possible": [
+          "possible cardiomegaly on chest x-ray",
+          "chest x-ray possibly showing cardiomegaly",
+          "cardiomegaly cannot be excluded on chest x-ray"
+        ],
+        "unlikely": [
+          "cardiomegaly less likely on chest x-ray",
+          "cardiomegaly unlikely on chest x-ray",
+          "chest x-ray findings unlikely to represent cardiomegaly"
+        ],
+        "absent_plain": [
+          "chest x-ray negative for cardiomegaly",
+          "no cardiomegaly on chest x-ray",
+          "chest x-ray without cardiomegaly",
+          "cardiomegaly absent on chest x-ray"
+        ],
+        "absent_evidential": [
+          "no evidence of cardiomegaly on chest x-ray",
+          "cardiomegaly ruled out on chest x-ray",
+          "cardiomegaly excluded on chest x-ray",
+          "chest x-ray shows no evidence of cardiomegaly"
+        ],
+        "historical": [
+          "history of cardiomegaly, resolved on chest x-ray",
+          "prior cardiomegaly, no longer seen on chest x-ray",
+          "previously documented cardiomegaly, resolved"
+        ]
+      },
+      "historical": [
+        "history of cardiomegaly, resolved on chest x-ray",
+        "prior cardiomegaly, no longer seen on chest x-ray",
+        "previously documented cardiomegaly, resolved"
+      ]
+    },
+    "pleural_effusion": {
+      "rungs": {
+        "present": [
+          "chest x-ray consistent with pleural effusion",
+          "findings consistent with pleural effusion on chest x-ray",
+          "chest x-ray demonstrating pleural effusion"
+        ],
+        "probable": [
+          "chest x-ray suspicious for pleural effusion",
+          "probable pleural effusion on chest x-ray",
+          "findings probably representing pleural effusion on chest x-ray"
+        ],
+        "possible": [
+          "possible pleural effusion on chest x-ray",
+          "chest x-ray possibly showing pleural effusion",
+          "pleural effusion cannot be excluded on chest x-ray"
+        ],
+        "unlikely": [
+          "pleural effusion less likely on chest x-ray",
+          "pleural effusion unlikely on chest x-ray",
+          "chest x-ray findings unlikely to represent pleural effusion"
+        ],
+        "absent_plain": [
+          "chest x-ray negative for pleural effusion",
+          "no pleural effusion on chest x-ray",
+          "chest x-ray without pleural effusion",
+          "pleural effusion absent on chest x-ray"
+        ],
+        "absent_evidential": [
+          "no evidence of pleural effusion on chest x-ray",
+          "pleural effusion ruled out on chest x-ray",
+          "pleural effusion excluded on chest x-ray",
+          "chest x-ray shows no evidence of pleural effusion"
+        ],
+        "historical": [
+          "history of pleural effusion, resolved on chest x-ray",
+          "prior pleural effusion, no longer seen on chest x-ray",
+          "previously documented pleural effusion, resolved"
+        ]
+      },
+      "historical": [
+        "history of pleural effusion, resolved on chest x-ray",
+        "prior pleural effusion, no longer seen on chest x-ray",
+        "previously documented pleural effusion, resolved"
+      ]
+    },
+    "atelectasis": {
+      "rungs": {
+        "present": [
+          "chest x-ray consistent with atelectasis",
+          "findings consistent with atelectasis on chest x-ray",
+          "chest x-ray demonstrating atelectasis"
+        ],
+        "probable": [
+          "chest x-ray suspicious for atelectasis",
+          "probable atelectasis on chest x-ray",
+          "findings probably representing atelectasis on chest x-ray"
+        ],
+        "possible": [
+          "possible atelectasis on chest x-ray",
+          "chest x-ray possibly showing atelectasis",
+          "atelectasis cannot be excluded on chest x-ray"
+        ],
+        "unlikely": [
+          "atelectasis less likely on chest x-ray",
+          "atelectasis unlikely on chest x-ray",
+          "chest x-ray findings unlikely to represent atelectasis"
+        ],
+        "absent_plain": [
+          "chest x-ray negative for atelectasis",
+          "no atelectasis on chest x-ray",
+          "chest x-ray without atelectasis",
+          "atelectasis absent on chest x-ray"
+        ],
+        "absent_evidential": [
+          "no evidence of atelectasis on chest x-ray",
+          "atelectasis ruled out on chest x-ray",
+          "atelectasis excluded on chest x-ray",
+          "chest x-ray shows no evidence of atelectasis"
+        ],
+        "historical": [
+          "history of atelectasis, resolved on chest x-ray",
+          "prior atelectasis, no longer seen on chest x-ray",
+          "previously documented atelectasis, resolved"
+        ]
+      },
+      "historical": [
+        "history of atelectasis, resolved on chest x-ray",
+        "prior atelectasis, no longer seen on chest x-ray",
+        "previously documented atelectasis, resolved"
+      ]
+    }
+  }
+}

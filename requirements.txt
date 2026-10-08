@@ -1,0 +1,26 @@
+# Core deep-learning + numerical stack
+torch>=2.0
+torchvision>=0.15
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.2
+pandas>=2.0
+
+# Vision-language model loaders
+open_clip_torch>=2.20
+transformers>=4.30
+huggingface_hub>=0.16
+
+# Image / dataset I/O
+pillow>=9.0
+nibabel>=5.0
+openpyxl>=3.1
+
+# Plotting (optional — required only for figure-export scripts)
+matplotlib>=3.7
+
+# Dataset download (CT / ISIC probe builders)
+requests>=2.28
+
+# Utilities
+tqdm>=4.65

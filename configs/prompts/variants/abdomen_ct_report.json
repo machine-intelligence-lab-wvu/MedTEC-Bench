@@ -1,0 +1,257 @@
+{
+  "modality": "abdomen_ct",
+  "variant": "report",
+  "description": "Exp A prompt-robustness variant (report) for abdomen_ct, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/abdomen_ct_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "Findings: homogeneous soft-tissue attenuation of the liver in the right upper quadrant. Impression: the liver.",
+            "Impression: the liver.",
+            "Findings consistent with the liver. Impression: the liver.",
+            "Impression: the liver, showing homogeneous soft-tissue attenuation of the liver in the right upper quadrant."
+          ],
+          "negatives": [
+            "Impression: the spleen.",
+            "Impression: the left kidney.",
+            "Impression: the right kidney.",
+            "Impression: the pancreas.",
+            "Impression: the gallbladder.",
+            "Impression: the stomach.",
+            "Impression: the aorta.",
+            "Impression: an adrenal gland.",
+            "Impression: the colon.",
+            "Impression: a small bowel loop."
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "Findings: the splenic parenchyma in the left upper quadrant. Impression: the spleen.",
+            "Impression: the spleen.",
+            "Findings consistent with the spleen. Impression: the spleen.",
+            "Impression: the spleen, showing the splenic parenchyma in the left upper quadrant."
+          ],
+          "negatives": [
+            "Impression: the liver.",
+            "Impression: the left kidney.",
+            "Impression: the right kidney.",
+            "Impression: the pancreas.",
+            "Impression: the gallbladder.",
+            "Impression: the stomach.",
+            "Impression: the aorta.",
+            "Impression: an adrenal gland.",
+            "Impression: the colon.",
+            "Impression: a small bowel loop."
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "Findings: the left kidney in the retroperitoneum. Impression: the left kidney.",
+            "Impression: the left kidney.",
+            "Findings consistent with the left kidney. Impression: the left kidney.",
+            "Impression: the left kidney, showing the left kidney in the retroperitoneum."
+          ],
+          "negatives": [
+            "Impression: the liver.",
+            "Impression: the spleen.",
+            "Impression: the right kidney.",
+            "Impression: the pancreas.",
+            "Impression: the gallbladder.",
+            "Impression: the stomach.",
+            "Impression: the aorta.",
+            "Impression: an adrenal gland.",
+            "Impression: the colon.",
+            "Impression: a small bowel loop."
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "Findings: the right kidney in the retroperitoneum. Impression: the right kidney.",
+            "Impression: the right kidney.",
+            "Findings consistent with the right kidney. Impression: the right kidney.",
+            "Impression: the right kidney, showing the right kidney in the retroperitoneum."
+          ],
+          "negatives": [
+            "Impression: the liver.",
+            "Impression: the spleen.",
+            "Impression: the left kidney.",
+            "Impression: the pancreas.",
+            "Impression: the gallbladder.",
+            "Impression: the stomach.",
+            "Impression: the aorta.",
+            "Impression: an adrenal gland.",
+            "Impression: the colon.",
+            "Impression: a small bowel loop."
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "Findings: the pancreatic parenchyma in the retroperitoneum. Impression: the pancreas.",
+            "Impression: the pancreas.",
+            "Findings consistent with the pancreas. Impression: the pancreas.",
+            "Impression: the pancreas, showing the pancreatic parenchyma in the retroperitoneum."
+          ],
+          "negatives": [
+            "Impression: the liver.",
+            "Impression: the spleen.",
+            "Impression: the left kidney.",
+            "Impression: the right kidney.",
+            "Impression: the gallbladder.",
+            "Impression: the stomach.",
+            "Impression: the aorta.",
+            "Impression: an adrenal gland.",
+            "Impression: the colon.",
+            "Impression: a small bowel loop."
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "Findings: the fluid-filled gallbladder beneath the liver. Impression: the gallbladder.",
+            "Impression: the gallbladder.",
+            "Findings consistent with the gallbladder. Impression: the gallbladder.",
+            "Impression: the gallbladder, showing the fluid-filled gallbladder beneath the liver."
+          ],
+          "negatives": [
+            "Impression: the liver.",
+            "Impression: the spleen.",
+            "Impression: the left kidney.",
+            "Impression: the right kidney.",
+            "Impression: the pancreas.",
+            "Impression: the stomach.",
+            "Impression: the aorta.",
+            "Impression: an adrenal gland.",
+            "Impression: the colon.",
+            "Impression: a small bowel loop."
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "Findings: homogeneous soft-tissue attenuation of the liver in the right upper quadrant. Impression: the liver.",
+            "Impression: the liver is present.",
+            "Impression: the liver.",
+            "Findings consistent with the liver."
+          ],
+          "negatives": [
+            "Findings: no liver. Impression: no liver.",
+            "Impression: negative for liver.",
+            "Impression: no evidence of liver.",
+            "Impression: liver is excluded.",
+            "Findings: no liver. Impression: liver not identified.",
+            "Impression: no findings of liver.",
+            "Impression: without liver.",
+            "Impression: liver is ruled out.",
+            "Impression: no liver seen.",
+            "Impression: liver not present."
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "Findings: the splenic parenchyma in the left upper quadrant. Impression: the spleen.",
+            "Impression: the spleen is present.",
+            "Impression: the spleen.",
+            "Findings consistent with the spleen."
+          ],
+          "negatives": [
+            "Findings: no spleen. Impression: no spleen.",
+            "Impression: negative for spleen.",
+            "Impression: no evidence of spleen.",
+            "Impression: spleen is excluded.",
+            "Findings: no spleen. Impression: spleen not identified.",
+            "Impression: no findings of spleen.",
+            "Impression: without spleen.",
+            "Impression: spleen is ruled out.",
+            "Impression: no spleen seen.",
+            "Impression: spleen not present."
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "Findings: the left kidney in the retroperitoneum. Impression: the left kidney.",
+            "Impression: the left kidney is present.",
+            "Impression: the left kidney.",
+            "Findings consistent with the left kidney."
+          ],
+          "negatives": [
+            "Findings: no left kidney. Impression: no left kidney.",
+            "Impression: negative for left kidney.",
+            "Impression: no evidence of left kidney.",
+            "Impression: left kidney is excluded.",
+            "Findings: no left kidney. Impression: left kidney not identified.",
+            "Impression: no findings of left kidney.",
+            "Impression: without left kidney.",
+            "Impression: left kidney is ruled out.",
+            "Impression: no left kidney seen.",
+            "Impression: left kidney not present."
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "Findings: the right kidney in the retroperitoneum. Impression: the right kidney.",
+            "Impression: the right kidney is present.",
+            "Impression: the right kidney.",
+            "Findings consistent with the right kidney."
+          ],
+          "negatives": [
+            "Findings: no right kidney. Impression: no right kidney.",
+            "Impression: negative for right kidney.",
+            "Impression: no evidence of right kidney.",
+            "Impression: right kidney is excluded.",
+            "Findings: no right kidney. Impression: right kidney not identified.",
+            "Impression: no findings of right kidney.",
+            "Impression: without right kidney.",
+            "Impression: right kidney is ruled out.",
+            "Impression: no right kidney seen.",
+            "Impression: right kidney not present."
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "Findings: the pancreatic parenchyma in the retroperitoneum. Impression: the pancreas.",
+            "Impression: the pancreas is present.",
+            "Impression: the pancreas.",
+            "Findings consistent with the pancreas."
+          ],
+          "negatives": [
+            "Findings: no pancreas. Impression: no pancreas.",
+            "Impression: negative for pancreas.",
+            "Impression: no evidence of pancreas.",
+            "Impression: pancreas is excluded.",
+            "Findings: no pancreas. Impression: pancreas not identified.",
+            "Impression: no findings of pancreas.",
+            "Impression: without pancreas.",
+            "Impression: pancreas is ruled out.",
+            "Impression: no pancreas seen.",
+            "Impression: pancreas not present."
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "Findings: the fluid-filled gallbladder beneath the liver. Impression: the gallbladder.",
+            "Impression: the gallbladder is present.",
+            "Impression: the gallbladder.",
+            "Findings consistent with the gallbladder."
+          ],
+          "negatives": [
+            "Findings: no gallbladder. Impression: no gallbladder.",
+            "Impression: negative for gallbladder.",
+            "Impression: no evidence of gallbladder.",
+            "Impression: gallbladder is excluded.",
+            "Findings: no gallbladder. Impression: gallbladder not identified.",
+            "Impression: no findings of gallbladder.",
+            "Impression: without gallbladder.",
+            "Impression: gallbladder is ruled out.",
+            "Impression: no gallbladder seen.",
+            "Impression: gallbladder not present."
+          ]
+        }
+      }
+    }
+  }
+}

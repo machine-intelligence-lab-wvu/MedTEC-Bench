@@ -1,0 +1,402 @@
+{
+  "modality": "brain_mri",
+  "description": "Brain MRI prompt templates for MedTEC-Bench levels 1-6. Level 4/5 use per-image disease-specific prompts keyed by dementia stage from OASIS; levels 1-3 and 6 are shared across all images.",
+  "disease_categories": {
+    "non_demented": {
+      "display": "Non-Demented (cognitively normal)",
+      "oasis_folder": "Non Demented",
+      "description": "Cognitively normal adult \u2014 no dementia"
+    },
+    "very_mild_dementia": {
+      "display": "Very Mild Dementia",
+      "oasis_folder": "Very mild Dementia",
+      "description": "Very mild dementia (CDR 0.5)"
+    },
+    "mild_dementia": {
+      "display": "Mild Dementia",
+      "oasis_folder": "Mild Dementia",
+      "description": "Mild dementia (CDR 1.0)"
+    },
+    "moderate_dementia": {
+      "display": "Moderate Dementia",
+      "oasis_folder": "Moderate Dementia",
+      "description": "Moderate dementia (CDR 2.0)"
+    }
+  },
+  "sampling": {
+    "n_per_category": 12,
+    "total": 48,
+    "seed": 42,
+    "source": "OASIS (Alzheimer MRI 2D-slice classification)"
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Brain MRI vs everyday objects \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "brain_l1_001",
+          "positives": [
+            "a brain MRI scan",
+            "an axial brain MRI image",
+            "a magnetic resonance image of the brain"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "brain_l1_002",
+          "positives": [
+            "an MRI of the brain",
+            "a brain scan showing cerebral structures"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a running shoe on a white background",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a park bench in autumn",
+            "a cup of coffee"
+          ]
+        },
+        {
+          "probe_id": "brain_l1_003",
+          "positives": [
+            "a cranial MRI showing brain tissue",
+            "a magnetic resonance scan of the head"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a bicycle helmet",
+            "a wristwatch on a surface",
+            "a baseball glove on grass",
+            "a garden with flowers"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Brain MRI vs other brain imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "brain_l2_001",
+          "positives": [
+            "an axial brain MRI",
+            "a T1-weighted brain MRI scan"
+          ],
+          "negatives": [
+            "an axial brain CT scan",
+            "a brain PET scan",
+            "a brain SPECT scan",
+            "a brain MR angiography image",
+            "a transcranial brain ultrasound"
+          ]
+        },
+        {
+          "probe_id": "brain_l2_002",
+          "positives": [
+            "a brain MRI coronal view",
+            "a magnetic resonance brain image"
+          ],
+          "negatives": [
+            "a non-contrast brain CT",
+            "a brain FDG-PET scan",
+            "a functional MRI brain activation map",
+            "a cerebral angiogram",
+            "a brain perfusion CT scan"
+          ]
+        },
+        {
+          "probe_id": "brain_l2_003",
+          "positives": [
+            "a T2-weighted brain MRI",
+            "a FLAIR sequence brain MRI"
+          ],
+          "negatives": [
+            "a DWI brain CT",
+            "a brain DSA angiogram",
+            "an EEG recording of brain activity",
+            "a MEG brain imaging scan",
+            "an intraoperative brain ultrasound"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Brain MRI vs MRI of other body regions \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "brain_l3_001",
+          "positives": [
+            "a brain MRI",
+            "an MRI of the head"
+          ],
+          "negatives": [
+            "an MRI of the knee joint",
+            "an MRI of the lumbar spine",
+            "an MRI of the shoulder",
+            "an MRI of the abdomen",
+            "an MRI of the pelvis"
+          ]
+        },
+        {
+          "probe_id": "brain_l3_002",
+          "positives": [
+            "a cranial MRI scan",
+            "an MRI showing brain structures"
+          ],
+          "negatives": [
+            "an MRI of the cervical spine",
+            "an MRI of the liver",
+            "an MRI of the wrist",
+            "an MRI of the ankle",
+            "an MRI of the heart"
+          ]
+        },
+        {
+          "probe_id": "brain_l3_003",
+          "positives": [
+            "an MRI of the cerebrum",
+            "a brain MRI showing cortical and subcortical structures"
+          ],
+          "negatives": [
+            "an MRI of the thoracic spine",
+            "an MRI of the breast",
+            "a prostate MRI",
+            "a cardiac MRI",
+            "an MRI of the hip joint"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Image-specific prompts based on true dementia stage. 2 positives describe the true stage; 10 negatives describe other brain conditions.",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "a brain MRI of a cognitively normal adult",
+            "a brain MRI with no evidence of dementia or atrophy",
+            "a T1-weighted brain MRI with preserved hippocampal volume and normal cortical thickness",
+            "a brain MRI showing intact medial temporal lobe and age-appropriate sulcal patterns"
+          ],
+          "negatives": [
+            "a brain MRI showing mild dementia",
+            "a brain MRI showing moderate dementia with cortical atrophy",
+            "a brain MRI showing advanced Alzheimer disease",
+            "a brain MRI showing hippocampal atrophy",
+            "a brain MRI showing a glioblastoma",
+            "a brain MRI showing an acute ischemic stroke",
+            "a brain MRI showing multiple sclerosis plaques",
+            "a brain MRI showing hydrocephalus",
+            "a brain MRI showing an intracerebral hemorrhage",
+            "a brain MRI showing vascular dementia changes"
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "a brain MRI showing very mild dementia",
+            "a brain MRI with subtle features consistent with very mild dementia (CDR 0.5)",
+            "a brain MRI with subtle medial temporal lobe atrophy suggesting prodromal Alzheimer disease",
+            "a T1-weighted brain MRI with mild hippocampal volume reduction without overt cortical thinning"
+          ],
+          "negatives": [
+            "a brain MRI of a cognitively normal adult",
+            "a brain MRI showing moderate dementia",
+            "a brain MRI showing severe cortical atrophy",
+            "a brain MRI showing a glioblastoma",
+            "a brain MRI showing an acute ischemic stroke",
+            "a brain MRI showing multiple sclerosis plaques",
+            "a brain MRI showing hydrocephalus",
+            "a brain MRI showing an intracerebral hemorrhage",
+            "a brain MRI showing a meningioma",
+            "a brain MRI showing Parkinson disease changes"
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "a brain MRI showing mild dementia",
+            "a brain MRI with features consistent with mild Alzheimer dementia (CDR 1.0)",
+            "a brain MRI with hippocampal atrophy and parietal cortical thinning consistent with mild Alzheimer disease",
+            "a T1-weighted brain MRI with mild ventricular enlargement and medial temporal lobe atrophy"
+          ],
+          "negatives": [
+            "a brain MRI of a cognitively normal adult",
+            "a brain MRI showing very mild dementia",
+            "a brain MRI showing moderate to severe dementia",
+            "a brain MRI showing a glioblastoma",
+            "a brain MRI showing an acute ischemic stroke",
+            "a brain MRI showing multiple sclerosis plaques",
+            "a brain MRI showing hydrocephalus",
+            "a brain MRI showing an intracerebral hemorrhage",
+            "a brain MRI showing Lewy body dementia",
+            "a brain MRI showing frontotemporal dementia"
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "a brain MRI showing moderate dementia with cortical atrophy",
+            "a brain MRI with features consistent with moderate Alzheimer dementia (CDR 2.0)",
+            "a brain MRI with marked hippocampal atrophy, widened sulci, and ventriculomegaly",
+            "a brain MRI showing diffuse cortical atrophy and prominent ex vacuo ventricular enlargement"
+          ],
+          "negatives": [
+            "a brain MRI of a cognitively normal adult",
+            "a brain MRI showing very mild dementia",
+            "a brain MRI showing mild dementia",
+            "a brain MRI showing a glioblastoma",
+            "a brain MRI showing an acute ischemic stroke",
+            "a brain MRI showing multiple sclerosis plaques",
+            "a brain MRI showing normal pressure hydrocephalus",
+            "a brain MRI showing an intracerebral hemorrhage",
+            "a brain MRI showing vascular dementia only",
+            "a brain MRI showing Creutzfeldt-Jakob disease changes"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Image-specific: presence vs absence of the true stage. 2 positives affirm the diagnosis; 10 negatives are linguistic negations of the same diagnosis.",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "brain MRI negative for dementia",
+            "brain MRI showing no evidence of dementia or atrophy",
+            "brain MRI without features of cognitive impairment",
+            "brain MRI demonstrating normal age-appropriate findings"
+          ],
+          "negatives": [
+            "brain MRI positive for dementia",
+            "brain MRI showing dementia",
+            "brain MRI with evidence of dementia",
+            "brain MRI demonstrating cognitive decline changes",
+            "brain MRI showing Alzheimer disease",
+            "brain MRI with abnormal atrophy",
+            "brain MRI showing signs of neurodegeneration",
+            "brain MRI not within normal limits",
+            "brain MRI revealing dementia changes",
+            "brain MRI consistent with cognitive impairment"
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "brain MRI showing very mild dementia",
+            "very mild dementia visible on brain MRI",
+            "very mild dementia identified on brain MRI",
+            "imaging features consistent with prodromal cognitive decline"
+          ],
+          "negatives": [
+            "brain MRI showing no very mild dementia",
+            "no evidence of very mild dementia on brain MRI",
+            "brain MRI negative for very mild dementia",
+            "very mild dementia absent on brain MRI",
+            "brain MRI without very mild dementia",
+            "no very mild dementia visible on brain MRI",
+            "brain MRI clear of very mild dementia",
+            "very mild dementia excluded on brain MRI",
+            "no signs of very mild dementia on brain MRI",
+            "very mild dementia not seen on brain MRI"
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "brain MRI showing mild dementia",
+            "mild dementia visible on brain MRI",
+            "mild dementia identified on brain MRI",
+            "imaging features consistent with mild Alzheimer disease"
+          ],
+          "negatives": [
+            "brain MRI showing no mild dementia",
+            "no evidence of mild dementia on brain MRI",
+            "brain MRI negative for mild dementia",
+            "mild dementia absent on brain MRI",
+            "brain MRI without mild dementia",
+            "no mild dementia visible on brain MRI",
+            "brain MRI clear of mild dementia",
+            "mild dementia excluded on brain MRI",
+            "no signs of mild dementia on brain MRI",
+            "mild dementia not seen on brain MRI"
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "brain MRI showing moderate dementia",
+            "moderate dementia visible on brain MRI",
+            "moderate dementia identified on brain MRI",
+            "imaging features consistent with moderate Alzheimer disease"
+          ],
+          "negatives": [
+            "brain MRI showing no moderate dementia",
+            "no evidence of moderate dementia on brain MRI",
+            "brain MRI negative for moderate dementia",
+            "moderate dementia absent on brain MRI",
+            "brain MRI without moderate dementia",
+            "no moderate dementia visible on brain MRI",
+            "brain MRI clear of moderate dementia",
+            "moderate dementia excluded on brain MRI",
+            "no signs of moderate dementia on brain MRI",
+            "moderate dementia not seen on brain MRI"
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Attribute binding",
+      "description": "Modifier sensitivity (size, laterality, severity). Shared template probes.",
+      "probes": [
+        {
+          "probe_id": "brain_l6_001",
+          "positives": [
+            "brain MRI showing severe cortical atrophy"
+          ],
+          "negatives": [
+            "brain MRI showing mild cortical atrophy",
+            "brain MRI showing moderate cortical atrophy",
+            "brain MRI showing focal cortical atrophy",
+            "brain MRI showing asymmetric cortical atrophy"
+          ]
+        },
+        {
+          "probe_id": "brain_l6_002",
+          "positives": [
+            "brain MRI showing a right hemisphere lesion"
+          ],
+          "negatives": [
+            "brain MRI showing a left hemisphere lesion",
+            "brain MRI showing bilateral hemisphere lesions",
+            "brain MRI showing a frontal lobe lesion",
+            "brain MRI showing a temporal lobe lesion"
+          ]
+        },
+        {
+          "probe_id": "brain_l6_003",
+          "positives": [
+            "brain MRI showing severe hippocampal atrophy"
+          ],
+          "negatives": [
+            "brain MRI showing mild hippocampal atrophy",
+            "brain MRI showing normal hippocampal volume",
+            "brain MRI showing unilateral hippocampal atrophy",
+            "brain MRI showing bilateral hippocampal atrophy"
+          ]
+        }
+      ]
+    }
+  }
+}

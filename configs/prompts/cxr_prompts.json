@@ -1,0 +1,526 @@
+{
+  "modality": "cxr",
+  "description": "Chest X-ray prompt templates for MedTEC-Bench levels 1-5. Level 6 is handled separately.",
+  "disease_categories": {
+    "no_finding": {
+      "display": "Normal",
+      "chexpert_col": "No Finding",
+      "nih_label": "No Finding"
+    },
+    "pneumonia": {
+      "display": "Pneumonia",
+      "chexpert_col": "Pneumonia",
+      "nih_label": "Pneumonia"
+    },
+    "cardiomegaly": {
+      "display": "Cardiomegaly",
+      "chexpert_col": "Cardiomegaly",
+      "nih_label": "Cardiomegaly"
+    },
+    "pleural_effusion": {
+      "display": "Pleural Effusion",
+      "chexpert_col": "Pleural Effusion",
+      "nih_label": "Effusion"
+    },
+    "atelectasis": {
+      "display": "Atelectasis",
+      "chexpert_col": "Atelectasis",
+      "nih_label": "Atelectasis"
+    }
+  },
+  "sampling": {
+    "n_per_category": 10,
+    "total": 50,
+    "seed": 42,
+    "frontal_only": true
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Medical image vs everyday objects \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "cxr_l1_001",
+          "positives": [
+            "a chest x-ray",
+            "a chest radiograph showing lungs and heart"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "cxr_l1_002",
+          "positives": [
+            "a frontal chest radiograph",
+            "a chest x-ray image of the thoracic cavity"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a running shoe on a white background",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a wristwatch on a surface",
+            "a bicycle helmet"
+          ]
+        },
+        {
+          "probe_id": "cxr_l1_003",
+          "positives": [
+            "a radiograph of the chest",
+            "a chest x-ray showing the lungs"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a cup of coffee",
+            "a park bench in autumn",
+            "a baseball glove on grass",
+            "a garden with flowers"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Chest X-ray vs other chest imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "cxr_l2_001",
+          "positives": [
+            "a posteroanterior chest radiograph",
+            "a chest x-ray image"
+          ],
+          "negatives": [
+            "an axial chest CT scan",
+            "a chest MRI coronal view",
+            "a chest ultrasound image",
+            "a chest PET scan",
+            "a chest tomosynthesis image"
+          ]
+        },
+        {
+          "probe_id": "cxr_l2_002",
+          "positives": [
+            "a PA chest radiograph",
+            "a frontal chest x-ray"
+          ],
+          "negatives": [
+            "a chest CT with contrast enhancement",
+            "a chest MRI axial slice",
+            "a chest fluoroscopy image",
+            "a ventilation-perfusion scan of the lungs",
+            "a high-resolution CT of the chest"
+          ]
+        },
+        {
+          "probe_id": "cxr_l2_003",
+          "positives": [
+            "a standard chest radiograph",
+            "a chest x-ray examination"
+          ],
+          "negatives": [
+            "a chest MRI sagittal view",
+            "an echocardiogram image",
+            "a nuclear medicine chest scan",
+            "a chest CT angiography",
+            "a chest SPECT scan"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Chest X-ray vs X-rays of other body regions \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "cxr_l3_001",
+          "positives": [
+            "an x-ray of the chest",
+            "a chest radiograph"
+          ],
+          "negatives": [
+            "an x-ray of the knee joint",
+            "an x-ray of the lumbar spine",
+            "an x-ray of the left hand",
+            "an x-ray of the pelvis",
+            "an x-ray of the cervical spine"
+          ]
+        },
+        {
+          "probe_id": "cxr_l3_002",
+          "positives": [
+            "a chest radiograph",
+            "a thoracic x-ray"
+          ],
+          "negatives": [
+            "an x-ray of the wrist",
+            "an x-ray of the ankle",
+            "an x-ray of the shoulder joint",
+            "an x-ray of the hip",
+            "an x-ray of the foot"
+          ]
+        },
+        {
+          "probe_id": "cxr_l3_003",
+          "positives": [
+            "a chest x-ray",
+            "an x-ray showing the thorax"
+          ],
+          "negatives": [
+            "an abdominal x-ray",
+            "an x-ray of the skull",
+            "an x-ray of the elbow",
+            "an x-ray of the sacrum",
+            "an x-ray of the femur"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Image-specific prompts based on true disease label. 2 positives describe the true disease; 10 negatives describe other chest conditions.",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": [
+            "a normal chest x-ray with no significant findings",
+            "a chest x-ray showing clear lungs and normal cardiac silhouette",
+            "a chest x-ray with no acute cardiopulmonary abnormalities",
+            "a chest x-ray with normal mediastinal contours and clear costophrenic angles"
+          ],
+          "negatives": [
+            "a chest x-ray showing pneumonia",
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray showing consolidation",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis"
+          ]
+        },
+        "pneumonia": {
+          "positives": [
+            "a chest x-ray showing pneumonia",
+            "a chest x-ray with pulmonary consolidation consistent with pneumonia",
+            "a chest x-ray with focal airspace opacities consistent with pneumonia",
+            "a chest x-ray with patchy infiltrates and air bronchograms suggestive of pneumonia"
+          ],
+          "negatives": [
+            "a normal chest x-ray with no findings",
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis",
+            "a chest x-ray showing interstitial lung disease"
+          ]
+        },
+        "cardiomegaly": {
+          "positives": [
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray with an enlarged cardiac silhouette",
+            "a chest x-ray with increased cardiothoracic ratio",
+            "a chest x-ray with widened cardiac borders extending beyond half the thoracic diameter"
+          ],
+          "negatives": [
+            "a normal chest x-ray with no findings",
+            "a chest x-ray showing pneumonia",
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis",
+            "a chest x-ray showing interstitial lung disease"
+          ]
+        },
+        "pleural_effusion": {
+          "positives": [
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray with pleural fluid accumulation blunting the costophrenic angle",
+            "a chest x-ray with blunting of the costophrenic angle",
+            "a chest x-ray with a meniscus sign indicating pleural fluid"
+          ],
+          "negatives": [
+            "a normal chest x-ray with no findings",
+            "a chest x-ray showing pneumonia",
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis",
+            "a chest x-ray showing interstitial lung disease"
+          ]
+        },
+        "atelectasis": {
+          "positives": [
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray with partial lung collapse",
+            "a chest x-ray with volume loss and lobar opacification",
+            "a chest x-ray with elevated hemidiaphragm and mediastinal shift indicating atelectasis"
+          ],
+          "negatives": [
+            "a normal chest x-ray with no findings",
+            "a chest x-ray showing pneumonia",
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis",
+            "a chest x-ray showing interstitial lung disease"
+          ]
+        },
+        "consolidation": {
+          "positives": [
+            "a chest x-ray showing consolidation",
+            "a chest x-ray with airspace consolidation",
+            "a chest x-ray with dense lobar opacity and air bronchograms",
+            "a chest x-ray with homogeneous opacification of the lung parenchyma"
+          ],
+          "negatives": [
+            "a normal chest x-ray with no findings",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis",
+            "a chest x-ray showing interstitial lung disease"
+          ]
+        },
+        "edema": {
+          "positives": [
+            "a chest x-ray showing pulmonary edema",
+            "a chest x-ray with interstitial pulmonary edema",
+            "a chest x-ray with cephalization and Kerley B lines",
+            "a chest x-ray with bilateral perihilar opacities consistent with pulmonary edema"
+          ],
+          "negatives": [
+            "a normal chest x-ray with no findings",
+            "a chest x-ray showing pneumothorax",
+            "a chest x-ray showing cardiomegaly",
+            "a chest x-ray showing pleural effusion",
+            "a chest x-ray showing atelectasis",
+            "a chest x-ray showing consolidation",
+            "a chest x-ray showing emphysema",
+            "a chest x-ray showing a lung nodule",
+            "a chest x-ray showing pulmonary fibrosis",
+            "a chest x-ray showing interstitial lung disease"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Image-specific: presence vs absence of the true finding. 2 positives affirm the disease; 10 negatives are linguistic negations of the same disease.",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": [
+            "chest x-ray negative for pathological findings",
+            "chest x-ray without any disease or abnormality",
+            "no abnormalities detected on chest x-ray",
+            "chest x-ray within normal limits"
+          ],
+          "negatives": [
+            "chest x-ray positive for pathological findings",
+            "chest x-ray showing disease",
+            "chest x-ray with abnormal findings",
+            "chest x-ray revealing pathological changes",
+            "chest x-ray demonstrating active disease",
+            "chest x-ray with clinically significant abnormalities",
+            "chest x-ray showing acute findings",
+            "chest x-ray with imaging abnormalities",
+            "chest x-ray not within normal limits",
+            "chest x-ray showing underlying pathology"
+          ]
+        },
+        "pneumonia": {
+          "positives": [
+            "chest x-ray showing pneumonia",
+            "pneumonia visible on chest radiograph",
+            "findings consistent with pneumonia on chest x-ray",
+            "chest x-ray with imaging findings of pneumonia"
+          ],
+          "negatives": [
+            "chest x-ray showing no pneumonia",
+            "no evidence of pneumonia on chest x-ray",
+            "chest x-ray negative for pneumonia",
+            "pneumonia absent on chest radiograph",
+            "chest x-ray without pneumonia",
+            "no pneumonia visible on chest x-ray",
+            "chest x-ray clear of pneumonia",
+            "pneumonia excluded on chest x-ray",
+            "no signs of pneumonia on chest radiograph",
+            "pneumonia not seen on chest x-ray"
+          ]
+        },
+        "cardiomegaly": {
+          "positives": [
+            "chest x-ray showing cardiomegaly",
+            "enlarged heart visible on chest radiograph",
+            "cardiac enlargement on chest x-ray",
+            "chest x-ray demonstrating cardiac enlargement"
+          ],
+          "negatives": [
+            "chest x-ray showing no cardiomegaly",
+            "normal heart size on chest x-ray",
+            "no evidence of cardiomegaly on chest radiograph",
+            "heart size is within normal limits on chest x-ray",
+            "chest x-ray without cardiomegaly",
+            "no cardiomegaly visible on chest x-ray",
+            "chest x-ray negative for cardiomegaly",
+            "cardiomegaly absent on chest radiograph",
+            "no cardiac enlargement on chest x-ray",
+            "cardiomegaly excluded on chest radiograph"
+          ]
+        },
+        "pleural_effusion": {
+          "positives": [
+            "chest x-ray showing pleural effusion",
+            "pleural effusion identified on chest radiograph",
+            "chest x-ray with pleural fluid",
+            "chest x-ray demonstrating pleural fluid accumulation"
+          ],
+          "negatives": [
+            "chest x-ray with no pleural effusion",
+            "no pleural effusion on chest x-ray",
+            "chest radiograph negative for pleural effusion",
+            "pleural effusion absent on chest radiograph",
+            "chest x-ray without pleural effusion",
+            "no pleural fluid on chest x-ray",
+            "chest x-ray clear of pleural effusion",
+            "pleural effusion excluded on chest radiograph",
+            "no pleural fluid accumulation on chest x-ray",
+            "costophrenic angles clear on chest x-ray"
+          ]
+        },
+        "atelectasis": {
+          "positives": [
+            "chest x-ray showing atelectasis",
+            "atelectasis identified on chest radiograph",
+            "atelectatic changes on chest x-ray",
+            "chest x-ray with collapsed lung segment"
+          ],
+          "negatives": [
+            "chest x-ray showing no atelectasis",
+            "no evidence of atelectasis on chest x-ray",
+            "chest x-ray negative for atelectasis",
+            "atelectasis absent on chest radiograph",
+            "chest x-ray without atelectasis",
+            "no atelectasis visible on chest x-ray",
+            "chest x-ray clear of atelectasis",
+            "atelectasis excluded on chest radiograph",
+            "lungs fully expanded on chest x-ray",
+            "no lung collapse on chest radiograph"
+          ]
+        },
+        "consolidation": {
+          "positives": [
+            "chest x-ray showing consolidation",
+            "consolidation identified on chest radiograph",
+            "airspace consolidation on chest x-ray",
+            "chest x-ray demonstrating consolidation"
+          ],
+          "negatives": [
+            "chest x-ray showing no consolidation",
+            "no evidence of consolidation on chest x-ray",
+            "chest x-ray negative for consolidation",
+            "consolidation absent on chest radiograph",
+            "chest x-ray without consolidation",
+            "no consolidation visible on chest x-ray",
+            "chest x-ray clear of consolidation",
+            "consolidation excluded on chest radiograph",
+            "no airspace opacities on chest x-ray",
+            "lungs without consolidation on chest radiograph"
+          ]
+        },
+        "edema": {
+          "positives": [
+            "chest x-ray showing pulmonary edema",
+            "pulmonary edema identified on chest radiograph",
+            "chest x-ray with pulmonary congestion",
+            "chest x-ray demonstrating pulmonary edema"
+          ],
+          "negatives": [
+            "chest x-ray showing no pulmonary edema",
+            "no evidence of pulmonary edema on chest x-ray",
+            "chest x-ray negative for pulmonary edema",
+            "pulmonary edema absent on chest radiograph",
+            "chest x-ray without pulmonary edema",
+            "no pulmonary edema visible on chest x-ray",
+            "chest x-ray clear of pulmonary edema",
+            "pulmonary edema excluded on chest radiograph",
+            "no interstitial edema on chest x-ray",
+            "lungs without edematous changes on chest radiograph"
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Attribute binding",
+      "description": "Modifier sensitivity (size, side, severity). Shared template probes \u2014 to be expanded with image-specific versions.",
+      "probes": [
+        {
+          "probe_id": "cxr_l6_001",
+          "positives": [
+            "chest x-ray showing a large pleural effusion"
+          ],
+          "negatives": [
+            "chest x-ray showing a small pleural effusion",
+            "chest x-ray showing a moderate pleural effusion",
+            "chest x-ray showing bilateral pleural effusions",
+            "chest x-ray showing a left-sided pleural effusion"
+          ]
+        },
+        {
+          "probe_id": "cxr_l6_002",
+          "positives": [
+            "chest x-ray showing right-sided pleural effusion"
+          ],
+          "negatives": [
+            "chest x-ray showing left-sided pleural effusion",
+            "chest x-ray showing bilateral pleural effusions",
+            "chest x-ray showing a large pleural effusion",
+            "chest x-ray showing a small pleural effusion"
+          ]
+        },
+        {
+          "probe_id": "cxr_l6_003",
+          "positives": [
+            "chest x-ray showing consolidation in the right lower lobe"
+          ],
+          "negatives": [
+            "chest x-ray showing consolidation in the left lower lobe",
+            "chest x-ray showing consolidation in the right upper lobe",
+            "chest x-ray showing consolidation in the left upper lobe",
+            "chest x-ray showing bilateral consolidation"
+          ]
+        }
+      ]
+    }
+  }
+}

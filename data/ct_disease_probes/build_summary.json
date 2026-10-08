@@ -1,0 +1,21 @@
+{
+  "per_class_done": {
+    "hepatic_steatosis": 150,
+    "renal_cyst": 150,
+    "gallstones": 150,
+    "ascites": 150,
+    "pleural_effusion": 150,
+    "no_finding": 150
+  },
+  "per_class_attempted": {
+    "hepatic_steatosis": 150,
+    "renal_cyst": 150,
+    "gallstones": 150,
+    "ascites": 150,
+    "pleural_effusion": 150,
+    "no_finding": 150
+  },
+  "n_total": 900,
+  "n_failed": 0,
+  "failed": []
+}

@@ -1,0 +1,499 @@
+{
+  "modality": "abdomen_ct",
+  "description": "Abdominal CT prompt templates for MedTEC-Bench levels 1-6. Per-image L4/L5 prompts are keyed by the primary organ finding (liver, spleen, kidneys, pancreas, gallbladder). Source: AMOS 2022.",
+  "disease_categories": {
+    "liver": {
+      "display": "Liver",
+      "amos_label": 6,
+      "description": "Liver-centered abdominal CT slice"
+    },
+    "spleen": {
+      "display": "Spleen",
+      "amos_label": 1,
+      "description": "Spleen-centered abdominal CT slice"
+    },
+    "kidney_left": {
+      "display": "Left Kidney",
+      "amos_label": 3,
+      "description": "Left kidney-centered abdominal CT slice"
+    },
+    "kidney_right": {
+      "display": "Right Kidney",
+      "amos_label": 2,
+      "description": "Right kidney-centered abdominal CT slice"
+    },
+    "pancreas": {
+      "display": "Pancreas",
+      "amos_label": 10,
+      "description": "Pancreas-centered abdominal CT slice"
+    },
+    "gallbladder": {
+      "display": "Gallbladder",
+      "amos_label": 4,
+      "description": "Gallbladder-centered abdominal CT slice"
+    }
+  },
+  "sampling": {
+    "n_per_category": 8,
+    "total": 48,
+    "seed": 42,
+    "slice_strategy": "largest_label_area",
+    "image_subdirs": [
+      "imagesTr",
+      "imagesVa"
+    ],
+    "label_subdirs": [
+      "labelsTr",
+      "labelsVa"
+    ]
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Abdominal CT vs everyday objects \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "ct_l1_001",
+          "positives": [
+            "an abdominal CT scan",
+            "a computed tomography image of the abdomen"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "ct_l1_002",
+          "positives": [
+            "an axial CT slice through the abdomen",
+            "a CT scan of the upper abdomen"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a park bench in autumn",
+            "a baseball glove on grass",
+            "a wristwatch on a surface"
+          ]
+        },
+        {
+          "probe_id": "ct_l1_003",
+          "positives": [
+            "a contrast-enhanced abdominal CT image",
+            "a CT scan showing abdominal organs"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a cup of coffee",
+            "a garden with flowers",
+            "a bicycle helmet",
+            "a running shoe on a white background"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Abdominal CT vs other abdominal imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "ct_l2_001",
+          "positives": [
+            "an abdominal CT scan",
+            "a computed tomography image of the abdomen"
+          ],
+          "negatives": [
+            "an abdominal MRI scan",
+            "an abdominal ultrasound image",
+            "an abdominal radiograph",
+            "a PET scan of the abdomen",
+            "a fluoroscopic image of the abdomen"
+          ]
+        },
+        {
+          "probe_id": "ct_l2_002",
+          "positives": [
+            "a contrast-enhanced abdominal CT image",
+            "a CT angiography image of the abdominal aorta"
+          ],
+          "negatives": [
+            "a T1-weighted abdominal MRI image",
+            "a T2-weighted abdominal MRI image",
+            "a diffusion-weighted abdominal MRI",
+            "an MR cholangiopancreatography image",
+            "an MR enterography image"
+          ]
+        },
+        {
+          "probe_id": "ct_l2_003",
+          "positives": [
+            "an axial CT slice of the abdomen",
+            "a multidetector CT image of the abdomen"
+          ],
+          "negatives": [
+            "a B-mode ultrasound of the abdomen",
+            "a color Doppler ultrasound of the abdomen",
+            "an MR elastography image of the liver",
+            "a SPECT image of the abdomen",
+            "an endoscopic ultrasound image"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Abdominal CT vs other body-region imaging \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "ct_l3_001",
+          "positives": [
+            "an abdominal CT scan",
+            "a computed tomography image of the abdomen"
+          ],
+          "negatives": [
+            "a chest x-ray",
+            "a brain MRI scan",
+            "a dermoscopy image of skin",
+            "a retinal fundus photograph",
+            "a histopathology slide"
+          ]
+        },
+        {
+          "probe_id": "ct_l3_002",
+          "positives": [
+            "a CT image of the liver",
+            "a CT image of the kidneys"
+          ],
+          "negatives": [
+            "a CT image of the brain",
+            "a CT image of the chest",
+            "a CT image of the pelvis only",
+            "a CT image of the cervical spine",
+            "a CT image of the extremities"
+          ]
+        },
+        {
+          "probe_id": "ct_l3_003",
+          "positives": [
+            "a CT scan showing abdominal viscera",
+            "a CT slice through the upper abdomen"
+          ],
+          "negatives": [
+            "a CT scan of the thorax showing the lungs",
+            "a CT scan of the head showing the brain",
+            "a CT scan of the neck",
+            "a CT scan of the lower limb",
+            "a CT scan of the facial bones"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Image-specific prompts keyed to the primary organ in view. 2 positives describe that organ; 10 negatives describe other organs or pathologies.",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "an abdominal CT image centered on the liver",
+            "a CT slice showing the liver as the primary organ",
+            "an abdominal CT axial slice with the liver occupying the right upper quadrant",
+            "a contrast-enhanced abdominal CT showing hepatic parenchyma"
+          ],
+          "negatives": [
+            "an abdominal CT image centered on the spleen",
+            "an abdominal CT image centered on the left kidney",
+            "an abdominal CT image centered on the right kidney",
+            "an abdominal CT image centered on the pancreas",
+            "an abdominal CT image centered on the gallbladder",
+            "an abdominal CT image centered on the stomach",
+            "an abdominal CT image centered on the aorta",
+            "an abdominal CT image centered on the bladder",
+            "an abdominal CT image showing hepatic metastases",
+            "an abdominal CT image showing a liver abscess"
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "an abdominal CT image centered on the spleen",
+            "a CT slice showing the spleen as the primary organ",
+            "an abdominal CT axial slice with the spleen in the left upper quadrant",
+            "a CT image showing splenic parenchyma posterior to the stomach"
+          ],
+          "negatives": [
+            "an abdominal CT image centered on the liver",
+            "an abdominal CT image centered on the left kidney",
+            "an abdominal CT image centered on the right kidney",
+            "an abdominal CT image centered on the pancreas",
+            "an abdominal CT image centered on the gallbladder",
+            "an abdominal CT image centered on the stomach",
+            "an abdominal CT image centered on the aorta",
+            "an abdominal CT image centered on the bladder",
+            "an abdominal CT image showing splenomegaly",
+            "an abdominal CT image showing a splenic laceration"
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "an abdominal CT image centered on the left kidney",
+            "a CT slice showing the left kidney as the primary organ",
+            "an abdominal CT axial slice with the left kidney in the retroperitoneum",
+            "a CT image showing the left renal parenchyma adjacent to the spleen"
+          ],
+          "negatives": [
+            "an abdominal CT image centered on the liver",
+            "an abdominal CT image centered on the spleen",
+            "an abdominal CT image centered on the right kidney",
+            "an abdominal CT image centered on the pancreas",
+            "an abdominal CT image centered on the gallbladder",
+            "an abdominal CT image centered on the stomach",
+            "an abdominal CT image centered on the aorta",
+            "an abdominal CT image centered on the bladder",
+            "an abdominal CT image showing hydronephrosis",
+            "an abdominal CT image showing a renal cyst"
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "an abdominal CT image centered on the right kidney",
+            "a CT slice showing the right kidney as the primary organ",
+            "an abdominal CT axial slice with the right kidney in the retroperitoneum",
+            "a CT image showing the right renal parenchyma below the liver"
+          ],
+          "negatives": [
+            "an abdominal CT image centered on the liver",
+            "an abdominal CT image centered on the spleen",
+            "an abdominal CT image centered on the left kidney",
+            "an abdominal CT image centered on the pancreas",
+            "an abdominal CT image centered on the gallbladder",
+            "an abdominal CT image centered on the stomach",
+            "an abdominal CT image centered on the aorta",
+            "an abdominal CT image centered on the bladder",
+            "an abdominal CT image showing a renal mass",
+            "an abdominal CT image showing a ureteral stone"
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "an abdominal CT image centered on the pancreas",
+            "a CT slice showing the pancreas as the primary organ",
+            "an abdominal CT axial slice with the pancreas in the retroperitoneum anterior to the spine",
+            "a CT image showing the pancreatic head, body, and tail crossing the midline"
+          ],
+          "negatives": [
+            "an abdominal CT image centered on the liver",
+            "an abdominal CT image centered on the spleen",
+            "an abdominal CT image centered on the left kidney",
+            "an abdominal CT image centered on the right kidney",
+            "an abdominal CT image centered on the gallbladder",
+            "an abdominal CT image centered on the stomach",
+            "an abdominal CT image centered on the aorta",
+            "an abdominal CT image centered on the bladder",
+            "an abdominal CT image showing pancreatitis",
+            "an abdominal CT image showing a pancreatic mass"
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "an abdominal CT image centered on the gallbladder",
+            "a CT slice showing the gallbladder as the primary organ",
+            "an abdominal CT axial slice with the gallbladder in the gallbladder fossa beneath the liver",
+            "a CT image showing the gallbladder lumen adjacent to the cystic duct"
+          ],
+          "negatives": [
+            "an abdominal CT image centered on the liver",
+            "an abdominal CT image centered on the spleen",
+            "an abdominal CT image centered on the left kidney",
+            "an abdominal CT image centered on the right kidney",
+            "an abdominal CT image centered on the pancreas",
+            "an abdominal CT image centered on the stomach",
+            "an abdominal CT image centered on the aorta",
+            "an abdominal CT image centered on the bladder",
+            "an abdominal CT image showing cholelithiasis",
+            "an abdominal CT image showing acute cholecystitis"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Image-specific: presence vs absence of the primary organ. 2 positives affirm the organ; 10 negatives are linguistic negations of the same organ.",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "abdominal CT showing the liver",
+            "the liver is visible on abdominal CT",
+            "the liver is the primary structure on this CT slice",
+            "abdominal CT demonstrating hepatic anatomy"
+          ],
+          "negatives": [
+            "abdominal CT showing no liver",
+            "no liver visible on abdominal CT",
+            "abdominal CT without the liver in view",
+            "the liver is absent on abdominal CT",
+            "abdominal CT negative for liver parenchyma",
+            "no hepatic tissue visible on abdominal CT",
+            "abdominal CT clear of the liver",
+            "liver excluded from this abdominal CT slice",
+            "no signs of the liver on abdominal CT",
+            "the liver is not seen on abdominal CT"
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "abdominal CT showing the spleen",
+            "the spleen is visible on abdominal CT",
+            "the spleen is the primary structure on this CT slice",
+            "abdominal CT demonstrating splenic anatomy"
+          ],
+          "negatives": [
+            "abdominal CT showing no spleen",
+            "no spleen visible on abdominal CT",
+            "abdominal CT without the spleen in view",
+            "the spleen is absent on abdominal CT",
+            "abdominal CT negative for splenic tissue",
+            "no splenic parenchyma visible on abdominal CT",
+            "abdominal CT clear of the spleen",
+            "spleen excluded from this abdominal CT slice",
+            "no signs of the spleen on abdominal CT",
+            "the spleen is not seen on abdominal CT"
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "abdominal CT showing the left kidney",
+            "the left kidney is visible on abdominal CT",
+            "the left kidney is the primary structure on this CT slice",
+            "abdominal CT demonstrating left renal anatomy"
+          ],
+          "negatives": [
+            "abdominal CT showing no left kidney",
+            "no left kidney visible on abdominal CT",
+            "abdominal CT without the left kidney in view",
+            "the left kidney is absent on abdominal CT",
+            "abdominal CT negative for left renal tissue",
+            "no left kidney parenchyma visible on abdominal CT",
+            "abdominal CT clear of the left kidney",
+            "left kidney excluded from this abdominal CT slice",
+            "no signs of the left kidney on abdominal CT",
+            "the left kidney is not seen on abdominal CT"
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "abdominal CT showing the right kidney",
+            "the right kidney is visible on abdominal CT",
+            "the right kidney is the primary structure on this CT slice",
+            "abdominal CT demonstrating right renal anatomy"
+          ],
+          "negatives": [
+            "abdominal CT showing no right kidney",
+            "no right kidney visible on abdominal CT",
+            "abdominal CT without the right kidney in view",
+            "the right kidney is absent on abdominal CT",
+            "abdominal CT negative for right renal tissue",
+            "no right kidney parenchyma visible on abdominal CT",
+            "abdominal CT clear of the right kidney",
+            "right kidney excluded from this abdominal CT slice",
+            "no signs of the right kidney on abdominal CT",
+            "the right kidney is not seen on abdominal CT"
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "abdominal CT showing the pancreas",
+            "the pancreas is visible on abdominal CT",
+            "the pancreas is the primary structure on this CT slice",
+            "abdominal CT demonstrating pancreatic anatomy"
+          ],
+          "negatives": [
+            "abdominal CT showing no pancreas",
+            "no pancreas visible on abdominal CT",
+            "abdominal CT without the pancreas in view",
+            "the pancreas is absent on abdominal CT",
+            "abdominal CT negative for pancreatic tissue",
+            "no pancreatic parenchyma visible on abdominal CT",
+            "abdominal CT clear of the pancreas",
+            "pancreas excluded from this abdominal CT slice",
+            "no signs of the pancreas on abdominal CT",
+            "the pancreas is not seen on abdominal CT"
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "abdominal CT showing the gallbladder",
+            "the gallbladder is visible on abdominal CT",
+            "the gallbladder is the primary structure on this CT slice",
+            "abdominal CT demonstrating biliary anatomy"
+          ],
+          "negatives": [
+            "abdominal CT showing no gallbladder",
+            "no gallbladder visible on abdominal CT",
+            "abdominal CT without the gallbladder in view",
+            "the gallbladder is absent on abdominal CT",
+            "abdominal CT negative for the gallbladder",
+            "no gallbladder lumen visible on abdominal CT",
+            "abdominal CT clear of the gallbladder",
+            "gallbladder excluded from this abdominal CT slice",
+            "no signs of the gallbladder on abdominal CT",
+            "the gallbladder is not seen on abdominal CT"
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Attribute binding",
+      "description": "Modifier sensitivity (size, laterality, contrast phase). Shared template probes.",
+      "probes": [
+        {
+          "probe_id": "ct_l6_001",
+          "positives": [
+            "an abdominal CT showing an enlarged liver"
+          ],
+          "negatives": [
+            "an abdominal CT showing a normal-sized liver",
+            "an abdominal CT showing a shrunken cirrhotic liver",
+            "an abdominal CT showing an enlarged spleen",
+            "an abdominal CT showing an enlarged left kidney"
+          ]
+        },
+        {
+          "probe_id": "ct_l6_002",
+          "positives": [
+            "a contrast-enhanced abdominal CT in the portal venous phase"
+          ],
+          "negatives": [
+            "a non-contrast abdominal CT",
+            "a contrast-enhanced abdominal CT in the arterial phase",
+            "a contrast-enhanced abdominal CT in the delayed phase",
+            "a contrast-enhanced abdominal CT in the nephrographic phase"
+          ]
+        },
+        {
+          "probe_id": "ct_l6_003",
+          "positives": [
+            "an abdominal CT showing a lesion in the right lobe of the liver"
+          ],
+          "negatives": [
+            "an abdominal CT showing a lesion in the left lobe of the liver",
+            "an abdominal CT showing a lesion in the caudate lobe",
+            "an abdominal CT showing a lesion in the right kidney",
+            "an abdominal CT showing a lesion in the pancreatic head"
+          ]
+        }
+      ]
+    }
+  }
+}

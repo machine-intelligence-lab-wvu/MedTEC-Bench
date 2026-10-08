@@ -1,0 +1,82 @@
+{
+  "modality": "cxr",
+  "variant": "ontology",
+  "description": "Prompt-robustness variant: terse ontology-derived terms (RadLex/UMLS canonical finding names, no carrier sentence). Same L4/L5 structure and competing-finding sets as configs/prompts/cxr_prompts.json; only the phrasing STYLE changes. L4+L5 only (Exp A scope). Used via run_medtec.py --prompts-file --levels 4 5.",
+  "disease_categories": {
+    "no_finding": {"display": "Normal", "chexpert_col": "No Finding", "nih_label": "No Finding"},
+    "pneumonia": {"display": "Pneumonia", "chexpert_col": "Pneumonia", "nih_label": "Pneumonia"},
+    "cardiomegaly": {"display": "Cardiomegaly", "chexpert_col": "Cardiomegaly", "nih_label": "Cardiomegaly"},
+    "pleural_effusion": {"display": "Pleural Effusion", "chexpert_col": "Pleural Effusion", "nih_label": "Effusion"},
+    "atelectasis": {"display": "Atelectasis", "chexpert_col": "Atelectasis", "nih_label": "Atelectasis"}
+  },
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "description": "Ontology-term finding discrimination. 4 canonical positives for the anchor's finding; 10 canonical negatives naming other findings (same competing set as baseline).",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": ["Normal chest radiograph", "No radiographic abnormality", "Unremarkable chest radiograph", "No acute cardiopulmonary abnormality"],
+          "negatives": ["Pneumonia", "Cardiomegaly", "Pleural effusion", "Atelectasis", "Pneumothorax", "Pulmonary edema", "Pulmonary consolidation", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis"]
+        },
+        "pneumonia": {
+          "positives": ["Pneumonia", "Bronchopneumonia", "Lobar pneumonia", "Infectious pulmonary consolidation"],
+          "negatives": ["Normal chest radiograph", "Cardiomegaly", "Pleural effusion", "Atelectasis", "Pneumothorax", "Pulmonary edema", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis", "Interstitial lung disease"]
+        },
+        "cardiomegaly": {
+          "positives": ["Cardiomegaly", "Enlarged cardiac silhouette", "Increased cardiothoracic ratio", "Cardiac enlargement"],
+          "negatives": ["Normal chest radiograph", "Pneumonia", "Pleural effusion", "Atelectasis", "Pneumothorax", "Pulmonary edema", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis", "Interstitial lung disease"]
+        },
+        "pleural_effusion": {
+          "positives": ["Pleural effusion", "Pleural fluid collection", "Costophrenic angle blunting", "Pleural fluid"],
+          "negatives": ["Normal chest radiograph", "Pneumonia", "Cardiomegaly", "Atelectasis", "Pneumothorax", "Pulmonary edema", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis", "Interstitial lung disease"]
+        },
+        "atelectasis": {
+          "positives": ["Atelectasis", "Pulmonary collapse", "Lobar collapse", "Volume loss"],
+          "negatives": ["Normal chest radiograph", "Pneumonia", "Cardiomegaly", "Pleural effusion", "Pneumothorax", "Pulmonary edema", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis", "Interstitial lung disease"]
+        },
+        "consolidation": {
+          "positives": ["Pulmonary consolidation", "Airspace consolidation", "Lobar opacification", "Parenchymal opacification"],
+          "negatives": ["Normal chest radiograph", "Pneumothorax", "Cardiomegaly", "Pleural effusion", "Atelectasis", "Pulmonary edema", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis", "Interstitial lung disease"]
+        },
+        "edema": {
+          "positives": ["Pulmonary edema", "Pulmonary congestion", "Interstitial edema", "Cardiogenic pulmonary edema"],
+          "negatives": ["Normal chest radiograph", "Pneumothorax", "Cardiomegaly", "Pleural effusion", "Atelectasis", "Pulmonary consolidation", "Emphysema", "Pulmonary nodule", "Pulmonary fibrosis", "Interstitial lung disease"]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Ontology-term definite negation. 4 canonical presence terms vs 10 terse canonical negation terms of the same finding. no_finding row is polarity-flipped.",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": ["Normal chest radiograph", "No radiographic abnormality", "No acute cardiopulmonary abnormality", "Unremarkable chest radiograph"],
+          "negatives": ["Abnormal chest radiograph", "Radiographic abnormality present", "Acute cardiopulmonary abnormality", "Pathological findings present", "Positive for disease", "Abnormal findings", "Active disease", "Clinically significant abnormality", "Underlying pathology", "Not within normal limits"]
+        },
+        "pneumonia": {
+          "positives": ["Pneumonia", "Bronchopneumonia", "Lobar pneumonia", "Pneumonia present"],
+          "negatives": ["No pneumonia", "Absence of pneumonia", "Pneumonia absent", "No evidence of pneumonia", "Pneumonia excluded", "Pneumonia not present", "Negative for pneumonia", "Without pneumonia", "No radiographic pneumonia", "Pneumonia ruled out"]
+        },
+        "cardiomegaly": {
+          "positives": ["Cardiomegaly", "Enlarged cardiac silhouette", "Cardiac enlargement", "Cardiomegaly present"],
+          "negatives": ["No cardiomegaly", "Absence of cardiomegaly", "Cardiomegaly absent", "No evidence of cardiomegaly", "Cardiomegaly excluded", "Normal heart size", "Negative for cardiomegaly", "Without cardiomegaly", "Normal cardiothoracic ratio", "Cardiomegaly ruled out"]
+        },
+        "pleural_effusion": {
+          "positives": ["Pleural effusion", "Pleural fluid collection", "Pleural fluid", "Pleural effusion present"],
+          "negatives": ["No pleural effusion", "Absence of pleural effusion", "Pleural effusion absent", "No evidence of pleural effusion", "Pleural effusion excluded", "No pleural fluid", "Negative for pleural effusion", "Without pleural effusion", "Clear costophrenic angles", "Pleural effusion ruled out"]
+        },
+        "atelectasis": {
+          "positives": ["Atelectasis", "Pulmonary collapse", "Lobar collapse", "Atelectasis present"],
+          "negatives": ["No atelectasis", "Absence of atelectasis", "Atelectasis absent", "No evidence of atelectasis", "Atelectasis excluded", "No pulmonary collapse", "Negative for atelectasis", "Without atelectasis", "Normal lung expansion", "Atelectasis ruled out"]
+        },
+        "consolidation": {
+          "positives": ["Pulmonary consolidation", "Airspace consolidation", "Lobar opacification", "Consolidation present"],
+          "negatives": ["No consolidation", "Absence of consolidation", "Consolidation absent", "No evidence of consolidation", "Consolidation excluded", "No airspace opacity", "Negative for consolidation", "Without consolidation", "Clear lung parenchyma", "Consolidation ruled out"]
+        },
+        "edema": {
+          "positives": ["Pulmonary edema", "Pulmonary congestion", "Interstitial edema", "Pulmonary edema present"],
+          "negatives": ["No pulmonary edema", "Absence of pulmonary edema", "Pulmonary edema absent", "No evidence of pulmonary edema", "Pulmonary edema excluded", "No pulmonary congestion", "Negative for pulmonary edema", "Without pulmonary edema", "No vascular redistribution", "Pulmonary edema ruled out"]
+        }
+      }
+    }
+  }
+}

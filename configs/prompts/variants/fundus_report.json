@@ -1,0 +1,75 @@
+{
+  "modality": "fundus",
+  "variant": "report",
+  "description": "Prompt-robustness variant for retinal fundus: ophthalmology report register (Findings/Impression). Same L4/L5 structure and competing-finding sets as configs/prompts/fundus_prompts.json; only phrasing STYLE changes. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "description": "Report-register diagnosis discrimination. 4 report-style positives; 10 report-style negatives naming other ocular findings.",
+      "disease_prompts": {
+        "normal": {
+          "positives": ["Findings: sharp disc margins, normal vasculature, and a clear macula. Impression: normal fundus.", "Findings: no hemorrhage, exudate, or drusen. Impression: healthy retina.", "Impression: normal fundus without retinal pathology.", "Findings: uniform fundus with a normal cup-to-disc ratio. Impression: unremarkable fundus."],
+          "negatives": ["Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Impression: age-related macular degeneration, with macular drusen.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Impression: pathological myopia, with peripapillary atrophy.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: papilledema, with optic disc swelling.", "Impression: a macular hole at the fovea.", "Impression: retinitis pigmentosa, with bone-spicule pigmentation."]
+        },
+        "diabetic_retinopathy": {
+          "positives": ["Findings: microaneurysms, dot-blot hemorrhages, and hard exudates. Impression: diabetic retinopathy.", "Findings: cotton-wool spots and venous beading. Impression: diabetic retinopathy.", "Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Findings: neovascularization with preretinal hemorrhage. Impression: proliferative diabetic retinopathy."],
+          "negatives": ["Impression: normal fundus without retinal pathology.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Impression: age-related macular degeneration, with macular drusen.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Impression: pathological myopia, with peripapillary atrophy.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: papilledema, with optic disc swelling.", "Impression: a macular hole at the fovea.", "Impression: retinitis pigmentosa, with bone-spicule pigmentation."]
+        },
+        "glaucoma": {
+          "positives": ["Findings: increased cup-to-disc ratio with rim thinning. Impression: glaucoma.", "Findings: inferior rim notching and a nerve fiber layer defect. Impression: glaucomatous optic neuropathy.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Findings: a deep, excavated optic cup. Impression: glaucoma."],
+          "negatives": ["Impression: normal fundus without retinal pathology.", "Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Impression: age-related macular degeneration, with macular drusen.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Impression: pathological myopia, with peripapillary atrophy.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: papilledema, with optic disc swelling.", "Impression: optic atrophy, with a pale optic disc.", "Impression: a macular hole at the fovea."]
+        },
+        "cataract": {
+          "positives": ["Findings: hazy fundus view due to lens opacity. Impression: cataract.", "Findings: retinal vessels obscured by media opacity. Impression: cataract.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Findings: yellowish lenticular opacification. Impression: cataract."],
+          "negatives": ["Impression: normal fundus without retinal pathology.", "Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Impression: age-related macular degeneration, with macular drusen.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Impression: pathological myopia, with peripapillary atrophy.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: papilledema, with optic disc swelling.", "Impression: a macular hole at the fovea.", "Impression: retinitis pigmentosa, with bone-spicule pigmentation."]
+        },
+        "amd": {
+          "positives": ["Findings: macular drusen with RPE changes. Impression: age-related macular degeneration.", "Findings: geographic atrophy at the fovea. Impression: age-related macular degeneration.", "Impression: age-related macular degeneration, with macular drusen.", "Findings: subretinal fluid and hemorrhage. Impression: neovascular age-related macular degeneration."],
+          "negatives": ["Impression: normal fundus without retinal pathology.", "Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Impression: pathological myopia, with peripapillary atrophy.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: a macular hole at the fovea.", "Impression: central serous chorioretinopathy, with subretinal fluid.", "Impression: retinitis pigmentosa, with bone-spicule pigmentation."]
+        },
+        "hypertensive_retinopathy": {
+          "positives": ["Findings: arteriolar narrowing with arteriovenous nicking. Impression: hypertensive retinopathy.", "Findings: flame hemorrhages and cotton-wool spots. Impression: hypertensive retinopathy.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Findings: narrowed arterioles with disc edema. Impression: hypertensive retinopathy."],
+          "negatives": ["Impression: normal fundus without retinal pathology.", "Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Impression: age-related macular degeneration, with macular drusen.", "Impression: pathological myopia, with peripapillary atrophy.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: papilledema, with optic disc swelling.", "Impression: a macular hole at the fovea.", "Impression: retinitis pigmentosa, with bone-spicule pigmentation."]
+        },
+        "pathological_myopia": {
+          "positives": ["Findings: tessellated fundus with peripapillary atrophy. Impression: pathological myopia.", "Findings: a myopic crescent with chorioretinal thinning. Impression: pathological myopia.", "Impression: pathological myopia, with peripapillary atrophy.", "Findings: lacquer cracks and a Fuchs spot. Impression: pathological myopia."],
+          "negatives": ["Impression: normal fundus without retinal pathology.", "Impression: diabetic retinopathy, with microaneurysms and hemorrhages.", "Impression: glaucomatous optic neuropathy, with disc cupping.", "Impression: cataract, with lens opacity reducing fundus clarity.", "Impression: age-related macular degeneration, with macular drusen.", "Impression: hypertensive retinopathy, with arteriolar narrowing.", "Impression: retinal vein occlusion, with venous dilation and hemorrhage.", "Impression: papilledema, with optic disc swelling.", "Impression: a macular hole at the fovea.", "Impression: retinitis pigmentosa, with bone-spicule pigmentation."]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Report-register definite negation. 4 report-style presence affirmations vs 10 report-style negations of the same diagnosis. normal row is polarity-flipped.",
+      "disease_prompts": {
+        "normal": {
+          "positives": ["Findings: no retinal hemorrhage, exudate, or drusen. Impression: normal fundus.", "Impression: negative for retinal disease.", "Findings: intact vasculature and a clear macula. Impression: healthy retina.", "Impression: no retinal pathology identified."],
+          "negatives": ["Impression: positive for retinal disease.", "Findings: abnormal retinal changes are present. Impression: retinal pathology.", "Impression: the fundus demonstrates pathologic findings.", "Findings: retinal hemorrhage and exudate are present. Impression: active retinal disease.", "Impression: a clinically significant retinal abnormality is identified.", "Findings: abnormal fundus. Impression: retinal disease present.", "Impression: an ocular imaging abnormality is demonstrated.", "Findings: the fundus is not within normal limits. Impression: abnormal.", "Impression: underlying retinal pathology is present.", "Findings: a focal retinal abnormality is seen. Impression: positive for disease."]
+        },
+        "diabetic_retinopathy": {
+          "positives": ["Findings: microaneurysms and hemorrhages. Impression: diabetic retinopathy.", "Impression: diabetic retinopathy is present.", "Findings: diabetic retinal microangiopathy. Impression: diabetic retinopathy.", "Impression: findings of diabetic retinopathy."],
+          "negatives": ["Findings: no microaneurysms or hemorrhages. Impression: no diabetic retinopathy.", "Impression: negative for diabetic retinopathy.", "Findings: intact retinal vasculature. Impression: no diabetic retinopathy.", "Impression: no evidence of diabetic retinopathy.", "Findings: no diabetic changes. Impression: diabetic retinopathy not identified.", "Impression: diabetic retinopathy is excluded.", "Findings: no exudate or hemorrhage. Impression: no diabetic retinopathy.", "Impression: no findings of diabetic retinopathy.", "Findings: a normal posterior pole. Impression: no diabetic retinopathy.", "Impression: without evidence of diabetic retinopathy."]
+        },
+        "glaucoma": {
+          "positives": ["Findings: increased cup-to-disc ratio. Impression: glaucoma.", "Impression: glaucoma is present.", "Findings: optic disc cupping. Impression: glaucomatous optic neuropathy.", "Impression: findings of glaucoma."],
+          "negatives": ["Findings: a normal cup-to-disc ratio. Impression: no glaucoma.", "Impression: negative for glaucoma.", "Findings: a healthy neuroretinal rim. Impression: no glaucoma.", "Impression: no evidence of glaucoma.", "Findings: no disc cupping. Impression: glaucoma not identified.", "Impression: glaucoma is excluded.", "Findings: no rim thinning. Impression: no glaucoma.", "Impression: no findings of glaucoma.", "Findings: a normal optic disc. Impression: no glaucoma.", "Impression: without evidence of glaucoma."]
+        },
+        "cataract": {
+          "positives": ["Findings: media opacity obscuring the fundus. Impression: cataract.", "Impression: cataract is present.", "Findings: lens opacity. Impression: cataract.", "Impression: findings of cataract."],
+          "negatives": ["Findings: clear media. Impression: no cataract.", "Impression: negative for cataract.", "Findings: a sharply visualized fundus. Impression: no cataract.", "Impression: no evidence of cataract.", "Findings: no lens opacity. Impression: cataract not identified.", "Impression: cataract is excluded.", "Findings: unobscured retinal vessels. Impression: no cataract.", "Impression: no findings of cataract.", "Findings: clear ocular media. Impression: no cataract.", "Impression: without evidence of cataract."]
+        },
+        "amd": {
+          "positives": ["Findings: macular drusen with RPE changes. Impression: age-related macular degeneration.", "Impression: age-related macular degeneration is present.", "Findings: geographic atrophy at the fovea. Impression: age-related macular degeneration.", "Impression: findings of age-related macular degeneration."],
+          "negatives": ["Findings: no macular drusen. Impression: no age-related macular degeneration.", "Impression: negative for age-related macular degeneration.", "Findings: a healthy macula. Impression: no macular degeneration.", "Impression: no evidence of age-related macular degeneration.", "Findings: no RPE change. Impression: age-related macular degeneration not identified.", "Impression: age-related macular degeneration is excluded.", "Findings: no geographic atrophy. Impression: no macular degeneration.", "Impression: no findings of age-related macular degeneration.", "Findings: a normal foveal reflex. Impression: no macular degeneration.", "Impression: without evidence of age-related macular degeneration."]
+        },
+        "hypertensive_retinopathy": {
+          "positives": ["Findings: arteriolar narrowing with AV nicking. Impression: hypertensive retinopathy.", "Impression: hypertensive retinopathy is present.", "Findings: flame hemorrhages and cotton-wool spots. Impression: hypertensive retinopathy.", "Impression: findings of hypertensive retinopathy."],
+          "negatives": ["Findings: normal caliber arterioles. Impression: no hypertensive retinopathy.", "Impression: negative for hypertensive retinopathy.", "Findings: no AV nicking. Impression: no hypertensive retinopathy.", "Impression: no evidence of hypertensive retinopathy.", "Findings: no arteriolar narrowing. Impression: hypertensive retinopathy not identified.", "Impression: hypertensive retinopathy is excluded.", "Findings: no flame hemorrhages. Impression: no hypertensive retinopathy.", "Impression: no findings of hypertensive retinopathy.", "Findings: a normal retinal vasculature. Impression: no hypertensive retinopathy.", "Impression: without evidence of hypertensive retinopathy."]
+        },
+        "pathological_myopia": {
+          "positives": ["Findings: tessellated fundus with peripapillary atrophy. Impression: pathological myopia.", "Impression: pathological myopia is present.", "Findings: a myopic crescent. Impression: pathological myopia.", "Impression: findings of pathological myopia."],
+          "negatives": ["Findings: no tessellation or peripapillary atrophy. Impression: no pathological myopia.", "Impression: negative for pathological myopia.", "Findings: a normal posterior pole. Impression: no pathological myopia.", "Impression: no evidence of pathological myopia.", "Findings: no myopic crescent. Impression: pathological myopia not identified.", "Impression: pathological myopia is excluded.", "Findings: no chorioretinal thinning. Impression: no pathological myopia.", "Impression: no findings of pathological myopia.", "Findings: a normal optic disc without a crescent. Impression: no pathological myopia.", "Impression: without evidence of pathological myopia."]
+        }
+      }
+    }
+  }
+}

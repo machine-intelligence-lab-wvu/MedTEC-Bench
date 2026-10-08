@@ -1,0 +1,345 @@
+{
+ "biomedclip": {
+  "display_name": "BiomedCLIP",
+  "L4": {
+   "avg_discrimination_score": -0.06350882089138031,
+   "avg_collapse_ratio": 0.9237464126944542,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.08169332373142242,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.08929428827762603,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.015176303684711456,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.09822397524118423,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.05098566986620426,
+   "avg_collapse_ratio": 0.7003455449342728,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": 0.005485355794429779,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": 0.06809484836459159,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.11548187869787216,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": 0.014880596607923508,
+     "n": 250
+    }
+   }
+  }
+ },
+ "pubmedclip": {
+  "display_name": "PubMedCLIP",
+  "L4": {
+   "avg_discrimination_score": -0.01152405607700348,
+   "avg_collapse_ratio": 0.9708679693937302,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.01029358184337616,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.01585352849960327,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.009570871829986572,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.010378242135047913,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0012129422873258591,
+   "avg_collapse_ratio": 0.9740266800522804,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.004784467577934265,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.0038523007035255433,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.006156189918518067,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.0023711907863616945,
+     "n": 250
+    }
+   }
+  }
+ },
+ "medclip": {
+  "display_name": "MedCLIP",
+  "L4": {
+   "avg_discrimination_score": 0.0023326877281069757,
+   "avg_collapse_ratio": 0.6718432484779041,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": 0.008022899264469743,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": 0.0003456817828118801,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.0076847385969012975,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": 0.008646908462047577,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.004036547358031385,
+   "avg_collapse_ratio": 0.6577546918130829,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": 0.013500601090490817,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.009476906355470419,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.003928181153256446,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": 0.016050675850361587,
+     "n": 250
+    }
+   }
+  }
+ },
+ "pmc_clip": {
+  "display_name": "PMC-CLIP",
+  "L4": {
+   "avg_discrimination_score": -0.013052049241960049,
+   "avg_collapse_ratio": 0.7819991990029812,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.027611782789230346,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.013434402048587799,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.01874162769317627,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.029903639823198318,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.008939133666455745,
+   "avg_collapse_ratio": 0.8493100467324257,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.01195576286315918,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.00788228690624237,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.004843458235263824,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.011075026661157608,
+     "n": 250
+    }
+   }
+  }
+ },
+ "openclip_vitb32": {
+  "display_name": "OpenCLIP ViT-B-32",
+  "L4": {
+   "avg_discrimination_score": -0.0531656216531992,
+   "avg_collapse_ratio": 1.0318413519859313,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.06825976824760437,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.06659774732589721,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.018308151960372925,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.05949681907892227,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0033373282998800276,
+   "avg_collapse_ratio": 0.9263120949864387,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.005954102337360382,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.01910284101963043,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.022004650354385376,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.010297020196914673,
+     "n": 250
+    }
+   }
+  }
+ },
+ "openclip_vitl14": {
+  "display_name": "OpenCLIP ViT-L-14",
+  "L4": {
+   "avg_discrimination_score": -0.06392718125879765,
+   "avg_collapse_ratio": 1.0267792329788208,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.09127188795804977,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.06550570338964462,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.022264666080474855,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.07666646760702134,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0033179168105125427,
+   "avg_collapse_ratio": 0.8814207172989845,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.020337202072143554,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": 0.00101019948720932,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.024295820116996766,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.018240484774112702,
+     "n": 250
+    }
+   }
+  }
+ },
+ "siglip": {
+  "display_name": "SigLIP",
+  "L4": {
+   "avg_discrimination_score": -0.0415825814306736,
+   "avg_collapse_ratio": 1.1725765775442123,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.05485021723806858,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.053228752791881564,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": -0.006263527750968933,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.051987827941775325,
+     "n": 250
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.004329313281923533,
+   "avg_collapse_ratio": 0.8360330460071563,
+   "n_probes": 1000,
+   "by_category": {
+    "mild_dementia": {
+     "avg_DS": -0.01039835262298584,
+     "n": 250
+    },
+    "moderate_dementia": {
+     "avg_DS": -0.007545943960547447,
+     "n": 250
+    },
+    "non_demented": {
+     "avg_DS": 0.013093026846647263,
+     "n": 250
+    },
+    "very_mild_dementia": {
+     "avg_DS": -0.012465983390808106,
+     "n": 250
+    }
+   }
+  }
+ }
+}

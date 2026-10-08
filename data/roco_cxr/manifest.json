@@ -1,0 +1,9 @@
+{
+  "source": "roco",
+  "filter": "strict CXR (chest radiograph keywords minus other-modality / other-bodypart / comparison patterns)",
+  "n_total_input": 8176,
+  "n_kept": 354,
+  "kept_ratio": 0.04329745596868884,
+  "include_pattern_count": 10,
+  "exclude_pattern_count": 61
+}

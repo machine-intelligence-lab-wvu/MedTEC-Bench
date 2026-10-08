@@ -1,0 +1,257 @@
+{
+  "modality": "abdomen_ct",
+  "variant": "alt_clinical",
+  "description": "Exp A prompt-robustness variant (alt_clinical) for abdomen_ct, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/abdomen_ct_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "an abdominal CT slice with the liver",
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice compatible with the liver",
+            "an abdominal CT slice showing the liver"
+          ],
+          "negatives": [
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice with the stomach",
+            "an abdominal CT slice with the aorta",
+            "an abdominal CT slice with an adrenal gland",
+            "an abdominal CT slice with the colon",
+            "an abdominal CT slice with a small bowel loop"
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "an abdominal CT slice with the spleen",
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice compatible with the spleen",
+            "an abdominal CT slice showing the spleen"
+          ],
+          "negatives": [
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice with the stomach",
+            "an abdominal CT slice with the aorta",
+            "an abdominal CT slice with an adrenal gland",
+            "an abdominal CT slice with the colon",
+            "an abdominal CT slice with a small bowel loop"
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "an abdominal CT slice with the left kidney",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice compatible with the left kidney",
+            "an abdominal CT slice showing the left kidney"
+          ],
+          "negatives": [
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice with the stomach",
+            "an abdominal CT slice with the aorta",
+            "an abdominal CT slice with an adrenal gland",
+            "an abdominal CT slice with the colon",
+            "an abdominal CT slice with a small bowel loop"
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "an abdominal CT slice with the right kidney",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice compatible with the right kidney",
+            "an abdominal CT slice showing the right kidney"
+          ],
+          "negatives": [
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice with the stomach",
+            "an abdominal CT slice with the aorta",
+            "an abdominal CT slice with an adrenal gland",
+            "an abdominal CT slice with the colon",
+            "an abdominal CT slice with a small bowel loop"
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "an abdominal CT slice with the pancreas",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice compatible with the pancreas",
+            "an abdominal CT slice showing the pancreas"
+          ],
+          "negatives": [
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice with the stomach",
+            "an abdominal CT slice with the aorta",
+            "an abdominal CT slice with an adrenal gland",
+            "an abdominal CT slice with the colon",
+            "an abdominal CT slice with a small bowel loop"
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "an abdominal CT slice with the gallbladder",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice compatible with the gallbladder",
+            "an abdominal CT slice showing the gallbladder"
+          ],
+          "negatives": [
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice with the stomach",
+            "an abdominal CT slice with the aorta",
+            "an abdominal CT slice with an adrenal gland",
+            "an abdominal CT slice with the colon",
+            "an abdominal CT slice with a small bowel loop"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "liver": {
+          "positives": [
+            "an abdominal CT slice with the liver",
+            "an abdominal CT slice demonstrating the liver",
+            "an abdominal CT slice positive for the liver",
+            "an abdominal CT slice showing the liver"
+          ],
+          "negatives": [
+            "an abdominal CT slice without liver",
+            "an abdominal CT slice negative for liver",
+            "an abdominal CT slice showing no liver",
+            "an abdominal CT slice with no evidence of liver",
+            "an abdominal CT slice with liver excluded",
+            "an abdominal CT slice free of liver",
+            "an abdominal CT slice in which liver is not seen",
+            "an abdominal CT slice with liver ruled out",
+            "an abdominal CT slice without liver identified",
+            "an abdominal CT slice with no liver"
+          ]
+        },
+        "spleen": {
+          "positives": [
+            "an abdominal CT slice with the spleen",
+            "an abdominal CT slice demonstrating the spleen",
+            "an abdominal CT slice positive for the spleen",
+            "an abdominal CT slice showing the spleen"
+          ],
+          "negatives": [
+            "an abdominal CT slice without spleen",
+            "an abdominal CT slice negative for spleen",
+            "an abdominal CT slice showing no spleen",
+            "an abdominal CT slice with no evidence of spleen",
+            "an abdominal CT slice with spleen excluded",
+            "an abdominal CT slice free of spleen",
+            "an abdominal CT slice in which spleen is not seen",
+            "an abdominal CT slice with spleen ruled out",
+            "an abdominal CT slice without spleen identified",
+            "an abdominal CT slice with no spleen"
+          ]
+        },
+        "kidney_left": {
+          "positives": [
+            "an abdominal CT slice with the left kidney",
+            "an abdominal CT slice demonstrating the left kidney",
+            "an abdominal CT slice positive for the left kidney",
+            "an abdominal CT slice showing the left kidney"
+          ],
+          "negatives": [
+            "an abdominal CT slice without left kidney",
+            "an abdominal CT slice negative for left kidney",
+            "an abdominal CT slice showing no left kidney",
+            "an abdominal CT slice with no evidence of left kidney",
+            "an abdominal CT slice with left kidney excluded",
+            "an abdominal CT slice free of left kidney",
+            "an abdominal CT slice in which left kidney is not seen",
+            "an abdominal CT slice with left kidney ruled out",
+            "an abdominal CT slice without left kidney identified",
+            "an abdominal CT slice with no left kidney"
+          ]
+        },
+        "kidney_right": {
+          "positives": [
+            "an abdominal CT slice with the right kidney",
+            "an abdominal CT slice demonstrating the right kidney",
+            "an abdominal CT slice positive for the right kidney",
+            "an abdominal CT slice showing the right kidney"
+          ],
+          "negatives": [
+            "an abdominal CT slice without right kidney",
+            "an abdominal CT slice negative for right kidney",
+            "an abdominal CT slice showing no right kidney",
+            "an abdominal CT slice with no evidence of right kidney",
+            "an abdominal CT slice with right kidney excluded",
+            "an abdominal CT slice free of right kidney",
+            "an abdominal CT slice in which right kidney is not seen",
+            "an abdominal CT slice with right kidney ruled out",
+            "an abdominal CT slice without right kidney identified",
+            "an abdominal CT slice with no right kidney"
+          ]
+        },
+        "pancreas": {
+          "positives": [
+            "an abdominal CT slice with the pancreas",
+            "an abdominal CT slice demonstrating the pancreas",
+            "an abdominal CT slice positive for the pancreas",
+            "an abdominal CT slice showing the pancreas"
+          ],
+          "negatives": [
+            "an abdominal CT slice without pancreas",
+            "an abdominal CT slice negative for pancreas",
+            "an abdominal CT slice showing no pancreas",
+            "an abdominal CT slice with no evidence of pancreas",
+            "an abdominal CT slice with pancreas excluded",
+            "an abdominal CT slice free of pancreas",
+            "an abdominal CT slice in which pancreas is not seen",
+            "an abdominal CT slice with pancreas ruled out",
+            "an abdominal CT slice without pancreas identified",
+            "an abdominal CT slice with no pancreas"
+          ]
+        },
+        "gallbladder": {
+          "positives": [
+            "an abdominal CT slice with the gallbladder",
+            "an abdominal CT slice demonstrating the gallbladder",
+            "an abdominal CT slice positive for the gallbladder",
+            "an abdominal CT slice showing the gallbladder"
+          ],
+          "negatives": [
+            "an abdominal CT slice without gallbladder",
+            "an abdominal CT slice negative for gallbladder",
+            "an abdominal CT slice showing no gallbladder",
+            "an abdominal CT slice with no evidence of gallbladder",
+            "an abdominal CT slice with gallbladder excluded",
+            "an abdominal CT slice free of gallbladder",
+            "an abdominal CT slice in which gallbladder is not seen",
+            "an abdominal CT slice with gallbladder ruled out",
+            "an abdominal CT slice without gallbladder identified",
+            "an abdominal CT slice with no gallbladder"
+          ]
+        }
+      }
+    }
+  }
+}

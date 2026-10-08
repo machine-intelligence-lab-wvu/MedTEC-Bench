@@ -1,0 +1,65 @@
+{
+ "merlin": {
+  "display_name": "Merlin (3D CT)",
+  "L4": {
+   "avg_discrimination_score": -0.022315130076474614,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": -0.06355380080640316,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.05250375141700109,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": 0.09635771855711937,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.055629402473568915,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": 0.01523984044790268,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.07380138476689657,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.04451467181348966,
+   "n_probes": 900,
+   "by_category": {
+    "ascites": {
+     "avg_DS": 0.041551156491041186,
+     "n": 150
+    },
+    "gallstones": {
+     "avg_DS": -0.04238286246856054,
+     "n": 150
+    },
+    "hepatic_steatosis": {
+     "avg_DS": -0.055128273349255325,
+     "n": 150
+    },
+    "no_finding": {
+     "avg_DS": -0.055629402473568915,
+     "n": 150
+    },
+    "pleural_effusion": {
+     "avg_DS": -0.02060245782136917,
+     "n": 150
+    },
+    "renal_cyst": {
+     "avg_DS": -0.13489619125922522,
+     "n": 150
+    }
+   }
+  }
+ }
+}

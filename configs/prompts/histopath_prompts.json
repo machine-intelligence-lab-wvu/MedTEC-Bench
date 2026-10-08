@@ -1,0 +1,636 @@
+{
+  "modality": "histopath",
+  "description": "Histopathology prompt templates for MedTEC-Bench levels 1-6. Per-image L4/L5 prompts are keyed by the NCT-CRC-HE-100K tissue class label.",
+  "disease_categories": {
+    "tum": {
+      "display": "Colorectal Adenocarcinoma Epithelium",
+      "nct_label": "TUM",
+      "description": "Tumor epithelium (colorectal adenocarcinoma)"
+    },
+    "norm": {
+      "display": "Normal Colon Mucosa",
+      "nct_label": "NORM",
+      "description": "Normal colon mucosa"
+    },
+    "str": {
+      "display": "Cancer-Associated Stroma",
+      "nct_label": "STR",
+      "description": "Cancer-associated stroma"
+    },
+    "lym": {
+      "display": "Lymphocytes",
+      "nct_label": "LYM",
+      "description": "Lymphocyte aggregates"
+    },
+    "mus": {
+      "display": "Smooth Muscle",
+      "nct_label": "MUS",
+      "description": "Smooth muscle"
+    },
+    "adi": {
+      "display": "Adipose Tissue",
+      "nct_label": "ADI",
+      "description": "Adipose tissue"
+    },
+    "muc": {
+      "display": "Mucus",
+      "nct_label": "MUC",
+      "description": "Extracellular mucus"
+    },
+    "deb": {
+      "display": "Debris",
+      "nct_label": "DEB",
+      "description": "Debris and necrotic tissue"
+    },
+    "back": {
+      "display": "Background",
+      "nct_label": "BACK",
+      "description": "Slide background"
+    }
+  },
+  "sampling": {
+    "n_per_category": 6,
+    "total": 54,
+    "seed": 42,
+    "class_subdirs": {
+      "tum": "TUM",
+      "norm": "NORM",
+      "str": "STR",
+      "lym": "LYM",
+      "mus": "MUS",
+      "adi": "ADI",
+      "muc": "MUC",
+      "deb": "DEB",
+      "back": "BACK"
+    }
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Histopathology vs everyday objects \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "histopath_l1_001",
+          "positives": [
+            "a histopathology slide",
+            "an H&E stained tissue microscopy image"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "histopath_l1_002",
+          "positives": [
+            "a microscopic image of stained tissue",
+            "a hematoxylin and eosin (H&E) stained microscopy image"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a park bench in autumn",
+            "a baseball glove on grass",
+            "a wristwatch on a surface"
+          ]
+        },
+        {
+          "probe_id": "histopath_l1_003",
+          "positives": [
+            "a pathology slide showing cells and tissue architecture",
+            "a whole-slide image tile of stained tissue"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a cup of coffee",
+            "a garden with flowers",
+            "a bicycle helmet",
+            "a running shoe on a white background"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "H&E histopathology vs other microscopy / tissue imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "histopath_l2_001",
+          "positives": [
+            "a hematoxylin and eosin (H&E) stained histology image",
+            "an H&E stained tissue microscopy image"
+          ],
+          "negatives": [
+            "an immunohistochemistry (IHC) stained tissue image",
+            "a multiplex immunofluorescence tissue image",
+            "a fluorescence in situ hybridization (FISH) image",
+            "a Masson's trichrome stained tissue image",
+            "a PAS (periodic acid-Schiff) stained tissue image"
+          ]
+        },
+        {
+          "probe_id": "histopath_l2_002",
+          "positives": [
+            "a brightfield light microscopy image of stained tissue",
+            "a color histopathology slide photograph"
+          ],
+          "negatives": [
+            "a phase contrast microscopy image",
+            "a differential interference contrast (DIC) image",
+            "a confocal fluorescence microscopy image",
+            "an electron microscopy image of tissue",
+            "a dark-field microscopy image"
+          ]
+        },
+        {
+          "probe_id": "histopath_l2_003",
+          "positives": [
+            "a formalin-fixed paraffin-embedded (FFPE) histology image",
+            "a whole-slide image of FFPE tissue"
+          ],
+          "negatives": [
+            "a frozen section image of tissue",
+            "a cytology smear image",
+            "a touch imprint cytology image",
+            "a Giemsa stained blood smear",
+            "a Gram stained bacterial smear"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Histopathology vs other medical imaging modalities / body sites \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "histopath_l3_001",
+          "positives": [
+            "a histopathology slide",
+            "a microscopic image of stained tissue"
+          ],
+          "negatives": [
+            "a chest x-ray",
+            "a brain MRI scan",
+            "a dermoscopy image of skin",
+            "a retinal fundus photograph",
+            "an abdominal CT scan"
+          ]
+        },
+        {
+          "probe_id": "histopath_l3_002",
+          "positives": [
+            "a histopathology image of colorectal tissue",
+            "a pathology slide of colon tissue"
+          ],
+          "negatives": [
+            "a histopathology image of lung tissue",
+            "a histopathology image of breast tissue",
+            "a histopathology image of prostate tissue",
+            "a histopathology image of kidney tissue",
+            "a histopathology image of lymph node tissue"
+          ]
+        },
+        {
+          "probe_id": "histopath_l3_003",
+          "positives": [
+            "a microscopic image of gastrointestinal tissue",
+            "an H&E stained image of colonic mucosa or stroma"
+          ],
+          "negatives": [
+            "a microscopic image of cardiac muscle",
+            "a microscopic image of hepatic parenchyma",
+            "a microscopic image of brain cortex",
+            "a microscopic image of bone marrow",
+            "a microscopic image of skin epidermis"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Image-specific prompts keyed to the true NCT-CRC-HE tissue class. 2 positives describe the class; 10 negatives describe other classes.",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "an H&E image showing malignant colon tumor epithelium",
+            "an H&E image of malignant glandular epithelium with nuclear pleomorphism and architectural distortion",
+            "histology showing colon adenocarcinoma with cribriform glands and loss of normal crypt architecture"
+          ],
+          "negatives": [
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of benign colonic adenoma",
+            "a histopathology image of neuroendocrine tumor"
+          ]
+        },
+        "norm": {
+          "positives": [
+            "a histopathology image of normal colon mucosa",
+            "an H&E image showing benign colonic glands",
+            "an H&E image of normal colonic crypts with regular goblet cells",
+            "histology showing intact colonic mucosa with preserved glandular architecture"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of a colonic adenoma with dysplasia",
+            "a histopathology image of inflamed colonic mucosa"
+          ]
+        },
+        "str": {
+          "positives": [
+            "a histopathology image of cancer-associated stroma",
+            "an H&E image showing desmoplastic tumor stroma",
+            "an H&E image of cancer-associated stroma with spindle cells and collagen deposition",
+            "histology showing desmoplastic reaction adjacent to tumor"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of normal submucosal connective tissue",
+            "a histopathology image of granulation tissue"
+          ]
+        },
+        "lym": {
+          "positives": [
+            "a histopathology image of lymphocyte aggregates",
+            "an H&E image showing dense lymphoid infiltrate",
+            "an H&E image of polymorphous mature lymphoid infiltrate",
+            "histology showing lymphoid follicle within tumor stroma"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of a germinal center",
+            "a histopathology image of plasma cell infiltrate"
+          ]
+        },
+        "mus": {
+          "positives": [
+            "a histopathology image of smooth muscle",
+            "an H&E image showing muscularis propria",
+            "an H&E image of bundled smooth muscle fibers with elongated nuclei",
+            "histology showing the muscularis propria of the colon wall"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of skeletal muscle",
+            "a histopathology image of cardiac muscle"
+          ]
+        },
+        "adi": {
+          "positives": [
+            "a histopathology image of adipose tissue",
+            "an H&E image showing mature adipocytes",
+            "an H&E image of mature unilocular adipocytes with peripheral nuclei",
+            "histology showing white adipose tissue with peripheral nuclei displaced by a single large lipid droplet"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of brown adipose tissue",
+            "a histopathology image of a lipoma"
+          ]
+        },
+        "muc": {
+          "positives": [
+            "a histopathology image of extracellular mucus",
+            "an H&E image showing mucinous pools",
+            "an H&E image of pale extracellular mucin pools with floating tumor cells",
+            "histology showing mucinous lakes characteristic of mucinous adenocarcinoma"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image showing slide background",
+            "a histopathology image of goblet cells",
+            "a histopathology image of mucinous adenocarcinoma"
+          ]
+        },
+        "deb": {
+          "positives": [
+            "a histopathology image of debris and necrotic tissue",
+            "an H&E image showing necrotic debris",
+            "an H&E image of necrotic debris with cellular fragments and pyknotic nuclei",
+            "histology showing apoptotic and necrotic cellular detritus"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image showing slide background",
+            "a histopathology image of apoptotic bodies",
+            "a histopathology image of fibrinoid necrosis"
+          ]
+        },
+        "back": {
+          "positives": [
+            "a histopathology image showing slide background with no tissue",
+            "a blank background region of a whole-slide image",
+            "an H&E slide region with no tissue, only the glass background",
+            "a blank slide area outside the tissue section"
+          ],
+          "negatives": [
+            "a histopathology image of colorectal adenocarcinoma tumor epithelium",
+            "a histopathology image of normal colon mucosa",
+            "a histopathology image of cancer-associated stroma",
+            "a histopathology image of lymphocyte aggregates",
+            "a histopathology image of smooth muscle",
+            "a histopathology image of adipose tissue",
+            "a histopathology image of extracellular mucus",
+            "a histopathology image of debris and necrosis",
+            "a histopathology image of tissue folds or artifacts",
+            "a histopathology image of out-of-focus tissue"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Image-specific: presence vs absence of the true tissue class. 2 positives affirm the class; 10 negatives are linguistic negations of the same class.",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "histopathology showing colorectal adenocarcinoma tumor epithelium",
+            "tumor epithelium visible on histopathology",
+            "tumor epithelium identified on H&E histology",
+            "H&E demonstrating colorectal adenocarcinoma"
+          ],
+          "negatives": [
+            "histopathology showing no tumor epithelium",
+            "no evidence of tumor epithelium on histopathology",
+            "histopathology negative for adenocarcinoma",
+            "tumor epithelium absent on histopathology",
+            "histopathology without tumor epithelium",
+            "no tumor epithelium visible on histopathology",
+            "histopathology clear of adenocarcinoma",
+            "tumor epithelium excluded on histopathology",
+            "no signs of tumor epithelium on histopathology",
+            "adenocarcinoma not seen on histopathology"
+          ]
+        },
+        "norm": {
+          "positives": [
+            "histopathology showing normal colon mucosa",
+            "normal colon mucosa visible on histopathology",
+            "normal colon mucosa identified on H&E",
+            "H&E demonstrating benign colonic glands"
+          ],
+          "negatives": [
+            "histopathology showing no normal colon mucosa",
+            "no evidence of normal colon mucosa",
+            "histopathology negative for normal colon mucosa",
+            "normal colon mucosa absent on histopathology",
+            "histopathology without normal colon mucosa",
+            "no normal colon mucosa visible",
+            "histopathology clear of normal colon mucosa",
+            "normal colon mucosa excluded",
+            "no signs of normal colon mucosa",
+            "normal colon mucosa not seen"
+          ]
+        },
+        "str": {
+          "positives": [
+            "histopathology showing cancer-associated stroma",
+            "cancer-associated stroma visible on histopathology",
+            "cancer-associated stroma identified on histology",
+            "H&E demonstrating tumor desmoplasia"
+          ],
+          "negatives": [
+            "histopathology showing no cancer-associated stroma",
+            "no evidence of cancer-associated stroma",
+            "histopathology negative for cancer-associated stroma",
+            "cancer-associated stroma absent on histopathology",
+            "histopathology without cancer-associated stroma",
+            "no cancer-associated stroma visible",
+            "histopathology clear of cancer-associated stroma",
+            "cancer-associated stroma excluded",
+            "no signs of cancer-associated stroma",
+            "cancer-associated stroma not seen"
+          ]
+        },
+        "lym": {
+          "positives": [
+            "histopathology showing lymphocyte aggregates",
+            "lymphocyte aggregates visible on histopathology",
+            "lymphocyte aggregates identified on H&E",
+            "H&E demonstrating lymphoid infiltrate"
+          ],
+          "negatives": [
+            "histopathology showing no lymphocyte aggregates",
+            "no evidence of lymphocyte aggregates",
+            "histopathology negative for lymphocytes",
+            "lymphocyte aggregates absent on histopathology",
+            "histopathology without lymphocyte aggregates",
+            "no lymphocytes visible on histopathology",
+            "histopathology clear of lymphocyte aggregates",
+            "lymphocyte aggregates excluded",
+            "no signs of lymphocyte aggregates",
+            "lymphocyte aggregates not seen"
+          ]
+        },
+        "mus": {
+          "positives": [
+            "histopathology showing smooth muscle",
+            "smooth muscle visible on histopathology",
+            "smooth muscle identified on H&E",
+            "H&E demonstrating muscularis layer"
+          ],
+          "negatives": [
+            "histopathology showing no smooth muscle",
+            "no evidence of smooth muscle",
+            "histopathology negative for smooth muscle",
+            "smooth muscle absent on histopathology",
+            "histopathology without smooth muscle",
+            "no smooth muscle visible",
+            "histopathology clear of smooth muscle",
+            "smooth muscle excluded",
+            "no signs of smooth muscle",
+            "smooth muscle not seen"
+          ]
+        },
+        "adi": {
+          "positives": [
+            "histopathology showing adipose tissue",
+            "adipose tissue visible on histopathology",
+            "adipose tissue identified on H&E",
+            "H&E demonstrating adipocytes"
+          ],
+          "negatives": [
+            "histopathology showing no adipose tissue",
+            "no evidence of adipose tissue",
+            "histopathology negative for adipose tissue",
+            "adipose tissue absent on histopathology",
+            "histopathology without adipose tissue",
+            "no adipose tissue visible",
+            "histopathology clear of adipose tissue",
+            "adipose tissue excluded",
+            "no signs of adipose tissue",
+            "adipose tissue not seen"
+          ]
+        },
+        "muc": {
+          "positives": [
+            "histopathology showing extracellular mucus",
+            "extracellular mucus visible on histopathology",
+            "extracellular mucus identified on H&E",
+            "H&E demonstrating mucin pools"
+          ],
+          "negatives": [
+            "histopathology showing no extracellular mucus",
+            "no evidence of extracellular mucus",
+            "histopathology negative for extracellular mucus",
+            "extracellular mucus absent on histopathology",
+            "histopathology without extracellular mucus",
+            "no extracellular mucus visible",
+            "histopathology clear of extracellular mucus",
+            "extracellular mucus excluded",
+            "no signs of extracellular mucus",
+            "extracellular mucus not seen"
+          ]
+        },
+        "deb": {
+          "positives": [
+            "histopathology showing debris and necrosis",
+            "debris and necrotic tissue visible on histopathology",
+            "necrotic debris identified on H&E",
+            "H&E demonstrating tissue necrosis"
+          ],
+          "negatives": [
+            "histopathology showing no debris or necrosis",
+            "no evidence of debris or necrosis",
+            "histopathology negative for debris and necrosis",
+            "debris and necrosis absent on histopathology",
+            "histopathology without debris or necrosis",
+            "no necrotic debris visible",
+            "histopathology clear of debris and necrosis",
+            "debris excluded on histopathology",
+            "no signs of necrosis",
+            "debris and necrotic tissue not seen"
+          ]
+        },
+        "back": {
+          "positives": [
+            "histopathology showing slide background",
+            "slide background visible with no tissue",
+            "background slide area without tissue",
+            "an out-of-tissue region of the H&E slide"
+          ],
+          "negatives": [
+            "histopathology showing no slide background",
+            "no evidence of slide background",
+            "histopathology negative for background-only region",
+            "slide background absent on histopathology",
+            "histopathology without a blank background region",
+            "no background-only area visible",
+            "histopathology clear of slide background",
+            "slide background excluded from this tile",
+            "no signs of blank background",
+            "slide background not seen"
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Attribute binding",
+      "description": "Modifier sensitivity (stain, grade, density). Shared template probes.",
+      "probes": [
+        {
+          "probe_id": "histopath_l6_001",
+          "positives": [
+            "an H&E stained histopathology image of colon tissue"
+          ],
+          "negatives": [
+            "a PAS stained histopathology image of colon tissue",
+            "an immunohistochemistry stained colon tissue image",
+            "a Masson's trichrome stained colon tissue image",
+            "a silver stained histopathology image"
+          ]
+        },
+        {
+          "probe_id": "histopath_l6_002",
+          "positives": [
+            "a histopathology image showing a high-grade tumor"
+          ],
+          "negatives": [
+            "a histopathology image showing a low-grade tumor",
+            "a histopathology image showing a well-differentiated tumor",
+            "a histopathology image showing benign mucosa",
+            "a histopathology image showing dysplasia without invasion"
+          ]
+        },
+        {
+          "probe_id": "histopath_l6_003",
+          "positives": [
+            "a histopathology image showing dense lymphocytic infiltration"
+          ],
+          "negatives": [
+            "a histopathology image showing sparse lymphocytic infiltration",
+            "a histopathology image showing absent lymphocytic infiltration",
+            "a histopathology image showing dense neutrophilic infiltration",
+            "a histopathology image showing dense eosinophilic infiltration"
+          ]
+        }
+      ]
+    }
+  }
+}

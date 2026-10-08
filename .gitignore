@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+.venv/
+venv/
+.python-version
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Datasets & weights — must be obtained from upstream sources
+data/nih_xray/
+data/oasis/
+data/amos/
+data/odir/
+data/ODIR-5K/
+data/isic/
+data/nct_crc/
+data/openi/
+data/roco/
+data/*/images/
+data/*/Images/
+data/*/Training Images/
+data/*/Testing Images/
+pretrained/
+
+# Caches and intermediate outputs
+experiments/results/retrieval_cache/
+logs/
+*.tmp
+*.log
+
+# Manifest images shouldn't ship — only the JSON manifests
+data/*_probes_n1000/images/
+data/*_probes/images/
+data/openi_probes_full/images/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Generated docs
+*.aux
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Merlin 3D embeddings and CT slices are regenerated locally
+data/ct_disease_probes/merlin_emb/

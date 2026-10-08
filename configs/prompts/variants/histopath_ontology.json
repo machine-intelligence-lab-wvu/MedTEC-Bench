@@ -1,0 +1,377 @@
+{
+  "modality": "histopath",
+  "variant": "ontology",
+  "description": "Exp A prompt-robustness variant (ontology) for histopath, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/histopath_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "Adenocarcinoma epithelium",
+            "tumor epithelium",
+            "malignant epithelium",
+            "Adenocarcinoma epithelium, present"
+          ],
+          "negatives": [
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Mucus",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "norm": {
+          "positives": [
+            "Normal colon mucosa",
+            "benign colonic mucosa",
+            "normal glandular mucosa",
+            "Normal colon mucosa, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Mucus",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "str": {
+          "positives": [
+            "Cancer-associated stroma",
+            "desmoplastic stroma",
+            "tumor stroma",
+            "Cancer-associated stroma, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Mucus",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "lym": {
+          "positives": [
+            "Lymphocytes",
+            "a lymphocytic infiltrate",
+            "lymphoid aggregates",
+            "Lymphocytes, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Mucus",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "mus": {
+          "positives": [
+            "Smooth muscle",
+            "muscularis",
+            "smooth muscle bundles",
+            "Smooth muscle, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Adipose tissue",
+            "Mucus",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "adi": {
+          "positives": [
+            "Adipose tissue",
+            "fat tissue",
+            "adipocytes",
+            "Adipose tissue, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Mucus",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "muc": {
+          "positives": [
+            "Mucus",
+            "mucin",
+            "mucinous material",
+            "Mucus, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Debris",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "deb": {
+          "positives": [
+            "Debris",
+            "necrotic debris",
+            "cellular debris",
+            "Debris, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Mucus",
+            "Background",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        },
+        "back": {
+          "positives": [
+            "Background",
+            "empty background",
+            "non-tissue background",
+            "Background, present"
+          ],
+          "negatives": [
+            "Adenocarcinoma epithelium",
+            "Normal colon mucosa",
+            "Cancer-associated stroma",
+            "Lymphocytes",
+            "Smooth muscle",
+            "Adipose tissue",
+            "Mucus",
+            "Debris",
+            "Blood vessels",
+            "Nerve tissue"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "tum": {
+          "positives": [
+            "Adenocarcinoma epithelium",
+            "tumor epithelium",
+            "Adenocarcinoma epithelium, present",
+            "malignant epithelium"
+          ],
+          "negatives": [
+            "No adenocarcinoma epithelium",
+            "Absence of adenocarcinoma epithelium",
+            "Adenocarcinoma epithelium absent",
+            "No evidence of adenocarcinoma epithelium",
+            "Adenocarcinoma epithelium excluded",
+            "Adenocarcinoma epithelium not present",
+            "Negative for adenocarcinoma epithelium",
+            "Without adenocarcinoma epithelium",
+            "No adenocarcinoma epithelium identified",
+            "Adenocarcinoma epithelium ruled out"
+          ]
+        },
+        "norm": {
+          "positives": [
+            "Normal colon mucosa",
+            "No abnormality",
+            "Normal study",
+            "No disease"
+          ],
+          "negatives": [
+            "Abnormal",
+            "Disease present",
+            "Pathological findings present",
+            "Positive for disease",
+            "Abnormal findings",
+            "Active disease",
+            "Significant abnormality",
+            "Underlying pathology",
+            "Not within normal limits",
+            "Disease identified"
+          ]
+        },
+        "str": {
+          "positives": [
+            "Cancer-associated stroma",
+            "desmoplastic stroma",
+            "Cancer-associated stroma, present",
+            "tumor stroma"
+          ],
+          "negatives": [
+            "No cancer-associated stroma",
+            "Absence of cancer-associated stroma",
+            "Cancer-associated stroma absent",
+            "No evidence of cancer-associated stroma",
+            "Cancer-associated stroma excluded",
+            "Cancer-associated stroma not present",
+            "Negative for cancer-associated stroma",
+            "Without cancer-associated stroma",
+            "No cancer-associated stroma identified",
+            "Cancer-associated stroma ruled out"
+          ]
+        },
+        "lym": {
+          "positives": [
+            "Lymphocytes",
+            "a lymphocytic infiltrate",
+            "Lymphocytes, present",
+            "lymphoid aggregates"
+          ],
+          "negatives": [
+            "No lymphocytes",
+            "Absence of lymphocytes",
+            "Lymphocytes absent",
+            "No evidence of lymphocytes",
+            "Lymphocytes excluded",
+            "Lymphocytes not present",
+            "Negative for lymphocytes",
+            "Without lymphocytes",
+            "No lymphocytes identified",
+            "Lymphocytes ruled out"
+          ]
+        },
+        "mus": {
+          "positives": [
+            "Smooth muscle",
+            "muscularis",
+            "Smooth muscle, present",
+            "smooth muscle bundles"
+          ],
+          "negatives": [
+            "No smooth muscle",
+            "Absence of smooth muscle",
+            "Smooth muscle absent",
+            "No evidence of smooth muscle",
+            "Smooth muscle excluded",
+            "Smooth muscle not present",
+            "Negative for smooth muscle",
+            "Without smooth muscle",
+            "No smooth muscle identified",
+            "Smooth muscle ruled out"
+          ]
+        },
+        "adi": {
+          "positives": [
+            "Adipose tissue",
+            "fat tissue",
+            "Adipose tissue, present",
+            "adipocytes"
+          ],
+          "negatives": [
+            "No adipose tissue",
+            "Absence of adipose tissue",
+            "Adipose tissue absent",
+            "No evidence of adipose tissue",
+            "Adipose tissue excluded",
+            "Adipose tissue not present",
+            "Negative for adipose tissue",
+            "Without adipose tissue",
+            "No adipose tissue identified",
+            "Adipose tissue ruled out"
+          ]
+        },
+        "muc": {
+          "positives": [
+            "Mucus",
+            "mucin",
+            "Mucus, present",
+            "mucinous material"
+          ],
+          "negatives": [
+            "No mucus",
+            "Absence of mucus",
+            "Mucus absent",
+            "No evidence of mucus",
+            "Mucus excluded",
+            "Mucus not present",
+            "Negative for mucus",
+            "Without mucus",
+            "No mucus identified",
+            "Mucus ruled out"
+          ]
+        },
+        "deb": {
+          "positives": [
+            "Debris",
+            "necrotic debris",
+            "Debris, present",
+            "cellular debris"
+          ],
+          "negatives": [
+            "No debris",
+            "Absence of debris",
+            "Debris absent",
+            "No evidence of debris",
+            "Debris excluded",
+            "Debris not present",
+            "Negative for debris",
+            "Without debris",
+            "No debris identified",
+            "Debris ruled out"
+          ]
+        },
+        "back": {
+          "positives": [
+            "Background",
+            "empty background",
+            "Background, present",
+            "non-tissue background"
+          ],
+          "negatives": [
+            "No background",
+            "Absence of background",
+            "Background absent",
+            "No evidence of background",
+            "Background excluded",
+            "Background not present",
+            "Negative for background",
+            "Without background",
+            "No background identified",
+            "Background ruled out"
+          ]
+        }
+      }
+    }
+  }
+}

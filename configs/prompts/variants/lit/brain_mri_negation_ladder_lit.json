@@ -1,0 +1,123 @@
+{
+  "modality": "brain_mri",
+  "description": "LITERATURE-GROUNDED negation ladder for brain_mri. Cue terms verbatim from Panicek & Hricak (AJR 2016) certainty lexicon and NegEx/ConText (Chapman 2001; Harkema 2009).",
+  "provenance": "Panicek&Hricak2016; NegEx Chapman2001; ConText Harkema2009",
+  "ordinal": {
+    "present": 2,
+    "probable": 1,
+    "possible": 0,
+    "unlikely": -1,
+    "absent_plain": -2,
+    "absent_evidential": -2
+  },
+  "subtype_map": {
+    "definite": [
+      "absent_plain"
+    ],
+    "hedged": [
+      "possible",
+      "unlikely"
+    ],
+    "ruled_out": [
+      "absent_evidential"
+    ],
+    "historical": [
+      "historical"
+    ]
+  },
+  "absent_anchor_category": "non_demented",
+  "findings": {
+    "mild_dementia": {
+      "rungs": {
+        "present": [
+          "brain MRI consistent with mild dementia",
+          "findings consistent with mild dementia on brain MRI",
+          "brain MRI demonstrating mild dementia"
+        ],
+        "probable": [
+          "brain MRI suspicious for mild dementia",
+          "probable mild dementia on brain MRI",
+          "findings probably representing mild dementia on brain MRI"
+        ],
+        "possible": [
+          "possible mild dementia on brain MRI",
+          "brain MRI possibly showing mild dementia",
+          "mild dementia cannot be excluded on brain MRI"
+        ],
+        "unlikely": [
+          "mild dementia less likely on brain MRI",
+          "mild dementia unlikely on brain MRI",
+          "brain MRI findings unlikely to represent mild dementia"
+        ],
+        "absent_plain": [
+          "brain MRI negative for mild dementia",
+          "no mild dementia on brain MRI",
+          "brain MRI without mild dementia",
+          "mild dementia absent on brain MRI"
+        ],
+        "absent_evidential": [
+          "no evidence of mild dementia on brain MRI",
+          "mild dementia ruled out on brain MRI",
+          "mild dementia excluded on brain MRI",
+          "brain MRI shows no evidence of mild dementia"
+        ],
+        "historical": [
+          "history of mild dementia, resolved on brain MRI",
+          "prior mild dementia, no longer seen on brain MRI",
+          "previously documented mild dementia, resolved"
+        ]
+      },
+      "historical": [
+        "history of mild dementia, resolved on brain MRI",
+        "prior mild dementia, no longer seen on brain MRI",
+        "previously documented mild dementia, resolved"
+      ]
+    },
+    "moderate_dementia": {
+      "rungs": {
+        "present": [
+          "brain MRI consistent with moderate dementia",
+          "findings consistent with moderate dementia on brain MRI",
+          "brain MRI demonstrating moderate dementia"
+        ],
+        "probable": [
+          "brain MRI suspicious for moderate dementia",
+          "probable moderate dementia on brain MRI",
+          "findings probably representing moderate dementia on brain MRI"
+        ],
+        "possible": [
+          "possible moderate dementia on brain MRI",
+          "brain MRI possibly showing moderate dementia",
+          "moderate dementia cannot be excluded on brain MRI"
+        ],
+        "unlikely": [
+          "moderate dementia less likely on brain MRI",
+          "moderate dementia unlikely on brain MRI",
+          "brain MRI findings unlikely to represent moderate dementia"
+        ],
+        "absent_plain": [
+          "brain MRI negative for moderate dementia",
+          "no moderate dementia on brain MRI",
+          "brain MRI without moderate dementia",
+          "moderate dementia absent on brain MRI"
+        ],
+        "absent_evidential": [
+          "no evidence of moderate dementia on brain MRI",
+          "moderate dementia ruled out on brain MRI",
+          "moderate dementia excluded on brain MRI",
+          "brain MRI shows no evidence of moderate dementia"
+        ],
+        "historical": [
+          "history of moderate dementia, resolved on brain MRI",
+          "prior moderate dementia, no longer seen on brain MRI",
+          "previously documented moderate dementia, resolved"
+        ]
+      },
+      "historical": [
+        "history of moderate dementia, resolved on brain MRI",
+        "prior moderate dementia, no longer seen on brain MRI",
+        "previously documented moderate dementia, resolved"
+      ]
+    }
+  }
+}

@@ -1,0 +1,513 @@
+{
+ "biomedclip": {
+  "display_name": "BiomedCLIP",
+  "L4": {
+   "avg_discrimination_score": 0.008422868600879532,
+   "avg_collapse_ratio": 0.8611514083299029,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": 0.0030827693144480387,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": 0.03081279933452606,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.027468847235043843,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.0007574619849522908,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.01989248051093175,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": 0.034661638339360555,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": 0.02983828922112783,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.023500843708258702,
+   "avg_collapse_ratio": 0.9074655282069962,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.008863925139109293,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.05460967441399892,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.04898609419663747,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.05628999173641205,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.029569826733607512,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.005608594616254171,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": 0.03756104608376821,
+     "n": 150
+    }
+   }
+  }
+ },
+ "pubmedclip": {
+  "display_name": "PubMedCLIP",
+  "L4": {
+   "avg_discrimination_score": -0.011515848071451682,
+   "avg_collapse_ratio": 0.9634470637457304,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.026094533999760947,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.011721215844154358,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.016518688201904295,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.015902588963508605,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.025226549460337713,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": 0.013908461332321168,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.0032604364554087322,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.0021242982897150564,
+   "avg_collapse_ratio": 0.9428049742106898,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.005124079982439677,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": 0.011279770731925964,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.010727452039718628,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": 0.0030211257934570314,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.004687942564487457,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.006525916258494059,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": 0.02554549515247345,
+     "n": 150
+    }
+   }
+  }
+ },
+ "medclip": {
+  "display_name": "MedCLIP",
+  "L4": {
+   "avg_discrimination_score": -0.0013571299123612559,
+   "avg_collapse_ratio": 1.0591167466050808,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.0012666840199381114,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.0003774899997127553,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.0020624401862733067,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.0006424576756156361,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.0017754950139743204,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.0016393218018735448,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.0018643193203024566,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -3.807886696812062e-05,
+   "avg_collapse_ratio": 0.9250030466262622,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.00013109941345949968,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -1.0337869947155316e-05,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.00020296902706225714,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": 0.00022082233180602392,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": 0.0001872074745523815,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.00018636683118529617,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -7.472092208142082e-05,
+     "n": 150
+    }
+   }
+  }
+ },
+ "pmc_clip": {
+  "display_name": "PMC-CLIP",
+  "L4": {
+   "avg_discrimination_score": -0.015906349907952002,
+   "avg_collapse_ratio": 0.8696726767784095,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.004723077813784281,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": 0.017216744820276898,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.056158918937047324,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.07126583874225617,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.040788378279942736,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": 0.0554189994931221,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.018674468596776326,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.018517344329224163,
+   "avg_collapse_ratio": 0.9222926021928332,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.008976895610491436,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.05703399995962779,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.0176960955063502,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.02868424733479818,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.014997157053305553,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.029913379152615865,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": 0.028759888410568236,
+     "n": 150
+    }
+   }
+  }
+ },
+ "openclip_vitb32": {
+  "display_name": "OpenCLIP ViT-B-32",
+  "L4": {
+   "avg_discrimination_score": -0.016719209705572204,
+   "avg_collapse_ratio": 0.9570227493921599,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.04411753197511037,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": 0.00033701032400131227,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.013352171977361044,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": 0.003003119627634684,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.015687311211457618,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.020650975108146667,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.02625015874703725,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": 0.0048796715756574,
+   "avg_collapse_ratio": 0.9232782956613488,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": 0.004388299385706584,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.014217126270135244,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.0015485105911890666,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": 0.016491509675979614,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.00304686134824386,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": 0.00138814111550649,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": 0.028271445631980897,
+     "n": 150
+    }
+   }
+  }
+ },
+ "openclip_vitl14": {
+  "display_name": "OpenCLIP ViT-L-14",
+  "L4": {
+   "avg_discrimination_score": -0.010980905541979459,
+   "avg_collapse_ratio": 0.9435218073338626,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.020301220218340556,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": 0.013593133985996247,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.007645632028579712,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.03503283937772115,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": 0.0051474843460779926,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.012636168599128724,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.01504505733648936,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.0022493474690087763,
+   "avg_collapse_ratio": 0.9099722322952225,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.0057966744899749754,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": 0.005009822249412536,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.006489627162615458,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.0007166045904159545,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.004723093544061367,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.0002539787689844767,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.0035338914394378662,
+     "n": 150
+    }
+   }
+  }
+ },
+ "siglip": {
+  "display_name": "SigLIP",
+  "L4": {
+   "avg_discrimination_score": -0.014460204395491526,
+   "avg_collapse_ratio": 0.9415100745084989,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.0042758587747812275,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.00648186335961024,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.019921801537275314,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.02333987591167291,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.018040133783450492,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.002011097222566605,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": -0.02824864519139131,
+     "n": 150
+    }
+   }
+  },
+  "L5": {
+   "avg_discrimination_score": -0.004814147023461848,
+   "avg_collapse_ratio": 0.7235830340207929,
+   "n_probes": 1004,
+   "by_category": {
+    "amd": {
+     "avg_DS": -0.006197613428036372,
+     "n": 150
+    },
+    "cataract": {
+     "avg_DS": -0.008449600655585527,
+     "n": 150
+    },
+    "diabetic_retinopathy": {
+     "avg_DS": -0.003473570893208186,
+     "n": 150
+    },
+    "glaucoma": {
+     "avg_DS": -0.006037048666427533,
+     "n": 150
+    },
+    "hypertensive_retinopathy": {
+     "avg_DS": -0.00819011412274379,
+     "n": 104
+    },
+    "normal": {
+     "avg_DS": -0.00821185580144326,
+     "n": 150
+    },
+    "pathological_myopia": {
+     "avg_DS": 0.005825477826098601,
+     "n": 150
+    }
+   }
+  }
+ }
+}

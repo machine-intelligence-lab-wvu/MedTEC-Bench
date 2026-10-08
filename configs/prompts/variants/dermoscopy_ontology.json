@@ -1,0 +1,217 @@
+{
+  "modality": "dermoscopy",
+  "variant": "ontology",
+  "description": "Exp A prompt-robustness variant (ontology) for dermoscopy, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/dermoscopy_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "Melanoma",
+            "malignant melanoma",
+            "melanocytic malignancy",
+            "Melanoma, present"
+          ],
+          "negatives": [
+            "Melanocytic nevus",
+            "Basal cell carcinoma",
+            "Actinic keratosis",
+            "Benign keratosis",
+            "Dermatofibroma",
+            "Squamous cell carcinoma",
+            "Vascular lesion",
+            "Solar lentigo",
+            "Angioma",
+            "Sebaceous hyperplasia"
+          ]
+        },
+        "nv": {
+          "positives": [
+            "Melanocytic nevus",
+            "a benign melanocytic nevus",
+            "a common mole",
+            "Melanocytic nevus, present"
+          ],
+          "negatives": [
+            "Melanoma",
+            "Basal cell carcinoma",
+            "Actinic keratosis",
+            "Benign keratosis",
+            "Dermatofibroma",
+            "Squamous cell carcinoma",
+            "Vascular lesion",
+            "Solar lentigo",
+            "Angioma",
+            "Sebaceous hyperplasia"
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "Basal cell carcinoma",
+            "a basal cell tumor",
+            "basal cell skin cancer",
+            "Basal cell carcinoma, present"
+          ],
+          "negatives": [
+            "Melanoma",
+            "Melanocytic nevus",
+            "Actinic keratosis",
+            "Benign keratosis",
+            "Dermatofibroma",
+            "Squamous cell carcinoma",
+            "Vascular lesion",
+            "Solar lentigo",
+            "Angioma",
+            "Sebaceous hyperplasia"
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "Actinic keratosis",
+            "intraepithelial carcinoma",
+            "Bowen disease",
+            "Actinic keratosis, present"
+          ],
+          "negatives": [
+            "Melanoma",
+            "Melanocytic nevus",
+            "Basal cell carcinoma",
+            "Benign keratosis",
+            "Dermatofibroma",
+            "Squamous cell carcinoma",
+            "Vascular lesion",
+            "Solar lentigo",
+            "Angioma",
+            "Sebaceous hyperplasia"
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "Benign keratosis",
+            "a seborrheic keratosis",
+            "a solar lentigo",
+            "Benign keratosis, present"
+          ],
+          "negatives": [
+            "Melanoma",
+            "Melanocytic nevus",
+            "Basal cell carcinoma",
+            "Actinic keratosis",
+            "Dermatofibroma",
+            "Squamous cell carcinoma",
+            "Vascular lesion",
+            "Solar lentigo",
+            "Angioma",
+            "Sebaceous hyperplasia"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "mel": {
+          "positives": [
+            "Melanoma",
+            "malignant melanoma",
+            "Melanoma, present",
+            "melanocytic malignancy"
+          ],
+          "negatives": [
+            "No melanoma",
+            "Absence of melanoma",
+            "Melanoma absent",
+            "No evidence of melanoma",
+            "Melanoma excluded",
+            "Melanoma not present",
+            "Negative for melanoma",
+            "Without melanoma",
+            "No melanoma identified",
+            "Melanoma ruled out"
+          ]
+        },
+        "nv": {
+          "positives": [
+            "Melanocytic nevus",
+            "a benign melanocytic nevus",
+            "Melanocytic nevus, present",
+            "a common mole"
+          ],
+          "negatives": [
+            "No melanocytic nevus",
+            "Absence of melanocytic nevus",
+            "Melanocytic nevus absent",
+            "No evidence of melanocytic nevus",
+            "Melanocytic nevus excluded",
+            "Melanocytic nevus not present",
+            "Negative for melanocytic nevus",
+            "Without melanocytic nevus",
+            "No melanocytic nevus identified",
+            "Melanocytic nevus ruled out"
+          ]
+        },
+        "bcc": {
+          "positives": [
+            "Basal cell carcinoma",
+            "a basal cell tumor",
+            "Basal cell carcinoma, present",
+            "basal cell skin cancer"
+          ],
+          "negatives": [
+            "No basal cell carcinoma",
+            "Absence of basal cell carcinoma",
+            "Basal cell carcinoma absent",
+            "No evidence of basal cell carcinoma",
+            "Basal cell carcinoma excluded",
+            "Basal cell carcinoma not present",
+            "Negative for basal cell carcinoma",
+            "Without basal cell carcinoma",
+            "No basal cell carcinoma identified",
+            "Basal cell carcinoma ruled out"
+          ]
+        },
+        "akiec": {
+          "positives": [
+            "Actinic keratosis",
+            "intraepithelial carcinoma",
+            "Actinic keratosis, present",
+            "Bowen disease"
+          ],
+          "negatives": [
+            "No actinic keratosis",
+            "Absence of actinic keratosis",
+            "Actinic keratosis absent",
+            "No evidence of actinic keratosis",
+            "Actinic keratosis excluded",
+            "Actinic keratosis not present",
+            "Negative for actinic keratosis",
+            "Without actinic keratosis",
+            "No actinic keratosis identified",
+            "Actinic keratosis ruled out"
+          ]
+        },
+        "bkl": {
+          "positives": [
+            "Benign keratosis",
+            "a seborrheic keratosis",
+            "Benign keratosis, present",
+            "a solar lentigo"
+          ],
+          "negatives": [
+            "No benign keratosis",
+            "Absence of benign keratosis",
+            "Benign keratosis absent",
+            "No evidence of benign keratosis",
+            "Benign keratosis excluded",
+            "Benign keratosis not present",
+            "Negative for benign keratosis",
+            "Without benign keratosis",
+            "No benign keratosis identified",
+            "Benign keratosis ruled out"
+          ]
+        }
+      }
+    }
+  }
+}

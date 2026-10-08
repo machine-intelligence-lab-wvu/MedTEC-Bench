@@ -1,0 +1,177 @@
+{
+  "modality": "brain_mri",
+  "variant": "ontology",
+  "description": "Exp A prompt-robustness variant (ontology) for brain_mri, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/brain_mri_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "Cognitively normal brain",
+            "no cortical atrophy",
+            "normal brain volume",
+            "Cognitively normal brain, present"
+          ],
+          "negatives": [
+            "Very mild dementia",
+            "Mild dementia",
+            "Moderate dementia",
+            "Ischemic infarct",
+            "Brain tumor",
+            "Multiple sclerosis",
+            "Hydrocephalus",
+            "Small-vessel white matter disease",
+            "Intracranial hemorrhage",
+            "Encephalomalacia"
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "Very mild dementia",
+            "very mild cognitive impairment",
+            "early neurodegeneration",
+            "Very mild dementia, present"
+          ],
+          "negatives": [
+            "Cognitively normal brain",
+            "Mild dementia",
+            "Moderate dementia",
+            "Ischemic infarct",
+            "Brain tumor",
+            "Multiple sclerosis",
+            "Hydrocephalus",
+            "Small-vessel white matter disease",
+            "Intracranial hemorrhage",
+            "Encephalomalacia"
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "Mild dementia",
+            "mild Alzheimer-type dementia",
+            "mild cognitive impairment",
+            "Mild dementia, present"
+          ],
+          "negatives": [
+            "Cognitively normal brain",
+            "Very mild dementia",
+            "Moderate dementia",
+            "Ischemic infarct",
+            "Brain tumor",
+            "Multiple sclerosis",
+            "Hydrocephalus",
+            "Small-vessel white matter disease",
+            "Intracranial hemorrhage",
+            "Encephalomalacia"
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "Moderate dementia",
+            "moderate Alzheimer-type dementia",
+            "moderate neurodegeneration",
+            "Moderate dementia, present"
+          ],
+          "negatives": [
+            "Cognitively normal brain",
+            "Very mild dementia",
+            "Mild dementia",
+            "Ischemic infarct",
+            "Brain tumor",
+            "Multiple sclerosis",
+            "Hydrocephalus",
+            "Small-vessel white matter disease",
+            "Intracranial hemorrhage",
+            "Encephalomalacia"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "Cognitively normal brain",
+            "No abnormality",
+            "Normal study",
+            "No disease"
+          ],
+          "negatives": [
+            "Abnormal",
+            "Disease present",
+            "Pathological findings present",
+            "Positive for disease",
+            "Abnormal findings",
+            "Active disease",
+            "Significant abnormality",
+            "Underlying pathology",
+            "Not within normal limits",
+            "Disease identified"
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "Very mild dementia",
+            "very mild cognitive impairment",
+            "Very mild dementia, present",
+            "early neurodegeneration"
+          ],
+          "negatives": [
+            "No very mild dementia",
+            "Absence of very mild dementia",
+            "Very mild dementia absent",
+            "No evidence of very mild dementia",
+            "Very mild dementia excluded",
+            "Very mild dementia not present",
+            "Negative for very mild dementia",
+            "Without very mild dementia",
+            "No very mild dementia identified",
+            "Very mild dementia ruled out"
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "Mild dementia",
+            "mild Alzheimer-type dementia",
+            "Mild dementia, present",
+            "mild cognitive impairment"
+          ],
+          "negatives": [
+            "No mild dementia",
+            "Absence of mild dementia",
+            "Mild dementia absent",
+            "No evidence of mild dementia",
+            "Mild dementia excluded",
+            "Mild dementia not present",
+            "Negative for mild dementia",
+            "Without mild dementia",
+            "No mild dementia identified",
+            "Mild dementia ruled out"
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "Moderate dementia",
+            "moderate Alzheimer-type dementia",
+            "Moderate dementia, present",
+            "moderate neurodegeneration"
+          ],
+          "negatives": [
+            "No moderate dementia",
+            "Absence of moderate dementia",
+            "Moderate dementia absent",
+            "No evidence of moderate dementia",
+            "Moderate dementia excluded",
+            "Moderate dementia not present",
+            "Negative for moderate dementia",
+            "Without moderate dementia",
+            "No moderate dementia identified",
+            "Moderate dementia ruled out"
+          ]
+        }
+      }
+    }
+  }
+}

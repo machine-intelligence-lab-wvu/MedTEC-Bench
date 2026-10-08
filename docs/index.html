@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MedTEC-Bench</title>
+<meta name="description" content="When Medical VLMs Stop Understanding: MedTEC-Bench for Probing Semantic Specificity. NeurIPS 2026 Evaluations and Datasets Track (poster).">
+<meta property="og:title" content="MedTEC-Bench: When Medical VLMs Stop Understanding">
+<meta property="og:description" content="A diagnostic benchmark for probing semantic specificity in medical vision-language models across five levels and six imaging modalities.">
+<style>
+:root{
+  --bg:#fbfaf7; --fg:#1b2130; --muted:#5a6376; --line:#e2dfd6; --card:#ffffff; --soft:#f3f1ea;
+  --accent:#0d5c7d; --accent-fg:#fff; --bad:#b3372b; --good:#1f7a55; --mid:#8a8f9c; --code:#f1efe8;
+  --l1:#0d3b66; --l2:#1f6f9f; --l3:#3f9fb5; --l4:#c27c0e; --l5:#b3372b;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#11151c; --fg:#e8eaee; --muted:#9aa3b2; --line:#272d38; --card:#1a2029; --soft:#161c25;
+         --accent:#6cc4e3; --accent-fg:#0b1218; --bad:#f0907f; --good:#6fd0a6; --mid:#7d8594; --code:#1f2530;
+         --l1:#8fc1ff; --l2:#5fb3e0; --l3:#7fd6d0; --l4:#f2b54a; --l5:#f0907f; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
+h1,h2,h3,h4,.sans,nav,.btn,button,select,label,table,figcaption,.tag{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.wide{max-width:1040px}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+header{padding:56px 0 30px;text-align:center;border-bottom:1px solid var(--line)}
+.venue{display:inline-block;font:600 12px/1 system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid var(--accent);padding:7px 11px;border-radius:99px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:20px 0 8px;letter-spacing:-.015em}
+.sub{color:var(--muted);font-size:19px;margin:0 auto;max-width:720px}
+.authors{font:16px/1.8 system-ui,sans-serif;margin:20px 0 2px}
+.authors span{white-space:nowrap;margin:0 9px}
+.affil{font:14px system-ui,sans-serif;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:22px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;font-size:15px;background:var(--accent);color:var(--accent-fg);border:1px solid var(--accent)}
+.btn.ghost{background:transparent;color:var(--accent)}
+.btn.todo{opacity:.5;pointer-events:none}
+
+.hero{max-width:860px;margin:30px auto 0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 16px 12px;text-align:left}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;font:14px system-ui,sans-serif}
+.hero-dots{display:flex;gap:6px}
+.hero-dots button{font:600 12px system-ui;padding:5px 10px;border-radius:99px;border:1px solid var(--line);background:var(--soft);color:var(--fg);cursor:pointer}
+.hero-dots button[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+#heroSvg .mv{transition:transform 1.1s cubic-bezier(.4,0,.2,1)}
+#heroSvg .fade{transition:opacity .5s}
+@media (prefers-reduced-motion: reduce){#heroSvg .mv,#heroSvg .fade{transition:none}}
+.hero-cap{font:13px/1.5 system-ui,sans-serif;color:var(--muted);margin:6px 2px 0}
+
+nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:20px;overflow-x:auto;padding:12px 20px;font-size:14px;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+section{padding:44px 0 6px}
+h2{font-size:26px;margin:0 0 12px;letter-spacing:-.01em}
+h3{font-size:18px;margin:24px 0 6px}
+.kicker{font:600 12px/1 system-ui,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:22px 0}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.stat b{display:block;font:700 26px/1.1 system-ui,sans-serif;color:var(--accent)}
+.stat span{font:13.5px/1.4 system-ui,sans-serif;color:var(--muted)}
+
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:18px 0}
+.panel h4{margin:0 0 4px;font-size:16px}
+.note{font:13.5px/1.5 system-ui,sans-serif;color:var(--muted);margin:6px 0 0}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.tabs button,.chip{font:600 14px system-ui,sans-serif;padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:var(--soft);color:var(--fg);cursor:pointer}
+.tabs button[aria-pressed=true],.chip[aria-pressed=true]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+.tabs .lvchip[aria-pressed=true]{background:var(--card);color:var(--fg);border-color:var(--fg)}
+.lvchip[aria-pressed=false]{opacity:.45;text-decoration:line-through}
+select{font:15px system-ui;padding:8px 10px;border-radius:8px;border:1px solid var(--line);background:var(--soft);color:var(--fg)}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:99px;background:var(--soft);border:1px solid var(--line);color:var(--muted)}
+.tag.bad{color:var(--bad);border-color:var(--bad)}
+.tag.good{color:var(--good);border-color:var(--good)}
+.cap{flex:1 1 220px;border-radius:12px;padding:12px 14px;font:15px/1.4 system-ui,sans-serif;border:2px solid var(--line)}
+.cap b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.cap q{font:italic 19px/1.3 Georgia,serif;quotes:"“" "”"}
+
+svg{max-width:100%;height:auto;display:block}
+svg text{font-family:system-ui,sans-serif;fill:var(--fg)}
+svg .m{fill:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:720px){.grid2{grid-template-columns:1fr}}
+
+table{width:100%;border-collapse:collapse;font-size:14.5px;background:var(--card)}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.hm td{text-align:center;font-variant-numeric:tabular-nums;font-size:13.5px;padding:7px 6px;white-space:nowrap}
+.hm td:first-child,.hm th:first-child{text-align:left}
+input[type=range]{width:100%;accent-color:var(--accent)}
+pre{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:16px;overflow-x:auto;font:13.5px/1.55 ui-monospace,Menlo,Consolas,monospace;position:relative}
+.copy{position:absolute;top:8px;right:8px;font:12px system-ui;padding:4px 10px;border-radius:6px;border:1px solid var(--line);background:var(--card);color:var(--fg);cursor:pointer}
+.callout{border-left:4px solid var(--accent);padding:2px 0 2px 16px;margin:18px 0}
+footer{margin-top:60px;padding:28px 0 48px;border-top:1px solid var(--line);color:var(--muted);font:14px system-ui,sans-serif;text-align:center}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap wide">
+    <span class="venue">NeurIPS 2026 · Evaluations &amp; Datasets Track · Poster</span>
+    <h1>When Medical VLMs Stop Understanding</h1>
+    <p class="sub">MedTEC-Bench for Probing Semantic Specificity</p>
+
+    <div class="authors">
+      <span>Ahsan Habib Akash<sup>1</sup></span><span>Alina Devkota<sup>1</sup></span><span>Donald A. Adjeroh<sup>1</sup></span><span>Binod Bhattarai<sup>2,3,4</sup></span><span>Prashnna Kumar Gyawali<sup>1</sup></span>
+    </div>
+    <div class="affil"><sup>1</sup>West Virginia University, USA &nbsp; <sup>2</sup>University of Aberdeen, UK &nbsp; <sup>3</sup>Fogsphere (Redev.AI Ltd), UK &nbsp; <sup>4</sup>University College London, UK</div>
+
+    <div class="btns">
+      <a class="btn todo" href="#">Paper</a>
+      <a class="btn todo" href="#">OpenReview</a>
+      <a class="btn" href="https://github.com/machine-intelligence-lab-wvu/MedTEC-Bench">Code</a>
+      <a class="btn" href="https://github.com/machine-intelligence-lab-wvu/MedTEC-Bench/tree/main/data">Benchmark data</a>
+      <a class="btn ghost" href="#bibtex">BibTeX</a>
+    </div>
+
+    <figure class="hero" aria-labelledby="heroCap" style="margin-bottom:0">
+      <div class="hero-top">
+        <span id="heroLevel" style="font-weight:600"></span>
+        <div class="hero-dots" id="heroDots" role="group" aria-label="Select level"></div>
+      </div>
+      <svg id="heroSvg" viewBox="0 0 700 250" role="img" aria-label="Schematic of a correct and a distractor caption approaching an image embedding as the probe level increases"></svg>
+      <figcaption class="hero-cap" id="heroCap">Schematic of a single probe. Distance from the anchor image represents text–image similarity in the shared embedding space; the dashed circle marks the correct caption. As the level increases, the distractor differs from the correct caption along an increasingly fine semantic axis. At L4 and L5 it lies closer to the image than the correct caption, the behaviour MedTEC-Bench records as collapse (DS ≤ 0). Distances are illustrative.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<nav aria-label="Sections"><div class="wrap wide">
+  <a href="#overview">Overview</a><a href="#levels">Taxonomy</a><a href="#score">Metric</a><a href="#modalities">Modalities</a><a href="#explore">CXR results</a>
+  <a href="#proxies">Standard protocols</a><a href="#ct">Abdomen CT</a><a href="#robust">Robustness</a>
+  <a href="#fair">Subgroups</a><a href="#scale">Sample size</a><a href="#data">Construction</a><a href="#bibtex">BibTeX</a>
+</div></nav>
+
+<main class="wrap">
+
+<!-- ================= OVERVIEW ================= -->
+<section id="overview">
+  <div class="kicker">Overview</div>
+  <h2>Motivation</h2>
+  <p>Medical vision–language models are typically validated with image–text retrieval (R@k on ROCO or MedICaT) and zero-shot classification (AUROC on CheXpert-style label sets). These aggregate scores can conceal elementary failures. In our analysis, MedCLIP assigns a higher similarity to the text “acoustic guitar” than to “chest x-ray” for a frontal chest radiograph, despite competitive retrieval performance on chest radiographs.</p>
+
+  <div class="stats">
+    <div class="stat"><b>11</b><span>dual-encoder VLMs: general-domain, broad-biomedical, and modality-specialist</span></div>
+    <div class="stat"><b>6</b><span>imaging modalities, ~1,000 stratified anchor images each</span></div>
+    <div class="stat"><b>5</b><span>probe levels, each varying a single semantic axis</span></div>
+    <div class="stat"><b>+0.008</b><span>largest L5 (negation) score in the panel, against a 0.05 discrimination boundary</span></div>
+  </div>
+
+  <h2>Abstract</h2>
+  <p>Medical vision–language models (VLMs) are attracting growing interest as a foundation for clinical image interpretation, retrieval, and decision support. However, current evaluations largely emphasize aggregate accuracy, retrieval, or classification performance, offering limited insight into whether these models possess the fine-grained semantic understanding required for safe and reliable use in high-stakes clinical settings. In this work, we introduce <b>MedTEC-Bench</b>, a diagnostic benchmark for probing semantic understanding in medical VLMs across five levels of increasing specificity, from broad modality recognition to fine-grained findings and negation. MedTEC-Bench combines controlled semantic probes with a suite of metrics designed to reveal failures hidden by aggregate benchmarks. Evaluating a diverse set of VLMs, from broad biomedical models to clinical-specialist models, we find that existing systems often fail on basic yet clinically meaningful semantic distinctions, despite strong reported performance on standard tasks. Our results suggest that current medical VLM evaluations may overestimate vision-grounded clinical understanding and highlight the need for targeted semantic benchmarks before such models are deployed in high-stakes medical workflows.</p>
+
+  <h3>Summary of findings</h3>
+  <ol>
+    <li><b>Two regimes of failure.</b> Chest-radiograph specialists (MedCLIP, CheXzero, BioViL) fail at the domain level: they do not reliably separate chest radiographs from everyday objects. Broad-biomedical and general-domain models pass the coarse levels but fail on fine-grained findings and negation.</li>
+    <li><b>Negation fails universally.</b> No evaluated model reaches meaningful negation discrimination on any modality.</li>
+    <li><b>Standard protocols disagree.</b> Retrieval, zero-shot AUROC, and MedTEC probing produce different model rankings, including on identical images.</li>
+  </ol>
+</section>
+
+<!-- ================= LEVELS ================= -->
+<section id="levels">
+  <div class="kicker">Benchmark</div>
+  <h2>Probe taxonomy</h2>
+  <p>For a fixed anchor image, each probe pairs four correct descriptions with eight to ten incorrect ones that differ along a single semantic axis. Length, syntax, and template are matched between positives and negatives, so a failure cannot be attributed to surface form. Levels are ordered by difficulty; the first level at which a model collapses characterises its text-side competence ceiling.</p>
+  <div class="panel">
+    <div class="tabs" id="levelTabs" role="group" aria-label="Choose a level"></div>
+    <div id="levelBody"></div>
+    <p class="note">Examples are for a chest-radiograph anchor labelled <i>pneumonia</i>.</p>
+  </div>
+</section>
+
+<!-- ================= SCORE ================= -->
+<section id="score">
+  <div class="kicker">Metric</div>
+  <h2>Discrimination Score</h2>
+  <p>Let <b>v</b> be the ℓ2-normalised image embedding, and <b>t⁺</b> and <b>t⁻</b> the normalised positive and negative text embeddings. The Discrimination Score is</p>
+  <p style="text-align:center;font-size:20px"><b>DS = max<sub>i</sub> cos(v, t⁺<sub>i</sub>) − max<sub>j</sub> cos(v, t⁻<sub>j</sub>)</b></p>
+  <p>That is, the best-matching correct description must exceed the strongest distractor. DS ≤ 0 is recorded as a probe failure (collapse). Scores are averaged over per-concept template variants, and bootstrap 95% confidence intervals are computed over images (B = 10,000, seed 42).</p>
+  <div class="panel">
+    <h4>Worked example</h4>
+    <div class="grid2" style="align-items:center">
+      <div>
+        <label for="sPos">Similarity of best correct description: <b id="vPos"></b></label>
+        <input id="sPos" type="range" min="0.15" max="0.35" step="0.005" value="0.27">
+        <label for="sNeg" style="display:block;margin-top:10px">Similarity of strongest distractor: <b id="vNeg"></b></label>
+        <input id="sNeg" type="range" min="0.15" max="0.35" step="0.005" value="0.25">
+      </div>
+      <div id="dsOut"></div>
+    </div>
+    <p class="note">Slider values are illustrative and are not measurements.</p>
+  </div>
+  <h3>Classification of results</h3>
+  <table>
+    <tr><th>Verdict</th><th>Criterion (bootstrap 95% CI)</th></tr>
+    <tr><td><span class="tag good">Discriminating</span></td><td>CI lies above the 0.05 boundary</td></tr>
+    <tr><td><span class="tag">Near chance</span></td><td>CI crosses zero, or lies above zero but below 0.05</td></tr>
+    <tr><td><span class="tag bad">Collapse-certain</span></td><td>CI lies strictly below zero</td></tr>
+  </table>
+</section>
+
+<!-- ================= RADAR ================= -->
+<section id="modalities">
+  <div class="kicker">Results across modalities</div>
+  <h2>Discrimination scores by modality</h2>
+  <p>Each spoke is a model and each polygon a MedTEC level. Two patterns hold across modalities. The L2 and L3 polygons separate model families: broad-biomedical and general-domain models score above zero, while out-of-domain specialists do not. The L4 and L5 polygons contract toward the zero circle in every modality, irrespective of model family.</p>
+  <div class="panel">
+    <div class="tabs" id="modTabs" role="group" aria-label="Choose a modality"></div>
+    <div class="tabs" id="lvToggles" role="group" aria-label="Show or hide levels" style="margin-top:-4px"></div>
+    <svg id="radar" viewBox="0 0 700 560" role="img" aria-label="Radar chart of discrimination scores per model and level for the selected modality"></svg>
+    <p class="note" id="radarNote"></p>
+    <p class="note">Radial axis is linear from −0.30 (centre) to +0.25 (outer ring); the red dotted circle is DS = 0. Modality specialists are shown in bold. Hover a vertex for its value. Abdomen CT uses the disease-labelled Merlin probe set; MERLIN is evaluated with 3D volumes.</p>
+  </div>
+</section>
+
+<!-- ================= EXPLORE ================= -->
+<section id="explore">
+  <div class="kicker">Chest radiography · n = 1,000</div>
+  <h2>Per-level results on chest radiographs</h2>
+  <p>We examine chest radiography in detail because it has the most established retrieval and zero-shot benchmarks and the largest set of specialist models.</p>
+  <div class="panel">
+    <label for="modelSel" class="sans">Model&nbsp;</label>
+    <select id="modelSel"></select>
+    <span id="tier" style="margin-left:8px"></span>
+    <svg id="dsBars" viewBox="0 0 700 300" role="img" aria-label="Discrimination scores by level for the selected model"></svg>
+    <p class="note" id="tierNote"></p>
+  </div>
+  <div class="panel">
+    <h4>All models</h4>
+    <div class="scroll"><table class="hm" id="cxrTable"></table></div>
+    <p class="note">▼ DS ≤ 0 (collapse); ▲ DS &gt; 0. Glyphs duplicate the colour encoding.</p>
+  </div>
+  <div class="grid2">
+    <div>
+      <h3>Specialist models</h3>
+      <p>MedCLIP, CheXzero, and BioViL fail at L1. Every fine-tuning example in MIMIC-CXR or CheXpert is a chest radiograph, so the contrastive objective never requires the encoder to separate a chest radiograph from other content. BioViL shows the deepest collapses in the panel (L1 −0.253, L2 −0.300, L4 −0.279). An encoder that cannot reject “acoustic guitar” as a description of a chest radiograph is unsuitable for open-vocabulary input.</p>
+    </div>
+    <div>
+      <h3>Broad-biomedical and general-domain models</h3>
+      <p>These models pass L1–L3. At L4, broad-biomedical models fall below zero (PMC-CLIP −0.018, BiomedCLIP −0.009) while general-domain models remain near chance (+0.001 to +0.006). L5 is the only level at which every model in the panel fails. Biomedical caption pretraining therefore does not yield finding-level discrimination as a by-product of scale or vocabulary exposure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROXIES ================= -->
+<section id="proxies">
+  <div class="kicker">Comparison with standard evaluation</div>
+  <h2>Model rankings under three protocols</h2>
+  <p>We rank the nine chest-radiograph models under ROCO-CXR retrieval, NIH ChestX-ray14 zero-shot AUROC, and MedTEC L4. Retrieval favours models trained on PubMed figure captions; zero-shot AUROC favours models fine-tuned on the closed CheXpert label vocabulary. Neither tests finding-level discrimination directly.</p>
+  <div class="panel">
+    <div class="tabs" id="rankTabs" role="group" aria-label="Highlight a model"></div>
+    <svg id="bump" viewBox="0 0 700 380" role="img" aria-label="Bump chart of model rankings under three protocols"></svg>
+    <p class="note">ROCO-CXR R@1 (354 image–caption pairs); NIH ChestX-ray14 macro-AUROC (five CheXpert findings); MedTEC L4 DS on chest radiographs. Tied values share a rank number. Select a model to highlight it.</p>
+  </div>
+  <p>The disagreement persists when all three protocols are applied to the same OpenI images. CXR specialists lead retrieval (BioViL R@50 = 12.9% vs. BiomedCLIP 4.5%) and zero-shot AUROC (BioViL 0.708), while BioViL also shows the deepest probing collapse (L4 −0.219, L5 −0.167). MedTEC therefore measures a property that neither standard protocol captures.</p>
+</section>
+
+<!-- ================= CT ================= -->
+<section id="ct">
+  <div class="kicker">Additional experiments</div>
+  <h2>Abdomen CT with disease labels</h2>
+  <p>Our initial CT probes used AMOS-2022, which provides organ segmentation labels only; its L4 and L5 would therefore probe organ identity rather than findings and negation. We rebuilt the modality from the Merlin abdominal CT dataset (Stanford AIMI; 30 report-derived abnormality labels) with six single-label classes: hepatic steatosis, renal cyst, gallstones, ascites, pleural effusion, and no finding (150 each, n = 900). We additionally evaluate MERLIN, a volumetric CT model, on its own training distribution.</p>
+  <div class="panel">
+    <div class="scroll"><table class="hm" id="ctTable"></table></div>
+    <p class="note">19 of 40 cells are collapse-certain (95% CI &lt; 0). MERLIN is collapse-certain at all five levels. Trained exclusively on abdominal CT–report pairs, it was never required to encode whether an image is a CT, and everyday-object and other-modality descriptions frequently outscore the correct CT description.</p>
+  </div>
+</section>
+
+<!-- ================= ROBUST ================= -->
+<section id="robust">
+  <div class="kicker">Additional experiments</div>
+  <h2>Robustness to prompt formulation</h2>
+  <p>We repeated L4 and L5 under four phrasing styles, keeping the anchor image, competing findings, and probe structure fixed: the original <b>template</b> captions, <b>report</b>-style sentences (Findings/Impression), <b>ontology</b> terms following RadLex and UMLS, and <b>alternative clinical</b> paraphrases. Of the 63 cells that collapse under the template, 62 remain below the 0.05 boundary under every style; style accounts for roughly 0.01–0.04 SD per cell.</p>
+  <div class="panel">
+    <h4>Collapse-certain cells by modality (models × levels × styles)</h4>
+    <svg id="robustBars" viewBox="0 0 700 250" role="img" aria-label="Bar chart of collapse-certain cell counts by modality"></svg>
+    <p class="note">The single exception is in brain MRI: BiomedCLIP L5 changes from −0.014 (template) to +0.051 (ontology) and is negative again under two other styles. Sign changes occur in both directions, so the template does not systematically favour the models.</p>
+  </div>
+
+  <h3>Negation subtypes</h3>
+  <p>The original L5 used a single negation form. We decomposed it into four subtypes following NegEx, ConText, and the radiologist-certainty lexicon of Panicek and Hricak: definite (“pneumonia excluded”), hedged (“possible pneumonia”, “cannot be excluded”), ruled-out (“no radiographic evidence of pneumonia”), and historical (“prior pneumonia, now resolved”). Hedged phrasing is collapse-certain in 38 of 46 model × modality cells (83%), compared with 52% for definite and 50% for ruled-out negation.</p>
+  <div class="panel">
+    <h4>Histopathology: DS by negation subtype</h4>
+    <div class="scroll"><table class="hm" id="negTable"></table></div>
+    <p class="note">* collapse-certain (95% CI &lt; 0). † Historical is off-axis. CONCH, the in-domain pathology model, handles explicit negation (definite +0.075, ruled-out +0.210) but collapses on hedged phrasing (−0.014), which isolates uncertainty as the failure mode.</p>
+  </div>
+
+  <h3>Downstream task</h3>
+  <p>On the 1,191 closed yes/no questions of VQA-RAD, a dual encoder answers by scoring an affirmative statement against its negation, which is an L5 contrast on an externally authored dataset. Balanced accuracy across ten models ranges from 0.484 to 0.530 (chance 0.500), only two models exceed chance, and the yes-rate varies from 0.164 to 0.766, indicating that answers follow a fixed polarity prior rather than the image.</p>
+</section>
+
+<!-- ================= FAIRNESS ================= -->
+<section id="fair">
+  <div class="kicker">Additional experiments</div>
+  <h2>Demographic subgroup analysis</h2>
+  <p>All subgroup analyses use ground-truth attributes without imputation and the same DS protocol. Sex and age use HAM10000 disease labels joined to ISIC-2019 metadata (n = 1,000; L1–L5). Skin tone uses the MSKCC Skin Tone Labeling Dataset (ISIC collection 413; 300 images per Fitzpatrick group). Because all lesions in that set are benign, skin-tone analysis covers L1–L3.</p>
+  <div class="panel">
+    <h4>L1 DS by Fitzpatrick group</h4>
+    <svg id="skinBars" viewBox="0 0 700 300" role="img" aria-label="Grouped bars of L1 DS by Fitzpatrick skin-tone group"></svg>
+    <p class="note">Recognition holds across all groups, with a small but significant gradient against darker skin at L1–L2 (maximum gap 0.044; BiomedCLIP L1 +0.177 for I–II vs. +0.132 for V–VI, non-overlapping CIs). The gap falls to at most 0.012 at L3.</p>
+  </div>
+  <table>
+    <tr><th>Attribute</th><th class="n">Max. gap</th><th>Observation</th></tr>
+    <tr><td>Skin tone (L1–L3)</td><td class="n">0.044</td><td>Small gradient against types V–VI at L1–L2; absent at L3</td></tr>
+    <tr><td>Sex (L1–L5)</td><td class="n">0.009</td><td>No difference; L4/L5 collapse is equal across sexes</td></tr>
+    <tr><td>Age (L1–L5)</td><td class="n">0.019</td><td>Negligible; one isolated gap (PMC-CLIP, L4)</td></tr>
+  </table>
+</section>
+
+<!-- ================= SCALE ================= -->
+<section id="scale">
+  <div class="kicker">Additional experiments</div>
+  <h2>Sensitivity to sample size</h2>
+  <p>We subsampled per-image scores at n = 100, 250, 500, and 1,000 with fixed prompts, seed, and bootstrap settings. Point estimates are stable from n ≈ 250; larger samples mainly narrow the confidence intervals. At n ≈ 1,000 the intervals are narrow enough to separate collapse from near-chance behaviour for |DS| ≈ 0.001–0.005.</p>
+  <div class="panel">
+    <svg id="nStab" viewBox="0 0 700 280" role="img" aria-label="DS point estimates versus subsample size"></svg>  </div>
+  <p>We also report precision@k alongside recall@k for retrieval. With one gold caption per image, P@k = R@k / k, so the two metrics yield identical rankings.</p>
+</section>
+
+<!-- ================= DATA ================= -->
+<section id="data">
+  <div class="kicker">Construction</div>
+  <h2>Benchmark construction</h2>
+  <p>Anchor images are stratified by label and restricted to single-label cases. This restriction is necessary because L4 and L5 negatives name other findings; with a multi-label anchor, a nominal negative could be a true description. Each anchor set is produced by a deterministic script (seed 42) that writes a manifest with per-image provenance.</p>
+  <div class="scroll"><table>
+    <tr><th>Modality</th><th>Source</th><th class="n">Anchors</th><th>Label vocabulary</th></tr>
+    <tr><td>Chest X-ray</td><td>NIH ChestX-ray14</td><td class="n">1,000</td><td>5 single-label findings</td></tr>
+    <tr><td>Brain MRI</td><td>OASIS</td><td class="n">1,000</td><td>4 dementia stages</td></tr>
+    <tr><td>Abdomen CT</td><td>Merlin (disease-labelled)</td><td class="n">900</td><td>6 classes</td></tr>
+    <tr><td>Retinal fundus</td><td>ODIR-5K</td><td class="n">1,004</td><td>7 ocular disease classes</td></tr>
+    <tr><td>Dermoscopy</td><td>ISIC 2018 Task 3</td><td class="n">1,000</td><td>5 lesion types</td></tr>
+    <tr><td>Histopathology</td><td>NCT-CRC-HE-100K</td><td class="n">999</td><td>9 tissue classes</td></tr>
+  </table></div>
+  <p style="margin-top:14px">Negatives are drawn from clinical vocabularies rather than constructed adversarially: other imaging modalities of the same anatomy, named following RadLex (L2); the same modality applied to a different anatomical region (L3); the remaining labels of the modality's diagnostic vocabulary, e.g. CheXpert for chest radiographs (L4); and ten negation constructions (L5). This follows the grounded-negative practice of Winoground, ARO, and SugarCrepe.</p>
+
+  <h3>Relation to existing benchmarks</h3>
+  <table>
+    <tr><th>Benchmark</th><th>Measurement</th></tr>
+    <tr><td>GMAI-MMBench, OmniMedVQA</td><td>Task accuracy of generative LVLMs across clinical tasks, departments, and modalities</td></tr>
+    <tr><td>ProbMed, MediConfusion</td><td>Robustness on adversarial or confusable cases</td></tr>
+    <tr><td>Winoground, ARO, SugarCrepe, CREPE, ConMe</td><td>Compositional probing in the general domain</td></tr>
+    <tr><td><b>MedTEC-Bench</b></td><td>Whether dual-encoder representations separate clinically relevant concepts, one semantic axis at a time</td></tr>
+  </table>
+
+  <h3>Scope and limitations</h3>
+  <p>MedTEC-Bench probes the text side of dual-encoder medical VLMs. Image-side failures are a separate axis, and the conclusions do not transfer directly to generative or cross-attention architectures. The negation levels cover a range of constructions but do not exhaust clinical phrasing. The study is diagnostic; establishing how L4 and L5 performance maps to specific downstream applications, and how each failure regime responds to mitigation, is left to future work.</p>
+  <div class="callout">We recommend reporting text-side probing alongside retrieval and zero-shot scores. Standard benchmarks remain informative, but they are insufficient proxies for the semantic discrimination that clinical applications require.</div>
+</section>
+
+<section id="bibtex">
+  <h2>Citation</h2>
+  <!-- TODO: replace with the official entry once the proceedings key is available -->
+  <pre><button class="copy" type="button">Copy</button><code>@inproceedings{akash2026medtec,
+  title     = {When Medical VLMs Stop Understanding: MedTEC-Bench for Probing Semantic Specificity},
+  author    = {Akash, Ahsan Habib and Devkota, Alina and Adjeroh, Donald A. and Bhattarai, Binod and Gyawali, Prashnna Kumar},
+  booktitle = {Advances in Neural Information Processing Systems (Evaluations and Datasets Track)},
+  year      = {2026}
+}</code></pre>
+</section>
+
+</main>
+
+<footer><div class="wrap">West Virginia University · NeurIPS 2026 Evaluations and Datasets Track</div></footer>
+
+<script>
+(function(){
+"use strict";
+var $=function(s){return document.querySelector(s)};
+function fmt(x,d){d=d==null?3:d;return (x>=0?"+":"−")+Math.abs(x).toFixed(d)}
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+var LEVELS=[
+ {k:"L1",n:"Domain",q:"Is the image medical?",pos:"a chest x-ray",neg:"a red apple",note:"Negatives are everyday objects: food, animals, household items, outdoor scenes."},
+ {k:"L2",n:"Modality",q:"Which imaging modality?",pos:"a chest radiograph",neg:"a chest CT scan",note:"Negatives are other modalities applied to the same anatomy."},
+ {k:"L3",n:"Anatomy",q:"Which anatomical region?",pos:"a chest x-ray",neg:"a knee x-ray",note:"Modality is held constant; only anatomy varies."},
+ {k:"L4",n:"Finding",q:"Which pathology?",pos:"chest x-ray showing pneumonia",neg:"chest x-ray showing cardiomegaly",note:"Negatives are the remaining labels of the modality's diagnostic vocabulary."},
+ {k:"L5",n:"Negation",q:"Is the finding present or absent?",pos:"chest x-ray showing pneumonia",neg:"chest x-ray showing no pneumonia",note:"Ten negation constructions: sentential, passive, clinical, copular, and existential."}
+];
+
+/* ---------------- hero animation ---------------- */
+var hero={i:0,timer:null,playing:!reduce};
+var IMG=[350,128],DP=105,DN=[235,200,165,80,72];
+(function buildHero(){
+  var s='<circle cx="'+IMG[0]+'" cy="'+IMG[1]+'" r="'+DP+'" fill="none" stroke="var(--good)" stroke-dasharray="4 5" stroke-opacity=".7"/>'+
+   '<line id="hpLine" x1="'+IMG[0]+'" y1="'+IMG[1]+'" x2="'+(IMG[0]-DP)+'" y2="'+IMG[1]+'" stroke="var(--good)" stroke-width="1.5"/>'+
+   '<g class="mv" id="hnLineG"><line x1="0" y1="0" x2="1" y2="0" stroke="var(--bad)" stroke-width="1.5" id="hnLine" transform="translate('+IMG[0]+','+IMG[1]+')"/></g>'+
+   '<defs><radialGradient id="xr" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#d9dde4"/><stop offset=".5" stop-color="#6b7280"/><stop offset="1" stop-color="#1f232b"/></radialGradient></defs>'+
+   '<rect x="'+(IMG[0]-26)+'" y="'+(IMG[1]-30)+'" width="52" height="60" rx="8" fill="url(#xr)" stroke="var(--line)"/>'+
+   '<text x="'+IMG[0]+'" y="'+(IMG[1]+48)+'" text-anchor="middle" font-size="12" font-weight="700">anchor image</text>'+
+   '<g id="hPos" transform="translate('+(IMG[0]-DP)+','+IMG[1]+')"><circle r="9" fill="var(--good)"/></g>'+
+   '<text id="hPosT" x="'+(IMG[0]-DP-16)+'" y="'+(IMG[1]+5)+'" text-anchor="end" font-size="13" style="fill:var(--good)" font-weight="700"></text>'+
+   '<g class="mv" id="hNeg"><circle r="9" id="hNegC" fill="var(--bad)"/><text id="hNegT" y="-18" text-anchor="middle" font-size="13" font-weight="700" style="fill:var(--bad)"></text></g>'+
+   '<text x="20" y="232" font-size="12" class="m"><tspan style="fill:var(--good)">●</tspan> correct description</text><text x="180" y="232" font-size="12" class="m"><tspan style="fill:var(--bad)">●</tspan> distractor</text>'+
+   '<text id="hVerdict" class="fade" x="680" y="232" text-anchor="end" font-size="13" font-weight="700"></text>';
+  $("#heroSvg").innerHTML=s;
+  var d=$("#heroDots");
+  LEVELS.forEach(function(L,i){
+    var b=document.createElement("button");b.type="button";b.textContent=L.k;
+    b.onclick=function(){hero.i=i;stopHero();showHero()};d.appendChild(b);
+  });
+  var p=document.createElement("button");p.type="button";p.id="heroPlay";
+  p.onclick=function(){hero.playing?stopHero():startHero()};d.appendChild(p);
+})();
+function showHero(){
+  var L=LEVELS[hero.i],dn=DN[hero.i],ang=-20*Math.PI/180;
+  var x=IMG[0]+dn*Math.cos(ang),y=IMG[1]+dn*Math.sin(ang);
+  $("#hNeg").setAttribute("style","transform:translate("+x+"px,"+y+"px)");
+  $("#hnLine").setAttribute("x2",(x-IMG[0]));$("#hnLine").setAttribute("y2",(y-IMG[1]));
+  $("#hPosT").textContent="“"+L.pos+"”";
+  $("#hNegT").textContent="“"+L.neg+"”";
+  var collapse=dn<DP;
+  $("#hNegT").setAttribute("text-anchor",x>560?"end":"middle");
+  $("#hVerdict").textContent=collapse?"Distractor closer than correct description: collapse":"Correct description closer: pass";
+  $("#hVerdict").style.fill=collapse?"var(--bad)":"var(--good)";
+  $("#heroLevel").textContent=L.k+" · "+L.n+": "+L.q;
+  document.querySelectorAll("#heroDots button").forEach(function(b,i){if(i<5)b.setAttribute("aria-pressed",i===hero.i)});
+  $("#heroPlay").textContent=hero.playing?"Pause":"Play";
+}
+function startHero(){hero.playing=true;clearInterval(hero.timer);hero.timer=setInterval(function(){hero.i=(hero.i+1)%5;showHero()},2800);showHero()}
+function stopHero(){hero.playing=false;clearInterval(hero.timer);showHero()}
+showHero();if(hero.playing)startHero();
+
+/* ---------------- level tabs ---------------- */
+var lv=0;
+function drawLevels(){
+  var t=$("#levelTabs");t.innerHTML="";
+  LEVELS.forEach(function(L,i){
+    var b=document.createElement("button");b.type="button";b.textContent=L.k+" · "+L.n;
+    b.setAttribute("aria-pressed",i===lv);b.onclick=function(){lv=i;drawLevels()};t.appendChild(b);
+  });
+  var L=LEVELS[lv];
+  $("#levelBody").innerHTML='<p style="margin:4px 0 10px"><b>'+L.k+" ("+L.n.toLowerCase()+")</b>. "+L.q+'</p>'+
+   '<div style="display:flex;gap:12px;flex-wrap:wrap">'+
+   '<div class="cap" style="border-color:var(--good)"><b>Positive</b><q>'+esc(L.pos)+'</q></div>'+
+   '<div class="cap" style="border-color:var(--bad)"><b>Negative</b><q>'+esc(L.neg)+'</q></div></div>'+
+   '<p class="note">'+L.note+'</p>';
+}
+drawLevels();
+
+/* ---------------- DS worked example ---------------- */
+function calc(){
+  var p=+$("#sPos").value,n=+$("#sNeg").value,d=p-n,v,c,g;
+  $("#vPos").textContent=p.toFixed(3);$("#vNeg").textContent=n.toFixed(3);
+  if(d<=0){v="Collapse: the distractor is preferred";c="var(--bad)";g="▼"}
+  else if(d<0.05){v="Positive, but below the 0.05 discrimination boundary";c="var(--mid)";g="▲"}
+  else{v="Above the discrimination boundary";c="var(--good)";g="▲"}
+  $("#dsOut").innerHTML='<div style="font:700 32px system-ui;color:'+c+'">'+g+' DS '+fmt(d)+'</div><div class="sans" style="color:var(--muted)">'+v+'</div>';
+}
+$("#sPos").oninput=calc;$("#sNeg").oninput=calc;calc();
+
+/* ---------------- per-modality data (experiments/results/medtec_*_n1000.json; CT: medtec_ct_disease_*.json) ---------------- */
+var MOD={
+ "Chest X-ray":{spec:["MedCLIP","CheXzero","BioViL"],d:{
+   "BiomedCLIP":[.223,.048,.110,-.009,-.011],"PMC-CLIP":[.114,.070,.127,-.018,-.024],"PubMedCLIP":[.038,.026,.049,.002,-.003],
+   "OpenCLIP-B/32":[.230,.039,.067,.002,-.003],"OpenCLIP-L/14":[.228,.044,.081,.006,-.007],"SigLIP":[.131,.011,.059,.001,-.003],
+   "MedCLIP":[-.012,.001,-.000,-.000,-.004],"CheXzero":[-.008,-.007,-.002,-.001,-.004],"BioViL":[-.253,-.300,-.001,-.279,-.008]}},
+ "Brain MRI":{spec:[],d:{
+   "BiomedCLIP":[.141,.009,.036,-.010,-.014],"PMC-CLIP":[.054,-.018,.063,.034,.007],"PubMedCLIP":[.042,.006,.034,-.002,-.001],
+   "OpenCLIP-B/32":[.175,.006,.007,-.004,.001],"OpenCLIP-L/14":[.206,.014,.029,-.013,-.000],"SigLIP":[.129,.009,.042,-.004,-.000],
+   "MedCLIP":[-.013,.002,-.010,-.005,-.001]}},
+ "Abdomen CT":{spec:["MERLIN"],d:{
+   "BiomedCLIP":[.193,.090,.103,-.036,-.007],"PMC-CLIP":[.110,.074,.099,-.047,-.032],"PubMedCLIP":[.040,.040,.021,-.022,-.001],
+   "OpenCLIP-B/32":[.190,.021,.016,-.013,.001],"OpenCLIP-L/14":[.214,.016,.046,-.006,-.001],"SigLIP":[.133,.035,.037,-.010,-.003],
+   "MedCLIP":[-.012,-.003,-.000,-.005,.000],"MERLIN":[-.080,-.076,-.023,-.012,-.032]}},
+ "Retinal fundus":{spec:[],d:{
+   "BiomedCLIP":[.183,.082,.108,-.024,-.003],"PMC-CLIP":[.163,.103,.134,-.043,-.018],"PubMedCLIP":[.051,.038,.069,-.009,-.006],
+   "OpenCLIP-B/32":[.214,.021,.085,-.014,.002],"OpenCLIP-L/14":[.232,.023,.096,-.011,-.005],"SigLIP":[.132,.017,.060,-.014,-.001],
+   "MedCLIP":[-.016,-.002,-.001,.004,.001]}},
+ "Dermoscopy":{spec:[],d:{
+   "BiomedCLIP":[.190,.124,.125,.002,.001],"PMC-CLIP":[.170,.092,.161,.005,.008],"PubMedCLIP":[.047,.013,.044,.006,-.003],
+   "OpenCLIP-B/32":[.163,.029,.052,-.000,.003],"OpenCLIP-L/14":[.195,.015,.053,.007,.002],"SigLIP":[.147,.038,.051,-.002,-.001],
+   "MedCLIP":[-.016,-.007,-.019,-.011,.000]}},
+ "Histopathology":{spec:["CONCH","PLIP"],d:{
+   "BiomedCLIP":[.163,-.005,.022,.001,.002],"PMC-CLIP":[.104,-.003,.038,.025,-.012],"PubMedCLIP":[.037,.003,.002,-.001,-.001],
+   "OpenCLIP-B/32":[.173,.009,-.004,-.006,.002],"OpenCLIP-L/14":[.190,.009,.014,-.008,-.001],"SigLIP":[.115,.004,.014,-.007,-.003],
+   "MedCLIP":[-.013,-.001,-.001,-.003,-.002],"CONCH":[.005,.055,.056,.045,-.004],"PLIP":[.002,-.001,-.003,.017,-.010]}}
+};
+var NOTES={
+ "Chest X-ray":"The three CXR specialists sit at or inside the zero circle from L1 onward; BioViL reaches the centre at L1, L2, and L4.",
+ "Brain MRI":"No model has a specialist for this modality in the panel. L4 and L5 lie on the zero circle for every model except PMC-CLIP at L4 (+0.034).",
+ "Abdomen CT":"MERLIN, evaluated on its own training distribution, lies inside the zero circle at every level.",
+ "Retinal fundus":"Broad-biomedical models are furthest below zero at L4 (PMC-CLIP −0.043, BiomedCLIP −0.024).",
+ "Dermoscopy":"L4 and L5 are near zero for every model; the largest value is +0.008 (PMC-CLIP, L5).",
+ "Histopathology":"CONCH, the pathology specialist, is the only model approaching the boundary at L4 (+0.045), yet it fails L5 (−0.004)."
+};
+var LVCOL=["var(--l1)","var(--l2)","var(--l3)","var(--l4)","var(--l5)"],LVDASH=["0","10 5","2 4 8 4","5 4","1.5 4"];
+var curMod="Chest X-ray",lvOn=[true,true,true,true,true];
+(function(){
+  var t=$("#modTabs");
+  Object.keys(MOD).forEach(function(m){
+    var b=document.createElement("button");b.type="button";b.textContent=m;
+    b.onclick=function(){curMod=m;drawRadar()};t.appendChild(b);
+  });
+  var g=$("#lvToggles");
+  LEVELS.forEach(function(L,i){
+    var b=document.createElement("button");b.type="button";b.className="chip lvchip";
+    b.innerHTML='<svg width="26" height="10" style="display:inline-block;vertical-align:middle;margin-right:6px"><line x1="1" y1="5" x2="25" y2="5" stroke="'+LVCOL[i]+'" stroke-width="3" stroke-dasharray="'+LVDASH[i]+'"/></svg>'+L.k+" "+L.n;
+    b.onclick=function(){lvOn[i]=!lvOn[i];drawRadar()};g.appendChild(b);
+  });
+})();
+function drawRadar(){
+  document.querySelectorAll("#modTabs button").forEach(function(b){b.setAttribute("aria-pressed",b.textContent===curMod)});
+  document.querySelectorAll("#lvToggles button").forEach(function(b,i){b.setAttribute("aria-pressed",lvOn[i])});
+  var M=MOD[curMod],names=Object.keys(M.d),N=names.length,cx=350,cy=285,R0=0,R=200,vmin=-.30,vmax=.25,s="";
+  function rad(v){v=Math.max(vmin,Math.min(vmax,v));return R0+(v-vmin)/(vmax-vmin)*(R-R0)}
+  function pt(i,v){var a=-Math.PI/2+i*2*Math.PI/N,r=rad(v);return [cx+r*Math.cos(a),cy+r*Math.sin(a)]}
+  [-.2,-.1,.1,.2].forEach(function(t){s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+rad(t)+'" fill="none" stroke="var(--line)"/>'});
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+R+'" fill="none" stroke="var(--line)"/>';
+  [-.2,-.1,0,.1,.2].forEach(function(t){s+='<text x="'+(cx+4)+'" y="'+(cy-rad(t)+12)+'" font-size="10" class="m">'+(t>0?"+":"")+t.toFixed(1)+'</text>'});
+  for(var i=0;i<N;i++){
+    var e=pt(i,vmax),a=-Math.PI/2+i*2*Math.PI/N,lx=cx+(R+22)*Math.cos(a),ly=cy+(R+22)*Math.sin(a);
+    var anc=Math.abs(Math.cos(a))<.2?"middle":(Math.cos(a)>0?"start":"end"),sp=M.spec.indexOf(names[i])>=0;
+    s+='<line x1="'+cx+'" y1="'+cy+'" x2="'+e[0]+'" y2="'+e[1]+'" stroke="var(--line)"/>'+
+       '<text x="'+lx+'" y="'+(ly+4)+'" text-anchor="'+anc+'" font-size="13" font-weight="'+(sp?800:500)+'"'+(sp?' style="fill:var(--good)"':'')+'>'+names[i]+'</text>';
+  }
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="'+rad(0)+'" fill="none" stroke="var(--bad)" stroke-width="2" stroke-dasharray="2 4"/>';
+  for(var L=0;L<5;L++){
+    if(!lvOn[L])continue;
+    var pts=names.map(function(n,i){return pt(i,M.d[n][L])});
+    s+='<polygon points="'+pts.map(function(p){return p[0].toFixed(1)+","+p[1].toFixed(1)}).join(" ")+'" fill="'+LVCOL[L]+'" fill-opacity=".06" stroke="'+LVCOL[L]+'" stroke-width="2.4" stroke-dasharray="'+LVDASH[L]+'" stroke-linejoin="round"/>';
+    pts.forEach(function(p,i){
+      var v=M.d[names[i]][L];
+      s+='<circle cx="'+p[0].toFixed(1)+'" cy="'+p[1].toFixed(1)+'" r="4" fill="'+LVCOL[L]+'" stroke="var(--card)" stroke-width="1"><title>'+names[i]+" · "+LEVELS[L].k+" "+LEVELS[L].n+": DS "+fmt(v)+(v<vmin?" (clipped)":"")+'</title></circle>';
+    });
+  }
+  s+='<text x="'+(cx+rad(0)*.72)+'" y="'+(cy+rad(0)*.72+14)+'" font-size="11" style="fill:var(--bad)">DS = 0</text>';
+  $("#radar").innerHTML=s;
+  $("#radarNote").textContent=NOTES[curMod];
+}
+drawRadar();
+
+/* ---------------- CXR bar explorer (paper Table 3) ---------------- */
+var CXR=[
+ {m:"OpenCLIP ViT-B/32",f:"General-domain",v:[.231,.039,.067,.002,-.003]},
+ {m:"OpenCLIP ViT-L/14",f:"General-domain",v:[.228,.044,.081,.006,-.007]},
+ {m:"SigLIP",f:"General-domain",v:[.131,.011,.059,.001,-.003]},
+ {m:"BiomedCLIP",f:"Broad biomedical",v:[.223,.048,.110,-.009,-.011]},
+ {m:"PMC-CLIP",f:"Broad biomedical",v:[.114,.070,.127,-.018,-.024]},
+ {m:"PubMedCLIP",f:"Broad biomedical",v:[.038,.027,.049,.002,-.003]},
+ {m:"MedCLIP",f:"CXR specialist",v:[-.012,.001,-.000,-.000,-.004]},
+ {m:"CheXzero",f:"CXR specialist",v:[-.008,-.007,-.002,-.001,-.004]},
+ {m:"BioViL",f:"CXR specialist",v:[-.253,-.300,-.001,-.279,-.008]}
+];
+var sel=$("#modelSel");
+CXR.forEach(function(r,i){var o=document.createElement("option");o.value=i;o.textContent=r.m;sel.appendChild(o)});
+sel.value=8;
+var TIERNOTE={
+ "CXR specialist":"Fails at the domain level. Narrow-domain fine-tuning has eroded the open-vocabulary structure inherited from general pretraining.",
+ "Broad biomedical":"Passes L1–L3 and falls to or below zero at the finding and negation levels.",
+ "General-domain":"Passes L1–L3, remains near chance at L4, and fails L5."
+};
+function drawBars(){
+  var r=CXR[+sel.value],W=700,H=300,pl=60,pr=20,pt=20,pb=50,mn=-0.32,mx=0.28;
+  function Y(v){return pt+(mx-v)/(mx-mn)*(H-pt-pb)}
+  var s='<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#fff" stroke-opacity=".35" stroke-width="2"/></pattern></defs>';
+  [-0.3,-0.2,-0.1,0,0.1,0.2].forEach(function(t){
+    s+='<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+Y(t)+'" y2="'+Y(t)+'" stroke="var(--line)"/>'+
+       '<text x="'+(pl-8)+'" y="'+(Y(t)+4)+'" text-anchor="end" font-size="11" class="m">'+(t>0?"+":"")+t.toFixed(1)+'</text>';
+  });
+  s+='<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+Y(0)+'" y2="'+Y(0)+'" stroke="var(--fg)" stroke-width="1.5"/>'+
+     '<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+Y(.05)+'" y2="'+Y(.05)+'" stroke="var(--good)" stroke-dasharray="5 4"/>'+
+     '<text x="'+(W-pr)+'" y="'+(Y(.05)-5)+'" text-anchor="end" font-size="11" style="fill:var(--good)">0.05 boundary</text>';
+  var bw=70,gap=(W-pl-pr-5*bw)/5;
+  r.v.forEach(function(v,i){
+    var x=pl+gap/2+i*(bw+gap),y0=Y(0),y1=Y(v),col=v<=0?"var(--bad)":"var(--accent)";
+    var top=Math.min(y0,y1),h=Math.max(Math.abs(y1-y0),2);
+    s+='<rect x="'+x+'" y="'+top+'" width="'+bw+'" height="'+h+'" rx="4" fill="'+col+'"/>';
+    if(v<=0)s+='<rect x="'+x+'" y="'+top+'" width="'+bw+'" height="'+h+'" rx="4" fill="url(#hatch)"/>';
+    var ly=v>=0?top-6:top+h+14;
+    s+='<text x="'+(x+bw/2)+'" y="'+ly+'" text-anchor="middle" font-size="12" font-weight="700">'+(v<=0?"▼ ":"▲ ")+fmt(v)+'</text>'+
+       '<text x="'+(x+bw/2)+'" y="'+(H-22)+'" text-anchor="middle" font-size="12" font-weight="700">'+LEVELS[i].k+'</text>'+
+       '<text x="'+(x+bw/2)+'" y="'+(H-8)+'" text-anchor="middle" font-size="11" class="m">'+LEVELS[i].n+'</text>';
+  });
+  $("#dsBars").innerHTML=s;
+  $("#tier").innerHTML='<span class="tag '+(r.f==="CXR specialist"?"bad":"")+'">'+r.f+'</span>';
+  $("#tierNote").textContent=TIERNOTE[r.f];
+}
+sel.onchange=drawBars;drawBars();
+
+function heat(v,scale){
+  var a=Math.min(Math.abs(v)/(scale||0.25),1)*0.55+0.08;
+  return v<=0?"rgba(179,55,43,"+a+")":"rgba(13,92,125,"+Math.min(a,0.5)+")";
+}
+function hmTable(el,head,rows,d,scale){
+  var h="<tr><th>"+head.join("</th><th>")+"</th></tr>";
+  rows.forEach(function(r){
+    h+="<tr><td>"+esc(r.name)+"</td>";
+    r.v.forEach(function(v,i){
+      h+='<td style="background:'+heat(v,scale)+'">'+(v<=0?"▼ ":"▲ ")+fmt(v,d)+(r.s&&r.s[i]?"*":"")+"</td>";
+    });
+    h+="</tr>";
+  });
+  el.innerHTML=h;
+}
+hmTable($("#cxrTable"),["Model","L1","L2","L3","L4","L5"],CXR.map(function(r){return {name:r.m,v:r.v}}));
+
+/* ---------------- bump chart ---------------- */
+var RK=[
+ {m:"PMC-CLIP",roco:27.4,nih:.664,l4:-.018},{m:"BiomedCLIP",roco:24.0,nih:.670,l4:-.009},
+ {m:"PubMedCLIP",roco:3.4,nih:.570,l4:.002},{m:"SigLIP",roco:3.4,nih:.500,l4:.001},
+ {m:"OpenCLIP-L/14",roco:1.4,nih:.555,l4:.006},{m:"OpenCLIP-B/32",roco:.8,nih:.497,l4:.002},
+ {m:"BioViL",roco:2.5,nih:.686,l4:-.279},{m:"CheXzero",roco:2.3,nih:.755,l4:-.001},{m:"MedCLIP",roco:.6,nih:.771,l4:0}
+];
+var keys=["roco","nih","l4"],ranks={},pos={};
+keys.forEach(function(k){
+  var s=RK.slice().sort(function(a,b){return b[k]-a[k]});
+  s.forEach(function(r,i){
+    (pos[r.m]=pos[r.m]||{})[k]=i;
+    var rank=i+1;
+    if(i>0&&s[i-1][k]===r[k])rank=ranks[s[i-1].m][k];
+    (ranks[r.m]=ranks[r.m]||{})[k]=rank;
+  });
+});
+var hi=null,PAL=["#0d5c7d","#b3372b","#1f7a55","#b07d00","#7a4fb5","#c2185b","#00838f","#6d4c41","#455a64"];
+function drawBump(){
+  var tabs=$("#rankTabs");tabs.innerHTML="";
+  RK.forEach(function(r){
+    var b=document.createElement("button");b.type="button";b.className="chip";b.textContent=r.m;
+    b.setAttribute("aria-pressed",hi===r.m);b.onclick=function(){hi=(hi===r.m?null:r.m);drawBump()};tabs.appendChild(b);
+  });
+  var xs=[150,350,550],top=60,step=34,s="";
+  ["ROCO-CXR R@1","NIH zero-shot AUROC","MedTEC L4 DS"].forEach(function(n,i){s+='<text x="'+xs[i]+'" y="26" text-anchor="middle" font-size="13" font-weight="700">'+n+'</text>'});
+  RK.forEach(function(r,idx){
+    var on=hi===null||hi===r.m,col=PAL[idx],pts=keys.map(function(k,i){return [xs[i],top+pos[r.m][k]*step]});
+    s+='<polyline points="'+pts.map(function(p){return p.join(",")}).join(" ")+'" fill="none" stroke="'+(on?col:"var(--line)")+'" stroke-width="'+(hi===r.m?5:3)+'" stroke-linejoin="round" stroke-dasharray="'+(idx%3===1?"8 4":idx%3===2?"2 4":"0")+'"/>';
+    pts.forEach(function(p,i){
+      s+='<circle cx="'+p[0]+'" cy="'+p[1]+'" r="11" fill="'+(on?col:"var(--card)")+'" stroke="'+(on?col:"var(--line)")+'"/>'+
+         '<text x="'+p[0]+'" y="'+(p[1]+4)+'" text-anchor="middle" font-size="11" font-weight="700" style="fill:'+(on?"#fff":"var(--muted)")+'">'+ranks[r.m][keys[i]]+'</text>';
+    });
+    if(on){
+      s+='<text x="'+(xs[0]-20)+'" y="'+(pts[0][1]+4)+'" text-anchor="end" font-size="11.5" style="fill:'+col+'" font-weight="700">'+r.m+'</text>'+
+         '<text x="'+(xs[2]+20)+'" y="'+(pts[2][1]+4)+'" font-size="11.5" style="fill:'+col+'" font-weight="700">'+r.m+'</text>';
+    }
+  });
+  $("#bump").innerHTML=s;
+}
+drawBump();
+
+/* ---------------- CT table ---------------- */
+var CT=[
+ ["BiomedCLIP",MOD["Abdomen CT"].d["BiomedCLIP"]],["PMC-CLIP",MOD["Abdomen CT"].d["PMC-CLIP"]],["PubMedCLIP",MOD["Abdomen CT"].d["PubMedCLIP"]],
+ ["OpenCLIP-B/32",MOD["Abdomen CT"].d["OpenCLIP-B/32"]],["OpenCLIP-L/14",MOD["Abdomen CT"].d["OpenCLIP-L/14"]],["SigLIP",MOD["Abdomen CT"].d["SigLIP"]],
+ ["MedCLIP (CXR specialist, out of domain)",MOD["Abdomen CT"].d["MedCLIP"]],["MERLIN (3D CT model)",MOD["Abdomen CT"].d["MERLIN"]]
+];
+hmTable($("#ctTable"),["Model","L1","L2","L3","L4","L5"],CT.map(function(r){return {name:r[0],v:r[1]}}));
+
+/* ---------------- robustness bars ---------------- */
+(function(){
+  var RB=[["Chest X-ray",54,64],["Retinal fundus",42,56],["Abdomen CT",42,56],["Dermoscopy",31,56],["Brain MRI",44,56],["Histopathology",35,72]];
+  var s="",W=700,pl=130,bh=26,g=14;
+  RB.forEach(function(r,i){
+    var y=10+i*(bh+g),w=(W-pl-70)*r[1]/r[2];
+    s+='<text x="'+(pl-10)+'" y="'+(y+18)+'" text-anchor="end" font-size="13">'+r[0]+'</text>'+
+       '<rect x="'+pl+'" y="'+y+'" width="'+(W-pl-70)+'" height="'+bh+'" rx="5" fill="var(--soft)" stroke="var(--line)"/>'+
+       '<rect x="'+pl+'" y="'+y+'" width="'+w+'" height="'+bh+'" rx="5" fill="var(--bad)" fill-opacity=".85"/>'+
+       '<text x="'+(W-60)+'" y="'+(y+18)+'" font-size="13" font-weight="700">'+r[1]+" / "+r[2]+'</text>';
+  });
+  $("#robustBars").innerHTML=s;
+})();
+
+/* ---------------- negation subtype table ---------------- */
+hmTable($("#negTable"),["Model","Definite","Hedged","Ruled-out","Historical†"],[
+ {name:"BiomedCLIP",v:[-.0003,-.0047,.0040,.1018],s:[0,1,0,0]},{name:"PubMedCLIP",v:[.0008,.0013,.0053,.0133],s:[0,0,0,0]},
+ {name:"PMC-CLIP",v:[-.0157,-.0262,.0035,-.0153],s:[1,1,0,1]},{name:"OpenCLIP-B/32",v:[.0026,-.0110,-.0033,.0086],s:[0,1,1,0]},
+ {name:"OpenCLIP-L/14",v:[.0207,-.0244,.0022,.0210],s:[0,1,0,0]},{name:"SigLIP",v:[-.0017,-.0084,-.0069,.0044],s:[1,1,1,0]},
+ {name:"MedCLIP",v:[.0002,-.0008,-.0013,-.0002],s:[0,1,1,1]},{name:"CONCH (pathology)",v:[.0746,-.0136,.2103,.0292],s:[0,1,0,0]},
+ {name:"PLIP (pathology)",v:[-.0169,-.0320,-.0261,-.0183],s:[1,1,1,1]}
+],4,0.05);
+
+/* ---------------- skin-tone grouped bars ---------------- */
+(function(){
+  var SK=[["BiomedCLIP",.177,.167,.132],["PMC-CLIP",.153,.150,.127],["PubMedCLIP",.034,.034,.032],["OpenCLIP-B/32",.144,.136,.115],["OpenCLIP-L/14",.166,.159,.145],["SigLIP",.122,.119,.097]];
+  var W=700,H=300,pl=44,pb=46,pt=14,mx=.2,s="",cols=["#0d5c7d","#5aa6c2","#b3d4e2"],labs=["I–II","III–IV","V–VI"];
+  function Y(v){return pt+(mx-v)/mx*(H-pt-pb)}
+  [0,.05,.1,.15,.2].forEach(function(t){s+='<line x1="'+pl+'" x2="'+(W-10)+'" y1="'+Y(t)+'" y2="'+Y(t)+'" stroke="var(--line)"/><text x="'+(pl-6)+'" y="'+(Y(t)+4)+'" text-anchor="end" font-size="11" class="m">'+t.toFixed(2)+'</text>'});
+  var gw=(W-pl-10)/SK.length;
+  SK.forEach(function(r,i){
+    for(var j=0;j<3;j++){
+      var x=pl+i*gw+12+j*((gw-24)/3),w=(gw-24)/3-3,y=Y(r[j+1]);
+      s+='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+(Y(0)-y)+'" rx="3" fill="'+cols[j]+'"/>';
+      if(j!==1)s+='<text x="'+(x+w/2)+'" y="'+(y-4)+'" text-anchor="middle" font-size="10" font-weight="700">'+r[j+1].toFixed(3).replace("0.",".")+'</text>';
+    }
+    s+='<text x="'+(pl+i*gw+gw/2)+'" y="'+(H-26)+'" text-anchor="middle" font-size="11.5">'+r[0]+'</text>';
+  });
+  labs.forEach(function(l,j){s+='<rect x="'+(pl+j*110)+'" y="'+(H-14)+'" width="12" height="10" fill="'+cols[j]+'"/><text x="'+(pl+j*110+17)+'" y="'+(H-5)+'" font-size="11">Fitzpatrick '+l+'</text>'});
+  $("#skinBars").innerHTML=s;
+})();
+
+/* ---------------- N-stability ---------------- */
+(function(){
+  var D=[["BiomedCLIP L4",[-.0100,-.0104,-.0102,-.0093]],["BiomedCLIP L5",[-.0083,-.0109,-.0118,-.0112]],
+   ["PMC-CLIP L4",[-.0194,-.0166,-.0178,-.0179]],["PMC-CLIP L5",[-.0203,-.0237,-.0241,-.0236]],
+   ["SigLIP L4",[.0013,.0007,.0008,.0006]],["SigLIP L5",[-.0026,-.0027,-.0026,-.0028]]];
+  var W=700,H=280,pl=56,pr=130,pt=14,pb=34,mn=-.026,mx=.004,s="",xs=[100,250,500,1000];
+  var cols=["#0d5c7d","#0d5c7d","#b3372b","#b3372b","#1f7a55","#1f7a55"],dash=["0","6 3","0","6 3","0","6 3"];
+  function X(i){return pl+i*(W-pl-pr)/3}
+  function Y(v){return pt+(mx-v)/(mx-mn)*(H-pt-pb)}
+  [-.02,-.01,0].forEach(function(t){s+='<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+Y(t)+'" y2="'+Y(t)+'" stroke="'+(t===0?"var(--fg)":"var(--line)")+'"/><text x="'+(pl-6)+'" y="'+(Y(t)+4)+'" text-anchor="end" font-size="11" class="m">'+t.toFixed(2)+'</text>'});
+  xs.forEach(function(n,i){s+='<text x="'+X(i)+'" y="'+(H-12)+'" text-anchor="middle" font-size="11.5">n = '+n+'</text>'});
+  D.forEach(function(r,k){
+    s+='<polyline fill="none" stroke="'+cols[k]+'" stroke-width="2.5" stroke-dasharray="'+dash[k]+'" points="'+r[1].map(function(v,i){return X(i)+","+Y(v)}).join(" ")+'"/>';
+    r[1].forEach(function(v,i){s+='<circle cx="'+X(i)+'" cy="'+Y(v)+'" r="3.5" fill="'+cols[k]+'"/>'});
+  });
+  var ly=D.map(function(r){return Y(r[1][3])}),order=ly.map(function(y,i){return i}).sort(function(a,b){return ly[a]-ly[b]}),last=-99;
+  order.forEach(function(i){var y=Math.max(ly[i],last+13);ly[i]=y;last=y});
+  D.forEach(function(r,k){s+='<text x="'+(W-pr+8)+'" y="'+(ly[k]+4)+'" font-size="11" style="fill:'+cols[k]+'" font-weight="600">'+r[0]+'</text>'});
+  $("#nStab").innerHTML=s;
+})();
+
+document.querySelectorAll(".copy").forEach(function(b){
+  b.addEventListener("click",function(){
+    var t=b.parentElement.querySelector("code").innerText;
+    if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy"},1500)})}
+  });
+});
+})();
+</script>
+</body>
+</html>

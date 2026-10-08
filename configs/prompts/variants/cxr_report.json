@@ -1,0 +1,459 @@
+{
+  "modality": "cxr",
+  "variant": "report",
+  "description": "Prompt-robustness variant: radiology-report register. Same probe structure, classes, and pos/neg counts as configs/prompts/cxr_prompts.json; only the phrasing STYLE changes (Findings/Impression report sentences). Used with run_medtec.py --prompts-file to test whether L4/L5 collapse survives report-style phrasing.",
+  "disease_categories": {
+    "no_finding": {"display": "Normal", "chexpert_col": "No Finding", "nih_label": "No Finding"},
+    "pneumonia": {"display": "Pneumonia", "chexpert_col": "Pneumonia", "nih_label": "Pneumonia"},
+    "cardiomegaly": {"display": "Cardiomegaly", "chexpert_col": "Cardiomegaly", "nih_label": "Cardiomegaly"},
+    "pleural_effusion": {"display": "Pleural Effusion", "chexpert_col": "Pleural Effusion", "nih_label": "Effusion"},
+    "atelectasis": {"display": "Atelectasis", "chexpert_col": "Atelectasis", "nih_label": "Atelectasis"}
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Report-register CXR description vs matched-length everyday-scene description.",
+      "probes": [
+        {
+          "probe_id": "cxr_l1_001",
+          "positives": [
+            "Frontal chest radiograph demonstrates the lungs, mediastinum, and cardiac silhouette.",
+            "PA chest radiograph shows the thoracic cavity and both lung fields."
+          ],
+          "negatives": [
+            "Photograph depicts a red apple resting on a wooden table.",
+            "Photograph shows a golden retriever playing in a park.",
+            "Image shows a slice of pepperoni pizza on a plate.",
+            "Photograph depicts a blue sports car on a highway.",
+            "Image shows a cat sleeping on a couch.",
+            "Photograph captures a sunset over the ocean.",
+            "Image shows a stack of books on a shelf.",
+            "Photograph depicts an acoustic guitar leaning against a wall."
+          ]
+        },
+        {
+          "probe_id": "cxr_l1_002",
+          "positives": [
+            "AP chest radiograph demonstrates the thoracic cavity and pulmonary parenchyma.",
+            "Portable frontal chest radiograph shows the heart and both lungs."
+          ],
+          "negatives": [
+            "Photograph shows a loaf of bread on a cutting board.",
+            "Image depicts a running shoe on a white background.",
+            "Photograph shows a wooden chair in a room.",
+            "Image shows a glass of water on a table.",
+            "Photograph depicts a laptop computer on a desk.",
+            "Image shows a flowering plant in a ceramic pot.",
+            "Photograph shows a wristwatch resting on a surface.",
+            "Image depicts a bicycle helmet on the ground."
+          ]
+        },
+        {
+          "probe_id": "cxr_l1_003",
+          "positives": [
+            "Chest radiograph demonstrates the lung fields, hila, and costophrenic angles.",
+            "Frontal radiograph of the chest shows the pulmonary vasculature and diaphragm."
+          ],
+          "negatives": [
+            "Image shows a bowl of pasta with tomato sauce.",
+            "Photograph depicts a dog running along a beach.",
+            "Image shows a smartphone lying on a desk.",
+            "Photograph depicts a painting hanging on a wall.",
+            "Image shows a cup of coffee on a saucer.",
+            "Photograph captures a park bench in autumn.",
+            "Image shows a baseball glove on the grass.",
+            "Photograph depicts a garden filled with flowers."
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Report-register chest radiograph vs report-register description of other chest imaging modalities (anatomy held constant).",
+      "probes": [
+        {
+          "probe_id": "cxr_l2_001",
+          "positives": [
+            "Posteroanterior chest radiograph demonstrates the lungs and cardiomediastinal contours.",
+            "Frontal chest radiograph shows the thoracic structures in projection."
+          ],
+          "negatives": [
+            "Axial CT of the chest demonstrates the pulmonary parenchyma in cross-section.",
+            "Coronal chest MRI demonstrates the mediastinal soft tissues.",
+            "Chest ultrasound demonstrates the pleural space sonographically.",
+            "Chest PET scan demonstrates metabolic activity within the thorax.",
+            "Chest tomosynthesis demonstrates the lungs in reconstructed sections."
+          ]
+        },
+        {
+          "probe_id": "cxr_l2_002",
+          "positives": [
+            "PA chest radiograph demonstrates the lung fields and cardiac silhouette.",
+            "Frontal projection radiograph of the chest shows the thoracic cavity."
+          ],
+          "negatives": [
+            "Contrast-enhanced chest CT demonstrates the mediastinal vessels.",
+            "Axial chest MRI demonstrates the pulmonary and mediastinal structures.",
+            "Chest fluoroscopy demonstrates real-time thoracic motion.",
+            "Ventilation-perfusion scan demonstrates pulmonary perfusion distribution.",
+            "High-resolution CT of the chest demonstrates the lung interstitium."
+          ]
+        },
+        {
+          "probe_id": "cxr_l2_003",
+          "positives": [
+            "Standard chest radiograph demonstrates the lungs, heart, and diaphragm.",
+            "Chest radiographic examination shows the thoracic structures."
+          ],
+          "negatives": [
+            "Sagittal chest MRI demonstrates the thoracic soft tissues.",
+            "Echocardiogram demonstrates the cardiac chambers with ultrasound.",
+            "Nuclear medicine chest scan demonstrates radiotracer uptake in the thorax.",
+            "CT angiography of the chest demonstrates the pulmonary arteries.",
+            "Chest SPECT demonstrates functional radiotracer distribution."
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Report-register chest radiograph vs report-register radiograph of other body regions (modality held constant).",
+      "probes": [
+        {
+          "probe_id": "cxr_l3_001",
+          "positives": [
+            "Radiograph of the chest demonstrates the thoracic cavity and lung fields.",
+            "Chest radiograph shows the heart, lungs, and mediastinum."
+          ],
+          "negatives": [
+            "Radiograph of the knee demonstrates the joint spaces and osseous margins.",
+            "Radiograph of the lumbar spine demonstrates the vertebral bodies.",
+            "Radiograph of the left hand demonstrates the phalanges and metacarpals.",
+            "Radiograph of the pelvis demonstrates the iliac bones and hip joints.",
+            "Radiograph of the cervical spine demonstrates the cervical vertebrae."
+          ]
+        },
+        {
+          "probe_id": "cxr_l3_002",
+          "positives": [
+            "Chest radiograph demonstrates the thoracic skeleton and pulmonary fields.",
+            "Thoracic radiograph shows the ribs, lungs, and cardiac contour."
+          ],
+          "negatives": [
+            "Radiograph of the wrist demonstrates the carpal bones.",
+            "Radiograph of the ankle demonstrates the tibiotalar joint.",
+            "Radiograph of the shoulder demonstrates the glenohumeral joint.",
+            "Radiograph of the hip demonstrates the femoral head and acetabulum.",
+            "Radiograph of the foot demonstrates the tarsal and metatarsal bones."
+          ]
+        },
+        {
+          "probe_id": "cxr_l3_003",
+          "positives": [
+            "Chest radiograph demonstrates the thorax with the lungs and heart.",
+            "Radiograph shows the thoracic cavity and pulmonary parenchyma."
+          ],
+          "negatives": [
+            "Abdominal radiograph demonstrates the bowel gas pattern.",
+            "Radiograph of the skull demonstrates the cranial vault.",
+            "Radiograph of the elbow demonstrates the humeroulnar joint.",
+            "Radiograph of the sacrum demonstrates the sacral segments.",
+            "Radiograph of the femur demonstrates the femoral shaft."
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Report-register finding discrimination. 4 report-style positives affirm the anchor's finding; 10 report-style negatives name other chest findings (same competing set as the baseline config).",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": [
+            "Findings: the lungs are clear and the cardiomediastinal silhouette is normal. Impression: no acute cardiopulmonary abnormality.",
+            "Findings: no focal consolidation, effusion, or pneumothorax. Impression: normal chest radiograph.",
+            "Impression: no acute cardiopulmonary process; the lungs are well aerated.",
+            "Findings: normal mediastinal contours and clear costophrenic angles. Impression: unremarkable chest radiograph."
+          ],
+          "negatives": [
+            "Impression: pneumonia, with focal airspace opacity and air bronchograms.",
+            "Impression: cardiomegaly, with an enlarged cardiac silhouette.",
+            "Impression: pleural effusion, with costophrenic angle blunting.",
+            "Impression: atelectasis, with volume loss and linear opacity.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: pulmonary edema, with perihilar opacities and vascular redistribution.",
+            "Impression: consolidation, with dense opacification and air bronchograms.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities."
+          ]
+        },
+        "pneumonia": {
+          "positives": [
+            "Findings: focal airspace opacity with air bronchograms. Impression: pneumonia.",
+            "Findings: patchy consolidation in the lung, compatible with infection. Impression: pneumonia.",
+            "Findings: segmental air-space opacification. Impression: findings consistent with pneumonia.",
+            "Impression: pneumonia, with focal opacity and associated air bronchograms."
+          ],
+          "negatives": [
+            "Impression: no acute cardiopulmonary abnormality, with clear lungs.",
+            "Impression: cardiomegaly, with an enlarged cardiac silhouette.",
+            "Impression: pleural effusion, with costophrenic angle blunting.",
+            "Impression: atelectasis, with volume loss and linear opacity.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: pulmonary edema, with perihilar opacities and vascular redistribution.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities.",
+            "Impression: interstitial lung disease, with reticulonodular markings."
+          ]
+        },
+        "cardiomegaly": {
+          "positives": [
+            "Findings: enlarged cardiac silhouette with increased cardiothoracic ratio. Impression: cardiomegaly.",
+            "Findings: the heart is enlarged beyond half the thoracic diameter. Impression: cardiomegaly.",
+            "Impression: cardiomegaly, with widened cardiac borders.",
+            "Findings: prominent, enlarged cardiac contour. Impression: cardiac enlargement."
+          ],
+          "negatives": [
+            "Impression: no acute cardiopulmonary abnormality, with clear lungs.",
+            "Impression: pneumonia, with focal airspace opacity and air bronchograms.",
+            "Impression: pleural effusion, with costophrenic angle blunting.",
+            "Impression: atelectasis, with volume loss and linear opacity.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: pulmonary edema, with perihilar opacities and vascular redistribution.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities.",
+            "Impression: interstitial lung disease, with reticulonodular markings."
+          ]
+        },
+        "pleural_effusion": {
+          "positives": [
+            "Findings: blunting of the costophrenic angle with layering fluid. Impression: pleural effusion.",
+            "Findings: a meniscus of fluid along the lateral pleural margin. Impression: pleural effusion.",
+            "Impression: pleural effusion, with dependent fluid accumulation.",
+            "Findings: opacification of the costophrenic angle by pleural fluid. Impression: pleural effusion."
+          ],
+          "negatives": [
+            "Impression: no acute cardiopulmonary abnormality, with clear lungs.",
+            "Impression: pneumonia, with focal airspace opacity and air bronchograms.",
+            "Impression: cardiomegaly, with an enlarged cardiac silhouette.",
+            "Impression: atelectasis, with volume loss and linear opacity.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: pulmonary edema, with perihilar opacities and vascular redistribution.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities.",
+            "Impression: interstitial lung disease, with reticulonodular markings."
+          ]
+        },
+        "atelectasis": {
+          "positives": [
+            "Findings: volume loss with linear opacity. Impression: atelectasis.",
+            "Findings: lobar collapse with an elevated hemidiaphragm. Impression: atelectasis.",
+            "Impression: atelectasis, with volume loss and mediastinal shift.",
+            "Findings: subsegmental linear opacities. Impression: atelectatic changes."
+          ],
+          "negatives": [
+            "Impression: no acute cardiopulmonary abnormality, with clear lungs.",
+            "Impression: pneumonia, with focal airspace opacity and air bronchograms.",
+            "Impression: cardiomegaly, with an enlarged cardiac silhouette.",
+            "Impression: pleural effusion, with costophrenic angle blunting.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: pulmonary edema, with perihilar opacities and vascular redistribution.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities.",
+            "Impression: interstitial lung disease, with reticulonodular markings."
+          ]
+        },
+        "consolidation": {
+          "positives": [
+            "Findings: dense lobar opacification with air bronchograms. Impression: consolidation.",
+            "Findings: homogeneous air-space opacity in the lung. Impression: consolidation.",
+            "Impression: consolidation, with dense parenchymal opacification.",
+            "Findings: confluent air-space opacity. Impression: airspace consolidation."
+          ],
+          "negatives": [
+            "Impression: no acute cardiopulmonary abnormality, with clear lungs.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: cardiomegaly, with an enlarged cardiac silhouette.",
+            "Impression: pleural effusion, with costophrenic angle blunting.",
+            "Impression: atelectasis, with volume loss and linear opacity.",
+            "Impression: pulmonary edema, with perihilar opacities and vascular redistribution.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities.",
+            "Impression: interstitial lung disease, with reticulonodular markings."
+          ]
+        },
+        "edema": {
+          "positives": [
+            "Findings: bilateral perihilar opacities with vascular redistribution. Impression: pulmonary edema.",
+            "Findings: interstitial opacities with Kerley B lines and cephalization. Impression: pulmonary edema.",
+            "Impression: pulmonary edema, with perihilar haziness.",
+            "Findings: diffuse bilateral airspace opacities consistent with fluid overload. Impression: pulmonary edema."
+          ],
+          "negatives": [
+            "Impression: no acute cardiopulmonary abnormality, with clear lungs.",
+            "Impression: pneumothorax, with a visible visceral pleural line.",
+            "Impression: cardiomegaly, with an enlarged cardiac silhouette.",
+            "Impression: pleural effusion, with costophrenic angle blunting.",
+            "Impression: atelectasis, with volume loss and linear opacity.",
+            "Impression: consolidation, with dense opacification and air bronchograms.",
+            "Impression: emphysema, with hyperinflation and flattened diaphragms.",
+            "Impression: a well-circumscribed pulmonary nodule.",
+            "Impression: pulmonary fibrosis, with basal reticular opacities.",
+            "Impression: interstitial lung disease, with reticulonodular markings."
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Report-register negation. 4 report-style positives affirm the finding present; 10 report-style negatives negate the same finding. The no_finding row is polarity-flipped (positives affirm absence, negatives affirm presence), matching the baseline config.",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": [
+            "Findings: the lungs are clear. Impression: no acute cardiopulmonary abnormality.",
+            "Impression: negative for acute cardiopulmonary disease.",
+            "Findings: no focal opacity, effusion, or pneumothorax. Impression: normal.",
+            "Impression: no radiographic evidence of acute disease."
+          ],
+          "negatives": [
+            "Impression: positive for an acute cardiopulmonary abnormality.",
+            "Findings: an abnormal opacity is present. Impression: acute disease.",
+            "Impression: the radiograph demonstrates pathologic findings.",
+            "Findings: abnormal parenchymal opacity. Impression: active disease.",
+            "Impression: a clinically significant abnormality is identified.",
+            "Findings: acute findings are present. Impression: abnormal radiograph.",
+            "Impression: an imaging abnormality is demonstrated.",
+            "Findings: the radiograph is not within normal limits. Impression: abnormal.",
+            "Impression: underlying pathology is present.",
+            "Findings: a focal abnormality is seen. Impression: positive for disease."
+          ]
+        },
+        "pneumonia": {
+          "positives": [
+            "Findings: focal airspace opacity. Impression: pneumonia.",
+            "Impression: pneumonia is identified on the radiograph.",
+            "Findings: consolidation compatible with infection. Impression: pneumonia present.",
+            "Impression: radiographic findings of pneumonia."
+          ],
+          "negatives": [
+            "Findings: no focal consolidation. Impression: no evidence of pneumonia.",
+            "Impression: negative for pneumonia.",
+            "Findings: the lungs are clear. Impression: no pneumonia.",
+            "Impression: no radiographic evidence of pneumonia.",
+            "Findings: no airspace opacity to suggest pneumonia. Impression: negative.",
+            "Impression: pneumonia is excluded.",
+            "Findings: clear lung fields without infection. Impression: no pneumonia.",
+            "Impression: no focal consolidation to suggest pneumonia.",
+            "Findings: no air-space disease. Impression: pneumonia not identified.",
+            "Impression: without evidence of pneumonia."
+          ]
+        },
+        "cardiomegaly": {
+          "positives": [
+            "Findings: enlarged cardiac silhouette. Impression: cardiomegaly.",
+            "Impression: cardiomegaly is present.",
+            "Findings: increased cardiothoracic ratio. Impression: cardiac enlargement.",
+            "Impression: radiographic findings of cardiomegaly."
+          ],
+          "negatives": [
+            "Findings: normal cardiac silhouette. Impression: no cardiomegaly.",
+            "Impression: negative for cardiomegaly.",
+            "Findings: heart size within normal limits. Impression: no cardiac enlargement.",
+            "Impression: no radiographic evidence of cardiomegaly.",
+            "Findings: normal cardiothoracic ratio. Impression: no cardiomegaly.",
+            "Impression: cardiomegaly is excluded.",
+            "Findings: the cardiac contour is normal. Impression: no cardiac enlargement.",
+            "Impression: no findings of cardiomegaly.",
+            "Findings: no cardiac enlargement. Impression: cardiomegaly not identified.",
+            "Impression: without evidence of cardiomegaly."
+          ]
+        },
+        "pleural_effusion": {
+          "positives": [
+            "Findings: costophrenic angle blunting with layering fluid. Impression: pleural effusion.",
+            "Impression: pleural effusion is present.",
+            "Findings: dependent pleural fluid. Impression: pleural effusion.",
+            "Impression: radiographic findings of pleural effusion."
+          ],
+          "negatives": [
+            "Findings: the costophrenic angles are clear. Impression: no pleural effusion.",
+            "Impression: negative for pleural effusion.",
+            "Findings: no layering pleural fluid. Impression: no effusion.",
+            "Impression: no radiographic evidence of pleural effusion.",
+            "Findings: no costophrenic angle blunting. Impression: no effusion.",
+            "Impression: pleural effusion is excluded.",
+            "Findings: no pleural fluid accumulation. Impression: no effusion.",
+            "Impression: no findings of pleural effusion.",
+            "Findings: sharp costophrenic angles. Impression: effusion not identified.",
+            "Impression: without evidence of pleural effusion."
+          ]
+        },
+        "atelectasis": {
+          "positives": [
+            "Findings: volume loss with linear opacity. Impression: atelectasis.",
+            "Impression: atelectasis is present.",
+            "Findings: lobar collapse. Impression: atelectatic changes.",
+            "Impression: radiographic findings of atelectasis."
+          ],
+          "negatives": [
+            "Findings: the lungs are fully expanded. Impression: no atelectasis.",
+            "Impression: negative for atelectasis.",
+            "Findings: no volume loss. Impression: no atelectasis.",
+            "Impression: no radiographic evidence of atelectasis.",
+            "Findings: no lobar collapse. Impression: no atelectasis.",
+            "Impression: atelectasis is excluded.",
+            "Findings: no linear opacity to suggest collapse. Impression: no atelectasis.",
+            "Impression: no findings of atelectasis.",
+            "Findings: normal lung expansion. Impression: atelectasis not identified.",
+            "Impression: without evidence of atelectasis."
+          ]
+        },
+        "consolidation": {
+          "positives": [
+            "Findings: dense air-space opacification. Impression: consolidation.",
+            "Impression: consolidation is present.",
+            "Findings: homogeneous lobar opacity. Impression: airspace consolidation.",
+            "Impression: radiographic findings of consolidation."
+          ],
+          "negatives": [
+            "Findings: the lungs are clear. Impression: no consolidation.",
+            "Impression: negative for consolidation.",
+            "Findings: no air-space opacity. Impression: no consolidation.",
+            "Impression: no radiographic evidence of consolidation.",
+            "Findings: no dense opacification. Impression: no consolidation.",
+            "Impression: consolidation is excluded.",
+            "Findings: clear lung parenchyma. Impression: no consolidation.",
+            "Impression: no findings of consolidation.",
+            "Findings: no focal opacity. Impression: consolidation not identified.",
+            "Impression: without evidence of consolidation."
+          ]
+        },
+        "edema": {
+          "positives": [
+            "Findings: bilateral perihilar opacities with vascular redistribution. Impression: pulmonary edema.",
+            "Impression: pulmonary edema is present.",
+            "Findings: interstitial opacities with cephalization. Impression: pulmonary edema.",
+            "Impression: radiographic findings of pulmonary edema."
+          ],
+          "negatives": [
+            "Findings: no perihilar opacity. Impression: no pulmonary edema.",
+            "Impression: negative for pulmonary edema.",
+            "Findings: no vascular redistribution. Impression: no edema.",
+            "Impression: no radiographic evidence of pulmonary edema.",
+            "Findings: clear lungs without congestion. Impression: no edema.",
+            "Impression: pulmonary edema is excluded.",
+            "Findings: no interstitial opacity. Impression: no pulmonary edema.",
+            "Impression: no findings of pulmonary edema.",
+            "Findings: no signs of fluid overload. Impression: edema not identified.",
+            "Impression: without evidence of pulmonary edema."
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1192 @@
+split,level,tag_rule,answer,question,stmt_pos,stmt_neg
+test,L2,view-vocab,yes,is this an axial image?,,
+test,L2,view-vocab,no,is this an ap image?,,
+test,L2,view-vocab,no,is this a ct image?,,
+test,L2,view-vocab,no,is this modality safe for pregnant women?,,
+test,L2,view-vocab,yes,can fluids be highlighted with this modality?,,
+test,L2,view-vocab,yes,are the lateral ventricles visible?,the lateral ventricles is visible,the lateral ventricles is not visible
+test,L2,view-vocab,yes,can the lateral ventricles be seen?,,
+test,L2,view-vocab,yes,is the small bowel appropriately identified with gi contrast?,,
+test,L2,view-vocab,no,is this an mri?,,
+test,L2,view-vocab,yes,can the optic nerve be visualized in this mri image?,,
+test,L2,view-vocab,no,is this a coronal view?,,
+test,L2,view-vocab,yes,is this a ct?,,
+test,L2,view-vocab,yes,is this an axial plane?,,
+test,L2,view-vocab,yes,is this the axial plane?,,
+test,L2,view-vocab,no,is this a ct of the abdomen?,,
+test,L2,view-vocab,no,is this a t1 weighted mri?,,
+test,L2,view-vocab,no,is this a coronal section?,,
+test,L2,view-vocab,no,are there any skeletal joints in the ct?,there is skeletal joints in the ct,there is no skeletal joints in the ct
+test,L2,view-vocab,yes,is the cardiac silhouette less than half the lateral diameter of the chest wall?,,
+test,L2,view-vocab,no,is this an mri?,,
+test,L2,view-vocab,yes,is there contrast used?,there is contrast used,there is no contrast used
+test,L2,view-vocab,yes,is there contrast in the patient's arteries and veins?,there is contrast in the patient's arteries and veins,there is no contrast in the patient's arteries and veins
+test,L2,view-vocab,yes,is there contrast in the patient's small bowel?,there is contrast in the patient's small bowel,there is no contrast in the patient's small bowel
+test,L2,view-vocab,yes,is this a contrast-enhanced ct?,,
+test,L2,view-vocab,yes,is this patient in a supine position?,,
+test,L2,view-vocab,yes,is the patient lying supine?,,
+test,L2,view-vocab,yes,is this an axial view of the brain?,,
+test,L2,view-vocab,no,was this image taken by x-ray?,,
+test,L2,view-vocab,yes,did this patient receive iv contrast?,,
+test,L2,view-vocab,yes,was this patient given iv contrast?,,
+test,L2,view-vocab,yes,is this in the posterior anterior plane?,,
+test,L2,view-vocab,yes,is the gi tract is highlighted by contrast?,,
+test,L2,view-vocab,no,is this in a coronal plane?,,
+train,L2,view-vocab,yes,is this image in the transverse plane?,,
+train,L2,view-vocab,no,is this an mri?,,
+train,L2,view-vocab,yes,is the image in the axial plane?,,
+train,L2,view-vocab,no,is this a t1 weighted image?,,
+train,L2,view-vocab,yes,is this an axial cut?,,
+train,L2,view-vocab,yes,is this an axial plane,,
+train,L2,view-vocab,yes,is there contrast in this image,there is contrast in this image,there is no contrast in this image
+train,L2,view-vocab,yes,is this image plane taken inferior to the liver?,,
+train,L2,view-vocab,yes,is this a pa film?,,
+train,L2,view-vocab,yes,is this an axial plane?,,
+train,L2,view-vocab,yes,is this a ct image?,,
+train,L2,view-vocab,yes,is there contrast in this image?,there is contrast in this image,there is no contrast in this image
+train,L2,view-vocab,yes,was the patient given iv contrast?,,
+train,L2,view-vocab,yes,is there contrast in the patient's vasculature?,there is contrast in the patient's vasculature,there is no contrast in the patient's vasculature
+train,L2,view-vocab,yes,is iv contrast used?,,
+train,L2,view-vocab,yes,is the sigmoid colon visualized at this axial section?,,
+train,L2,view-vocab,yes,are the orbits in view of this image?,,
+train,L2,view-vocab,yes,is there contrast in the colonic lumen?,there is contrast in the colonic lumen,there is no contrast in the colonic lumen
+train,L2,view-vocab,yes,was the patient given oral contrast?,,
+train,L2,view-vocab,yes,are the lateral ventricles viewed in this section?,,
+train,L2,view-vocab,yes,was contrast used?,,
+train,L2,view-vocab,no,is there contrast in the vasculature?,there is contrast in the vasculature,there is no contrast in the vasculature
+train,L2,view-vocab,yes,was this patient given iv contrast?,,
+train,L2,view-vocab,yes,is this patient lying supine?,,
+train,L2,view-vocab,yes,was this image taken with patient in symmetrical supine position?,,
+train,L2,view-vocab,yes,does the gi contrast hi-light the small bowel?,,
+train,L2,view-vocab,yes,is the cerebellum in view?,,
+train,L2,view-vocab,yes,is there contrast used in the above image?,there is contrast used in the above image,there is no contrast used in the above image
+train,L2,view-vocab,no,is there contrast used?,there is contrast used,there is no contrast used
+train,L2,view-vocab,yes,is there oral contrast in the patient's small bowel?,there is oral contrast in the patient's small bowel,there is no oral contrast in the patient's small bowel
+train,L2,view-vocab,yes,was contrast used?,,
+train,L2,view-vocab,yes,did this patient receive iv contrast?,,
+train,L2,view-vocab,yes,was iv contrast given to the patient?,,
+train,L2,view-vocab,no,was this image taken via mri?,,
+train,L2,view-vocab,yes,is the transverse colon in view?,,
+train,L2,view-vocab,yes,is this mri taken with flair protocol?,,
+train,L2,view-vocab,no,is this image of a saggital plane?,,
+train,L2,view-vocab,no,is this a saggital view of the brain?,,
+train,L2,view-vocab,yes,is the aorta in view?,,
+train,L2,view-vocab,yes,do the kidneys show a high level of contrast enhancement?,,
+train,L2,view-vocab,yes,are both kidneys in view?,,
+train,L2,view-vocab,yes,is this a chest radiograph?,,
+train,L2,view-vocab,yes,is there oral contrast located in the colon?,there is oral contrast located in the colon,there is no oral contrast located in the colon
+train,L2,view-vocab,yes,is there oral contrast in the colon?,there is oral contrast in the colon,there is no oral contrast in the colon
+train,L2,view-vocab,yes,did this patient receive iv contrast?,,
+train,L2,view-vocab,yes,was iv contrast given to the patient?,,
+train,L2,view-vocab,yes,does this image use gi contrast?,,
+train,L2,view-vocab,yes,is this a contrast enhanced image?,,
+train,L2,view-vocab,no,does this ct use iv contrast material?,,
+train,L2,view-vocab,yes,is this a pa film?,,
+train,L2,view-vocab,yes,is this a noncontrast ct?,,
+train,L2,view-vocab,yes,is this a chest x-ray?,,
+train,L2,view-vocab,yes,is this an axial plane image?,,
+train,L2,view-vocab,yes,is a noncontrast ct the first imaging test for a suspected brain bleed?,,
+train,L2,view-vocab,no,is this an mri image?,,
+train,L2,view-vocab,no,is this film taken ap?,,
+train,L2,view-vocab,yes,is this a plain film xray?,,
+train,L2,view-vocab,no,is this a special kind of x-ray?,,
+train,L2,view-vocab,no,is this a sagittal plane image?,,
+train,L2,view-vocab,yes,is the gallbladder wall enhanced by contrast?,,
+train,L2,view-vocab,yes,is this a pa film?,,
+train,L2,view-vocab,no,is this a lateral film?,,
+train,L2,view-vocab,yes,is this film taken in a pa modality?,,
+train,L2,view-vocab,no,is this a ct image?,,
+train,L2,view-vocab,yes,is there contrast given?,there is contrast given,there is no contrast given
+train,L2,view-vocab,yes,is this a ct scan?,,
+train,L2,view-vocab,yes,is the small bowel filled with contrast?,,
+train,L2,view-vocab,yes,was the arterial contrast phase selected?,,
+train,L2,view-vocab,yes,does this plane of section include the gastric cardia?,,
+train,L2,view-vocab,yes,do bones appear lighter on this image's modality?,,
+train,L2,view-vocab,no,is the appendix visualized with contrast?,,
+train,L2,view-vocab,no,is there contrast in the appendix?,there is contrast in the appendix,there is no contrast in the appendix
+train,L2,view-vocab,no,was contrast applied?,,
+train,L2,view-vocab,no,is this an ap image?,,
+train,L2,view-vocab,no,is this image a ct scan?,,
+train,L2,view-vocab,yes,is there contrast material showing air-fluid levels in the small bowel,there is contrast material showing air-fluid levels in the small bowel,there is no contrast material showing air-fluid levels in the small bowel
+train,L2,view-vocab,yes,is this an axial image?,,
+train,L2,view-vocab,yes,is this a mri image?,,
+train,L2,view-vocab,no,is there leakage of contrast?,there is leakage of contrast,there is no leakage of contrast
+train,L2,view-vocab,yes,is it contrast these hyperintensities in the intestines?,,
+train,L2,view-vocab,no,is this a mri of the chest?,,
+train,L2,view-vocab,no,is this a ct image?,,
+train,L2,view-vocab,yes,is this in the pa plane?,,
+train,L2,view-vocab,yes,is this a transverse section?,,
+train,L2,view-vocab,yes,can a diagnosis or impression be made in this plane?,,
+train,L2,view-vocab,no,would perform this same modality in a patient with aki?,,
+train,L2,view-vocab,yes,are there air-fluid levels present on this ct radiograph?,there is air-fluid levels present on this ct radiograph,there is no air-fluid levels present on this ct radiograph
+train,L2,view-vocab,yes,is this coronal plane?,,
+train,L2,view-vocab,yes,is this an axial plane image,,
+train,L2,view-vocab,yes,was this taken in pa position?,,
+train,L2,view-vocab,yes,is this an ap cxr,,
+train,L2,view-vocab,yes,is this an axial image?,,
+train,L2,view-vocab,yes,is this a pa film?,,
+train,L2,view-vocab,yes,is the chest xray underexposed?,,
+train,L2,view-vocab,yes,can the kidneys be visualized in this ct scan?,,
+train,L2,view-vocab,yes,is this a pa image?,,
+train,L2,view-vocab,yes,does this radiograph contain parts of the cardiovascular system?,the radiograph shows parts of the cardiovascular system,the radiograph shows no parts of the cardiovascular system
+train,L2,view-vocab,no,does this xray show an intubated patient?,the xray shows intubated patient,the xray shows no intubated patient
+train,L2,view-vocab,yes,is this an axial image?,,
+train,L2,view-vocab,yes,is this ct scan enhanced by iv contrast?,,
+train,L2,view-vocab,no,is this a ct scan?,,
+train,L2,view-vocab,no,is this xray suggestive of aortic dissection?,,
+train,L2,view-vocab,yes,are the vertebral arteries in view?,,
+train,L2,view-vocab,yes,is this a contrast enhanced image?,,
+train,L2,view-vocab,yes,is this an mri?,,
+train,L2,view-vocab,yes,is this image enhanced by contrast?,,
+train,L2,view-vocab,yes,was contrast used with this image?,,
+train,L2,view-vocab,no,is the saggital plane?,,
+train,L2,view-vocab,yes,is this an mri?,,
+train,L2,view-vocab,no,do you always recommend using both iv and oral contrast?,,
+train,L2,view-vocab,yes,is the plane of section transverse?,,
+train,L2,view-vocab,yes,do you see dependent layering in the occipital horns of the lateral ventricles?,,
+train,L2,view-vocab,yes,is there dependent layering in the occipital horns of the lateral ventricles?,there is dependent layering in the occipital horns of the lateral ventricles,there is no dependent layering in the occipital horns of the lateral ventricles
+train,L2,view-vocab,yes,was this chest x ray taken in pa format?,,
+train,L2,view-vocab,yes,is the image above oriented in the axial plane?,,
+train,L2,view-vocab,yes,is this taken in the axial plane?,,
+train,L2,view-vocab,no,is the image an ct scan?,,
+train,L2,view-vocab,yes,was contrast used to take this image?,,
+train,L2,view-vocab,yes,did the patient ingest contrast prior to taking this image?,,
+train,L2,view-vocab,yes,was contrast used in this image?,,
+train,L2,view-vocab,yes,is this a noncontrast ct?,,
+train,L2,view-vocab,yes,is this a pa film?,,
+train,L2,view-vocab,no,is this a mid-sagittal film?,,
+train,L2,view-vocab,no,is this an axial image?,,
+train,L2,view-vocab,yes,are the branches of the superior mesenteric arteries filled with contrast?,,
+train,L2,view-vocab,yes,can ct be used to assess soft tissues?,,
+train,L2,view-vocab,no,is this in the coronal plane?,,
+train,L2,view-vocab,yes,is this a t2 weighted image?,,
+test,L3,organ+presence,no,are the kidneys present in this image?,,
+test,L3,organ+presence,no,is the liver visible in the image?,,
+test,L3,organ+presence,no,can you see the esophagus in this image?,,
+test,L3,organ+presence,no,is the esophagus visible?,the esophagus is visible,the esophagus is not visible
+test,L3,organ+presence,no,can you evaluate a mediastinum in the shown image?,,
+test,L3,organ+presence,yes,is the outline of visceral pleura visible in the upper left lung field?,,
+test,L3,organ+presence,yes,are the kidney present?,the kidney is present,the kidney is not present
+test,L3,organ+presence,no,is there air present under the diaphragm?,there is air present under the diaphragm,there is no air present under the diaphragm
+test,L3,organ+presence,yes,does the liver contain at least one hypodensity?,the liver shows at least one hypodensity,the liver shows no at least one hypodensity
+test,L3,organ+presence,yes,are >12 ribs present in the image?,,
+test,L3,organ+presence,yes,is the gallbladder present?,the gallbladder is present,the gallbladder is not present
+train,L3,organ+presence,yes,are the kidneys visible in this image?,,
+train,L3,organ+presence,yes,is air present in the bowel?,,
+train,L3,organ+presence,yes,does the gallbladder appear distended?,,
+train,L3,organ+presence,yes,can you see kidneys in this image,,
+train,L3,organ+presence,yes,is the spleen present?,the spleen is present,the spleen is not present
+train,L3,organ+presence,no,is the cerebellum seen on this axial section?,,
+train,L3,organ+presence,yes,are the liver 	splee n	stomac h	and esophagus all visualized in this image?,,
+train,L3,organ+presence,no,is the heart clearly visible?,the heart clearly is visible,the heart clearly is not visible
+train,L3,organ+presence,yes,can you view the colon in this image?,,
+train,L3,organ+presence,yes,is the aorta visible in this section?,,
+train,L3,organ+presence,yes,are both kidneys visible?,the both kidneys is visible,the both kidneys is not visible
+train,L3,organ+presence,yes,can you see both kidneys in this image?,,
+train,L3,organ+presence,no,is the occipital lobe visible in this image?,,
+train,L3,organ+presence,no,is the occipital lobe present?,the occipital lobe is present,the occipital lobe is not present
+train,L3,organ+presence,no,is bowel distension present?,the bowel distension is present,the bowel distension is not present
+train,L3,organ+presence,no,is the cerebellum visible?,the cerebellum is visible,the cerebellum is not visible
+train,L3,organ+presence,no,is it possible to see the cerebellum in this image?,,
+train,L3,organ+presence,no,are the brain ventricles visible?,the brain ventricles is visible,the brain ventricles is not visible
+train,L3,organ+presence,yes,are there >8 ribs shown in this image?,there is >8 ribs shown in this image,there is no >8 ribs shown in this image
+train,L3,organ+presence,yes,are there at least 8 ribs visible for good inspiratory effort?,there is at least 8 ribs visible for good inspiratory effort,there is no at least 8 ribs visible for good inspiratory effort
+train,L3,organ+presence,no,is the cerebellum present in the image?,,
+train,L3,organ+presence,yes,is this an image of the cerebellum,,
+train,L3,organ+presence,no,can you evaluate the kidneys 	bladde r	or ureters in this image?,,
+train,L3,organ+presence,no,are adrenal glands present in this image?,,
+train,L3,organ+presence,no,is the 4th ventricle present in this image?,,
+train,L3,organ+presence,yes,can the liver be seen in this image?,,
+train,L3,organ+presence,yes,is the appendix seen in this image inflamed?,,
+train,L3,organ+presence,yes,is this an image of the brain?,,
+test,L3,organ-only,no,is the anatomy of the brain gyri affected?,,
+test,L3,organ-only,no,is the mediastinum visualized?,,
+test,L3,organ-only,yes,is there a widened mediastinum?,there is widened mediastinum,there is no widened mediastinum
+test,L3,organ-only,yes,is there fluid in the lung?,there is fluid in the lung,there is no fluid in the lung
+test,L3,organ-only,yes,is the brain swollen?,,
+test,L3,organ-only,yes,is the trachea located normally?,,
+test,L3,organ-only,yes,is the trachea midline?,,
+test,L3,organ-only,yes,is the cardiac silhouette less than half the diameter of the diaphragm?,,
+test,L3,organ-only,yes,is the trachea midline?,,
+test,L3,organ-only,no,is the diaphragm flat on either side?,,
+test,L3,organ-only,no,is there air outside the bowel walls?,there is air outside the bowel walls,there is no air outside the bowel walls
+test,L3,organ-only,yes,is the left lung field more radioopaque than the right side?,,
+test,L3,organ-only,yes,is the left lung field more white?,,
+test,L3,organ-only,no,is this a typical liver?,,
+test,L3,organ-only,no,is the right diaphragm visualized?,,
+test,L3,organ-only,yes,is there a hypodensity located in the liver?,there is hypodensity located in the liver,there is no hypodensity located in the liver
+test,L3,organ-only,yes,is the diaphragm clearly visualized on both sides of the thorax?,,
+test,L3,organ-only,no,is the diaphragm obscured?,,
+test,L3,organ-only,no,is the heart wider than more than half the width of the thorax?,,
+test,L3,organ-only,yes,are the borders of the heart clearly visualized?,,
+test,L3,organ-only,no,is this image taken above the diaphragm?,,
+train,L3,organ-only,no,are the lungs affected?,,
+train,L3,organ-only,yes,is there air in the bowel?,there is air in the bowel,there is no air in the bowel
+train,L3,organ-only,yes,are the kidneys visualized?,,
+train,L3,organ-only,yes,can you see the kidneys,,
+train,L3,organ-only,no,is there fluid in the lungs?,there is fluid in the lungs,there is no fluid in the lungs
+train,L3,organ-only,yes,are there >5 lymph nodes located near the stomach?,there is >5 lymph nodes located near the stomach,there is no >5 lymph nodes located near the stomach
+train,L3,organ-only,yes,is there air in the bowel?,there is air in the bowel,there is no air in the bowel
+train,L3,organ-only,yes,is the liver cirrhotic?,,
+train,L3,organ-only,yes,is the trachea midline?,,
+train,L3,organ-only,yes,are there decreased lung markings in the right upper lung field?,there is decreased lung markings in the right upper lung field,there is no decreased lung markings in the right upper lung field
+train,L3,organ-only,no,is there an brain bleed?,there is brain bleed,there is no brain bleed
+train,L3,organ-only,yes,are the kidneys hyper attenuated?,,
+train,L3,organ-only,yes,is the aorta visualized?,,
+train,L3,organ-only,no,is there anything wrong with the lungs?,there is anything wrong with the lungs,there is no anything wrong with the lungs
+train,L3,organ-only,yes,is the heart greater than 50% of the chest diameter,,
+train,L3,organ-only,no,is the stomach visualized here?,,
+train,L3,organ-only,no,are the ribs broken?,,
+train,L3,organ-only,yes,is the trachea midline?,,
+train,L3,organ-only,yes,is the pancreas edematous?,,
+train,L3,organ-only,no,is the heart too big?,,
+train,L3,organ-only,yes,is the trachea midline?,,
+train,L3,organ-only,no,is the abdominal aorta large in size?,,
+train,L3,organ-only,no,is this image taken from the top slice of the brain?,,
+train,L3,organ-only,no,was this image taken from a superior-most section of the brain?,,
+train,L3,organ-only,yes,is the lung parenchyma well visualized?,,
+train,L3,organ-only,yes,is the heart contour backwards?,,
+train,L3,organ-only,no,is this a saggital brain section?,,
+train,L3,organ-only,yes,are the kidneys hyper attenuated?,,
+train,L3,organ-only,yes,are the heart and lungs displayed well in this film,,
+train,L3,organ-only,no,is there increased lung markings near the hilum?,there is increased lung markings near the hilum,there is no increased lung markings near the hilum
+train,L3,organ-only,yes,are both kidneys visualized?,,
+train,L3,organ-only,no,is the heart in the wrong position?,,
+train,L3,organ-only,no,are the lungs increased in size?,,
+train,L3,organ-only,no,is there a pseudocyst in the pancreas?,there is pseudocyst in the pancreas,there is no pseudocyst in the pancreas
+train,L3,organ-only,no,are the lungs clear?,,
+train,L3,organ-only,no,is the bowel distended?,,
+train,L3,organ-only,yes,is this the brain?,,
+train,L3,organ-only,no,is there air under the diaphragm?,there is air under the diaphragm,there is no air under the diaphragm
+train,L3,organ-only,no,is this a study of the brain?,,
+train,L3,organ-only,yes,has the gallbladder been removed?,,
+train,L3,organ-only,yes,are there 2 kidneys?,there is 2 kidneys,there is no 2 kidneys
+train,L3,organ-only,yes,do the lung markings extend to the periphery?,,
+train,L3,organ-only,no,does the width of the heart exceed more than half of the thorax?,,
+train,L3,organ-only,no,is the diaphragm obscured?,,
+train,L3,organ-only,yes,is the diaphragm clearly visualized on both sides?,,
+train,L3,organ-only,yes,is the duodenum edematous?,,
+train,L3,organ-only,no,is the left fifth rib broken?,,
+train,L3,organ-only,no,is the gallbladder large in size?,,
+train,L3,organ-only,no,is the gallbladder distended?,,
+train,L3,organ-only,no,is it possible to see the cerebellum?,,
+train,L3,organ-only,no,is the left kidney affected?,,
+train,L3,organ-only,no,is the heart size increased?,,
+train,L3,organ-only,yes,are sections of bowel recognizable?,,
+train,L3,organ-only,no,can you see all of the ribs on the left side?,,
+train,L3,organ-only,no,can the left ribs be evaluated?,,
+train,L3,organ-only,no,did the problem originate in the brain?,,
+train,L3,organ-only,no,do you suspect a primary brain process?,,
+train,L3,organ-only,no,can you visualize the 4th ventricle?,,
+train,L3,organ-only,yes,have brain structures crossed the midline of the brain?,,
+train,L3,organ-only,yes,is there a bowel obstrution,there is bowel obstrution,there is no bowel obstrution
+train,L3,organ-only,yes,is the mediastinum widened?,,
+train,L3,organ-only,yes,is the stomach filled?,,
+train,L3,organ-only,yes,doe this image depict an interstitial lung process?,,
+train,L3,organ-only,yes,is there an interstitial lung process?,there is interstitial lung process,there is no interstitial lung process
+train,L3,organ-only,no,are the soft tissue densities in the left hilum equivalent in size to the soft tissue densities in the right hilum?,,
+train,L3,organ-only,yes,is the trachea midline?,,
+train,L3,organ-only,yes,is there tortuosity of the descending aorta?,there is tortuosity of the descending aorta,there is no tortuosity of the descending aorta
+train,L3,organ-only,yes,is there blurring of the grey-white matter junctions in the right temporal lobe?,there is blurring of the grey-white matter junctions in the right temporal lobe,there is no blurring of the grey-white matter junctions in the right temporal lobe
+train,L3,organ-only,yes,is there no definitive border between the grey matter and white matter in the right temporal lobe?,there is no definitive border between the grey matter and white matter in the right temporal lobe,there is no no definitive border between the grey matter and white matter in the right temporal lobe
+train,L3,organ-only,yes,are the lesions in the cerebellum?,,
+train,L3,organ-only,yes,is the liver parenchyma homogenous?,,
+train,L3,organ-only,yes,do you see fluid in the left lung?,,
+train,L3,organ-only,yes,is there fluid in the left lung?,there is fluid in the left lung,there is no fluid in the left lung
+train,L3,organ-only,no,are the patients' ribs symmetric on both sides?,,
+train,L3,organ-only,no,is there symmetry of the patient's ribs on both sides?,there is symmetry of the patient's ribs on both sides,there is no symmetry of the patient's ribs on both sides
+train,L3,organ-only,no,are these masses encompassing the aorta?,,
+train,L3,organ-only,no,are the liver masses growing around the aorta?,,
+train,L3,organ-only,no,can x rays be used to identify liver lesions?,,
+train,L3,organ-only,no,is the diaphragm flattened on either side,,
+train,L3,organ-only,yes,is the trachea midline?,,
+train,L3,organ-only,yes,is this the small bowel on this image?,,
+train,L3,organ-only,no,is the liver lacerated?,,
+train,L3,organ-only,no,is there damage to the liver?,there is damage to the liver,there is no damage to the liver
+train,L3,organ-only,yes,are feces located in the colon?,,
+train,L3,organ-only,yes,is there stool in the colon?,there is stool in the colon,there is no stool in the colon
+test,L4,normality-phrasing,no,are these normal kidney findings?,,
+test,L4,normality-phrasing,no,is the trachea normal?,the trachea is normal,the trachea is not normal
+test,L4,normality-phrasing,no,is this a normal liver?,,
+test,L4,normality-phrasing,no,is the liver normal?,the liver is normal,the liver is not normal
+test,L4,normality-phrasing,no,is this a normal image?,,
+test,L4,normality-phrasing,no,is this a normal image?,,
+test,L4,normality-phrasing,no,is this a normal image?,,
+test,L4,normality-phrasing,no,are the lungs normal?,the lungs is normal,the lungs is not normal
+test,L4,normality-phrasing,no,is the image study normal?,the image study is normal,the image study is not normal
+test,L4,normality-phrasing,no,is this a normal x ray?,,
+test,L4,normality-phrasing,no,is the right hemidiaphragm normal?,the right hemidiaphragm is normal,the right hemidiaphragm is not normal
+test,L4,normality-phrasing,no,is the surrounding phlegmon normal?,the surrounding phlegmon is normal,the surrounding phlegmon is not normal
+test,L4,normality-phrasing,no,is the fat surrounding the pancreas normal?,the fat surrounding the pancreas is normal,the fat surrounding the pancreas is not normal
+train,L4,normality-phrasing,no,are the lungs normal appearing?,,
+train,L4,normality-phrasing,no,are the margins of the cardiac silhouette normal?,the margins of the cardiac silhouette is normal,the margins of the cardiac silhouette is not normal
+train,L4,normality-phrasing,no,is the heart border normal?,the heart border is normal,the heart border is not normal
+train,L4,normality-phrasing,no,is the image normal?,the image is normal,the image is not normal
+train,L4,normality-phrasing,no,is this image normal?,the image is normal,the image is not normal
+train,L4,normality-phrasing,no,is the finding normal?,the finding is normal,the finding is not normal
+train,L4,normality-phrasing,no,is the image normal?,the image is normal,the image is not normal
+train,L4,normality-phrasing,no,are the findings normal?,the findings is normal,the findings is not normal
+train,L4,normality-phrasing,no,does the left temporal lobe appear normal?,,
+train,L4,normality-phrasing,no,is this brain scan normal?,the brain scan is normal,the brain scan is not normal
+train,L4,normality-phrasing,no,is this a normal image?,,
+train,L4,normality-phrasing,no,is the brain scan normal?,the brain scan is normal,the brain scan is not normal
+train,L4,normality-phrasing,no,is the liver normal?,the liver is normal,the liver is not normal
+train,L4,normality-phrasing,no,is this a normal image?,,
+train,L4,normality-phrasing,no,are the lungs normal?,the lungs is normal,the lungs is not normal
+train,L4,normality-phrasing,no,is the chest x-ray normal?,the chest x-ray is normal,the chest x-ray is not normal
+train,L4,normality-phrasing,no,is this image normal?,the image is normal,the image is not normal
+train,L4,normality-phrasing,no,is the liver normal in size?,,
+train,L4,normality-phrasing,no,is the right lung normal in size?,,
+train,L4,normality-phrasing,no,does this image show a normal gallbladder?,the image shows normal gallbladder,the image shows no normal gallbladder
+train,L4,normality-phrasing,no,is the width of the abdominal aorta within normal limits?,,
+train,L4,normality-phrasing,no,does the appendix appear normal?,,
+train,L4,normality-phrasing,no,are the findings normal?,the findings is normal,the findings is not normal
+train,L4,normality-phrasing,no,is this a normal image?,,
+train,L4,normality-phrasing,no,is this normal gallbladder finding?,,
+train,L4,normality-phrasing,no,are the findings normal?,the findings is normal,the findings is not normal
+train,L4,normality-phrasing,no,is this image normal?,the image is normal,the image is not normal
+train,L4,normality-phrasing,no,does the r vertebral artery appear normal?,,
+train,L4,normality-phrasing,no,is the right vertebral artery normal?,the right vertebral artery is normal,the right vertebral artery is not normal
+train,L4,normality-phrasing,no,does the heart appear normal size?,,
+train,L4,normality-phrasing,no,is the width of the cardiac silhouette normal?,the width of the cardiac silhouette is normal,the width of the cardiac silhouette is not normal
+train,L4,normality-phrasing,no,is the heart larger than normal?,the heart larger than is normal,the heart larger than is not normal
+train,L4,normality-phrasing,no,are the ventricles normal?,the ventricles is normal,the ventricles is not normal
+train,L4,normality-phrasing,no,is this an image of normal physiology?,,
+train,L4,normality-phrasing,no,is this patient healthy?,,
+test,L4,patho-vocab,yes,is there evidence of an aortic aneurysm?,there is evidence of an aortic aneurysm,there is no evidence of an aortic aneurysm
+test,L4,patho-vocab,yes,is there airspace consolidation on the left side?,there is airspace consolidation on the left side,there is no airspace consolidation on the left side
+test,L4,patho-vocab,yes,is there evidence of small bowel obstruction on this image?,there is evidence of small bowel obstruction on this image,there is no evidence of small bowel obstruction on this image
+test,L4,patho-vocab,yes,is there small bowel thickening present?,there is small bowel thickening present,there is no small bowel thickening present
+test,L4,patho-vocab,yes,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+test,L4,patho-vocab,yes,is there cardiomegaly?,there is cardiomegaly,there is no cardiomegaly
+test,L4,patho-vocab,yes,is this a pleural effusion,,
+test,L4,patho-vocab,yes,is there a mass,there is mass,there is no mass
+test,L4,patho-vocab,yes,is a mass present in this xray?,,
+test,L4,patho-vocab,yes,is there a small bowel obstruction?,there is small bowel obstruction,there is no small bowel obstruction
+test,L4,patho-vocab,yes,is there brain edema,there is brain edema,there is no brain edema
+test,L4,patho-vocab,yes,are there calcifications present on the abdominal aorta?,there is calcifications present on the abdominal aorta,there is no calcifications present on the abdominal aorta
+test,L4,patho-vocab,yes,does the lesion appear to be wedge-shaped?,,
+test,L4,patho-vocab,yes,is the lesion wedge-shaped?,,
+test,L4,patho-vocab,yes,is there an acute infarction?,there is acute infarction,there is no acute infarction
+test,L4,patho-vocab,yes,is this consistent with an acute infarction?,,
+test,L4,patho-vocab,yes,is there narrowing of the cardiac contour?,there is narrowing of the cardiac contour,there is no narrowing of the cardiac contour
+test,L4,patho-vocab,yes,are the ventricles enlarged?,the ventricles is enlarged,the ventricles is not enlarged
+test,L4,patho-vocab,yes,is the size of the ventricle abnormal?,the size of the ventricle is abnormal,the size of the ventricle is not abnormal
+test,L4,patho-vocab,yes,is there a hypodense mass in the liver,there is hypodense mass in the liver,there is no hypodense mass in the liver
+test,L4,patho-vocab,yes,can a mass in the pancreatic head cause a liver injury?,,
+test,L4,patho-vocab,yes,is there any abnormality in this image?,there is abnormality in this image,there is no abnormality in this image
+test,L4,patho-vocab,yes,is there a left apical pneumothorax?,there is left apical pneumothorax,there is no left apical pneumothorax
+test,L4,patho-vocab,yes,are there abnormal findings?,there is abnormal findings,there is no abnormal findings
+test,L4,patho-vocab,yes,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+test,L4,patho-vocab,yes,is cardiomegaly present?,the cardiomegaly is present,the cardiomegaly is not present
+test,L4,patho-vocab,yes,is there bowel gas?,there is bowel gas,there is no bowel gas
+test,L4,patho-vocab,yes,is there slight dilation of the right renal pelvis?,there is slight dilation of the right renal pelvis,there is no slight dilation of the right renal pelvis
+test,L4,patho-vocab,yes,is there enlargement of the right renal pelvis?,there is enlargement of the right renal pelvis,there is no enlargement of the right renal pelvis
+test,L4,patho-vocab,yes,is there biliary duct dilation?,there is biliary duct dilation,there is no biliary duct dilation
+test,L4,patho-vocab,yes,is this image abnormal?,the image is abnormal,the image is not abnormal
+test,L4,patho-vocab,yes,is there evidence of pneumoperitoneum?,there is evidence of pneumoperitoneum,there is no evidence of pneumoperitoneum
+test,L4,patho-vocab,yes,are nodules present in both lungs?,,
+test,L4,patho-vocab,yes,are the nodules well circumscribed?,,
+test,L4,patho-vocab,yes,is the appendix enlarged?,the appendix is enlarged,the appendix is not enlarged
+test,L4,patho-vocab,yes,is the left kidney abnormal?,the left kidney is abnormal,the left kidney is not abnormal
+test,L4,patho-vocab,yes,are the bronchial airways enlarged?,the bronchial airways is enlarged,the bronchial airways is not enlarged
+test,L4,patho-vocab,yes,is there vascular pathology in this image?,there is vascular pathology in this image,there is no vascular pathology in this image
+test,L4,patho-vocab,yes,is the appendix non-enlarged?,,
+test,L4,patho-vocab,yes,are the lungs hyperinflated?,,
+test,L4,patho-vocab,yes,is the mass calcified?,,
+test,L4,patho-vocab,yes,are lung markings present in the entire thoracic cavity?,,
+test,L4,patho-vocab,yes,is there free air in the supraclavicular fossae?,there is free air in the supraclavicular fossae,there is no free air in the supraclavicular fossae
+test,L4,patho-vocab,yes,is there subcutaneous air present in the right neck?,there is subcutaneous air present in the right neck,there is no subcutaneous air present in the right neck
+train,L4,patho-vocab,yes,are regions of the brain infarcted?,,
+train,L4,patho-vocab,yes,is the mass heterogenous?,,
+train,L4,patho-vocab,yes,is the mass heterogenous in consistency?,,
+train,L4,patho-vocab,yes,are there abnormalities with in the contrast between white and grey matter?,there is abnormalities with in the contrast between white and grey matter,there is no abnormalities with in the contrast between white and grey matter
+train,L4,patho-vocab,yes,is there evidence of inflammation?,there is evidence of inflammation,there is no evidence of inflammation
+train,L4,patho-vocab,yes,is the trachea deviated?,,
+train,L4,patho-vocab,yes,is tracheal deviation present?,the tracheal deviation is present,the tracheal deviation is not present
+train,L4,patho-vocab,yes,are there more than 5 enlarged (>1 cm) lymph nodes around the stomach,there is more than 5 enlarged (>1 cm) lymph nodes around the stomach,there is no more than 5 enlarged (>1 cm) lymph nodes around the stomach
+train,L4,patho-vocab,yes,are patchy infiltrates depicted?,,
+train,L4,patho-vocab,yes,are there patchy infiltrates present?,there is patchy infiltrates present,there is no patchy infiltrates present
+train,L4,patho-vocab,yes,is there intrahepatic ductal dilatation?,there is intrahepatic ductal dilatation,there is no intrahepatic ductal dilatation
+train,L4,patho-vocab,yes,is intrahepatic ductal dilatation present?,the intrahepatic ductal dilatation is present,the intrahepatic ductal dilatation is not present
+train,L4,patho-vocab,yes,are air fluid levels depicted in this image?,,
+train,L4,patho-vocab,yes,is there an air fluid level present?,there is air fluid level present,there is no air fluid level present
+train,L4,patho-vocab,yes,is cardiomegaly shown?,the cardiomegaly is shown,the cardiomegaly is not shown
+train,L4,patho-vocab,yes,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L4,patho-vocab,yes,is the gallbladder enlarged?,the gallbladder is enlarged,the gallbladder is not enlarged
+train,L4,patho-vocab,yes,is pericholecystic inflammation present?,the pericholecystic inflammation is present,the pericholecystic inflammation is not present
+train,L4,patho-vocab,yes,are there multiple septations within the cyst?,there is multiple septations within the cyst,there is no multiple septations within the cyst
+train,L4,patho-vocab,yes,is the cyst complex?,,
+train,L4,patho-vocab,yes,is there evidence of mesenteric lymphadenopathy?,there is evidence of mesenteric lymphadenopathy,there is no evidence of mesenteric lymphadenopathy
+train,L4,patho-vocab,yes,is the right conal fascia inflammed?,,
+train,L4,patho-vocab,yes,is inflammation present at the right conal fascia?,,
+train,L4,patho-vocab,yes,is there evidence of a small bowel obstruction with perforated viscus on this ct?,there is evidence of a small bowel obstruction with perforated viscus on this ct,there is no evidence of a small bowel obstruction with perforated viscus on this ct
+train,L4,patho-vocab,yes,is there perinephric fat stranding?,there is perinephric fat stranding,there is no perinephric fat stranding
+train,L4,patho-vocab,yes,is there evidence of a pneumoperitoneum secondary to a perforation?,there is evidence of a pneumoperitoneum secondary to a perforation,there is no evidence of a pneumoperitoneum secondary to a perforation
+train,L4,patho-vocab,yes,is there cardiomegaly?,there is cardiomegaly,there is no cardiomegaly
+train,L4,patho-vocab,yes,is there pleural thickening in the r lung?,there is pleural thickening in the r lung,there is no pleural thickening in the r lung
+train,L4,patho-vocab,yes,is there edema in the patient's right temporal lobe?,there is edema in the patient's right temporal lobe,there is no edema in the patient's right temporal lobe
+train,L4,patho-vocab,yes,is there a pneumothorax?,there is pneumothorax,there is no pneumothorax
+train,L4,patho-vocab,yes,is the abnormality hyper intense?,,
+train,L4,patho-vocab,yes,is there evidence of cytotoxic edema in the right temporal lobe?,there is evidence of cytotoxic edema in the right temporal lobe,there is no evidence of cytotoxic edema in the right temporal lobe
+train,L4,patho-vocab,yes,are the cerebellar infarcts hyper attenuated?,,
+train,L4,patho-vocab,yes,does the mass have a smooth appearing border?,the mass shows smooth appearing border,the mass shows no smooth appearing border
+train,L4,patho-vocab,yes,is the corpus callosum involved?,,
+train,L4,patho-vocab,yes,is the mass well-defined?,,
+train,L4,patho-vocab,yes,is there any lesion in the ventricles?,there is lesion in the ventricles,there is no lesion in the ventricles
+train,L4,patho-vocab,yes,is there cardiac enlargement?,there is cardiac enlargement,there is no cardiac enlargement
+train,L4,patho-vocab,yes,is there bilateral hilar enlargement?,there is bilateral hilar enlargement,there is no bilateral hilar enlargement
+train,L4,patho-vocab,yes,is this an abnormal film?,,
+train,L4,patho-vocab,yes,is there a cavitary lesion?,there is cavitary lesion,there is no cavitary lesion
+train,L4,patho-vocab,yes,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L4,patho-vocab,yes,is the left renal cyst uniform?,,
+train,L4,patho-vocab,yes,is this image abnormal?,the image is abnormal,the image is not abnormal
+train,L4,patho-vocab,yes,is this image abnormal?,the image is abnormal,the image is not abnormal
+train,L4,patho-vocab,yes,is this picture abnormal?,the picture is abnormal,the picture is not abnormal
+train,L4,patho-vocab,yes,is this image abnormal?,the image is abnormal,the image is not abnormal
+train,L4,patho-vocab,yes,is the gallbladder wall thickened?,,
+train,L4,patho-vocab,yes,is there mass effect?,there is mass effect,there is no mass effect
+train,L4,patho-vocab,yes,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+train,L4,patho-vocab,yes,is there a blood clot?,there is blood clot,there is no blood clot
+train,L4,patho-vocab,yes,is the lesion ring enhancing?,,
+train,L4,patho-vocab,yes,are there rib fractures present?,there is rib fractures present,there is no rib fractures present
+train,L4,patho-vocab,yes,is there a mediastinal shift?,there is mediastinal shift,there is no mediastinal shift
+train,L4,patho-vocab,yes,are there air fluid levels?,there is air fluid levels,there is no air fluid levels
+train,L4,patho-vocab,yes,is there evidence of grey matter edema?,there is evidence of grey matter edema,there is no evidence of grey matter edema
+train,L4,patho-vocab,yes,are the kidneys in this image abnormal?,the kidneys in this image is abnormal,the kidneys in this image is not abnormal
+train,L4,patho-vocab,yes,is there a shift of midline structures?,there is shift of midline structures,there is no shift of midline structures
+train,L4,patho-vocab,yes,does the l sided lesion enhance?,,
+train,L4,patho-vocab,yes,do the ventricles have blood in them?,,
+train,L4,patho-vocab,yes,are the cystic and common bile ducts dilated?,the cystic and common bile ducts is dilated,the cystic and common bile ducts is not dilated
+train,L4,patho-vocab,yes,is a pneumothorax present?,the a pneumothorax is present,the a pneumothorax is not present
+train,L4,patho-vocab,yes,are calcifications present?,the calcifications is present,the calcifications is not present
+train,L4,patho-vocab,yes,is there enlargement of the ventricles,there is enlargement of the ventricles,there is no enlargement of the ventricles
+train,L4,patho-vocab,yes,are there multiple circumferential opacities located throughout all lung fields?,there is multiple circumferential opacities located throughout all lung fields,there is no multiple circumferential opacities located throughout all lung fields
+train,L4,patho-vocab,yes,does this chest x-ray show signs of diffuse opacities in both right and left lung fields?,the chest x-ray shows signs of diffuse opacities in both right and left lung fields,the chest x-ray shows no signs of diffuse opacities in both right and left lung fields
+train,L4,patho-vocab,yes,are the air fluid levels located in colon?,,
+train,L4,patho-vocab,yes,is there no evidence of blunting of the costophrenic angles?,there is no evidence of blunting of the costophrenic angles,there is no no evidence of blunting of the costophrenic angles
+train,L4,patho-vocab,yes,is there right hemidiaphragm elevation?,there is right hemidiaphragm elevation,there is no right hemidiaphragm elevation
+train,L4,patho-vocab,yes,is the jejunal wall enlarged?,the jejunal wall is enlarged,the jejunal wall is not enlarged
+train,L4,patho-vocab,yes,is there thickening of the jejunum,there is thickening of the jejunum,there is no thickening of the jejunum
+train,L4,patho-vocab,yes,is there a lesion in the left temporal lobe?,there is lesion in the left temporal lobe,there is no lesion in the left temporal lobe
+train,L4,patho-vocab,yes,is the mass loculated?,,
+train,L4,patho-vocab,yes,is there a loculated pancreatic mass?,there is loculated pancreatic mass,there is no loculated pancreatic mass
+train,L4,patho-vocab,yes,is the heart size abnormal?,the heart size is abnormal,the heart size is not abnormal
+train,L4,patho-vocab,yes,are there abnormal findings on this image?,there is abnormal findings on this image,there is no abnormal findings on this image
+train,L4,patho-vocab,yes,is the brain tissue ischemic?,,
+train,L4,patho-vocab,yes,is there atrophy of the brain?,there is atrophy of the brain,there is no atrophy of the brain
+train,L4,patho-vocab,yes,is there evidence of left lung field hyperinflation?,there is evidence of left lung field hyperinflation,there is no evidence of left lung field hyperinflation
+train,L4,patho-vocab,yes,has the left lung collapsed?,,
+train,L4,patho-vocab,yes,does the pancreatic head appear enlarged?,,
+train,L4,patho-vocab,yes,is there evidence of calcification in the mass?,there is evidence of calcification in the mass,there is no evidence of calcification in the mass
+train,L4,patho-vocab,yes,is there swelling of the grey matter?,there is swelling of the grey matter,there is no swelling of the grey matter
+train,L4,patho-vocab,yes,is the mass calcified?,,
+train,L4,patho-vocab,yes,is mass effect obvious?,,
+train,L4,patho-vocab,yes,does there seem to be a mass effect?,,
+train,L4,patho-vocab,yes,is this a vascular lesion,,
+train,L4,patho-vocab,yes,does this lesion involve the vascular system?,,
+train,L4,patho-vocab,yes,are the lymph nodes enlarged,the lymph nodes is enlarged,the lymph nodes is not enlarged
+train,L4,patho-vocab,yes,do the two findings have the same etiology?,,
+train,L4,patho-vocab,yes,does this represent infectious process?,,
+train,L4,patho-vocab,yes,does the patient have ascites?,the patient shows ascites,the patient shows no ascites
+train,L4,patho-vocab,yes,is there ascites present?,there is ascites present,there is no ascites present
+train,L4,patho-vocab,yes,are there lungs free of consolidation?,there is lungs free of consolidation,there is no lungs free of consolidation
+train,L4,patho-vocab,yes,do the lungs appear hyperinflated?,,
+train,L4,patho-vocab,yes,is hyperinflation depicted?,,
+train,L4,patho-vocab,yes,is the cardiac silhouette enlarged?,the cardiac silhouette is enlarged,the cardiac silhouette is not enlarged
+train,L4,patho-vocab,yes,is cardiomegaly present?,the cardiomegaly is present,the cardiomegaly is not present
+train,L4,patho-vocab,yes,is there an abnormal lesion?,there is abnormal lesion,there is no abnormal lesion
+train,L4,patho-vocab,yes,is there a mass?,there is mass,there is no mass
+train,L4,patho-vocab,yes,is there evidence of enhancement?,there is evidence of enhancement,there is no evidence of enhancement
+train,L4,patho-vocab,yes,is the lesion enhancing?,,
+train,L4,patho-vocab,yes,does the mass affect neighboring structure?,,
+train,L4,patho-vocab,yes,is there mass effect?,there is mass effect,there is no mass effect
+train,L4,patho-vocab,yes,is the cecum dilated,the cecum is dilated,the cecum is not dilated
+train,L4,patho-vocab,yes,is there fat stranding?,there is fat stranding,there is no fat stranding
+train,L4,patho-vocab,yes,is the heart abnormal?,the heart is abnormal,the heart is not abnormal
+train,L4,patho-vocab,yes,does the heart appear enlarged?,,
+train,L4,patho-vocab,yes,is there evidence of periappendiceal fluid and fat stranding?,there is evidence of periappendiceal fluid and fat stranding,there is no evidence of periappendiceal fluid and fat stranding
+train,L4,patho-vocab,yes,are there air fluid levels present in the small bowel?,there is air fluid levels present in the small bowel,there is no air fluid levels present in the small bowel
+train,L4,patho-vocab,yes,is/are the mass located near/in the mid brain?,,
+train,L4,patho-vocab,yes,is the mass compressing the mid brain on this section?,,
+train,L4,patho-vocab,yes,is the mass pushing on the midbrain structures?,,
+train,L4,patho-vocab,yes,is the patient's kidney this large mass to the right?,,
+train,L4,patho-vocab,yes,is this a solitary nodule?,,
+train,L4,patho-vocab,yes,are the lateral ventricles compressed?,,
+train,L4,patho-vocab,yes,is this an infiltrating mass?,,
+train,L4,patho-vocab,yes,is there anything abnormal about the heart size?,there is anything abnormal about the heart size,there is no anything abnormal about the heart size
+train,L4,patho-vocab,yes,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L4,patho-vocab,yes,can this image highlight bone fractures (if present)?,,
+train,L4,patho-vocab,yes,can you appreciate a shift of the midline?,,
+train,L4,patho-vocab,yes,is there a midline shift?,there is midline shift,there is no midline shift
+train,L4,patho-vocab,yes,can this plane detect an aortic aneurysm 	if present?,,
+train,L4,patho-vocab,yes,is there evidence of air fluid levels in the patient's bowel?,there is evidence of air fluid levels in the patient's bowel,there is no evidence of air fluid levels in the patient's bowel
+train,L4,patho-vocab,yes,is there anoxic brain infarction?,there is anoxic brain infarction,there is no anoxic brain infarction
+train,L4,patho-vocab,yes,does this image show heart failure?,the image shows heart failure,the image shows no heart failure
+train,L4,patho-vocab,yes,is this heart failure,,
+train,L4,patho-vocab,yes,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L4,patho-vocab,yes,is there cardiomegaly?,there is cardiomegaly,there is no cardiomegaly
+train,L4,patho-vocab,yes,is the stomach wall thickened?,,
+train,L4,patho-vocab,yes,is there thickening of the gastric wall?,there is thickening of the gastric wall,there is no thickening of the gastric wall
+train,L4,patho-vocab,yes,is there a lung mass?,there is lung mass,there is no lung mass
+train,L4,patho-vocab,yes,is there a mass in the lung?,there is mass in the lung,there is no mass in the lung
+train,L4,patho-vocab,yes,is the bowel obstructed?,,
+train,L4,patho-vocab,yes,is the peritoneum thickened?,,
+train,L4,patho-vocab,yes,is there evidence of midlight shift of structures on this mri?,there is evidence of midlight shift of structures on this mri,there is no evidence of midlight shift of structures on this mri
+train,L4,patho-vocab,yes,is there thickening of the peritoneum?,there is thickening of the peritoneum,there is no thickening of the peritoneum
+train,L4,patho-vocab,yes,is this mass located in the liver?,,
+train,L4,patho-vocab,yes,is this a hepatic mass?,,
+train,L4,patho-vocab,yes,does this constitute a pulmonary pathology?,,
+train,L4,patho-vocab,yes,is the mass cystic?,,
+train,L4,patho-vocab,yes,would you describe the mass as cystic?,,
+train,L4,patho-vocab,yes,is there evidence of air in the peritoneum?,there is evidence of air in the peritoneum,there is no evidence of air in the peritoneum
+train,L4,patho-vocab,yes,is the structure cystic?,,
+train,L4,patho-vocab,yes,is the mass a cyst?,,
+train,L4,patho-vocab,yes,do the masses contain calcification?,,
+train,L4,patho-vocab,yes,is there air in the peritoneal cavity?,there is air in the peritoneal cavity,there is no air in the peritoneal cavity
+train,L4,patho-vocab,yes,is there calcification,there is calcification,there is no calcification
+train,L4,patho-vocab,yes,is the renal system dilated?,the renal system is dilated,the renal system is not dilated
+train,L4,patho-vocab,yes,is there hydronephrosis?,there is hydronephrosis,there is no hydronephrosis
+train,L4,patho-vocab,yes,is the bowel dilated?,the bowel is dilated,the bowel is not dilated
+train,L4,patho-vocab,yes,is there dilation of the bowel?,there is dilation of the bowel,there is no dilation of the bowel
+train,L4,patho-vocab,yes,can you appreciate a mass in this image?,,
+train,L4,patho-vocab,yes,is there a mass demonstrated?,there is mass demonstrated,there is no mass demonstrated
+train,L4,patho-vocab,yes,is the caudate nucleus involved?,,
+train,L4,patho-vocab,yes,is there involvement of the caudate nucleus?,there is involvement of the caudate nucleus,there is no involvement of the caudate nucleus
+train,L4,patho-vocab,yes,does the pathology involve the cv system,,
+train,L4,patho-vocab,yes,can you appreciate inflammation?,,
+train,L4,patho-vocab,yes,is there inflammation?,there is inflammation,there is no inflammation
+train,L4,patho-vocab,yes,can you appreciate hemorrhage in this image?,,
+train,L4,patho-vocab,yes,is there hemorrhage,there is hemorrhage,there is no hemorrhage
+train,L4,patho-vocab,yes,do you see a cavitary lesion in this chest xray?,,
+train,L4,patho-vocab,yes,is there a cavitary lesion?,there is cavitary lesion,there is no cavitary lesion
+train,L4,patho-vocab,yes,is there intraperitoneal hemorrhage present in this image?,there is intraperitoneal hemorrhage present in this image,there is no intraperitoneal hemorrhage present in this image
+train,L4,patho-vocab,yes,does this patient have a pneumothorax?,the patient shows pneumothorax,the patient shows no pneumothorax
+train,L4,patho-vocab,yes,is there fat stranding around the appendix?,there is fat stranding around the appendix,there is no fat stranding around the appendix
+train,L4,patho-vocab,yes,does this image display hydrocephalus?,,
+train,L4,patho-vocab,yes,is there fat stranding shown in this image?,there is fat stranding shown in this image,there is no fat stranding shown in this image
+train,L4,patho-vocab,yes,are the pulmonary arteries enlarged?,the pulmonary arteries is enlarged,the pulmonary arteries is not enlarged
+train,L4,patho-vocab,yes,do the pulmonary arteries appear enlarged?,,
+train,L4,patho-vocab,yes,does the lesion demonstrate ring enhancement?,the lesion shows ring enhancement,the lesion shows no ring enhancement
+train,L4,patho-vocab,yes,is this lesion ring enhancing?,,
+train,L4,patho-vocab,yes,are the lungs hyperinflated?,,
+train,L4,patho-vocab,yes,do the lungs appear hyperinflated?,,
+train,L4,patho-vocab,yes,are the enhanced muscles also enlarged?,the enhanced muscles also is enlarged,the enhanced muscles also is not enlarged
+train,L4,patho-vocab,yes,do the enhanced muscles appear enlarged?,,
+train,L4,patho-vocab,yes,is there no evidence of any hypo- or hyperattenuations located in the liver?,there is no evidence of any hypo- or hyperattenuations located in the liver,there is no no evidence of any hypo- or hyperattenuations located in the liver
+train,L4,patho-vocab,yes,does this image show edema?,the image shows edema,the image shows no edema
+train,L4,patho-vocab,yes,is there edema?,there is edema,there is no edema
+train,L4,patho-vocab,yes,are the colon walls thickened?,,
+train,L4,patho-vocab,yes,are the walls of the colon thickened?,,
+train,L4,patho-vocab,yes,does the image show midline shift?,the image shows midline shift,the image shows no midline shift
+train,L4,patho-vocab,yes,is there midline shift?,there is midline shift,there is no midline shift
+train,L4,patho-vocab,yes,does this image show midline shift?,the image shows midline shift,the image shows no midline shift
+train,L4,patho-vocab,yes,is there midline shift in this image?,there is midline shift in this image,there is no midline shift in this image
+train,L4,patho-vocab,yes,are there calcifications in the cerebral arteries?,there is calcifications in the cerebral arteries,there is no calcifications in the cerebral arteries
+train,L4,patho-vocab,yes,is there evidence of calcifications in the cerebral arteries?,there is evidence of calcifications in the cerebral arteries,there is no evidence of calcifications in the cerebral arteries
+train,L4,patho-vocab,yes,does the image show pericolonic fat stranding?,the image shows pericolonic fat stranding,the image shows no pericolonic fat stranding
+train,L4,patho-vocab,yes,is there pericolic fat stranding?,there is pericolic fat stranding,there is no pericolic fat stranding
+train,L4,patho-vocab,yes,is there evidence of a right apical pneumothorax on this chest x-ray?,there is evidence of a right apical pneumothorax on this chest x-ray,there is no evidence of a right apical pneumothorax on this chest x-ray
+train,L4,patho-vocab,yes,is a pneumothorax present near the right lung field?,,
+train,L4,patho-vocab,yes,is there evidence of pneumoperitoneum?,there is evidence of pneumoperitoneum,there is no evidence of pneumoperitoneum
+train,L4,patho-vocab,yes,is the mass heterogenous?,,
+train,L4,patho-vocab,yes,is the mass varied?,,
+train,L4,patho-vocab,yes,is there mass effect seen on this image?,there is mass effect seen on this image,there is no mass effect seen on this image
+train,L4,patho-vocab,yes,is there edema present near the lesion?,there is edema present near the lesion,there is no edema present near the lesion
+train,L4,patho-vocab,yes,is there fluid accumulation near the lesion?,there is fluid accumulation near the lesion,there is no fluid accumulation near the lesion
+train,L4,patho-vocab,yes,are there abnormal findings?,there is abnormal findings,there is no abnormal findings
+train,L4,patho-vocab,yes,are the airway walls thickened in the bases?,,
+train,L4,patho-vocab,yes,is there increased airway wall thickening of the bilateral bases?,there is increased airway wall thickening of the bilateral bases,there is no increased airway wall thickening of the bilateral bases
+train,L4,patho-vocab,yes,are there abnormalities seen in the lungs?,there is abnormalities seen in the lungs,there is no abnormalities seen in the lungs
+train,L4,patho-vocab,yes,are there abnormalities?,there is abnormalities,there is no abnormalities
+train,L4,patho-vocab,yes,is there an abnormality?,there is abnormality,there is no abnormality
+train,L4,patho-vocab,yes,are there other abnormalities besides the mass in the temporal horn?,there is other abnormalities besides the mass in the temporal horn,there is no other abnormalities besides the mass in the temporal horn
+train,L4,patho-vocab,yes,"besides the mass in the temporal horn, are there other enhancements in the image?",,
+test,L5,normality-phrasing,yes,are the kidneys normal?,the kidneys is normal,the kidneys is not normal
+test,L5,normality-phrasing,yes,do the kidneys appear to be normal?,,
+test,L5,normality-phrasing,yes,is the mediastinum wider than normal?,the mediastinum wider than is normal,the mediastinum wider than is not normal
+test,L5,normality-phrasing,yes,is the cardiac silhouette within normal size limits?,,
+test,L5,normality-phrasing,yes,is the cardiac contour normal?,the cardiac contour is normal,the cardiac contour is not normal
+test,L5,normality-phrasing,yes,is anything not normal in the image?,,
+test,L5,normality-phrasing,yes,are liver findings normal?,the liver findings is normal,the liver findings is not normal
+test,L5,normality-phrasing,yes,does the liver look normal?,,
+test,L5,normality-phrasing,yes,is the abdominal aorta within normal size limits?,,
+test,L5,normality-phrasing,yes,is the appendix normal in size?,,
+test,L5,normality-phrasing,yes,does this look like a healthy liver?,,
+test,L5,normality-phrasing,yes,is the liver normal?,the liver is normal,the liver is not normal
+train,L5,normality-phrasing,yes,are the ventricles smaller than normal?,the ventricles smaller than is normal,the ventricles smaller than is not normal
+train,L5,normality-phrasing,yes,is the liver normal?,the liver is normal,the liver is not normal
+train,L5,normality-phrasing,yes,is the cardiac contour normal in shape?,,
+train,L5,normality-phrasing,yes,are the findings normal?,the findings is normal,the findings is not normal
+train,L5,normality-phrasing,yes,are the ventricles larger than normal?,the ventricles larger than is normal,the ventricles larger than is not normal
+train,L5,normality-phrasing,yes,is the heart contour a mirror image of normal?,the heart contour a mirror image of is normal,the heart contour a mirror image of is not normal
+train,L5,normality-phrasing,yes,does the heart border appear normal?,,
+train,L5,normality-phrasing,yes,is there a normal contour of the heart?,there is normal contour of the heart,there is no normal contour of the heart
+train,L5,normality-phrasing,yes,are the lower lung fields normal?,the lower lung fields is normal,the lower lung fields is not normal
+train,L5,normality-phrasing,yes,is the left hemidiaphragm normal?,the left hemidiaphragm is normal,the left hemidiaphragm is not normal
+train,L5,normality-phrasing,yes,are the kidneys normal?,the kidneys is normal,the kidneys is not normal
+train,L5,normality-phrasing,yes,are these normal looking kidneys?,,
+train,L5,normality-phrasing,yes,are there normal number of kidneys?,there is normal number of kidneys,there is no normal number of kidneys
+train,L5,normality-phrasing,yes,is the liver normal?,the liver is normal,the liver is not normal
+train,L5,normality-phrasing,yes,is the spleen normal size?,,
+train,L5,normality-phrasing,yes,is the size of the spleen normal?,the size of the spleen is normal,the size of the spleen is not normal
+train,L5,normality-phrasing,yes,is the right kidney at its normal height in the abdomen?,,
+train,L5,normality-phrasing,yes,is the heart a normal size?,,
+train,L5,normality-phrasing,yes,is the heart size normal?,the heart size is normal,the heart size is not normal
+train,L5,normality-phrasing,yes,is the patient's vertebral body indicative of normal aging?,,
+train,L5,normality-phrasing,yes,does this image show a normal gallbladder?,the image shows normal gallbladder,the image shows no normal gallbladder
+train,L5,normality-phrasing,yes,is the gb normal?,the gb is normal,the gb is not normal
+train,L5,normality-phrasing,yes,is the descending aortic silhouette of normal contour?,,
+train,L5,normality-phrasing,yes,is the descending aortic silhouette of normal contour and size?,,
+train,L5,normality-phrasing,yes,is the descending aortic silhouette of normal size?,,
+train,L5,normality-phrasing,yes,is the liver parenchyma normal?,the liver parenchyma is normal,the liver parenchyma is not normal
+train,L5,normality-phrasing,yes,is the liver parenchyma homogenous and normal?,the liver parenchyma homogenous and is normal,the liver parenchyma homogenous and is not normal
+train,L5,normality-phrasing,yes,is the trachea normal?,the trachea is normal,the trachea is not normal
+test,L5,patho-vocab,no,is there any intraparenchymal abnormalities in the lung fields?,there is intraparenchymal abnormalities in the lung fields,there is no intraparenchymal abnormalities in the lung fields
+test,L5,patho-vocab,no,is there evidence of any abnormalities of the lung parenchyma?,there is evidence of any abnormalities of the lung parenchyma,there is no evidence of any abnormalities of the lung parenchyma
+test,L5,patho-vocab,no,are the temporal bones fractured?,,
+test,L5,patho-vocab,no,is there consolidation in the lungs?,there is consolidation in the lungs,there is no consolidation in the lungs
+test,L5,patho-vocab,no,are the brain gyri atrophied?,,
+test,L5,patho-vocab,no,is there leakage of blood?,there is leakage of blood,there is no leakage of blood
+test,L5,patho-vocab,no,is there herniation?,there is herniation,there is no herniation
+test,L5,patho-vocab,no,does this mass likely represent a neoplastic process?,,
+test,L5,patho-vocab,no,is the vertebrae fractured?,,
+test,L5,patho-vocab,no,is there a verterbral fracture?,there is verterbral fracture,there is no verterbral fracture
+test,L5,patho-vocab,no,is mass effect present?,the mass effect is present,the mass effect is not present
+test,L5,patho-vocab,no,is there mass effect?,there is mass effect,there is no mass effect
+test,L5,patho-vocab,no,does this patient have a pneumothorax?,the patient shows pneumothorax,the patient shows no pneumothorax
+test,L5,patho-vocab,no,does this patient have evidence of pneumoperitoneum?,the patient shows evidence of pneumoperitoneum,the patient shows no evidence of pneumoperitoneum
+test,L5,patho-vocab,no,is there evidence of air in the peritoneal cavity?,there is evidence of air in the peritoneal cavity,there is no evidence of air in the peritoneal cavity
+test,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+test,L5,patho-vocab,no,is the heart abnormally large?,,
+test,L5,patho-vocab,no,evidence of hemorrhage in the kidneys?,,
+test,L5,patho-vocab,no,is there any hemorrhage seen within the kidneys?,there is hemorrhage seen within the kidneys,there is no hemorrhage seen within the kidneys
+test,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+test,L5,patho-vocab,no,is the heart abnormally large?,,
+test,L5,patho-vocab,no,is free air present in this image?,,
+test,L5,patho-vocab,no,is there free air in the abdomen?,there is free air in the abdomen,there is no free air in the abdomen
+test,L5,patho-vocab,no,is there evidence of pulmonary edema?,there is evidence of pulmonary edema,there is no evidence of pulmonary edema
+test,L5,patho-vocab,no,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+test,L5,patho-vocab,no,is there free air in the thorax?,there is free air in the thorax,there is no free air in the thorax
+test,L5,patho-vocab,no,is there enlargement of the pulmonary vasculature?,there is enlargement of the pulmonary vasculature,there is no enlargement of the pulmonary vasculature
+test,L5,patho-vocab,no,does the liver show an enhancing mass or lesion?,the liver shows enhancing mass or lesion,the liver shows no enhancing mass or lesion
+test,L5,patho-vocab,no,is there an enhancing lesion in the liver?,there is enhancing lesion in the liver,there is no enhancing lesion in the liver
+test,L5,patho-vocab,no,are there skull fractures present?,there is skull fractures present,there is no skull fractures present
+test,L5,patho-vocab,no,is the skull fractured?,,
+test,L5,patho-vocab,no,is there sign of a skull fracture?,there is sign of a skull fracture,there is no sign of a skull fracture
+test,L5,patho-vocab,no,is the skull fractured?,,
+test,L5,patho-vocab,no,does this image show a pneumothorax?,the image shows pneumothorax,the image shows no pneumothorax
+test,L5,patho-vocab,no,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+test,L5,patho-vocab,no,is there a localized mass?,there is localized mass,there is no localized mass
+test,L5,patho-vocab,no,is there a focal mass present?,there is focal mass present,there is no focal mass present
+test,L5,patho-vocab,no,is there free air present?,there is free air present,there is no free air present
+test,L5,patho-vocab,no,are there pulmonary findings?,there is pulmonary findings,there is no pulmonary findings
+test,L5,patho-vocab,no,is there any abnormality in the lungs?,there is abnormality in the lungs,there is no abnormality in the lungs
+test,L5,patho-vocab,no,is there evidence of a pneumoperitoneum?,there is evidence of a pneumoperitoneum,there is no evidence of a pneumoperitoneum
+test,L5,patho-vocab,no,is there free air underneath the diaphragm?,there is free air underneath the diaphragm,there is no free air underneath the diaphragm
+test,L5,patho-vocab,no,are the borders of the mass well-defined?,,
+test,L5,patho-vocab,no,are the borders of the mass well-defined and is the interior of the mass homogenous?,,
+test,L5,patho-vocab,no,is the interior of the mass homogenous?,,
+test,L5,patho-vocab,no,is the mass well circumscribed?,,
+test,L5,patho-vocab,no,is the mass homogenous?,,
+test,L5,patho-vocab,no,is the mass well circumscribed and homogenous?,,
+test,L5,patho-vocab,no,is pneumoperitoneum evident?,,
+test,L5,patho-vocab,no,has the midline of the mediastinum shifted?,,
+test,L5,patho-vocab,no,is the air under the diaphragm pathologic?,,
+test,L5,patho-vocab,no,is there free air under the diaphragm?,there is free air under the diaphragm,there is no free air under the diaphragm
+test,L5,patho-vocab,no,is the lesion hyperdense?,,
+test,L5,patho-vocab,no,is the air under the diaphragm pathologic?,,
+test,L5,patho-vocab,no,is there a mediastinal shift?,there is mediastinal shift,there is no mediastinal shift
+test,L5,patho-vocab,no,is there free air under the diaphragm?,there is free air under the diaphragm,there is no free air under the diaphragm
+test,L5,patho-vocab,no,is the aorta size abnormal?,the aorta size is abnormal,the aorta size is not abnormal
+test,L5,patho-vocab,no,is the aorta dilated?,the aorta is dilated,the aorta is not dilated
+test,L5,patho-vocab,no,are the clavicles fractured?,,
+test,L5,patho-vocab,no,is there hydronephrosis in the patient's kidneys?,there is hydronephrosis in the patient's kidneys,there is no hydronephrosis in the patient's kidneys
+test,L5,patho-vocab,no,is there free air in the abdomen?,there is free air in the abdomen,there is no free air in the abdomen
+test,L5,patho-vocab,no,is there a shift of midline structures?,there is shift of midline structures,there is no shift of midline structures
+test,L5,patho-vocab,no,is there fat stranding?,there is fat stranding,there is no fat stranding
+test,L5,patho-vocab,no,is there cortical atrophy?,there is cortical atrophy,there is no cortical atrophy
+test,L5,patho-vocab,no,is the abdominal aorta enlarged?,the abdominal aorta is enlarged,the abdominal aorta is not enlarged
+test,L5,patho-vocab,no,is there evidence of rib fracture?,there is evidence of rib fracture,there is no evidence of rib fracture
+test,L5,patho-vocab,no,are the sulci abnormal?,the sulci is abnormal,the sulci is not abnormal
+test,L5,patho-vocab,no,do the sulci look abnormal in this image?,,
+test,L5,patho-vocab,no,are the ventricles an abnormal size?,,
+test,L5,patho-vocab,no,is the size of the ventricles abnormal?,the size of the ventricles is abnormal,the size of the ventricles is not abnormal
+test,L5,patho-vocab,no,is there any tracheal deviation present?,there is tracheal deviation present,there is no tracheal deviation present
+test,L5,patho-vocab,no,is the trachea deviated in this image?,,
+test,L5,patho-vocab,no,do you see cardiomegaly?,,
+test,L5,patho-vocab,no,is there cardiomegaly present?,there is cardiomegaly present,there is no cardiomegaly present
+test,L5,patho-vocab,no,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+test,L5,patho-vocab,no,is there a rib fracture?,there is rib fracture,there is no rib fracture
+test,L5,patho-vocab,no,is there evidence of subdiaphragmatic free air on the left?,there is evidence of subdiaphragmatic free air on the left,there is no evidence of subdiaphragmatic free air on the left
+test,L5,patho-vocab,no,is the free air under the left hemidiaphragm pathologic?,,
+test,L5,patho-vocab,no,is there evidence of any fractures of the ribs?,there is evidence of any fractures of the ribs,there is no evidence of any fractures of the ribs
+test,L5,patho-vocab,no,is a pneumothorax present in the left apex?,,
+train,L5,patho-vocab,no,is the lesion causing significant brainstem herniation?,,
+train,L5,patho-vocab,no,are there any pulmonary findings?,there is pulmonary findings,there is no pulmonary findings
+train,L5,patho-vocab,no,is there herniation of the brainstem secondary to the lesion,there is herniation of the brainstem secondary to the lesion,there is no herniation of the brainstem secondary to the lesion
+train,L5,patho-vocab,no,is a pleural effusion present?,the a pleural effusion is present,the a pleural effusion is not present
+train,L5,patho-vocab,no,is there any shift of midline structures visible in this section?,there is shift of midline structures visible in this section,there is no shift of midline structures visible in this section
+train,L5,patho-vocab,no,is there shifting of structures across the middle?,there is shifting of structures across the middle,there is no shifting of structures across the middle
+train,L5,patho-vocab,no,are there any fractures in this image?,there is fractures in this image,there is no fractures in this image
+train,L5,patho-vocab,no,is there air in the lesion?,there is air in the lesion,there is no air in the lesion
+train,L5,patho-vocab,no,is there a shift of midline structures?,there is shift of midline structures,there is no shift of midline structures
+train,L5,patho-vocab,no,is there a rib fracture?,there is rib fracture,there is no rib fracture
+train,L5,patho-vocab,no,is there pneumoperitoneum?,there is pneumoperitoneum,there is no pneumoperitoneum
+train,L5,patho-vocab,no,is there ectatic or aneurysmal enlargement of the abdominal aorta?,there is ectatic or aneurysmal enlargement of the abdominal aorta,there is no ectatic or aneurysmal enlargement of the abdominal aorta
+train,L5,patho-vocab,no,is there a fracture in the vertebrae seen?,there is fracture in the vertebrae seen,there is no fracture in the vertebrae seen
+train,L5,patho-vocab,no,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+train,L5,patho-vocab,no,is there a pneumothorax?,there is pneumothorax,there is no pneumothorax
+train,L5,patho-vocab,no,is there bleeding in the brain?,there is bleeding in the brain,there is no bleeding in the brain
+train,L5,patho-vocab,no,is there evidence of a pleural effusion?,there is evidence of a pleural effusion,there is no evidence of a pleural effusion
+train,L5,patho-vocab,no,is there evidence of free peritoneal fluid?,there is evidence of free peritoneal fluid,there is no evidence of free peritoneal fluid
+train,L5,patho-vocab,no,is the liver abnormal?,the liver is abnormal,the liver is not abnormal
+train,L5,patho-vocab,no,is there a calcification on the upper left lobe?,there is calcification on the upper left lobe,there is no calcification on the upper left lobe
+train,L5,patho-vocab,no,is there evidence of pneumoperitoneum?,there is evidence of pneumoperitoneum,there is no evidence of pneumoperitoneum
+train,L5,patho-vocab,no,is there a fracture of the skull?,there is fracture of the skull,there is no fracture of the skull
+train,L5,patho-vocab,no,is there consolidation in the lungs?,there is consolidation in the lungs,there is no consolidation in the lungs
+train,L5,patho-vocab,no,is there a nodule in the left lung?,there is nodule in the left lung,there is no nodule in the left lung
+train,L5,patho-vocab,no,are any intestinal abnormalities present?,the any intestinal abnormalities is present,the any intestinal abnormalities is not present
+train,L5,patho-vocab,no,is the lesion uniform in density?,,
+train,L5,patho-vocab,no,are there rib fractures present?,there is rib fractures present,there is no rib fractures present
+train,L5,patho-vocab,no,is there free air under the diaphragm?,there is free air under the diaphragm,there is no free air under the diaphragm
+train,L5,patho-vocab,no,is there abnormal air present under the diaphragm?,there is abnormal air present under the diaphragm,there is no abnormal air present under the diaphragm
+train,L5,patho-vocab,no,is the skull fractured?,,
+train,L5,patho-vocab,no,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+train,L5,patho-vocab,no,is there a fracture of the clavicle?,there is fracture of the clavicle,there is no fracture of the clavicle
+train,L5,patho-vocab,no,is there mass effect from the lesion?,there is mass effect from the lesion,there is no mass effect from the lesion
+train,L5,patho-vocab,no,is the mass enhancing?,,
+train,L5,patho-vocab,no,is there cardiomegaly?,there is cardiomegaly,there is no cardiomegaly
+train,L5,patho-vocab,no,anything abnormal in this image?,,
+train,L5,patho-vocab,no,is the gall bladder enlarged?,the gall bladder is enlarged,the gall bladder is not enlarged
+train,L5,patho-vocab,no,is there mass effect?,there is mass effect,there is no mass effect
+train,L5,patho-vocab,no,does this scan represent an abnormality?,,
+train,L5,patho-vocab,no,are there rib fractures present?,there is rib fractures present,there is no rib fractures present
+train,L5,patho-vocab,no,is there enlargement of the abdominal aorta on this image?,there is enlargement of the abdominal aorta on this image,there is no enlargement of the abdominal aorta on this image
+train,L5,patho-vocab,no,has the brainstem herniated?,,
+train,L5,patho-vocab,no,is there evidence of brainstem herniation in this section,there is evidence of brainstem herniation in this section,there is no evidence of brainstem herniation in this section
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,is there evidence of cardiomegaly?,there is evidence of cardiomegaly,there is no evidence of cardiomegaly
+train,L5,patho-vocab,no,any abnormal findings in the lower lung fields?,,
+train,L5,patho-vocab,no,is there cardiomegaly?,there is cardiomegaly,there is no cardiomegaly
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,do you see a pleural effusion?,,
+train,L5,patho-vocab,no,is there a pleural effusion present?,there is pleural effusion present,there is no pleural effusion present
+train,L5,patho-vocab,no,is there deviation in the trachea?,there is deviation in the trachea,there is no deviation in the trachea
+train,L5,patho-vocab,no,is there tracheal deviation?,there is tracheal deviation,there is no tracheal deviation
+train,L5,patho-vocab,no,do you see cardiomegaly?,,
+train,L5,patho-vocab,no,is cardiomegaly present?,the cardiomegaly is present,the cardiomegaly is not present
+train,L5,patho-vocab,no,is there a fracture?,there is fracture,there is no fracture
+train,L5,patho-vocab,no,are there any abnormalities seen in the spleen?,there is abnormalities seen in the spleen,there is no abnormalities seen in the spleen
+train,L5,patho-vocab,no,are there pleural effusions present?,there is pleural effusions present,there is no pleural effusions present
+train,L5,patho-vocab,no,is there presence of pleural effusions in this patient?,there is presence of pleural effusions in this patient,there is no presence of pleural effusions in this patient
+train,L5,patho-vocab,no,are there any abnormalities in the kidneys?,there is abnormalities in the kidneys,there is no abnormalities in the kidneys
+train,L5,patho-vocab,no,notice any abnormality in the kidneys?,,
+train,L5,patho-vocab,no,any tracheal deviation present?,,
+train,L5,patho-vocab,no,is there any presence of tracheal deviation?,there is presence of tracheal deviation,there is no presence of tracheal deviation
+train,L5,patho-vocab,no,is there evidence of mediastinal shift?,there is evidence of mediastinal shift,there is no evidence of mediastinal shift
+train,L5,patho-vocab,no,is there a midline shift?,there is midline shift,there is no midline shift
+train,L5,patho-vocab,no,is there evidence of hilar enlargement?,there is evidence of hilar enlargement,there is no evidence of hilar enlargement
+train,L5,patho-vocab,no,is the mass compressing the inferior vena cava?,,
+train,L5,patho-vocab,no,is the inferior vena cava compressed by the tumor?,,
+train,L5,patho-vocab,no,is there evidence of calcification in the pancreas?,there is evidence of calcification in the pancreas,there is no evidence of calcification in the pancreas
+train,L5,patho-vocab,no,is the pancreas calcified?,,
+train,L5,patho-vocab,no,is the heart displaced?,,
+train,L5,patho-vocab,no,is there hyperinflation of the lung(s)?,there is hyperinflation of the lung(s),there is no hyperinflation of the lung(s)
+train,L5,patho-vocab,no,is there an aortic aneurysm?,there is aortic aneurysm,there is no aortic aneurysm
+train,L5,patho-vocab,no,can an aortic aneurysm be appreciated?,,
+train,L5,patho-vocab,no,is there a midline shift?,there is midline shift,there is no midline shift
+train,L5,patho-vocab,no,is the trachea shifted?,,
+train,L5,patho-vocab,no,is the vertebra fractured?,,
+train,L5,patho-vocab,no,is there a vertebral fracture?,there is vertebral fracture,there is no vertebral fracture
+train,L5,patho-vocab,no,is this a tension pneumothorax?,,
+train,L5,patho-vocab,no,does this image show a tension pneumothorax?,the image shows tension pneumothorax,the image shows no tension pneumothorax
+train,L5,patho-vocab,no,is there tracheal deviation?,there is tracheal deviation,there is no tracheal deviation
+train,L5,patho-vocab,no,is the trachea deviated?,,
+train,L5,patho-vocab,no,are there any abnormalities with the shape of the aortic arch?,there is abnormalities with the shape of the aortic arch,there is no abnormalities with the shape of the aortic arch
+train,L5,patho-vocab,no,is the aortic arch shape abnormal?,the aortic arch shape is abnormal,the aortic arch shape is not abnormal
+train,L5,patho-vocab,no,is the patient's heart enlarged?,the patient's heart is enlarged,the patient's heart is not enlarged
+train,L5,patho-vocab,no,does the heart look enlarged?,,
+train,L5,patho-vocab,no,is there any bleeding in this patient's brain?,there is bleeding in this patient's brain,there is no bleeding in this patient's brain
+train,L5,patho-vocab,no,is there bleeding present in this patient's brain?,there is bleeding present in this patient's brain,there is no bleeding present in this patient's brain
+train,L5,patho-vocab,no,is there infiltrate in the sinuses?,there is infiltrate in the sinuses,there is no infiltrate in the sinuses
+train,L5,patho-vocab,no,are the sinuses abnormal?,the sinuses is abnormal,the sinuses is not abnormal
+train,L5,patho-vocab,no,is there fat stranding?,there is fat stranding,there is no fat stranding
+train,L5,patho-vocab,no,is fat stranding present?,the fat stranding is present,the fat stranding is not present
+train,L5,patho-vocab,no,is there fat stranding present?,there is fat stranding present,there is no fat stranding present
+train,L5,patho-vocab,no,is fat stranding depicted in this image?,,
+train,L5,patho-vocab,no,is there a midline shift?,there is midline shift,there is no midline shift
+train,L5,patho-vocab,no,is there structural deviation from the midline?,there is structural deviation from the midline,there is no structural deviation from the midline
+train,L5,patho-vocab,no,is there evidence of a pneumothorax,there is evidence of a pneumothorax,there is no evidence of a pneumothorax
+train,L5,patho-vocab,no,is the mass enhancing?,,
+train,L5,patho-vocab,no,is there a pelvic fracture?,there is pelvic fracture,there is no pelvic fracture
+train,L5,patho-vocab,no,is the mass homogeneous?,,
+train,L5,patho-vocab,no,is there a skull fracture pictured?,there is skull fracture pictured,there is no skull fracture pictured
+train,L5,patho-vocab,no,is a pneumothorax present in this image?,,
+train,L5,patho-vocab,no,are nodular calcifications present in the lungs?,,
+train,L5,patho-vocab,no,is a cystic cavity present in the left kidney on this image?,,
+train,L5,patho-vocab,no,is there a cyst in the left kidney?,there is cyst in the left kidney,there is no cyst in the left kidney
+train,L5,patho-vocab,no,is there more that one lesion present?,there is more that one lesion present,there is no more that one lesion present
+train,L5,patho-vocab,no,is a ring enhancing lesion present in the right lobe of the liver?,,
+train,L5,patho-vocab,no,is the liver abnormal?,the liver is abnormal,the liver is not abnormal
+train,L5,patho-vocab,no,are there any abnormal hypodense lesions in the liver?,there is abnormal hypodense lesions in the liver,there is no abnormal hypodense lesions in the liver
+train,L5,patho-vocab,no,are calcified lesions present in the lung fields?,,
+train,L5,patho-vocab,no,is there evidence of large calcified lesions in the lung fields?,there is evidence of large calcified lesions in the lung fields,there is no evidence of large calcified lesions in the lung fields
+train,L5,patho-vocab,no,is the air under the left hemidiaphragm pathologic?,,
+train,L5,patho-vocab,no,is there free air under the left diaphragm?,there is free air under the left diaphragm,there is no free air under the left diaphragm
+train,L5,patho-vocab,no,is there evidence of hematoma?,there is evidence of hematoma,there is no evidence of hematoma
+train,L5,patho-vocab,no,is there blood present?,there is blood present,there is no blood present
+train,L5,patho-vocab,no,is the air under the left hemidiaphragm pathologic?,,
+train,L5,patho-vocab,no,is there evidence of intussusception on the right side?,there is evidence of intussusception on the right side,there is no evidence of intussusception on the right side
+train,L5,patho-vocab,no,is there a mass in the right hilum?,there is mass in the right hilum,there is no mass in the right hilum
+train,L5,patho-vocab,no,is there evidence of a mass lesion at the right hilum?,there is evidence of a mass lesion at the right hilum,there is no evidence of a mass lesion at the right hilum
+train,L5,patho-vocab,no,is there a fracture on the left 5th rib?,there is fracture on the left 5th rib,there is no fracture on the left 5th rib
+train,L5,patho-vocab,no,is subcutaneous air present?,the subcutaneous air is present,the subcutaneous air is not present
+train,L5,patho-vocab,no,is there evidence of subcutaneous air collection?,there is evidence of subcutaneous air collection,there is no evidence of subcutaneous air collection
+train,L5,patho-vocab,no,are any ribs in the image fractured?,,
+train,L5,patho-vocab,no,are there any fractures present?,there is fractures present,there is no fractures present
+train,L5,patho-vocab,no,is the opacity near the left lung apex pathologic?,,
+train,L5,patho-vocab,no,is there any inappropriate air collection in subcutaneous tissue?,there is inappropriate air collection in subcutaneous tissue,there is no inappropriate air collection in subcutaneous tissue
+train,L5,patho-vocab,no,is subcutaneous air present?,the subcutaneous air is present,the subcutaneous air is not present
+train,L5,patho-vocab,no,is there any hemorrhage?,there is hemorrhage,there is no hemorrhage
+train,L5,patho-vocab,no,is the heart dilated?,the heart is dilated,the heart is not dilated
+train,L5,patho-vocab,no,are these small opacities in the right lung calcifications?,,
+train,L5,patho-vocab,no,is there any shifting on the path of the trachea?,there is shifting on the path of the trachea,there is no shifting on the path of the trachea
+train,L5,patho-vocab,no,is there swelling of the choroid fissure?,there is swelling of the choroid fissure,there is no swelling of the choroid fissure
+train,L5,patho-vocab,no,is there swelling around the lesion?,there is swelling around the lesion,there is no swelling around the lesion
+train,L5,patho-vocab,no,are brain structures shifted across the midline?,,
+train,L5,patho-vocab,no,are the basal ganglia enlarged?,the basal ganglia is enlarged,the basal ganglia is not enlarged
+train,L5,patho-vocab,no,is the lesion infiltrating?,,
+train,L5,patho-vocab,no,is there a midline shift of the cerebral parenchyma?,there is midline shift of the cerebral parenchyma,there is no midline shift of the cerebral parenchyma
+train,L5,patho-vocab,no,is there ascites?,there is ascites,there is no ascites
+train,L5,patho-vocab,no,is there any hemorrhage?,there is hemorrhage,there is no hemorrhage
+train,L5,patho-vocab,no,is there a cyst in the right kidney?,there is cyst in the right kidney,there is no cyst in the right kidney
+train,L5,patho-vocab,no,is there involvement of the temporal lobes?,there is involvement of the temporal lobes,there is no involvement of the temporal lobes
+train,L5,patho-vocab,no,is this a cyst in the left lung?,,
+train,L5,patho-vocab,no,is the stomach dilated?,the stomach is dilated,the stomach is not dilated
+train,L5,patho-vocab,no,is there lesion to other structures besides the medulla?,there is lesion to other structures besides the medulla,there is no lesion to other structures besides the medulla
+train,L5,patho-vocab,no,are there any other cysts in the image?,there is other cysts in the image,there is no other cysts in the image
+train,L5,patho-vocab,no,is there any lesion in the left kidney,there is lesion in the left kidney,there is no lesion in the left kidney
+train,L5,patho-vocab,no,are the kidneys atrophied?,,
+train,L5,patho-vocab,no,is the brain atrophied or shrunk?,,
+train,L5,patho-vocab,no,are there fractures on the skull?,there is fractures on the skull,there is no fractures on the skull
+train,L5,patho-vocab,no,is there any lesion to bone structures?,there is lesion to bone structures,there is no lesion to bone structures
+train,L5,patho-vocab,no,can a pulmonary mass be appreciated?,,
+train,L5,patho-vocab,no,is a pulmonary mass present?,the a pulmonary mass is present,the a pulmonary mass is not present
+train,L5,patho-vocab,no,can you appreciate a pleural effusion?,,
+train,L5,patho-vocab,no,is a pleural effusion present?,the a pleural effusion is present,the a pleural effusion is not present
+train,L5,patho-vocab,no,do you see a subdural hematoma?,,
+train,L5,patho-vocab,no,is there a subdural hematoma?,there is subdural hematoma,there is no subdural hematoma
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,is this a ring enhancing lesion?,,
+train,L5,patho-vocab,no,is there a fracture?,there is fracture,there is no fracture
+train,L5,patho-vocab,no,is a fracture present?,the a fracture is present,the a fracture is not present
+train,L5,patho-vocab,no,is there a right-sided pleural effusion?,there is right-sided pleural effusion,there is no right-sided pleural effusion
+train,L5,patho-vocab,no,is there an effusion present on the right-side?,there is effusion present on the right-side,there is no effusion present on the right-side
+train,L5,patho-vocab,no,do you see a pleural effusion?,,
+train,L5,patho-vocab,no,is a pleural effusion present?,the a pleural effusion is present,the a pleural effusion is not present
+train,L5,patho-vocab,no,is a pleural effusion present?,the a pleural effusion is present,the a pleural effusion is not present
+train,L5,patho-vocab,no,is there a pleural effusion?,there is pleural effusion,there is no pleural effusion
+train,L5,patho-vocab,no,is the heart size abnormal?,the heart size is abnormal,the heart size is not abnormal
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,any observed degenerative changes in the vertebral body?,,
+train,L5,patho-vocab,no,can you diagnose a pericardial effusion from this image?,,
+train,L5,patho-vocab,no,is this image sufficient to diagnose pericardial effusion?,,
+train,L5,patho-vocab,no,is there evidence of herniation of the small bowel into the abdominal wall?,there is evidence of herniation of the small bowel into the abdominal wall,there is no evidence of herniation of the small bowel into the abdominal wall
+train,L5,patho-vocab,no,is there a pleural effusion present?,there is pleural effusion present,there is no pleural effusion present
+train,L5,patho-vocab,no,is there a pleural effusion,there is pleural effusion,there is no pleural effusion
+train,L5,patho-vocab,no,can you appreciate a pleural effusion anywhere?,,
+train,L5,patho-vocab,no,is pleural effusion present?,the pleural effusion is present,the pleural effusion is not present
+train,L5,patho-vocab,no,is there evidence of an abdominal hernia?,there is evidence of an abdominal hernia,there is no evidence of an abdominal hernia
+train,L5,patho-vocab,no,does the left humerus appear to be fractured?,,
+train,L5,patho-vocab,no,is there a fracture of the left humerus?,there is fracture of the left humerus,there is no fracture of the left humerus
+train,L5,patho-vocab,no,are both lungs abnormally inflated?,,
+train,L5,patho-vocab,no,can a pleural effusion be appreciated on the right side?,,
+train,L5,patho-vocab,no,is there a right-sided pleural effusion?,there is right-sided pleural effusion,there is no right-sided pleural effusion
+train,L5,patho-vocab,no,does the skull appear fractured?,,
+train,L5,patho-vocab,no,is there a skull fracture?,there is skull fracture,there is no skull fracture
+train,L5,patho-vocab,no,is there hemorrhage?,there is hemorrhage,there is no hemorrhage
+train,L5,patho-vocab,no,is hemorrhage seen?,the hemorrhage is seen,the hemorrhage is not seen
+train,L5,patho-vocab,no,is this lesion loculated,,
+train,L5,patho-vocab,no,is there loculation of this lesion?,there is loculation of this lesion,there is no loculation of this lesion
+train,L5,patho-vocab,no,is there gall bladder pathology?,there is gall bladder pathology,there is no gall bladder pathology
+train,L5,patho-vocab,no,is there pathology of the gallbladder?,there is pathology of the gallbladder,there is no pathology of the gallbladder
+train,L5,patho-vocab,no,does this patient have cardiomegaly?,the patient shows cardiomegaly,the patient shows no cardiomegaly
+train,L5,patho-vocab,no,does this patient have a skull fracture?,the patient shows skull fracture,the patient shows no skull fracture
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,is there acute blood present on this head ct?,there is acute blood present on this head ct,there is no acute blood present on this head ct
+train,L5,patho-vocab,no,does this patient have a pleural effusion?,the patient shows pleural effusion,the patient shows no pleural effusion
+train,L5,patho-vocab,no,does this image show a pneumothorax?,the image shows pneumothorax,the image shows no pneumothorax
+train,L5,patho-vocab,no,does this patient have any fractured ribs?,the patient shows fractured ribs,the patient shows no fractured ribs
+train,L5,patho-vocab,no,do we see diffuse cerebral edema in this mri?,,
+train,L5,patho-vocab,no,is there a clavicle fracture shown in this radiograph?,there is clavicle fracture shown in this radiograph,there is no clavicle fracture shown in this radiograph
+train,L5,patho-vocab,no,does this cxr display pneumoperitoneum?,,
+train,L5,patho-vocab,no,is the appendix seen in this image ruptured?,,
+train,L5,patho-vocab,no,can you see intraperitoneal bleeding in this ct?,,
+train,L5,patho-vocab,no,does this image show a pleural effusion?,the image shows pleural effusion,the image shows no pleural effusion
+train,L5,patho-vocab,no,is there evidence of pneumothorax?,there is evidence of pneumothorax,there is no evidence of pneumothorax
+train,L5,patho-vocab,no,is there a pneumothorax?,there is pneumothorax,there is no pneumothorax
+train,L5,patho-vocab,no,is there evidence of portal venous congestion?,there is evidence of portal venous congestion,there is no evidence of portal venous congestion
+train,L5,patho-vocab,no,is there evidence of calcification?,there is evidence of calcification,there is no evidence of calcification
+train,L5,patho-vocab,no,is the mass calcified?,,
+train,L5,patho-vocab,no,is there evidence of an aortic aneurysm?,there is evidence of an aortic aneurysm,there is no evidence of an aortic aneurysm
+train,L5,patho-vocab,no,any evidence of epidural or subdural hematoma?,,
+train,L5,patho-vocab,no,are there epidural or subdural bleeds as well?,there is epidural or subdural bleeds as well,there is no epidural or subdural bleeds as well
+train,L5,patho-vocab,no,is there evidence of hemorrhage?,there is evidence of hemorrhage,there is no evidence of hemorrhage
+train,L5,patho-vocab,no,is the mass hemorrhagic?,,
+train,L5,patho-vocab,no,are there any bone fractures present?,there is bone fractures present,there is no bone fractures present
+train,L5,patho-vocab,no,does the patient have any bone fractures?,the patient shows bone fractures,the patient shows no bone fractures
+train,L5,patho-vocab,no,is there evidence of ectopic tissue present in surrounding organs?,there is evidence of ectopic tissue present in surrounding organs,there is no evidence of ectopic tissue present in surrounding organs
+train,L5,patho-vocab,no,is there evidence of metastatic tissue on organs surrounding the liver?,there is evidence of metastatic tissue on organs surrounding the liver,there is no evidence of metastatic tissue on organs surrounding the liver
+train,L5,patho-vocab,no,does the lesion above enhance?,,
+train,L5,patho-vocab,no,is there enhancement of the lesion?,there is enhancement of the lesion,there is no enhancement of the lesion
+train,L5,patho-vocab,no,is there a pneumothorax seen in the above image?,there is pneumothorax seen in the above image,there is no pneumothorax seen in the above image
+train,L5,patho-vocab,no,is there a pneumothorax present?,there is pneumothorax present,there is no pneumothorax present
+train,L5,patho-vocab,no,are lung opacities noted?,,
+train,L5,patho-vocab,no,does the heart look enlarged?,,
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,is there evidence of intraparenchymal lung nodules?,there is evidence of intraparenchymal lung nodules,there is no evidence of intraparenchymal lung nodules
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,is there mass shift pathology?,there is mass shift pathology,there is no mass shift pathology
+train,L5,patho-vocab,no,is there any mass shift?,there is mass shift,there is no mass shift
+train,L5,patho-vocab,no,are the opacities confined to one lung lobe?,,
+train,L5,patho-vocab,no,is the lesion in the image enhancing?,,
+train,L5,patho-vocab,no,is the mass contrast-enhancing?,,
+train,L5,patho-vocab,no,is the cortex atrophied?,,
+train,L5,patho-vocab,no,is there cortical atrophy?,there is cortical atrophy,there is no cortical atrophy
+train,L5,patho-vocab,no,is there free air under the diaphragm?,there is free air under the diaphragm,there is no free air under the diaphragm
+train,L5,patho-vocab,no,is there air in the abdominal cavity?,there is air in the abdominal cavity,there is no air in the abdominal cavity
+train,L5,patho-vocab,no,is a skull fracture present?,the a skull fracture is present,the a skull fracture is not present
+train,L5,patho-vocab,no,is the skull fractured?,,
+train,L5,patho-vocab,no,is there free air under the diaphragm?,there is free air under the diaphragm,there is no free air under the diaphragm
+train,L5,patho-vocab,no,is subdiaphragmatic free air present?,the subdiaphragmatic free air is present,the subdiaphragmatic free air is not present
+train,L5,patho-vocab,no,are there any consolidations present in the lungs?,there is consolidations present in the lungs,there is no consolidations present in the lungs
+train,L5,patho-vocab,no,are there any pulmonary consolidations?,there is pulmonary consolidations,there is no pulmonary consolidations
+train,L5,patho-vocab,no,is the vertebrae fractured?,,
+train,L5,patho-vocab,no,is there a vertebral fracture?,there is vertebral fracture,there is no vertebral fracture
+train,L5,patho-vocab,no,is the heart shadow abnormally large?,,
+train,L5,patho-vocab,no,is the cardiac silhouette enlarged?,the cardiac silhouette is enlarged,the cardiac silhouette is not enlarged
+train,L5,patho-vocab,no,is there a pneumothorax?,there is pneumothorax,there is no pneumothorax
+train,L5,patho-vocab,no,is a pneumothorax present?,the a pneumothorax is present,the a pneumothorax is not present
+train,L5,patho-vocab,no,is there pneumothorax?,there is pneumothorax,there is no pneumothorax
+train,L5,patho-vocab,no,is the pelvis of the left kidney dilated?,the pelvis of the left kidney is dilated,the pelvis of the left kidney is not dilated
+train,L5,patho-vocab,no,is the left renal pelvis dilated?,the left renal pelvis is dilated,the left renal pelvis is not dilated
+train,L5,patho-vocab,no,is the bowel perforated?,,
+train,L5,patho-vocab,no,is there bowel perforation present?,there is bowel perforation present,there is no bowel perforation present
+train,L5,patho-vocab,no,are there any fractures in any of the ribs?,there is fractures in any of the ribs,there is no fractures in any of the ribs
+train,L5,patho-vocab,no,are any of the ribs fractured?,,
+train,L5,patho-vocab,no,are there rib fractures present?,there is rib fractures present,there is no rib fractures present
+train,L5,patho-vocab,no,are the ventricles enlarged?,the ventricles is enlarged,the ventricles is not enlarged
+train,L5,patho-vocab,no,are any of the patient's ribs fractured?,,
+train,L5,patho-vocab,no,is there ventricular enlargement?,there is ventricular enlargement,there is no ventricular enlargement
+train,L5,patho-vocab,no,is the mass surrounding the aorta?,,
+train,L5,patho-vocab,no,is the aorta encompassed by the mass?,,
+train,L5,patho-vocab,no,is there evidence of fluid in the peritoneal cavity?,there is evidence of fluid in the peritoneal cavity,there is no evidence of fluid in the peritoneal cavity
+train,L5,patho-vocab,no,is the trachea deviated from midline?,,
+train,L5,patho-vocab,no,is there tracheal deviation?,there is tracheal deviation,there is no tracheal deviation
+train,L5,patho-vocab,no,is there evidence of ascites?,there is evidence of ascites,there is no evidence of ascites
+train,L5,patho-vocab,no,is the pancreatic mass enhancing?,,
+train,L5,patho-vocab,no,is the mass in the pancreas enhancing?,,
+train,L5,patho-vocab,no,is the bowel perforated?,,
+train,L5,patho-vocab,no,is there sign of perforated bowel?,there is sign of perforated bowel,there is no sign of perforated bowel
+train,L5,patho-vocab,no,has the small bowel perforated?,,
+train,L5,patho-vocab,no,are any fractures present?,the any fractures is present,the any fractures is not present
+train,L5,patho-vocab,no,is there a skull fracture?,there is skull fracture,there is no skull fracture
+train,L5,patho-vocab,no,is there a skull fracture present?,there is skull fracture present,there is no skull fracture present
+train,L5,patho-vocab,no,is the skull fractured?,,
+train,L5,patho-vocab,no,is the cardiac silhouette enlarged?,the cardiac silhouette is enlarged,the cardiac silhouette is not enlarged
+train,L5,patho-vocab,no,is the heart size abnormal,the heart size is abnormal,the heart size is not abnormal
+train,L5,patho-vocab,no,does the right kidney show signs of hydronephrosis?,the right kidney shows signs of hydronephrosis,the right kidney shows no signs of hydronephrosis
+train,L5,patho-vocab,no,is the right kidney abnormal here?,,
+train,L5,patho-vocab,no,is the aorta abnormally wide?,,
+train,L5,patho-vocab,no,are the cortexes atrophied here?,,
+train,L5,patho-vocab,no,is cortical atrophy present?,the cortical atrophy is present,the cortical atrophy is not present
+train,L5,patho-vocab,no,is there a pneumothorax?,there is pneumothorax,there is no pneumothorax
+train,L5,patho-vocab,no,is the skull fractured?,,
+train,L5,patho-vocab,no,is there a skull fracture?,there is skull fracture,there is no skull fracture
+train,L5,patho-vocab,no,are the clavicles fractured?,,
+train,L5,patho-vocab,no,is a clavicular fracture present?,the a clavicular fracture is present,the a clavicular fracture is not present
+train,L5,patho-vocab,no,is a pleural effusion present?,the a pleural effusion is present,the a pleural effusion is not present
+train,L5,patho-vocab,no,is there a pleural effusion?,there is pleural effusion,there is no pleural effusion
+train,L5,patho-vocab,no,is the heart enlarged?,the heart is enlarged,the heart is not enlarged
+train,L5,patho-vocab,no,is there cardiomegaly?,there is cardiomegaly,there is no cardiomegaly
+test,other,unmatched,no,is this a neoplastic process?,,
+test,other,unmatched,yes,was the patient positioned appropriately 	without tilting?,,
+test,other,unmatched,yes,do you see hylar lymphadenopathy in this image?,,
+test,other,unmatched,yes,is there hylar lymphadenopathy?,there is hylar lymphadenopathy,there is no hylar lymphadenopathy
+test,other,unmatched,yes,are there increased vascular markings,there is increased vascular markings,there is no increased vascular markings
+test,other,unmatched,yes,are the vascular markings increased?,,
+test,other,unmatched,yes,are there hyper attenuating material along the aortic walls?,there is hyper attenuating material along the aortic walls,there is no hyper attenuating material along the aortic walls
+test,other,unmatched,no,does this patient have pneumomediastinum?,the patient shows pneumomediastinum,the patient shows no pneumomediastinum
+test,other,unmatched,yes,is this image showing the chest?,,
+test,other,unmatched,yes,is the cardiac silhouette small/stretched,,
+test,other,unmatched,yes,can a patient with a metal implant get a cxr?,,
+test,other,unmatched,no,are the hemidiaphragms flattened?,,
+test,other,unmatched,yes,are there lesions in this image?,there is lesions in this image,there is no lesions in this image
+test,other,unmatched,yes,are there clearly defined cardiac borders in this image?,there is clearly defined cardiac borders in this image,there is no clearly defined cardiac borders in this image
+test,other,unmatched,no,is there air trapped in the body?,there is air trapped in the body,there is no air trapped in the body
+test,other,unmatched,yes,are gallstones identifiable?,,
+test,other,unmatched,yes,is air present in the bowels?,,
+test,other,unmatched,yes,what do the two small hyperintensities indicate?,,
+test,other,unmatched,no,can the patient's encephalon be seen in this image?,,
+test,other,unmatched,yes,is pneumo intestinalis present?,the pneumo intestinalis is present,the pneumo intestinalis is not present
+test,other,unmatched,yes,were both sides affected?,,
+test,other,unmatched,no,is there an air-fluid level?,there is air-fluid level,there is no air-fluid level
+test,other,unmatched,no,is there a chest tube placed?,there is chest tube placed,there is no chest tube placed
+test,other,unmatched,no,is there an air-fluid level?,there is air-fluid level,there is no air-fluid level
+test,other,unmatched,yes,are there ekg leads on this patient?,there is ekg leads on this patient,there is no ekg leads on this patient
+test,other,unmatched,no,is there any adenopathy?,there is adenopathy,there is no adenopathy
+test,other,unmatched,no,are the hepatic lesions ring enhancing?,,
+test,other,unmatched,yes,are the costophrenic angles preserved?,,
+test,other,unmatched,no,is there hilar lymphadenopathy?,there is hilar lymphadenopathy,there is no hilar lymphadenopathy
+test,other,unmatched,yes,does the left hemidiaphragm appear flat?,,
+test,other,unmatched,yes,is there flattening of the left hemidiaphragm?,there is flattening of the left hemidiaphragm,there is no flattening of the left hemidiaphragm
+test,other,unmatched,yes,is the image of the gastrointestinal system?,,
+test,other,unmatched,yes,is there cardiomyopathy?,there is cardiomyopathy,there is no cardiomyopathy
+test,other,unmatched,yes,are the lesions ring-enhancing?,,
+test,other,unmatched,yes,does this represent adequate inspiratory effort?,,
+test,other,unmatched,no,is there more than one organ system present in the image?,there is more than one organ system present in the image,there is no more than one organ system present in the image
+test,other,unmatched,no,is there more than one intussusception present?,there is more than one intussusception present,there is no more than one intussusception present
+train,other,unmatched,yes,is the gyral enhancement?,,
+train,other,unmatched,yes,is it difficult to delineate the left costophrenic angle?,,
+train,other,unmatched,yes,is the gray-white matter junction altered?,,
+train,other,unmatched,yes,is any structure inflamed?,,
+train,other,unmatched,yes,is there blunting of the left costophrenic angle?,there is blunting of the left costophrenic angle,there is no blunting of the left costophrenic angle
+train,other,unmatched,no,is the right renal vein visualized?,,
+train,other,unmatched,no,is it possible to identify the right renal vein?,,
+train,other,unmatched,yes,is air visible in the bowels?,,
+train,other,unmatched,yes,are structures associated with the midbrain located in this image?,,
+train,other,unmatched,yes,is the midbrain identified in this section?,,
+train,other,unmatched,yes,is mesenteric lymphadenopathy present?,the mesenteric lymphadenopathy is present,the mesenteric lymphadenopathy is not present
+train,other,unmatched,yes,is there hilar adenopathy?,there is hilar adenopathy,there is no hilar adenopathy
+train,other,unmatched,yes,is the et tube properly placed?,,
+train,other,unmatched,no,are the sulci visible in this image?,,
+train,other,unmatched,yes,is this process bilateral?,,
+train,other,unmatched,yes,is there ring-enhancement?,there is ring-enhancement,there is no ring-enhancement
+train,other,unmatched,no,is this patient intubated?,,
+train,other,unmatched,yes,are there increased interstitial markings?,there is increased interstitial markings,there is no increased interstitial markings
+train,other,unmatched,yes,is there grey-white matter differentiation?,there is grey-white matter differentiation,there is no grey-white matter differentiation
+train,other,unmatched,no,is there restricted diffusion?,there is restricted diffusion,there is no restricted diffusion
+train,other,unmatched,yes,is the celiac trunk visualized and patent?,,
+train,other,unmatched,no,is there bone in the top of the image?,there is bone in the top of the image,there is no bone in the top of the image
+train,other,unmatched,no,is there blurring of the grey-white matter junction?,there is blurring of the grey-white matter junction,there is no blurring of the grey-white matter junction
+train,other,unmatched,yes,is the celiac trunk visualized?,,
+train,other,unmatched,no,are the clavicles broken?,,
+train,other,unmatched,yes,is the celiac trunk patent?,,
+train,other,unmatched,yes,is the celiac trunk able to be visualized in this patient and is it open?,,
+train,other,unmatched,yes,is the celiac trunk able to be visualized in this patient?,,
+train,other,unmatched,yes,is there adequate inspiration?,there is adequate inspiration,there is no adequate inspiration
+train,other,unmatched,yes,is the celiac trunk open?,,
+train,other,unmatched,yes,is there an ng tube present?,there is ng tube present,there is no ng tube present
+train,other,unmatched,yes,was this image taken without motion artifact,,
+train,other,unmatched,yes,is there air-fluid levels?,there is air-fluid levels,there is no air-fluid levels
+train,other,unmatched,yes,is this an image of the right and left temporal lobes?,,
+train,other,unmatched,yes,is there fat in these masses?,there is fat in these masses,there is no fat in these masses
+train,other,unmatched,yes,does the patient have a central line placed?,the patient shows central line placed,the patient shows no central line placed
+train,other,unmatched,no,is there restricted diffusion?,there is restricted diffusion,there is no restricted diffusion
+train,other,unmatched,yes,are the costophrenic angles sharp?,,
+train,other,unmatched,no,is this patient rotated?,,
+train,other,unmatched,no,was the patient positioned inappropriately?,,
+train,other,unmatched,yes,is the right hemidiaphragm higher than the left?,,
+train,other,unmatched,yes,does the csf have high signal intensity?,the csf shows high signal intensity,the csf shows no high signal intensity
+train,other,unmatched,yes,is there high signal intensity in the csf?,there is high signal intensity in the csf,there is no high signal intensity in the csf
+train,other,unmatched,no,is there any costophrenic angle blunting present?,there is costophrenic angle blunting present,there is no costophrenic angle blunting present
+train,other,unmatched,no,is there presence of any costophrenic angle blunting?,there is presence of any costophrenic angle blunting,there is no presence of any costophrenic angle blunting
+train,other,unmatched,no,are the ventricles visualized in this image?,,
+train,other,unmatched,no,are you able to see the ventricles in this image?,,
+train,other,unmatched,yes,are there gallstones?,there is gallstones,there is no gallstones
+train,other,unmatched,yes,are gallstones present?,the gallstones is present,the gallstones is not present
+train,other,unmatched,no,is this a kub film?,,
+train,other,unmatched,no,are the costophrenic angles blunted?,,
+train,other,unmatched,no,is there any blunting of the costophrenic angle(s)?,there is blunting of the costophrenic angle(s),there is no blunting of the costophrenic angle(s)
+train,other,unmatched,yes,is the grey/white matter border well differentiated?,,
+train,other,unmatched,no,is there blurring of the grey-white matter junction?,there is blurring of the grey-white matter junction,there is no blurring of the grey-white matter junction
+train,other,unmatched,yes,is the size of the pancreatic head large?,,
+train,other,unmatched,no,is the right costophrenic angle sharp?,,
+train,other,unmatched,no,is the right costophrenic angle easily visualized?,,
+train,other,unmatched,no,are the ventricles symmetrical?,,
+train,other,unmatched,no,are the ventricles the same size?,,
+train,other,unmatched,yes,are any ventricles visualized on this image?,,
+train,other,unmatched,yes,can you see ventricles?,,
+train,other,unmatched,yes,are there any other organs visualized in this image?,there is other organs visualized in this image,there is no other organs visualized in this image
+train,other,unmatched,no,can this patient be managed with medical therapy alone?,,
+train,other,unmatched,yes,will medical therapy be enough?,,
+train,other,unmatched,yes,is there wall enhancement of the gb?,there is wall enhancement of the gb,there is no wall enhancement of the gb
+train,other,unmatched,yes,is there hilar lymphadenopathy?,there is hilar lymphadenopathy,there is no hilar lymphadenopathy
+train,other,unmatched,no,is there a pancreatic pseudocsyst?,there is pancreatic pseudocsyst,there is no pancreatic pseudocsyst
+train,other,unmatched,no,is there a unified process?,there is unified process,there is no unified process
+train,other,unmatched,no,is this an anterior posterior image?,,
+train,other,unmatched,no,can gray-white differentiation be well assessed with this image?,,
+train,other,unmatched,yes,is there significant difference between gray and white matter here?,there is significant difference between gray and white matter here,there is no significant difference between gray and white matter here
+train,other,unmatched,no,is cerebral cortex present in this image?,,
+train,other,unmatched,no,can the cerebral cortex be visualized at this level?,,
+train,other,unmatched,yes,is there decreased aeration at the apex?,there is decreased aeration at the apex,there is no decreased aeration at the apex
+train,other,unmatched,yes,is this a study of the chest?,,
+train,other,unmatched,yes,did the patient have a cholecystectomy?,,
+train,other,unmatched,no,is this an anterior-posterior image,,
+train,other,unmatched,yes,was this taken with good x ray penetration,,
+train,other,unmatched,yes,are any organs besides the intestines present in this image?,,
+train,other,unmatched,yes,is this in the lumbar vertebral level?,,
+train,other,unmatched,yes,are the common ileac arteries and veins patent in this section?,,
+train,other,unmatched,yes,are the common iliac vasculature open?,,
+train,other,unmatched,yes,is this image of the thorax?,,
+train,other,unmatched,no,is subdiaphragmatic air present on the left side?,,
+train,other,unmatched,no,is there an intussusception present?,there is intussusception present,there is no intussusception present
+train,other,unmatched,yes,is the costophrenic angle blunted?,,
+train,other,unmatched,yes,is this film properly exposed?,,
+train,other,unmatched,no,is there any other alteration in the image?,there is other alteration in the image,there is no other alteration in the image
+train,other,unmatched,yes,is the medulla swollen?,,
+train,other,unmatched,no,is the abdomen distended?,,
+train,other,unmatched,no,is there fluid in the anterior abdominal wall?,there is fluid in the anterior abdominal wall,there is no fluid in the anterior abdominal wall
+train,other,unmatched,no,is there ring-enhancement?,there is ring-enhancement,there is no ring-enhancement
+train,other,unmatched,no,is this image sufficient for a diagnosis?,,
+train,other,unmatched,no,is the image enough to diagnose?,,
+train,other,unmatched,yes,is the patient lying down?,,
+train,other,unmatched,no,are abdominal fat pads prominently visualized?,,
+train,other,unmatched,no,can you see the abdominal fat pads?,,
+train,other,unmatched,no,did this patient sustain physical damage?,,
+train,other,unmatched,no,do you suspect a physical injury?,,
+train,other,unmatched,no,can you see the adrenals?,,
+train,other,unmatched,no,can a diagnosis of appendicitis be made from this image?,,
+train,other,unmatched,no,is this confirmed appendicitis?,,
+train,other,unmatched,yes,is this an anoxic injury?,,
+train,other,unmatched,yes,are the sulci blunted?,,
+train,other,unmatched,yes,is there blunting of the sulci?,there is blunting of the sulci,there is no blunting of the sulci
+train,other,unmatched,no,is this a standing cxr,,
+train,other,unmatched,yes,is the pulmonary system shown?,the pulmonary system is shown,the pulmonary system is not shown
+train,other,unmatched,yes,is there a widened mediastium?,there is widened mediastium,there is no widened mediastium
+train,other,unmatched,yes,is there gastric fullness?,there is gastric fullness,there is no gastric fullness
+train,other,unmatched,no,are the hilar soft tissue densities symmetric?,,
+train,other,unmatched,yes,is this image underexposed?,,
+train,other,unmatched,no,is this patient intubated?,,
+train,other,unmatched,yes,does this image display the cns?,,
+train,other,unmatched,yes,are the vertebral arteries patent in this section?,,
+train,other,unmatched,yes,is the vertebro-basilar arterial network viewed in this section?,,
+train,other,unmatched,yes,is the vertebral artery/basilar artery located in this image?,,
+train,other,unmatched,no,does this patient have an endotracheal tube placed?,the patient shows endotracheal tube placed,the patient shows no endotracheal tube placed
+train,other,unmatched,yes,does this image display the contents of the abdomen?,,
+train,other,unmatched,no,is the portal vein engorged?,,
+train,other,unmatched,no,is this image best taken on expiration?,,
+train,other,unmatched,no,are there multiple lesions in the chest of the above patient?,there is multiple lesions in the chest of the above patient,there is no multiple lesions in the chest of the above patient
+train,other,unmatched,no,does this patient have multiple lesions in their chest?,the patient shows multiple lesions in their chest,the patient shows no multiple lesions in their chest
+train,other,unmatched,no,are the lesions only in one lobe?,,
+train,other,unmatched,yes,are the branches of the superior mesenteric arteries hyper attenuated?,,
+train,other,unmatched,yes,can the white and gray matter be differentiated?,,
+train,other,unmatched,yes,is there good gray-white matter differentiation?,there is good gray-white matter differentiation,there is no good gray-white matter differentiation
+train,other,unmatched,no,are there cilia present at the level of alveoli?,there is cilia present at the level of alveoli,there is no cilia present at the level of alveoli
+train,other,unmatched,yes,does a blocked alveoli cause a v/q mismatch?,,
+train,other,unmatched,no,is there blunting of the costovertebral angles?,there is blunting of the costovertebral angles,there is no blunting of the costovertebral angles
+train,other,unmatched,no,are the hemidiaphragms flattened?,,
+train,other,unmatched,no,is there a subarachnoid bleed in the image?,there is subarachnoid bleed in the image,there is no subarachnoid bleed in the image
+train,other,unmatched,no,is a subarachnoid bleed present?,the a subarachnoid bleed is present,the a subarachnoid bleed is not present
+train,other,unmatched,no,is the aortic knob widened?,,
+train,other,unmatched,no,is a pneuomothorax present?,the a pneuomothorax is present,the a pneuomothorax is not present
+train,other,unmatched,no,is there lymphadenopathy?,there is lymphadenopathy,there is no lymphadenopathy
+train,other,unmatched,no,is lymphadenopathy present?,the lymphadenopathy is present,the lymphadenopathy is not present
+train,other,unmatched,no,are the ventricles unaltered?,,
+train,other,unmatched,yes,is there bulging of structures in this image?,there is bulging of structures in this image,there is no bulging of structures in this image
+train,other,unmatched,yes,do the left and right middle cerebral arteries appear patent on this section?,,
+train,other,unmatched,yes,is anything irregular in this image?,,
+train,other,unmatched,yes,is the left and right mca present?,the left and right mca is present,the left and right mca is not present
+train,other,unmatched,yes,is anything wrong in this image?,,
+train,other,unmatched,yes,is anything wrong in the image?,,

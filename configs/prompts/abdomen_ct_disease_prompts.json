@@ -1,0 +1,438 @@
+{
+  "modality": "abdomen_ct_disease",
+  "description": "Disease-labeled abdominal CT prompts for MedTEC L1-L5. Source: Merlin (Stanford AIMI) abdominal CT, report-derived abnormality labels. L4/L5 keyed by primary abnormality. L1-L3 shared (identical to organ-binding abdomen_ct config).",
+  "disease_categories": {
+    "hepatic_steatosis": {
+      "display": "Hepatic steatosis"
+    },
+    "renal_cyst": {
+      "display": "Renal cyst"
+    },
+    "gallstones": {
+      "display": "Gallstones"
+    },
+    "ascites": {
+      "display": "Ascites"
+    },
+    "pleural_effusion": {
+      "display": "Pleural effusion"
+    },
+    "no_finding": {
+      "display": "No acute finding"
+    }
+  },
+  "sampling": {
+    "n_per_category": 150,
+    "total": 900,
+    "seed": 42,
+    "source": "merlin_abdominal_ct",
+    "slice_strategy": "representative_axial_slice + full_volume(3D)"
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Abdominal CT vs everyday objects \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "ct_l1_001",
+          "positives": [
+            "an abdominal CT scan",
+            "a computed tomography image of the abdomen"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "ct_l1_002",
+          "positives": [
+            "an axial CT slice through the abdomen",
+            "a CT scan of the upper abdomen"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a park bench in autumn",
+            "a baseball glove on grass",
+            "a wristwatch on a surface"
+          ]
+        },
+        {
+          "probe_id": "ct_l1_003",
+          "positives": [
+            "a contrast-enhanced abdominal CT image",
+            "a CT scan showing abdominal organs"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a cup of coffee",
+            "a garden with flowers",
+            "a bicycle helmet",
+            "a running shoe on a white background"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Abdominal CT vs other abdominal imaging modalities \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "ct_l2_001",
+          "positives": [
+            "an abdominal CT scan",
+            "a computed tomography image of the abdomen"
+          ],
+          "negatives": [
+            "an abdominal MRI scan",
+            "an abdominal ultrasound image",
+            "an abdominal radiograph",
+            "a PET scan of the abdomen",
+            "a fluoroscopic image of the abdomen"
+          ]
+        },
+        {
+          "probe_id": "ct_l2_002",
+          "positives": [
+            "a contrast-enhanced abdominal CT image",
+            "a CT angiography image of the abdominal aorta"
+          ],
+          "negatives": [
+            "a T1-weighted abdominal MRI image",
+            "a T2-weighted abdominal MRI image",
+            "a diffusion-weighted abdominal MRI",
+            "an MR cholangiopancreatography image",
+            "an MR enterography image"
+          ]
+        },
+        {
+          "probe_id": "ct_l2_003",
+          "positives": [
+            "an axial CT slice of the abdomen",
+            "a multidetector CT image of the abdomen"
+          ],
+          "negatives": [
+            "a B-mode ultrasound of the abdomen",
+            "a color Doppler ultrasound of the abdomen",
+            "an MR elastography image of the liver",
+            "a SPECT image of the abdomen",
+            "an endoscopic ultrasound image"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Abdominal CT vs other body-region imaging \u2014 shared across all images",
+      "probes": [
+        {
+          "probe_id": "ct_l3_001",
+          "positives": [
+            "an abdominal CT scan",
+            "a computed tomography image of the abdomen"
+          ],
+          "negatives": [
+            "a chest x-ray",
+            "a brain MRI scan",
+            "a dermoscopy image of skin",
+            "a retinal fundus photograph",
+            "a histopathology slide"
+          ]
+        },
+        {
+          "probe_id": "ct_l3_002",
+          "positives": [
+            "a CT image of the liver",
+            "a CT image of the kidneys"
+          ],
+          "negatives": [
+            "a CT image of the brain",
+            "a CT image of the chest",
+            "a CT image of the pelvis only",
+            "a CT image of the cervical spine",
+            "a CT image of the extremities"
+          ]
+        },
+        {
+          "probe_id": "ct_l3_003",
+          "positives": [
+            "a CT scan showing abdominal viscera",
+            "a CT slice through the upper abdomen"
+          ],
+          "negatives": [
+            "a CT scan of the thorax showing the lungs",
+            "a CT scan of the head showing the brain",
+            "a CT scan of the neck",
+            "a CT scan of the lower limb",
+            "a CT scan of the facial bones"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Per-image disease finding. 4 positives describe the finding; 10 negatives are other findings + abdominal distractors.",
+      "disease_prompts": {
+        "hepatic_steatosis": {
+          "positives": [
+            "abdominal CT showing hepatic steatosis",
+            "abdominal CT showing fatty liver",
+            "abdominal CT with diffuse low hepatic attenuation consistent with hepatic steatosis",
+            "abdominal CT showing a liver less dense than the spleen from fatty infiltration"
+          ],
+          "negatives": [
+            "an abdominal CT showing a renal cyst",
+            "an abdominal CT showing gallstones",
+            "an abdominal CT showing ascites",
+            "an abdominal CT showing pleural effusion",
+            "a normal abdominal CT with no acute abnormality",
+            "an abdominal CT showing splenomegaly",
+            "an abdominal CT showing hepatomegaly",
+            "an abdominal CT showing a pancreatic mass",
+            "an abdominal CT showing bowel obstruction",
+            "an abdominal CT showing hydronephrosis"
+          ]
+        },
+        "renal_cyst": {
+          "positives": [
+            "abdominal CT showing a renal cyst",
+            "abdominal CT with a simple cyst in the kidney",
+            "abdominal CT showing a well-defined low-attenuation renal lesion consistent with a cyst",
+            "abdominal CT demonstrating a fluid-density cyst in the kidney"
+          ],
+          "negatives": [
+            "an abdominal CT showing hepatic steatosis",
+            "an abdominal CT showing gallstones",
+            "an abdominal CT showing ascites",
+            "an abdominal CT showing pleural effusion",
+            "a normal abdominal CT with no acute abnormality",
+            "an abdominal CT showing splenomegaly",
+            "an abdominal CT showing hepatomegaly",
+            "an abdominal CT showing a pancreatic mass",
+            "an abdominal CT showing bowel obstruction",
+            "an abdominal CT showing hydronephrosis"
+          ]
+        },
+        "gallstones": {
+          "positives": [
+            "abdominal CT showing gallstones",
+            "abdominal CT showing cholelithiasis",
+            "abdominal CT with calcified stones in the gallbladder",
+            "abdominal CT demonstrating gallstones within the gallbladder lumen"
+          ],
+          "negatives": [
+            "an abdominal CT showing hepatic steatosis",
+            "an abdominal CT showing a renal cyst",
+            "an abdominal CT showing ascites",
+            "an abdominal CT showing pleural effusion",
+            "a normal abdominal CT with no acute abnormality",
+            "an abdominal CT showing splenomegaly",
+            "an abdominal CT showing hepatomegaly",
+            "an abdominal CT showing a pancreatic mass",
+            "an abdominal CT showing bowel obstruction",
+            "an abdominal CT showing hydronephrosis"
+          ]
+        },
+        "ascites": {
+          "positives": [
+            "abdominal CT showing ascites",
+            "abdominal CT with free fluid in the peritoneal cavity",
+            "abdominal CT demonstrating intraperitoneal fluid consistent with ascites",
+            "abdominal CT showing fluid surrounding the abdominal organs"
+          ],
+          "negatives": [
+            "an abdominal CT showing hepatic steatosis",
+            "an abdominal CT showing a renal cyst",
+            "an abdominal CT showing gallstones",
+            "an abdominal CT showing pleural effusion",
+            "a normal abdominal CT with no acute abnormality",
+            "an abdominal CT showing splenomegaly",
+            "an abdominal CT showing hepatomegaly",
+            "an abdominal CT showing a pancreatic mass",
+            "an abdominal CT showing bowel obstruction",
+            "an abdominal CT showing hydronephrosis"
+          ]
+        },
+        "pleural_effusion": {
+          "positives": [
+            "abdominal CT showing pleural effusion",
+            "abdominal CT with fluid in the pleural space at the lung bases",
+            "abdominal CT demonstrating a pleural effusion",
+            "abdominal CT showing dependent pleural fluid at the lung bases"
+          ],
+          "negatives": [
+            "an abdominal CT showing hepatic steatosis",
+            "an abdominal CT showing a renal cyst",
+            "an abdominal CT showing gallstones",
+            "an abdominal CT showing ascites",
+            "a normal abdominal CT with no acute abnormality",
+            "an abdominal CT showing splenomegaly",
+            "an abdominal CT showing hepatomegaly",
+            "an abdominal CT showing a pancreatic mass",
+            "an abdominal CT showing bowel obstruction",
+            "an abdominal CT showing hydronephrosis"
+          ]
+        },
+        "no_finding": {
+          "positives": [
+            "a normal abdominal CT with no acute abnormality",
+            "an abdominal CT with no significant findings",
+            "a normal abdominal CT with unremarkable organs",
+            "an abdominal CT without acute intra-abdominal pathology"
+          ],
+          "negatives": [
+            "an abdominal CT showing hepatic steatosis",
+            "an abdominal CT showing a renal cyst",
+            "an abdominal CT showing gallstones",
+            "an abdominal CT showing ascites",
+            "an abdominal CT showing pleural effusion",
+            "an abdominal CT showing splenomegaly",
+            "an abdominal CT showing hepatomegaly",
+            "an abdominal CT showing a pancreatic mass",
+            "an abdominal CT showing bowel obstruction",
+            "an abdominal CT showing hydronephrosis"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Per-image presence vs absence of the finding. 4 presence positives; 10 negation variants (no_finding is polarity-flipped).",
+      "disease_prompts": {
+        "hepatic_steatosis": {
+          "positives": [
+            "abdominal CT showing hepatic steatosis",
+            "abdominal CT showing fatty liver",
+            "abdominal CT with diffuse low hepatic attenuation consistent with hepatic steatosis",
+            "abdominal CT showing a liver less dense than the spleen from fatty infiltration"
+          ],
+          "negatives": [
+            "abdominal CT showing no hepatic steatosis",
+            "no evidence of hepatic steatosis on abdominal CT",
+            "abdominal CT negative for hepatic steatosis",
+            "hepatic steatosis absent on abdominal CT",
+            "abdominal CT without hepatic steatosis",
+            "no hepatic steatosis visible on abdominal CT",
+            "abdominal CT clear of hepatic steatosis",
+            "hepatic steatosis excluded on abdominal CT",
+            "no signs of hepatic steatosis on abdominal CT",
+            "hepatic steatosis not seen on abdominal CT"
+          ]
+        },
+        "renal_cyst": {
+          "positives": [
+            "abdominal CT showing a renal cyst",
+            "abdominal CT with a simple cyst in the kidney",
+            "abdominal CT showing a well-defined low-attenuation renal lesion consistent with a cyst",
+            "abdominal CT demonstrating a fluid-density cyst in the kidney"
+          ],
+          "negatives": [
+            "abdominal CT showing no a renal cyst",
+            "no evidence of a renal cyst on abdominal CT",
+            "abdominal CT negative for a renal cyst",
+            "a renal cyst absent on abdominal CT",
+            "abdominal CT without a renal cyst",
+            "no a renal cyst visible on abdominal CT",
+            "abdominal CT clear of a renal cyst",
+            "a renal cyst excluded on abdominal CT",
+            "no signs of a renal cyst on abdominal CT",
+            "a renal cyst not seen on abdominal CT"
+          ]
+        },
+        "gallstones": {
+          "positives": [
+            "abdominal CT showing gallstones",
+            "abdominal CT showing cholelithiasis",
+            "abdominal CT with calcified stones in the gallbladder",
+            "abdominal CT demonstrating gallstones within the gallbladder lumen"
+          ],
+          "negatives": [
+            "abdominal CT showing no gallstones",
+            "no evidence of gallstones on abdominal CT",
+            "abdominal CT negative for gallstones",
+            "gallstones absent on abdominal CT",
+            "abdominal CT without gallstones",
+            "no gallstones visible on abdominal CT",
+            "abdominal CT clear of gallstones",
+            "gallstones excluded on abdominal CT",
+            "no signs of gallstones on abdominal CT",
+            "gallstones not seen on abdominal CT"
+          ]
+        },
+        "ascites": {
+          "positives": [
+            "abdominal CT showing ascites",
+            "abdominal CT with free fluid in the peritoneal cavity",
+            "abdominal CT demonstrating intraperitoneal fluid consistent with ascites",
+            "abdominal CT showing fluid surrounding the abdominal organs"
+          ],
+          "negatives": [
+            "abdominal CT showing no ascites",
+            "no evidence of ascites on abdominal CT",
+            "abdominal CT negative for ascites",
+            "ascites absent on abdominal CT",
+            "abdominal CT without ascites",
+            "no ascites visible on abdominal CT",
+            "abdominal CT clear of ascites",
+            "ascites excluded on abdominal CT",
+            "no signs of ascites on abdominal CT",
+            "ascites not seen on abdominal CT"
+          ]
+        },
+        "pleural_effusion": {
+          "positives": [
+            "abdominal CT showing pleural effusion",
+            "abdominal CT with fluid in the pleural space at the lung bases",
+            "abdominal CT demonstrating a pleural effusion",
+            "abdominal CT showing dependent pleural fluid at the lung bases"
+          ],
+          "negatives": [
+            "abdominal CT showing no pleural effusion",
+            "no evidence of pleural effusion on abdominal CT",
+            "abdominal CT negative for pleural effusion",
+            "pleural effusion absent on abdominal CT",
+            "abdominal CT without pleural effusion",
+            "no pleural effusion visible on abdominal CT",
+            "abdominal CT clear of pleural effusion",
+            "pleural effusion excluded on abdominal CT",
+            "no signs of pleural effusion on abdominal CT",
+            "pleural effusion not seen on abdominal CT"
+          ]
+        },
+        "no_finding": {
+          "positives": [
+            "abdominal CT negative for acute abnormality",
+            "no acute intra-abdominal abnormality on abdominal CT",
+            "abdominal CT within normal limits",
+            "no significant findings on abdominal CT"
+          ],
+          "negatives": [
+            "abdominal CT showing hepatic steatosis",
+            "abdominal CT showing a renal cyst",
+            "abdominal CT showing gallstones",
+            "abdominal CT showing ascites",
+            "abdominal CT showing pleural effusion",
+            "abdominal CT showing splenomegaly",
+            "abdominal CT showing hepatomegaly",
+            "abdominal CT showing a pancreatic mass",
+            "abdominal CT showing bowel obstruction",
+            "abdominal CT showing hydronephrosis"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "modality": "cxr",
+  "variant": "alt_clinical",
+  "description": "Prompt-robustness variant: alternative clinical phrasing (synonym-rich, disease still named, single clause). Distinct wording from the baseline template and from report-style. Same L4/L5 structure and competing-finding sets as configs/prompts/cxr_prompts.json. L4+L5 only (Exp A scope).",
+  "disease_categories": {
+    "no_finding": {"display": "Normal", "chexpert_col": "No Finding", "nih_label": "No Finding"},
+    "pneumonia": {"display": "Pneumonia", "chexpert_col": "Pneumonia", "nih_label": "Pneumonia"},
+    "cardiomegaly": {"display": "Cardiomegaly", "chexpert_col": "Cardiomegaly", "nih_label": "Cardiomegaly"},
+    "pleural_effusion": {"display": "Pleural Effusion", "chexpert_col": "Pleural Effusion", "nih_label": "Effusion"},
+    "atelectasis": {"display": "Atelectasis", "chexpert_col": "Atelectasis", "nih_label": "Atelectasis"}
+  },
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "description": "Alternative-clinical-phrasing finding discrimination. 4 synonym-rich positives for the anchor's finding; 10 synonym-rich negatives naming other findings (same competing set as baseline).",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": ["a chest radiograph without acute cardiopulmonary disease", "a thoracic radiograph read as unremarkable", "a chest film with clear lungs and a normal heart", "a radiographically normal chest study"],
+          "negatives": ["a chest radiograph with features of pneumonia", "a chest film demonstrating an enlarged heart", "a thoracic radiograph with a pleural fluid collection", "a chest radiograph with lobar collapse", "a chest film demonstrating a collapsed lung with pleural air", "a chest radiograph with cardiogenic pulmonary congestion", "a thoracic radiograph with dense airspace opacification", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change"]
+        },
+        "pneumonia": {
+          "positives": ["a chest radiograph with features of pneumonia", "a thoracic radiograph compatible with a pneumonic infiltrate", "a chest film demonstrating infective airspace opacity", "a chest radiograph showing an area of pneumonic consolidation"],
+          "negatives": ["a chest radiograph read as unremarkable", "a chest film demonstrating an enlarged heart", "a thoracic radiograph with a pleural fluid collection", "a chest radiograph with lobar collapse", "a chest film demonstrating a collapsed lung with pleural air", "a chest radiograph with cardiogenic pulmonary congestion", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change", "a chest radiograph with diffuse interstitial infiltration"]
+        },
+        "cardiomegaly": {
+          "positives": ["a chest radiograph demonstrating an enlarged heart", "a thoracic radiograph with an increased cardiothoracic ratio", "a chest film showing a widened cardiac contour", "a chest radiograph with an enlarged cardiac silhouette"],
+          "negatives": ["a chest radiograph read as unremarkable", "a chest film with features of pneumonia", "a thoracic radiograph with a pleural fluid collection", "a chest radiograph with lobar collapse", "a chest film demonstrating a collapsed lung with pleural air", "a chest radiograph with cardiogenic pulmonary congestion", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change", "a chest radiograph with diffuse interstitial infiltration"]
+        },
+        "pleural_effusion": {
+          "positives": ["a chest radiograph with a pleural fluid collection", "a thoracic radiograph showing fluid layering in the pleural space", "a chest film with blunting of the costophrenic angle by fluid", "a chest radiograph demonstrating a pleural effusion"],
+          "negatives": ["a chest radiograph read as unremarkable", "a chest film with features of pneumonia", "a thoracic radiograph demonstrating an enlarged heart", "a chest radiograph with lobar collapse", "a chest film demonstrating a collapsed lung with pleural air", "a chest radiograph with cardiogenic pulmonary congestion", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change", "a chest radiograph with diffuse interstitial infiltration"]
+        },
+        "atelectasis": {
+          "positives": ["a chest radiograph with lobar collapse", "a thoracic radiograph showing volume loss and linear opacity", "a chest film with a collapsed lung segment", "a chest radiograph demonstrating atelectatic change"],
+          "negatives": ["a chest radiograph read as unremarkable", "a chest film with features of pneumonia", "a thoracic radiograph demonstrating an enlarged heart", "a chest radiograph with a pleural fluid collection", "a chest film demonstrating a collapsed lung with pleural air", "a chest radiograph with cardiogenic pulmonary congestion", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change", "a chest radiograph with diffuse interstitial infiltration"]
+        },
+        "consolidation": {
+          "positives": ["a chest radiograph with dense airspace opacification", "a thoracic radiograph showing homogeneous lobar opacity", "a chest film with confluent parenchymal opacification", "a chest radiograph demonstrating airspace consolidation"],
+          "negatives": ["a chest radiograph read as unremarkable", "a chest film demonstrating a collapsed lung with pleural air", "a thoracic radiograph demonstrating an enlarged heart", "a chest radiograph with a pleural fluid collection", "a chest radiograph with lobar collapse", "a chest radiograph with cardiogenic pulmonary congestion", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change", "a chest radiograph with diffuse interstitial infiltration"]
+        },
+        "edema": {
+          "positives": ["a chest radiograph with cardiogenic pulmonary congestion", "a thoracic radiograph showing perihilar haziness and vascular redistribution", "a chest film with interstitial fluid and Kerley lines", "a chest radiograph demonstrating pulmonary edema"],
+          "negatives": ["a chest radiograph read as unremarkable", "a chest film demonstrating a collapsed lung with pleural air", "a thoracic radiograph demonstrating an enlarged heart", "a chest radiograph with a pleural fluid collection", "a chest radiograph with lobar collapse", "a thoracic radiograph with dense airspace opacification", "a chest film with hyperinflated emphysematous lungs", "a chest radiograph with a solitary pulmonary lesion", "a thoracic radiograph with reticular fibrotic change", "a chest radiograph with diffuse interstitial infiltration"]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Alternative-clinical-phrasing definite negation. 4 synonym-rich presence affirmations vs 10 synonym-rich negations of the same finding. no_finding row is polarity-flipped.",
+      "disease_prompts": {
+        "no_finding": {
+          "positives": ["a chest film with no acute disease", "a thoracic radiograph free of abnormality", "a chest radiograph with clear lungs and normal heart size", "a radiographically normal chest study"],
+          "negatives": ["a chest film demonstrating acute disease", "a thoracic radiograph with an abnormality present", "a chest radiograph revealing pathological change", "a chest film with an active disease process", "a chest radiograph read as abnormal", "a thoracic radiograph with significant findings", "a chest radiograph outside normal limits", "a chest film demonstrating underlying pathology", "a chest radiograph with an acute abnormality", "a thoracic radiograph positive for disease"]
+        },
+        "pneumonia": {
+          "positives": ["a chest radiograph with features of pneumonia", "a thoracic radiograph compatible with pneumonia", "a chest film demonstrating pneumonic infiltrate", "a chest radiograph read as positive for pneumonia"],
+          "negatives": ["a chest radiograph with no features of pneumonia", "a thoracic radiograph without a pneumonic infiltrate", "a chest film read as negative for pneumonia", "a chest radiograph showing no infective opacity", "a chest film with pneumonia excluded", "a thoracic radiograph free of pneumonia", "a chest radiograph without evidence of pneumonia", "a chest film in which pneumonia is not seen", "a chest radiograph with clear lungs and no infection", "a thoracic radiograph with pneumonia ruled out"]
+        },
+        "cardiomegaly": {
+          "positives": ["a chest radiograph demonstrating an enlarged heart", "a thoracic radiograph with cardiac enlargement", "a chest film with an increased cardiothoracic ratio", "a chest radiograph positive for cardiomegaly"],
+          "negatives": ["a chest radiograph with a normal-sized heart", "a thoracic radiograph without cardiac enlargement", "a chest film read as negative for cardiomegaly", "a chest radiograph with a normal cardiothoracic ratio", "a chest film with cardiomegaly excluded", "a thoracic radiograph free of cardiac enlargement", "a chest radiograph without evidence of cardiomegaly", "a chest film in which the heart is not enlarged", "a chest radiograph with a normal cardiac contour", "a thoracic radiograph with cardiomegaly ruled out"]
+        },
+        "pleural_effusion": {
+          "positives": ["a chest radiograph with a pleural fluid collection", "a thoracic radiograph demonstrating pleural effusion", "a chest film with fluid layering in the pleural space", "a chest radiograph positive for pleural effusion"],
+          "negatives": ["a chest radiograph with no pleural fluid", "a thoracic radiograph without a pleural effusion", "a chest film read as negative for pleural effusion", "a chest radiograph with clear costophrenic angles", "a chest film with pleural effusion excluded", "a thoracic radiograph free of pleural fluid", "a chest radiograph without evidence of effusion", "a chest film in which no effusion is seen", "a chest radiograph with no fluid in the pleural space", "a thoracic radiograph with pleural effusion ruled out"]
+        },
+        "atelectasis": {
+          "positives": ["a chest radiograph with lobar collapse", "a thoracic radiograph demonstrating atelectasis", "a chest film with a collapsed lung segment", "a chest radiograph positive for atelectasis"],
+          "negatives": ["a chest radiograph with no lobar collapse", "a thoracic radiograph without atelectasis", "a chest film read as negative for atelectasis", "a chest radiograph with fully expanded lungs", "a chest film with atelectasis excluded", "a thoracic radiograph free of collapse", "a chest radiograph without evidence of atelectasis", "a chest film in which no collapse is seen", "a chest radiograph with normal lung volumes", "a thoracic radiograph with atelectasis ruled out"]
+        },
+        "consolidation": {
+          "positives": ["a chest radiograph with dense airspace opacification", "a thoracic radiograph demonstrating consolidation", "a chest film with confluent parenchymal opacity", "a chest radiograph positive for consolidation"],
+          "negatives": ["a chest radiograph with no airspace opacity", "a thoracic radiograph without consolidation", "a chest film read as negative for consolidation", "a chest radiograph with clear lung parenchyma", "a chest film with consolidation excluded", "a thoracic radiograph free of dense opacity", "a chest radiograph without evidence of consolidation", "a chest film in which no consolidation is seen", "a chest radiograph with no focal opacification", "a thoracic radiograph with consolidation ruled out"]
+        },
+        "edema": {
+          "positives": ["a chest radiograph with cardiogenic pulmonary congestion", "a thoracic radiograph demonstrating pulmonary edema", "a chest film with interstitial fluid overload", "a chest radiograph positive for pulmonary edema"],
+          "negatives": ["a chest radiograph with no pulmonary congestion", "a thoracic radiograph without pulmonary edema", "a chest film read as negative for pulmonary edema", "a chest radiograph with no vascular redistribution", "a chest film with pulmonary edema excluded", "a thoracic radiograph free of interstitial fluid", "a chest radiograph without evidence of edema", "a chest film in which no edema is seen", "a chest radiograph with clear lungs and no congestion", "a thoracic radiograph with pulmonary edema ruled out"]
+        }
+      }
+    }
+  }
+}

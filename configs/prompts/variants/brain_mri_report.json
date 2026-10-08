@@ -1,0 +1,177 @@
+{
+  "modality": "brain_mri",
+  "variant": "report",
+  "description": "Exp A prompt-robustness variant (report) for brain_mri, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/brain_mri_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "Findings: preserved cortical volume without disproportionate atrophy. Impression: no dementia.",
+            "Impression: no dementia.",
+            "Findings consistent with no dementia. Impression: no dementia.",
+            "Impression: no dementia, showing preserved cortical volume without disproportionate atrophy."
+          ],
+          "negatives": [
+            "Impression: very mild dementia.",
+            "Impression: mild dementia.",
+            "Impression: moderate dementia.",
+            "Impression: an ischemic infarct.",
+            "Impression: a brain tumor.",
+            "Impression: multiple sclerosis plaques.",
+            "Impression: hydrocephalus.",
+            "Impression: small-vessel white matter disease.",
+            "Impression: an intracranial hemorrhage.",
+            "Impression: encephalomalacia."
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "Findings: minimal hippocampal volume loss. Impression: very mild dementia.",
+            "Impression: very mild dementia.",
+            "Findings consistent with very mild dementia. Impression: very mild dementia.",
+            "Impression: very mild dementia, showing minimal hippocampal volume loss."
+          ],
+          "negatives": [
+            "Impression: no dementia.",
+            "Impression: mild dementia.",
+            "Impression: moderate dementia.",
+            "Impression: an ischemic infarct.",
+            "Impression: a brain tumor.",
+            "Impression: multiple sclerosis plaques.",
+            "Impression: hydrocephalus.",
+            "Impression: small-vessel white matter disease.",
+            "Impression: an intracranial hemorrhage.",
+            "Impression: encephalomalacia."
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "Findings: hippocampal and medial temporal atrophy. Impression: mild dementia.",
+            "Impression: mild dementia.",
+            "Findings consistent with mild dementia. Impression: mild dementia.",
+            "Impression: mild dementia, showing hippocampal and medial temporal atrophy."
+          ],
+          "negatives": [
+            "Impression: no dementia.",
+            "Impression: very mild dementia.",
+            "Impression: moderate dementia.",
+            "Impression: an ischemic infarct.",
+            "Impression: a brain tumor.",
+            "Impression: multiple sclerosis plaques.",
+            "Impression: hydrocephalus.",
+            "Impression: small-vessel white matter disease.",
+            "Impression: an intracranial hemorrhage.",
+            "Impression: encephalomalacia."
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "Findings: widespread cortical atrophy with ventricular enlargement. Impression: moderate dementia.",
+            "Impression: moderate dementia.",
+            "Findings consistent with moderate dementia. Impression: moderate dementia.",
+            "Impression: moderate dementia, showing widespread cortical atrophy with ventricular enlargement."
+          ],
+          "negatives": [
+            "Impression: no dementia.",
+            "Impression: very mild dementia.",
+            "Impression: mild dementia.",
+            "Impression: an ischemic infarct.",
+            "Impression: a brain tumor.",
+            "Impression: multiple sclerosis plaques.",
+            "Impression: hydrocephalus.",
+            "Impression: small-vessel white matter disease.",
+            "Impression: an intracranial hemorrhage.",
+            "Impression: encephalomalacia."
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "Impression: normal study.",
+            "Impression: no acute abnormality.",
+            "Impression: negative for disease.",
+            "Impression: no pathology identified."
+          ],
+          "negatives": [
+            "Impression: positive for disease.",
+            "Impression: abnormal.",
+            "Impression: pathologic findings present.",
+            "Impression: active disease.",
+            "Impression: a significant abnormality is identified.",
+            "Impression: abnormal findings.",
+            "Impression: an imaging abnormality is demonstrated.",
+            "Impression: not within normal limits.",
+            "Impression: underlying pathology is present.",
+            "Impression: positive for an abnormality."
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "Findings: minimal hippocampal volume loss. Impression: very mild dementia.",
+            "Impression: very mild dementia is present.",
+            "Impression: very mild dementia.",
+            "Findings consistent with very mild dementia."
+          ],
+          "negatives": [
+            "Findings: no very mild dementia. Impression: no very mild dementia.",
+            "Impression: negative for very mild dementia.",
+            "Impression: no evidence of very mild dementia.",
+            "Impression: very mild dementia is excluded.",
+            "Findings: no very mild dementia. Impression: very mild dementia not identified.",
+            "Impression: no findings of very mild dementia.",
+            "Impression: without very mild dementia.",
+            "Impression: very mild dementia is ruled out.",
+            "Impression: no very mild dementia seen.",
+            "Impression: very mild dementia not present."
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "Findings: hippocampal and medial temporal atrophy. Impression: mild dementia.",
+            "Impression: mild dementia is present.",
+            "Impression: mild dementia.",
+            "Findings consistent with mild dementia."
+          ],
+          "negatives": [
+            "Findings: no mild dementia. Impression: no mild dementia.",
+            "Impression: negative for mild dementia.",
+            "Impression: no evidence of mild dementia.",
+            "Impression: mild dementia is excluded.",
+            "Findings: no mild dementia. Impression: mild dementia not identified.",
+            "Impression: no findings of mild dementia.",
+            "Impression: without mild dementia.",
+            "Impression: mild dementia is ruled out.",
+            "Impression: no mild dementia seen.",
+            "Impression: mild dementia not present."
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "Findings: widespread cortical atrophy with ventricular enlargement. Impression: moderate dementia.",
+            "Impression: moderate dementia is present.",
+            "Impression: moderate dementia.",
+            "Findings consistent with moderate dementia."
+          ],
+          "negatives": [
+            "Findings: no moderate dementia. Impression: no moderate dementia.",
+            "Impression: negative for moderate dementia.",
+            "Impression: no evidence of moderate dementia.",
+            "Impression: moderate dementia is excluded.",
+            "Findings: no moderate dementia. Impression: moderate dementia not identified.",
+            "Impression: no findings of moderate dementia.",
+            "Impression: without moderate dementia.",
+            "Impression: moderate dementia is ruled out.",
+            "Impression: no moderate dementia seen.",
+            "Impression: moderate dementia not present."
+          ]
+        }
+      }
+    }
+  }
+}

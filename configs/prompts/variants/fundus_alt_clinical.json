@@ -1,0 +1,75 @@
+{
+  "modality": "fundus",
+  "variant": "alt_clinical",
+  "description": "Prompt-robustness variant for retinal fundus: alternative clinical phrasing (synonym-rich, diagnosis named, single clause). Distinct wording from the baseline template and from report-style. Same L4/L5 structure and competing-finding sets as configs/prompts/fundus_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "description": "Alternative-clinical-phrasing diagnosis discrimination. 4 synonym-rich positives; 10 synonym-rich negatives naming other ocular findings.",
+      "disease_prompts": {
+        "normal": {
+          "positives": ["a retinal image read as normal", "a fundus photograph free of retinal pathology", "a healthy-appearing fundus with clear media", "a normal fundus with intact vasculature"],
+          "negatives": ["a fundus photograph with features of diabetic retinopathy", "a fundus image demonstrating glaucomatous optic neuropathy", "a fundus view degraded by cataract", "a fundus image with features of age-related macular degeneration", "a fundus image demonstrating hypertensive retinopathy", "a fundus image with features of pathological myopia", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a swollen optic disc", "a fundus image with a macular hole", "a fundus image with bone-spicule pigmentation"]
+        },
+        "diabetic_retinopathy": {
+          "positives": ["a fundus photograph with features of diabetic retinopathy", "a retinal image demonstrating diabetic microangiopathy", "a fundus with diabetic microaneurysms and hemorrhages", "a retinal image compatible with diabetic retinopathy"],
+          "negatives": ["a retinal image read as normal", "a fundus image demonstrating glaucomatous optic neuropathy", "a fundus view degraded by cataract", "a fundus image with features of age-related macular degeneration", "a fundus image demonstrating hypertensive retinopathy", "a fundus image with features of pathological myopia", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a swollen optic disc", "a fundus image with a macular hole", "a fundus image with bone-spicule pigmentation"]
+        },
+        "glaucoma": {
+          "positives": ["a fundus image demonstrating glaucomatous optic neuropathy", "a retinal image with an enlarged optic cup", "a fundus with glaucomatous disc cupping", "a fundus image compatible with glaucoma"],
+          "negatives": ["a retinal image read as normal", "a fundus photograph with features of diabetic retinopathy", "a fundus view degraded by cataract", "a fundus image with features of age-related macular degeneration", "a fundus image demonstrating hypertensive retinopathy", "a fundus image with features of pathological myopia", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a swollen optic disc", "a fundus image with a pale, atrophic optic disc", "a fundus image with a macular hole"]
+        },
+        "cataract": {
+          "positives": ["a fundus view degraded by cataract", "a retinal image obscured by lens opacity", "a fundus with media opacity from cataract", "a fundus image compatible with cataract"],
+          "negatives": ["a retinal image read as normal", "a fundus photograph with features of diabetic retinopathy", "a fundus image demonstrating glaucomatous optic neuropathy", "a fundus image with features of age-related macular degeneration", "a fundus image demonstrating hypertensive retinopathy", "a fundus image with features of pathological myopia", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a swollen optic disc", "a fundus image with a macular hole", "a fundus image with bone-spicule pigmentation"]
+        },
+        "amd": {
+          "positives": ["a fundus image with features of age-related macular degeneration", "a retinal image demonstrating macular drusen", "a fundus with macular degenerative change", "a fundus image compatible with age-related macular degeneration"],
+          "negatives": ["a retinal image read as normal", "a fundus photograph with features of diabetic retinopathy", "a fundus image demonstrating glaucomatous optic neuropathy", "a fundus view degraded by cataract", "a fundus image demonstrating hypertensive retinopathy", "a fundus image with features of pathological myopia", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a macular hole", "a fundus image with central serous chorioretinopathy", "a fundus image with bone-spicule pigmentation"]
+        },
+        "hypertensive_retinopathy": {
+          "positives": ["a fundus image demonstrating hypertensive retinopathy", "a retinal image with arteriolar narrowing and AV nicking", "a fundus with hypertensive vascular change", "a fundus image compatible with hypertensive retinopathy"],
+          "negatives": ["a retinal image read as normal", "a fundus photograph with features of diabetic retinopathy", "a fundus image demonstrating glaucomatous optic neuropathy", "a fundus view degraded by cataract", "a fundus image with features of age-related macular degeneration", "a fundus image with features of pathological myopia", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a swollen optic disc", "a fundus image with a macular hole", "a fundus image with bone-spicule pigmentation"]
+        },
+        "pathological_myopia": {
+          "positives": ["a fundus image with features of pathological myopia", "a retinal image demonstrating myopic degeneration", "a fundus with peripapillary myopic atrophy", "a fundus image compatible with pathological myopia"],
+          "negatives": ["a retinal image read as normal", "a fundus photograph with features of diabetic retinopathy", "a fundus image demonstrating glaucomatous optic neuropathy", "a fundus view degraded by cataract", "a fundus image with features of age-related macular degeneration", "a fundus image demonstrating hypertensive retinopathy", "a fundus image demonstrating a retinal vein occlusion", "a fundus image with a swollen optic disc", "a fundus image with a macular hole", "a fundus image with bone-spicule pigmentation"]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Alternative-clinical-phrasing definite negation. 4 synonym-rich presence affirmations vs 10 synonym-rich negations of the same diagnosis. normal row is polarity-flipped.",
+      "disease_prompts": {
+        "normal": {
+          "positives": ["a fundus with no retinal disease", "a retinal image free of pathology", "a healthy fundus with clear media", "a fundus read as normal"],
+          "negatives": ["a fundus with active retinal disease", "a retinal image with pathology present", "a fundus read as abnormal", "a fundus positive for retinal disease", "a retinal image with an abnormality present", "a fundus demonstrating disease", "a pathological fundus", "a fundus with a significant retinal abnormality", "a retinal image outside normal limits", "a fundus with underlying retinal pathology"]
+        },
+        "diabetic_retinopathy": {
+          "positives": ["a fundus with features of diabetic retinopathy", "a retinal image demonstrating diabetic retinopathy", "a fundus with diabetic microangiopathy", "a fundus image positive for diabetic retinopathy"],
+          "negatives": ["a fundus with no features of diabetic retinopathy", "a retinal image without diabetic microangiopathy", "a fundus read as negative for diabetic retinopathy", "a fundus image showing no diabetic changes", "a fundus with diabetic retinopathy excluded", "a retinal image free of diabetic retinopathy", "a fundus without evidence of diabetic retinopathy", "a fundus in which diabetic retinopathy is not seen", "a fundus with intact vasculature and no diabetic change", "a retinal image with diabetic retinopathy ruled out"]
+        },
+        "glaucoma": {
+          "positives": ["a fundus with glaucomatous optic neuropathy", "a retinal image demonstrating glaucoma", "a fundus with glaucomatous disc cupping", "a fundus image positive for glaucoma"],
+          "negatives": ["a fundus with no glaucomatous cupping", "a retinal image without an enlarged optic cup", "a fundus read as negative for glaucoma", "a fundus image showing a normal optic disc", "a fundus with glaucoma excluded", "a retinal image free of glaucomatous change", "a fundus without evidence of glaucoma", "a fundus in which glaucoma is not seen", "a fundus with a normal cup-to-disc ratio", "a retinal image with glaucoma ruled out"]
+        },
+        "cataract": {
+          "positives": ["a fundus view degraded by cataract", "a retinal image obscured by lens opacity", "a fundus with media opacity from cataract", "a fundus image positive for cataract"],
+          "negatives": ["a fundus with no lens opacity", "a retinal image with clear media", "a fundus read as negative for cataract", "a fundus image that is sharply visualized", "a fundus with cataract excluded", "a retinal image free of media opacity", "a fundus without evidence of cataract", "a fundus in which cataract is not seen", "a fundus with unobscured retinal vessels", "a retinal image with cataract ruled out"]
+        },
+        "amd": {
+          "positives": ["a fundus with features of age-related macular degeneration", "a retinal image demonstrating macular drusen", "a fundus with macular degenerative change", "a fundus image positive for age-related macular degeneration"],
+          "negatives": ["a fundus with no macular drusen", "a retinal image without macular degeneration", "a fundus read as negative for age-related macular degeneration", "a fundus image showing a healthy macula", "a fundus with age-related macular degeneration excluded", "a retinal image free of macular degeneration", "a fundus without evidence of age-related macular degeneration", "a fundus in which macular degeneration is not seen", "a fundus with a normal foveal reflex", "a retinal image with age-related macular degeneration ruled out"]
+        },
+        "hypertensive_retinopathy": {
+          "positives": ["a fundus with features of hypertensive retinopathy", "a retinal image demonstrating hypertensive retinopathy", "a fundus with hypertensive vascular change", "a fundus image positive for hypertensive retinopathy"],
+          "negatives": ["a fundus with no arteriolar narrowing", "a retinal image without AV nicking", "a fundus read as negative for hypertensive retinopathy", "a fundus image showing normal caliber arterioles", "a fundus with hypertensive retinopathy excluded", "a retinal image free of hypertensive change", "a fundus without evidence of hypertensive retinopathy", "a fundus in which hypertensive retinopathy is not seen", "a fundus with a normal retinal vasculature", "a retinal image with hypertensive retinopathy ruled out"]
+        },
+        "pathological_myopia": {
+          "positives": ["a fundus with features of pathological myopia", "a retinal image demonstrating myopic degeneration", "a fundus with peripapillary myopic atrophy", "a fundus image positive for pathological myopia"],
+          "negatives": ["a fundus with no myopic degeneration", "a retinal image without peripapillary atrophy", "a fundus read as negative for pathological myopia", "a fundus image showing a normal posterior pole", "a fundus with pathological myopia excluded", "a retinal image free of myopic change", "a fundus without evidence of pathological myopia", "a fundus in which pathological myopia is not seen", "a fundus with no tessellation or crescent", "a retinal image with pathological myopia ruled out"]
+        }
+      }
+    }
+  }
+}

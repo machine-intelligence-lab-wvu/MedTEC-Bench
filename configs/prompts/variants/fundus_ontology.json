@@ -1,0 +1,75 @@
+{
+  "modality": "fundus",
+  "variant": "ontology",
+  "description": "Prompt-robustness variant for retinal fundus: terse ontology-derived ophthalmic terms. Same L4/L5 structure and competing-finding sets as configs/prompts/fundus_prompts.json; only phrasing STYLE changes. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "description": "Ontology-term diagnosis discrimination. 4 canonical positives; 10 canonical negatives naming other ocular findings.",
+      "disease_prompts": {
+        "normal": {
+          "positives": ["Normal fundus", "Healthy retina", "No retinal pathology", "Unremarkable fundus"],
+          "negatives": ["Diabetic retinopathy", "Glaucoma", "Cataract", "Age-related macular degeneration", "Hypertensive retinopathy", "Pathological myopia", "Retinal vein occlusion", "Papilledema", "Macular hole", "Retinitis pigmentosa"]
+        },
+        "diabetic_retinopathy": {
+          "positives": ["Diabetic retinopathy", "Diabetic retinal microangiopathy", "Retinal microaneurysms and hemorrhages", "Diabetic maculopathy"],
+          "negatives": ["Normal fundus", "Glaucoma", "Cataract", "Age-related macular degeneration", "Hypertensive retinopathy", "Pathological myopia", "Retinal vein occlusion", "Papilledema", "Macular hole", "Retinitis pigmentosa"]
+        },
+        "glaucoma": {
+          "positives": ["Glaucoma", "Glaucomatous optic neuropathy", "Optic disc cupping", "Increased cup-to-disc ratio"],
+          "negatives": ["Normal fundus", "Diabetic retinopathy", "Cataract", "Age-related macular degeneration", "Hypertensive retinopathy", "Pathological myopia", "Retinal vein occlusion", "Papilledema", "Optic atrophy", "Macular hole"]
+        },
+        "cataract": {
+          "positives": ["Cataract", "Lens opacity", "Media opacity", "Lenticular opacification"],
+          "negatives": ["Normal fundus", "Diabetic retinopathy", "Glaucoma", "Age-related macular degeneration", "Hypertensive retinopathy", "Pathological myopia", "Retinal vein occlusion", "Papilledema", "Macular hole", "Retinitis pigmentosa"]
+        },
+        "amd": {
+          "positives": ["Age-related macular degeneration", "Macular degeneration", "Macular drusen", "Geographic atrophy"],
+          "negatives": ["Normal fundus", "Diabetic retinopathy", "Glaucoma", "Cataract", "Hypertensive retinopathy", "Pathological myopia", "Retinal vein occlusion", "Macular hole", "Central serous chorioretinopathy", "Retinitis pigmentosa"]
+        },
+        "hypertensive_retinopathy": {
+          "positives": ["Hypertensive retinopathy", "Arteriolar narrowing", "Arteriovenous nicking", "Hypertensive retinal vascular changes"],
+          "negatives": ["Normal fundus", "Diabetic retinopathy", "Glaucoma", "Cataract", "Age-related macular degeneration", "Pathological myopia", "Retinal vein occlusion", "Papilledema", "Macular hole", "Retinitis pigmentosa"]
+        },
+        "pathological_myopia": {
+          "positives": ["Pathological myopia", "Myopic degeneration", "Peripapillary atrophy", "Myopic maculopathy"],
+          "negatives": ["Normal fundus", "Diabetic retinopathy", "Glaucoma", "Cataract", "Age-related macular degeneration", "Hypertensive retinopathy", "Retinal vein occlusion", "Papilledema", "Macular hole", "Retinitis pigmentosa"]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Ontology-term definite negation. 4 canonical presence terms vs 10 terse canonical negations of the same diagnosis. normal row is polarity-flipped.",
+      "disease_prompts": {
+        "normal": {
+          "positives": ["Normal fundus", "No retinal pathology", "No retinal disease", "Unremarkable fundus"],
+          "negatives": ["Retinal disease present", "Abnormal fundus", "Retinal pathology present", "Positive for retinal disease", "Retinal abnormality", "Fundus with disease", "Pathological fundus", "Active retinal disease", "Significant retinal abnormality", "Fundus not within normal limits"]
+        },
+        "diabetic_retinopathy": {
+          "positives": ["Diabetic retinopathy", "Diabetic retinopathy present", "Retinal microaneurysms and hemorrhages", "Diabetic maculopathy"],
+          "negatives": ["No diabetic retinopathy", "Absence of diabetic retinopathy", "Diabetic retinopathy absent", "No evidence of diabetic retinopathy", "Diabetic retinopathy excluded", "Diabetic retinopathy not present", "Negative for diabetic retinopathy", "Without diabetic retinopathy", "No signs of diabetic retinopathy", "Diabetic retinopathy ruled out"]
+        },
+        "glaucoma": {
+          "positives": ["Glaucoma", "Glaucomatous optic neuropathy", "Glaucoma present", "Optic disc cupping"],
+          "negatives": ["No glaucoma", "Absence of glaucoma", "Glaucoma absent", "No evidence of glaucoma", "Glaucoma excluded", "Glaucoma not present", "Negative for glaucoma", "Without glaucoma", "No signs of glaucoma", "Glaucoma ruled out"]
+        },
+        "cataract": {
+          "positives": ["Cataract", "Lens opacity", "Cataract present", "Media opacity"],
+          "negatives": ["No cataract", "Absence of cataract", "Cataract absent", "No evidence of cataract", "Cataract excluded", "Cataract not present", "Negative for cataract", "Without cataract", "Clear media", "Cataract ruled out"]
+        },
+        "amd": {
+          "positives": ["Age-related macular degeneration", "Macular drusen", "Age-related macular degeneration present", "Geographic atrophy"],
+          "negatives": ["No age-related macular degeneration", "Absence of macular degeneration", "Age-related macular degeneration absent", "No evidence of macular degeneration", "Age-related macular degeneration excluded", "Macular degeneration not present", "Negative for age-related macular degeneration", "Without macular drusen", "No signs of macular degeneration", "Age-related macular degeneration ruled out"]
+        },
+        "hypertensive_retinopathy": {
+          "positives": ["Hypertensive retinopathy", "Arteriolar narrowing", "Hypertensive retinopathy present", "Arteriovenous nicking"],
+          "negatives": ["No hypertensive retinopathy", "Absence of hypertensive retinopathy", "Hypertensive retinopathy absent", "No evidence of hypertensive retinopathy", "Hypertensive retinopathy excluded", "Hypertensive retinopathy not present", "Negative for hypertensive retinopathy", "Without arteriolar narrowing", "No signs of hypertensive retinopathy", "Hypertensive retinopathy ruled out"]
+        },
+        "pathological_myopia": {
+          "positives": ["Pathological myopia", "Myopic degeneration", "Pathological myopia present", "Peripapillary atrophy"],
+          "negatives": ["No pathological myopia", "Absence of pathological myopia", "Pathological myopia absent", "No evidence of pathological myopia", "Pathological myopia excluded", "Pathological myopia not present", "Negative for pathological myopia", "Without myopic degeneration", "No signs of pathological myopia", "Pathological myopia ruled out"]
+        }
+      }
+    }
+  }
+}

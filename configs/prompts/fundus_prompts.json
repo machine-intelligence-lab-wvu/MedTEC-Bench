@@ -1,0 +1,540 @@
+{
+  "modality": "fundus",
+  "description": "Retinal fundus photography prompt templates for MedTEC-Bench levels 1-6. Source dataset: ODIR-5K (Ocular Disease Intelligent Recognition). Per-eye single-label filtering against the Left/Right-Diagnostic Keywords columns, target ~150 images per category. The 'Other' (O) bucket is dropped because it is heterogeneous (laser spots, drusen, optic atrophy, vein occlusion, etc.) and would dilute fine-grained probing.",
+  "disease_categories": {
+    "normal": {
+      "display": "Normal Retina",
+      "odir_label": "N",
+      "description": "Normal fundus, no pathology"
+    },
+    "diabetic_retinopathy": {
+      "display": "Diabetic Retinopathy",
+      "odir_label": "D",
+      "description": "Diabetic retinopathy (NPDR mild/moderate/severe and PDR collapsed)"
+    },
+    "glaucoma": {
+      "display": "Glaucoma",
+      "odir_label": "G",
+      "description": "Glaucomatous optic neuropathy (includes suspected glaucoma)"
+    },
+    "cataract": {
+      "display": "Cataract",
+      "odir_label": "C",
+      "description": "Lens opacity / cataract"
+    },
+    "amd": {
+      "display": "Age-related Macular Degeneration",
+      "odir_label": "A",
+      "description": "AMD — dry and wet collapsed"
+    },
+    "hypertensive_retinopathy": {
+      "display": "Hypertensive Retinopathy",
+      "odir_label": "H",
+      "description": "Hypertensive retinopathy"
+    },
+    "pathological_myopia": {
+      "display": "Pathological Myopia",
+      "odir_label": "M",
+      "description": "Pathological / degenerative myopia"
+    }
+  },
+  "sampling": {
+    "n_per_category": 150,
+    "total": 1050,
+    "seed": 42,
+    "image_subdirs": [
+      "ODIR-5K/archive/ODIR-5K/ODIR-5K/Training Images",
+      "ODIR-5K/archive/ODIR-5K/ODIR-5K/Testing Images"
+    ],
+    "annotation_xlsx": "ODIR-5K/archive/ODIR-5K/ODIR-5K/data.xlsx"
+  },
+  "levels": {
+    "1": {
+      "name": "Cross-domain",
+      "description": "Retinal fundus vs everyday objects — shared across all images",
+      "probes": [
+        {
+          "probe_id": "fundus_l1_001",
+          "positives": [
+            "a retinal fundus photograph",
+            "a color photograph of the retina"
+          ],
+          "negatives": [
+            "a red apple on a table",
+            "a golden retriever playing in a park",
+            "a slice of pepperoni pizza",
+            "a blue sports car on a highway",
+            "a cat sleeping on a couch",
+            "a sunset over the ocean",
+            "a stack of books on a shelf",
+            "an acoustic guitar leaning on a wall"
+          ]
+        },
+        {
+          "probe_id": "fundus_l1_002",
+          "positives": [
+            "a fundus camera image of the eye",
+            "a retinal photograph showing the optic disc and vessels"
+          ],
+          "negatives": [
+            "a loaf of bread on a cutting board",
+            "a wooden chair in a room",
+            "a glass of water on a table",
+            "a laptop computer screen",
+            "a flowering plant in a pot",
+            "a park bench in autumn",
+            "a baseball glove on grass",
+            "a wristwatch on a surface"
+          ]
+        },
+        {
+          "probe_id": "fundus_l1_003",
+          "positives": [
+            "a color fundus photograph of the retina",
+            "a retinal image showing the macula and optic nerve head"
+          ],
+          "negatives": [
+            "a bowl of pasta with sauce",
+            "a dog running on a beach",
+            "a smartphone on a desk",
+            "a painting hanging on a wall",
+            "a cup of coffee",
+            "a garden with flowers",
+            "a bicycle helmet",
+            "a running shoe on a white background"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "name": "Cross-modality",
+      "description": "Retinal fundus photography vs other ophthalmic imaging modalities — shared across all images",
+      "probes": [
+        {
+          "probe_id": "fundus_l2_001",
+          "positives": [
+            "a color fundus photograph",
+            "a retinal fundus camera image"
+          ],
+          "negatives": [
+            "an optical coherence tomography (OCT) scan of the retina",
+            "a fluorescein angiography image of the retina",
+            "an indocyanine green angiography image",
+            "a retinal ultrasound B-scan",
+            "an OCT angiography image of the retina"
+          ]
+        },
+        {
+          "probe_id": "fundus_l2_002",
+          "positives": [
+            "a non-stereo color fundus photograph",
+            "a standard retinal fundus image"
+          ],
+          "negatives": [
+            "a stereo fundus photograph pair",
+            "a red-free fundus photograph",
+            "an autofluorescence fundus image",
+            "a scanning laser ophthalmoscopy image",
+            "an ultra-wide-field retinal image"
+          ]
+        },
+        {
+          "probe_id": "fundus_l2_003",
+          "positives": [
+            "a digital color fundus photograph of the retina",
+            "a fundus image of the posterior pole"
+          ],
+          "negatives": [
+            "a slit lamp photograph of the anterior segment",
+            "a corneal topography image",
+            "a specular microscopy image of the cornea",
+            "a Goldmann visual field plot",
+            "a Humphrey visual field printout"
+          ]
+        }
+      ]
+    },
+    "3": {
+      "name": "Cross-anatomy",
+      "description": "Retinal fundus vs other anatomical imaging sites — shared across all images",
+      "probes": [
+        {
+          "probe_id": "fundus_l3_001",
+          "positives": [
+            "a retinal fundus photograph",
+            "a color fundus image of the posterior eye"
+          ],
+          "negatives": [
+            "a chest x-ray",
+            "a brain MRI scan",
+            "a dermoscopy image of skin",
+            "an abdominal CT scan",
+            "a histopathology slide"
+          ]
+        },
+        {
+          "probe_id": "fundus_l3_002",
+          "positives": [
+            "a fundus image showing the optic disc",
+            "a retinal photograph of the macular region"
+          ],
+          "negatives": [
+            "a fundus image of a kidney",
+            "a photograph of a liver surface",
+            "a colonoscopy image of the colon",
+            "a laryngoscopy image of the vocal cords",
+            "a dental panoramic radiograph"
+          ]
+        },
+        {
+          "probe_id": "fundus_l3_003",
+          "positives": [
+            "a photograph of the retina through the pupil",
+            "a fundus photograph of the posterior segment of the eye"
+          ],
+          "negatives": [
+            "a photograph of a heart chamber",
+            "a photograph of lung tissue",
+            "a photograph of the tympanic membrane",
+            "a photograph of the esophageal mucosa",
+            "a photograph of the cervix"
+          ]
+        }
+      ]
+    },
+    "4": {
+      "name": "Fine-grained",
+      "description": "Image-specific prompts based on true diagnosis. 4 positives describe the true diagnosis with clinical features; 10 negatives describe other fundus pathologies.",
+      "disease_prompts": {
+        "normal": {
+          "positives": [
+            "healthy optic disc with sharp margins and a normal cup-to-disc ratio",
+            "normal macular reflex with intact retinal vasculature",
+            "uniformly orange fundus without hemorrhage, exudate, or pigmentary change",
+            "normal fundus with clear media and unremarkable peripheral retina"
+          ],
+          "negatives": [
+            "a fundus image showing diabetic retinopathy",
+            "a fundus image showing glaucomatous optic disc cupping",
+            "a fundus image showing cataract",
+            "a fundus image showing age-related macular degeneration",
+            "a fundus image showing hypertensive retinopathy",
+            "a fundus image showing pathological myopia",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing papilledema",
+            "a fundus image showing macular hole",
+            "a fundus image showing retinal detachment"
+          ]
+        },
+        "diabetic_retinopathy": {
+          "positives": [
+            "microaneurysms, dot-and-blot hemorrhages, and hard exudates in the posterior pole",
+            "cotton-wool spots and venous beading consistent with diabetic retinopathy",
+            "neovascularization at the disc with preretinal hemorrhage",
+            "macular edema with a circinate hard exudate ring"
+          ],
+          "negatives": [
+            "a normal fundus with no retinal pathology",
+            "a fundus image showing glaucomatous optic disc cupping",
+            "a fundus image showing cataract",
+            "a fundus image showing age-related macular degeneration",
+            "a fundus image showing hypertensive retinopathy",
+            "a fundus image showing pathological myopia",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing papilledema",
+            "a fundus image showing macular hole",
+            "a fundus image showing retinitis pigmentosa"
+          ]
+        },
+        "glaucoma": {
+          "positives": [
+            "increased optic disc cup-to-disc ratio with thinning of the neuroretinal rim",
+            "vertically elongated optic cup with notching of the inferior rim",
+            "peripapillary nerve fiber layer defect with optic disc excavation",
+            "deep optic cup with peripapillary nerve fiber loss"
+          ],
+          "negatives": [
+            "a normal fundus with no retinal pathology",
+            "a fundus image showing diabetic retinopathy",
+            "a fundus image showing cataract",
+            "a fundus image showing age-related macular degeneration",
+            "a fundus image showing hypertensive retinopathy",
+            "a fundus image showing pathological myopia",
+            "a fundus image showing optic disc edema",
+            "a fundus image showing optic atrophy with a pale disc",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing macular hole"
+          ]
+        },
+        "cataract": {
+          "positives": [
+            "diffusely hazy fundus view due to lens opacity",
+            "blurred optic disc and retinal vessels obscured by media opacity",
+            "yellowish lenticular opacification reducing fundus clarity",
+            "advanced cataract producing a poor-quality fundus image"
+          ],
+          "negatives": [
+            "a normal fundus with clear media",
+            "a fundus image showing diabetic retinopathy",
+            "a fundus image showing glaucomatous optic disc cupping",
+            "a fundus image showing age-related macular degeneration",
+            "a fundus image showing hypertensive retinopathy",
+            "a fundus image showing pathological myopia",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing papilledema",
+            "a fundus image showing vitreous hemorrhage",
+            "a fundus image showing retinitis pigmentosa"
+          ]
+        },
+        "amd": {
+          "positives": [
+            "macular drusen with retinal pigment epithelium changes",
+            "geographic atrophy at the fovea with sharply demarcated borders",
+            "subretinal hemorrhage and fluid consistent with neovascular AMD",
+            "confluent soft drusen and pigmentary mottling at the macula"
+          ],
+          "negatives": [
+            "a normal fundus with no retinal pathology",
+            "a fundus image showing diabetic retinopathy",
+            "a fundus image showing glaucomatous optic disc cupping",
+            "a fundus image showing cataract",
+            "a fundus image showing hypertensive retinopathy",
+            "a fundus image showing pathological myopia",
+            "a fundus image showing macular hole",
+            "a fundus image showing central serous chorioretinopathy",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing chorioretinal coloboma"
+          ]
+        },
+        "hypertensive_retinopathy": {
+          "positives": [
+            "arteriolar narrowing with arteriovenous nicking",
+            "flame-shaped hemorrhages and cotton-wool spots in a hypertensive pattern",
+            "narrowed arterioles with retinal hemorrhages",
+            "hypertensive retinopathy with disc edema and retinal hemorrhages"
+          ],
+          "negatives": [
+            "a normal fundus with no retinal pathology",
+            "a fundus image showing diabetic retinopathy",
+            "a fundus image showing glaucomatous optic disc cupping",
+            "a fundus image showing cataract",
+            "a fundus image showing age-related macular degeneration",
+            "a fundus image showing pathological myopia",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing macular hole",
+            "a fundus image showing retinitis pigmentosa",
+            "a fundus image showing optic atrophy with a pale disc"
+          ]
+        },
+        "pathological_myopia": {
+          "positives": [
+            "tessellated fundus with peripapillary atrophy",
+            "myopic crescent at the optic disc with chorioretinal thinning",
+            "lacquer cracks at the macula with chorioretinal atrophy",
+            "Fuchs spot and posterior staphyloma in pathological myopia"
+          ],
+          "negatives": [
+            "a normal fundus with no retinal pathology",
+            "a fundus image showing diabetic retinopathy",
+            "a fundus image showing glaucomatous optic disc cupping",
+            "a fundus image showing cataract",
+            "a fundus image showing age-related macular degeneration",
+            "a fundus image showing hypertensive retinopathy",
+            "a fundus image showing retinal vein occlusion",
+            "a fundus image showing papilledema",
+            "a fundus image showing macular hole",
+            "a fundus image showing retinitis pigmentosa"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "description": "Image-specific: presence vs absence of the true diagnosis. 4 positives affirm the diagnosis; 10 negatives are linguistic negations of the same diagnosis.",
+      "disease_prompts": {
+        "normal": {
+          "positives": [
+            "no diabetic retinopathy, glaucoma, or AMD",
+            "no retinal hemorrhage, exudate, or drusen",
+            "no optic disc cupping or pathological pigmentary change",
+            "fundus shows no signs of retinal disease"
+          ],
+          "negatives": [
+            "fundus showing pathologic findings",
+            "abnormal retinal findings present on fundus",
+            "fundus positive for retinal disease",
+            "fundus with hemorrhages and exudates",
+            "fundus showing optic disc cupping",
+            "fundus showing macular drusen",
+            "fundus showing retinal pathology",
+            "fundus showing arteriolar narrowing",
+            "fundus showing chorioretinal atrophy",
+            "fundus showing diffuse retinal abnormality"
+          ]
+        },
+        "diabetic_retinopathy": {
+          "positives": [
+            "diabetic retinopathy visible on fundus photography",
+            "fundus image shows diabetic retinopathy",
+            "diabetic retinopathy identified on fundus examination",
+            "microaneurysms and hemorrhages consistent with diabetic retinopathy"
+          ],
+          "negatives": [
+            "fundus showing no diabetic retinopathy",
+            "no evidence of diabetic retinopathy on fundus",
+            "fundus negative for diabetic retinopathy",
+            "diabetic retinopathy absent on fundus",
+            "fundus without diabetic retinopathy",
+            "no microaneurysms or hemorrhages on fundus",
+            "fundus clear of diabetic retinopathy",
+            "diabetic retinopathy excluded on fundus",
+            "no signs of diabetic retinopathy on fundus",
+            "diabetic retinopathy not seen on fundus"
+          ]
+        },
+        "glaucoma": {
+          "positives": [
+            "glaucomatous optic neuropathy on fundus",
+            "fundus image shows glaucoma",
+            "glaucoma identified on fundus examination",
+            "optic disc cupping consistent with glaucoma"
+          ],
+          "negatives": [
+            "fundus showing no glaucoma",
+            "no evidence of glaucoma on fundus",
+            "fundus negative for glaucoma",
+            "glaucoma absent on fundus",
+            "fundus without glaucomatous cupping",
+            "no enlargement of the optic cup",
+            "fundus clear of glaucomatous optic neuropathy",
+            "glaucoma excluded on fundus",
+            "no signs of glaucoma on fundus",
+            "glaucoma not seen on fundus"
+          ]
+        },
+        "cataract": {
+          "positives": [
+            "cataract evident on fundus image",
+            "fundus image obscured by lens opacity",
+            "cataract visible on fundus photography",
+            "lens opacity reducing fundus clarity"
+          ],
+          "negatives": [
+            "fundus showing no cataract",
+            "no evidence of cataract on fundus",
+            "fundus negative for cataract",
+            "cataract absent on fundus",
+            "fundus without lens opacity",
+            "fundus is sharply visualized with clear media",
+            "fundus clear of cataract",
+            "cataract excluded on fundus",
+            "no signs of cataract on fundus",
+            "cataract not seen on fundus"
+          ]
+        },
+        "amd": {
+          "positives": [
+            "age-related macular degeneration on fundus",
+            "fundus image shows age-related macular degeneration",
+            "AMD identified on fundus examination",
+            "macular drusen and pigmentary changes consistent with AMD"
+          ],
+          "negatives": [
+            "fundus showing no age-related macular degeneration",
+            "no evidence of AMD on fundus",
+            "fundus negative for AMD",
+            "AMD absent on fundus",
+            "fundus without macular drusen",
+            "no geographic atrophy at the fovea",
+            "fundus clear of age-related macular degeneration",
+            "AMD excluded on fundus",
+            "no signs of AMD on fundus",
+            "age-related macular degeneration not seen on fundus"
+          ]
+        },
+        "hypertensive_retinopathy": {
+          "positives": [
+            "hypertensive retinopathy on fundus",
+            "fundus image shows hypertensive retinopathy",
+            "hypertensive retinopathy identified on fundus examination",
+            "arteriolar narrowing and AV nicking consistent with hypertensive retinopathy"
+          ],
+          "negatives": [
+            "fundus showing no hypertensive retinopathy",
+            "no evidence of hypertensive retinopathy on fundus",
+            "fundus negative for hypertensive retinopathy",
+            "hypertensive retinopathy absent on fundus",
+            "fundus without arteriolar narrowing",
+            "no flame hemorrhages or cotton-wool spots",
+            "fundus clear of hypertensive retinopathy",
+            "hypertensive retinopathy excluded on fundus",
+            "no signs of hypertensive retinopathy on fundus",
+            "hypertensive retinopathy not seen on fundus"
+          ]
+        },
+        "pathological_myopia": {
+          "positives": [
+            "pathological myopia on fundus",
+            "fundus image shows pathological myopia",
+            "pathological myopia identified on fundus examination",
+            "tessellated fundus and peripapillary atrophy consistent with pathological myopia"
+          ],
+          "negatives": [
+            "fundus showing no pathological myopia",
+            "no evidence of pathological myopia on fundus",
+            "fundus negative for pathological myopia",
+            "pathological myopia absent on fundus",
+            "fundus without myopic crescent",
+            "no peripapillary atrophy or tessellated fundus",
+            "fundus clear of pathological myopia",
+            "pathological myopia excluded on fundus",
+            "no signs of pathological myopia on fundus",
+            "pathological myopia not seen on fundus"
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Attribute binding",
+      "description": "Modifier sensitivity (vessel caliber, cup-to-disc ratio, region). Shared template probes.",
+      "probes": [
+        {
+          "probe_id": "fundus_l6_001",
+          "positives": [
+            "a fundus photograph showing a small optic disc cup"
+          ],
+          "negatives": [
+            "a fundus photograph showing a large optic disc cup",
+            "a fundus photograph showing a pale optic disc",
+            "a fundus photograph showing a swollen optic disc",
+            "a fundus photograph showing optic disc coloboma"
+          ]
+        },
+        {
+          "probe_id": "fundus_l6_002",
+          "positives": [
+            "a fundus photograph showing narrow retinal arteries"
+          ],
+          "negatives": [
+            "a fundus photograph showing dilated retinal arteries",
+            "a fundus photograph showing tortuous retinal veins",
+            "a fundus photograph showing normal caliber retinal vessels",
+            "a fundus photograph showing sheathed retinal vessels"
+          ]
+        },
+        {
+          "probe_id": "fundus_l6_003",
+          "positives": [
+            "a fundus photograph centered on the macula"
+          ],
+          "negatives": [
+            "a fundus photograph centered on the optic disc",
+            "a fundus photograph of the nasal retina",
+            "a fundus photograph of the temporal periphery",
+            "a fundus photograph of the superior retina"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+model,definite,definite_lo,definite_hi,definite_n,definite_collapse_certain,hedged,hedged_lo,hedged_hi,hedged_n,hedged_collapse_certain,ruled_out,ruled_out_lo,ruled_out_hi,ruled_out_n,ruled_out_collapse_certain,historical,historical_lo,historical_hi,historical_n,historical_collapse_certain
+Merlin (3D CT),-0.0002,-0.0123,+0.0086,750,0,-0.0464,-0.0519,-0.0375,750,1,+0.0231,+0.0134,+0.0349,750,0,+0.0344,+0.0218,+0.0477,750,0

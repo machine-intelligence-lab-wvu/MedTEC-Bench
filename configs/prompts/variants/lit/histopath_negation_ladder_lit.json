@@ -1,0 +1,77 @@
+{
+  "modality": "histopath",
+  "description": "LITERATURE-GROUNDED negation ladder for histopath. Cue terms verbatim from Panicek & Hricak (AJR 2016) certainty lexicon and NegEx/ConText (Chapman 2001; Harkema 2009).",
+  "provenance": "Panicek&Hricak2016; NegEx Chapman2001; ConText Harkema2009",
+  "ordinal": {
+    "present": 2,
+    "probable": 1,
+    "possible": 0,
+    "unlikely": -1,
+    "absent_plain": -2,
+    "absent_evidential": -2
+  },
+  "subtype_map": {
+    "definite": [
+      "absent_plain"
+    ],
+    "hedged": [
+      "possible",
+      "unlikely"
+    ],
+    "ruled_out": [
+      "absent_evidential"
+    ],
+    "historical": [
+      "historical"
+    ]
+  },
+  "absent_anchor_category": "norm",
+  "findings": {
+    "tum": {
+      "rungs": {
+        "present": [
+          "histopathology consistent with malignancy",
+          "findings consistent with malignancy on histopathology",
+          "histopathology demonstrating malignancy"
+        ],
+        "probable": [
+          "histopathology suspicious for malignancy",
+          "probable malignancy on histopathology",
+          "findings probably representing malignancy on histopathology"
+        ],
+        "possible": [
+          "possible malignancy on histopathology",
+          "histopathology possibly showing malignancy",
+          "malignancy cannot be excluded on histopathology"
+        ],
+        "unlikely": [
+          "malignancy less likely on histopathology",
+          "malignancy unlikely on histopathology",
+          "histopathology findings unlikely to represent malignancy"
+        ],
+        "absent_plain": [
+          "histopathology negative for malignancy",
+          "no malignancy on histopathology",
+          "histopathology without malignancy",
+          "malignancy absent on histopathology"
+        ],
+        "absent_evidential": [
+          "no evidence of malignancy on histopathology",
+          "malignancy ruled out on histopathology",
+          "malignancy excluded on histopathology",
+          "histopathology shows no evidence of malignancy"
+        ],
+        "historical": [
+          "history of malignancy, resolved on histopathology",
+          "prior malignancy, no longer seen on histopathology",
+          "previously documented malignancy, resolved"
+        ]
+      },
+      "historical": [
+        "history of malignancy, resolved on histopathology",
+        "prior malignancy, no longer seen on histopathology",
+        "previously documented malignancy, resolved"
+      ]
+    }
+  }
+}

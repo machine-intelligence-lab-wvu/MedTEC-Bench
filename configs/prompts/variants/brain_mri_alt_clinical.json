@@ -1,0 +1,177 @@
+{
+  "modality": "brain_mri",
+  "variant": "alt_clinical",
+  "description": "Exp A prompt-robustness variant (alt_clinical) for brain_mri, templated from clinical content spec (scripts/_gen_promptrobust_variants.py). Same L4/L5 classes and 4pos/10neg counts as configs/prompts/brain_mri_prompts.json. L4+L5 only.",
+  "levels": {
+    "4": {
+      "name": "Fine-grained",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "a brain MRI with no evidence of dementia",
+            "a brain MRI demonstrating no dementia",
+            "a brain MRI compatible with no dementia",
+            "a brain MRI showing no evidence of dementia"
+          ],
+          "negatives": [
+            "a brain MRI demonstrating very mild dementia",
+            "a brain MRI demonstrating mild dementia",
+            "a brain MRI demonstrating moderate dementia",
+            "a brain MRI with an ischemic infarct",
+            "a brain MRI with a brain tumor",
+            "a brain MRI with features of multiple sclerosis",
+            "a brain MRI with hydrocephalus",
+            "a brain MRI with small-vessel ischemic change",
+            "a brain MRI with an intracranial hemorrhage",
+            "a brain MRI with encephalomalacia"
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "a brain MRI with features of very mild dementia",
+            "a brain MRI demonstrating very mild dementia",
+            "a brain MRI compatible with very mild dementia",
+            "a brain MRI showing features of very mild dementia"
+          ],
+          "negatives": [
+            "a brain MRI demonstrating no dementia",
+            "a brain MRI demonstrating mild dementia",
+            "a brain MRI demonstrating moderate dementia",
+            "a brain MRI with an ischemic infarct",
+            "a brain MRI with a brain tumor",
+            "a brain MRI with features of multiple sclerosis",
+            "a brain MRI with hydrocephalus",
+            "a brain MRI with small-vessel ischemic change",
+            "a brain MRI with an intracranial hemorrhage",
+            "a brain MRI with encephalomalacia"
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "a brain MRI with features of mild dementia",
+            "a brain MRI demonstrating mild dementia",
+            "a brain MRI compatible with mild dementia",
+            "a brain MRI showing features of mild dementia"
+          ],
+          "negatives": [
+            "a brain MRI demonstrating no dementia",
+            "a brain MRI demonstrating very mild dementia",
+            "a brain MRI demonstrating moderate dementia",
+            "a brain MRI with an ischemic infarct",
+            "a brain MRI with a brain tumor",
+            "a brain MRI with features of multiple sclerosis",
+            "a brain MRI with hydrocephalus",
+            "a brain MRI with small-vessel ischemic change",
+            "a brain MRI with an intracranial hemorrhage",
+            "a brain MRI with encephalomalacia"
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "a brain MRI with features of moderate dementia",
+            "a brain MRI demonstrating moderate dementia",
+            "a brain MRI compatible with moderate dementia",
+            "a brain MRI showing features of moderate dementia"
+          ],
+          "negatives": [
+            "a brain MRI demonstrating no dementia",
+            "a brain MRI demonstrating very mild dementia",
+            "a brain MRI demonstrating mild dementia",
+            "a brain MRI with an ischemic infarct",
+            "a brain MRI with a brain tumor",
+            "a brain MRI with features of multiple sclerosis",
+            "a brain MRI with hydrocephalus",
+            "a brain MRI with small-vessel ischemic change",
+            "a brain MRI with an intracranial hemorrhage",
+            "a brain MRI with encephalomalacia"
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Negation",
+      "disease_prompts": {
+        "non_demented": {
+          "positives": [
+            "a brain MRI read as normal",
+            "a brain MRI free of disease",
+            "a brain MRI with no abnormality",
+            "a brain MRI within normal limits"
+          ],
+          "negatives": [
+            "a brain MRI demonstrating disease",
+            "a brain MRI read as abnormal",
+            "a brain MRI with pathology present",
+            "a brain MRI positive for disease",
+            "a brain MRI with an abnormality present",
+            "a brain MRI showing active disease",
+            "a brain MRI with a significant abnormality",
+            "a brain MRI outside normal limits",
+            "a brain MRI with underlying pathology",
+            "a brain MRI demonstrating an abnormality"
+          ]
+        },
+        "very_mild_dementia": {
+          "positives": [
+            "a brain MRI with features of very mild dementia",
+            "a brain MRI demonstrating very mild dementia",
+            "a brain MRI positive for very mild dementia",
+            "a brain MRI showing features of very mild dementia"
+          ],
+          "negatives": [
+            "a brain MRI without very mild dementia",
+            "a brain MRI negative for very mild dementia",
+            "a brain MRI showing no very mild dementia",
+            "a brain MRI with no evidence of very mild dementia",
+            "a brain MRI with very mild dementia excluded",
+            "a brain MRI free of very mild dementia",
+            "a brain MRI in which very mild dementia is not seen",
+            "a brain MRI with very mild dementia ruled out",
+            "a brain MRI without very mild dementia identified",
+            "a brain MRI with no very mild dementia"
+          ]
+        },
+        "mild_dementia": {
+          "positives": [
+            "a brain MRI with features of mild dementia",
+            "a brain MRI demonstrating mild dementia",
+            "a brain MRI positive for mild dementia",
+            "a brain MRI showing features of mild dementia"
+          ],
+          "negatives": [
+            "a brain MRI without mild dementia",
+            "a brain MRI negative for mild dementia",
+            "a brain MRI showing no mild dementia",
+            "a brain MRI with no evidence of mild dementia",
+            "a brain MRI with mild dementia excluded",
+            "a brain MRI free of mild dementia",
+            "a brain MRI in which mild dementia is not seen",
+            "a brain MRI with mild dementia ruled out",
+            "a brain MRI without mild dementia identified",
+            "a brain MRI with no mild dementia"
+          ]
+        },
+        "moderate_dementia": {
+          "positives": [
+            "a brain MRI with features of moderate dementia",
+            "a brain MRI demonstrating moderate dementia",
+            "a brain MRI positive for moderate dementia",
+            "a brain MRI showing features of moderate dementia"
+          ],
+          "negatives": [
+            "a brain MRI without moderate dementia",
+            "a brain MRI negative for moderate dementia",
+            "a brain MRI showing no moderate dementia",
+            "a brain MRI with no evidence of moderate dementia",
+            "a brain MRI with moderate dementia excluded",
+            "a brain MRI free of moderate dementia",
+            "a brain MRI in which moderate dementia is not seen",
+            "a brain MRI with moderate dementia ruled out",
+            "a brain MRI without moderate dementia identified",
+            "a brain MRI with no moderate dementia"
+          ]
+        }
+      }
+    }
+  }
+}
