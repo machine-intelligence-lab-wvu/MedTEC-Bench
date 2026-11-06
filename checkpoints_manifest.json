@@ -1,0 +1,189 @@
+{
+  "description": "Exact checkpoints used for every result in MedTEC-Bench (NeurIPS 2026 E&D). Pin Hugging Face loads with revision=<revision>; verify files by sha256.",
+  "models": [
+    {
+      "model": "biomedclip",
+      "display_name": "BiomedCLIP",
+      "source": "huggingface",
+      "repo": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+      "url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+      "revision": "9f341de24bfb00180f1b847274256e9b65a3a32e",
+      "files": [
+        {
+          "path": "open_clip_pytorch_model.bin",
+          "bytes": 783705670,
+          "sha256": "52cc993c5c5ff962bd0c60931874bc001e7e9b41666a385530f4a036294576be"
+        }
+      ]
+    },
+    {
+      "model": "pmc_clip",
+      "display_name": "PMC-CLIP",
+      "source": "huggingface",
+      "repo": "ryanyip7777/pmc_vit_l_14",
+      "url": "https://huggingface.co/ryanyip7777/pmc_vit_l_14",
+      "revision": "a1db5a40d0a07855a435d9fabde846fdf7028be4",
+      "files": [
+        {
+          "path": "open_clip_model.safetensors",
+          "bytes": 1710517724,
+          "sha256": "24bf00a8d2ed5b7b5809fd4e6f48d3db04f745dd51b94edcdf8c33a43b6280a6"
+        }
+      ]
+    },
+    {
+      "model": "pubmedclip",
+      "display_name": "PubMedCLIP",
+      "source": "huggingface",
+      "repo": "flaviagiammarino/pubmed-clip-vit-base-patch32",
+      "url": "https://huggingface.co/flaviagiammarino/pubmed-clip-vit-base-patch32",
+      "revision": "26c0c67f6da303ad2a38909130bd35744ea93517",
+      "files": [
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 605222477,
+          "sha256": "4daa7650d2b47e55c37b5ca7dcabe826fd82407c26028a574bcc422f35a94aa4"
+        }
+      ]
+    },
+    {
+      "model": "openclip_vitb32",
+      "display_name": "OpenCLIP ViT-B/32",
+      "source": "huggingface",
+      "repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "url": "https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+      "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+      "files": [
+        {
+          "path": "open_clip_model.safetensors",
+          "bytes": 605143316,
+          "sha256": "ac4f8c4b88af6d963118cbf40ad93176d092abbedfcb752601ae1866352656e6"
+        }
+      ],
+      "note": "open_clip ViT-B-32 / laion2b_s34b_b79k"
+    },
+    {
+      "model": "openclip_vitl14",
+      "display_name": "OpenCLIP ViT-L/14",
+      "source": "huggingface",
+      "repo": "laion/CLIP-ViT-L-14-laion2B-s32B-b82K",
+      "url": "https://huggingface.co/laion/CLIP-ViT-L-14-laion2B-s32B-b82K",
+      "revision": "1627032197142fbe2a7cfec626f4ced3ae60d07a",
+      "files": [
+        {
+          "path": "open_clip_pytorch_model.bin",
+          "bytes": 1710631365,
+          "sha256": "5ddb47339f44e4fd9cace3d3960d38af1b51a25857440cfae90afc44706d7e2b"
+        }
+      ],
+      "note": "open_clip ViT-L-14 / laion2b_s32b_b82k"
+    },
+    {
+      "model": "siglip",
+      "display_name": "SigLIP",
+      "source": "huggingface",
+      "repo": "google/siglip-base-patch16-224",
+      "url": "https://huggingface.co/google/siglip-base-patch16-224",
+      "revision": "7fd15f0689c79d79e38b1c2e2e2370a7bf2761ed",
+      "files": [
+        {
+          "path": "model.safetensors",
+          "bytes": 812672320,
+          "sha256": "2c63cb7d1f2e95ba501893cbb8faeb4ea9a3af295498d35097126228659c2af8"
+        }
+      ]
+    },
+    {
+      "model": "medclip",
+      "display_name": "MedCLIP",
+      "source": "local",
+      "path": "pretrained/medclip-vit/pytorch_model.bin",
+      "files": [
+        {
+          "path": "pretrained/medclip-vit/pytorch_model.bin",
+          "bytes": 546888925,
+          "sha256": "07bf9f917ccce482ea30ec84e533a30c3ad395c424d3624f6b72edf8484f8126"
+        }
+      ],
+      "note": "ViT variant from GitHub RyanWangZf/MedCLIP; place at pretrained/medclip-vit/"
+    },
+    {
+      "model": "chexzero",
+      "display_name": "CheXzero",
+      "source": "local",
+      "path": "pretrained/chexzero/pytorch_model.bin",
+      "files": [
+        {
+          "path": "pretrained/chexzero/pytorch_model.bin",
+          "bytes": 353548709,
+          "sha256": "40ad37ea1933b6ae021a570d1a228e1b21ce1f7f4741348050766c365de214e9"
+        }
+      ],
+      "note": "GitHub rajpurkarlab/CheXzero release; place at pretrained/chexzero/"
+    },
+    {
+      "model": "biovil",
+      "display_name": "BioViL",
+      "source": "huggingface",
+      "repo": "microsoft/BiomedVLP-CXR-BERT-specialized",
+      "url": "https://huggingface.co/microsoft/BiomedVLP-CXR-BERT-specialized",
+      "revision": "5157bdba1437a3aed316dacb1a5b68edf96b9902",
+      "files": [
+        {
+          "path": "model.safetensors",
+          "bytes": 438546672,
+          "sha256": "ab65abb62d945287a80e985d3d37bfe82ff4003ec1f38c48758b36759941762d"
+        }
+      ],
+      "note": "text encoder; image encoder via hi-ml-multimodal get_biovil_image_encoder()"
+    },
+    {
+      "model": "conch",
+      "display_name": "CONCH",
+      "source": "huggingface",
+      "repo": "MahmoodLab/conch",
+      "url": "https://huggingface.co/MahmoodLab/conch",
+      "revision": "f9ca9f877171a28ade80228fb195ac5d79003357",
+      "files": [
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 802235437,
+          "sha256": "40a9644b9ba0e83a74576e0a5e5f7313599fa9c9cdaf3c20f8a3e271b0e9ae7c"
+        }
+      ],
+      "note": "gated on Hugging Face; request access"
+    },
+    {
+      "model": "plip",
+      "display_name": "PLIP",
+      "source": "huggingface",
+      "repo": "vinid/plip",
+      "url": "https://huggingface.co/vinid/plip",
+      "revision": "67ade53ddd32195868f422585f72698ef5d15094",
+      "files": [
+        {
+          "path": "pytorch_model.bin",
+          "bytes": 605241933,
+          "sha256": "98a7f8d2a1f4a8fc8f6dedb3a16ff7efbe02a7ef67c93904c80bca9767c69630"
+        }
+      ]
+    },
+    {
+      "model": "merlin",
+      "display_name": "MERLIN",
+      "source": "huggingface",
+      "repo": "stanfordmimi/Merlin",
+      "url": "https://huggingface.co/stanfordmimi/Merlin",
+      "revision": "8789c761787c7686e45c7bc95036adb804c1cfa0",
+      "files": [
+        {
+          "path": "i3_resnet_clinical_longformer_best_clip_04-02-2024_23-21-36_epoch_99.pt",
+          "bytes": 1084889630,
+          "sha256": "e274ec09ba6cf86ab4e5b9923a346e1ef35b4150607896264941875975674ff6"
+        }
+      ],
+      "provenance": "Run 2026-07-25 in an environment since removed; revision is the Hub main commit current on that date, sha256 from Hub LFS metadata.",
+      "note": "loaded via pip install merlin-vlm"
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "citeAs": "cr:citeAs",
+    "column": "cr:column",
+    "conformsTo": "dct:conformsTo",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "data": {
+      "@id": "cr:data",
+      "@type": "@json"
+    },
+    "dataType": {
+      "@id": "cr:dataType",
+      "@type": "@vocab"
+    },
+    "dct": "http://purl.org/dc/terms/",
+    "examples": {
+      "@id": "cr:examples",
+      "@type": "@json"
+    },
+    "extract": "cr:extract",
+    "field": "cr:field",
+    "fileProperty": "cr:fileProperty",
+    "fileObject": "cr:fileObject",
+    "fileSet": "cr:fileSet",
+    "format": "cr:format",
+    "includes": "cr:includes",
+    "isLiveDataset": "cr:isLiveDataset",
+    "jsonPath": "cr:jsonPath",
+    "key": "cr:key",
+    "md5": "cr:md5",
+    "parentField": "cr:parentField",
+    "path": "cr:path",
+    "recordSet": "cr:recordSet",
+    "references": "cr:references",
+    "regex": "cr:regex",
+    "repeated": "cr:repeated",
+    "replace": "cr:replace",
+    "sc": "https://schema.org/",
+    "samplingRate": "cr:samplingRate",
+    "equivalentProperty": "cr:equivalentProperty",
+    "separator": "cr:separator",
+    "source": "cr:source",
+    "subField": "cr:subField",
+    "transform": "cr:transform"
+  },
+  "@type": "sc:Dataset",
+  "conformsTo": "http://mlcommons.org/croissant/1.0",
+  "name": "MedTEC-Bench",
+  "description": "A five-level diagnostic benchmark that probes whether the text encoder of dual-encoder medical vision-language models separates semantically distinct descriptions of a fixed image: domain, modality, anatomy, finding, and negation. Covers chest X-ray, brain MRI, abdominal CT, retinal fundus, dermoscopy, and histopathology. Released as prompt sets and anchor-image manifests; images are obtained from the original datasets.",
+  "url": "https://github.com/machine-intelligence-lab-wvu/MedTEC-Bench",
+  "license": "https://opensource.org/licenses/MIT",
+  "version": "1.0.0",
+  "datePublished": "2026-11-06",
+  "keywords": [
+    "medical vision-language models",
+    "benchmark",
+    "CLIP",
+    "negation",
+    "semantic specificity",
+    "evaluation"
+  ],
+  "creator": [
+    {
+      "@type": "sc:Person",
+      "name": "Ahsan Habib Akash"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Alina Devkota"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Donald A. Adjeroh"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Binod Bhattarai"
+    },
+    {
+      "@type": "sc:Person",
+      "name": "Prashnna Kumar Gyawali"
+    }
+  ],
+  "citeAs": "@inproceedings{akash2026medtec, title={When Medical VLMs Stop Understanding: MedTEC-Bench for Probing Semantic Specificity}, author={Akash, Ahsan Habib and Devkota, Alina and Adjeroh, Donald A. and Bhattarai, Binod and Gyawali, Prashnna Kumar}, booktitle={Advances in Neural Information Processing Systems (Evaluations and Datasets Track)}, year={2026}}",
+  "isLiveDataset": false,
+  "rai:dataCollection": "Anchor images are sampled (seed 42, stratified, single-label) from public medical imaging datasets; prompts were written by the authors from clinical label vocabularies, with negation phrasings drawn from NegEx, ConText and the Panicek-Hricak certainty lexicon.",
+  "rai:dataCollectionType": [
+    "Secondary Data Analysis",
+    "Manual Human Curation"
+  ],
+  "rai:dataPreprocessingProtocol": "Single-label filtering and per-class stratified sampling to about 1,000 anchors per modality; CT anchors use a windowed representative axial slice for 2D models and the full volume for MERLIN. Selection scripts: scripts/select_*_probes.py, scripts/build_ct_disease_probes.py.",
+  "rai:dataAnnotationProtocol": "No new image annotation. Labels come from the source datasets; prompt positives and negatives are assigned from those labels.",
+  "rai:dataUseCases": "Diagnostic evaluation of the text-side semantic discrimination of dual-encoder medical VLMs. Not validated for image-side grounding, generative or cross-attention models, or for any clinical decision.",
+  "rai:dataLimitations": "English prompts only; template-based wording (robustness variants are provided); one representative slice per CT scan for 2D models; source-dataset label noise is inherited. Passing every level is necessary, not sufficient, for clinical use.",
+  "rai:dataBiases": "Demographic composition is inherited from the source datasets. Subgroup analysis (paper Appendix L) finds a small skin-tone gradient (gap at most 0.044 DS at L1-L3) and sex and age gaps at most 0.019; finding-level skin-tone evaluation is not covered.",
+  "rai:personalSensitiveInformation": "None released. Manifests contain only source-dataset image IDs and labels, plus the de-identified sex, age and skin-type fields already public in ISIC/HAM10000. No images or reports are redistributed.",
+  "rai:dataSocialImpact": "Intended to expose clinically relevant failures of medical VLMs before deployment. Risk: over-reliance on the benchmark as a certification; it must not replace clinical validation or non-AI safeguards.",
+  "rai:hasSyntheticData": false,
+  "rai:dataReleaseMaintenancePlan": "Maintained by the authors at the GitHub repository; issues and corrections are tracked there and versioned releases are tagged.",
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "repo",
+      "name": "repo",
+      "description": "MedTEC-Bench GitHub repository.",
+      "contentUrl": "https://github.com/machine-intelligence-lab-wvu/MedTEC-Bench.git",
+      "encodingFormat": "git+https",
+      "sha256": "main"
+    },
+    {
+      "@type": "cr:FileSet",
+      "@id": "prompt-files",
+      "name": "prompt-files",
+      "description": "Per-modality L1-L5 prompt sets, wording variants (clinical, ontology, report style) and literature-grounded negation ladders.",
+      "containedIn": {
+        "@id": "repo"
+      },
+      "encodingFormat": "application/json",
+      "includes": "configs/prompts/**/*.json"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "cxr-manifest",
+      "name": "cxr-manifest",
+      "description": "Chest X-ray anchors: 1,000 frontal single-label images, 5 findings. Source: NIH ChestX-ray14. 1000 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/cxr_probes_n1000/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "18f3c0da495cde15c1a4e7984c607c99904f32516635e412b0478a0d4bd84e96"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "brain_mri-manifest",
+      "name": "brain_mri-manifest",
+      "description": "Brain MRI anchors: 1,000 axial slices, 4 dementia stages. Source: OASIS-1. 1000 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/mri_probes_n1000/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "ff7eb1e6942d5d31ed140710c01b0b4d01b81848e3a06fb9858f8de0d93c7c5b"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "abdominal_ct-manifest",
+      "name": "abdominal_ct-manifest",
+      "description": "Abdominal CT anchors: 900 scans (150 per finding), 6 findings. Source: Merlin abdominal CT. 900 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/ct_disease_probes/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "6fda2f082191439d6aa5a903c78e3525227b40106ade648683bde77197f88899"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "fundus-manifest",
+      "name": "fundus-manifest",
+      "description": "Retinal fundus anchors: 1,004 images, 7 ocular disease classes. Source: ODIR-5K. 1004 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/fundus_probes_n1000/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "c0ec7ce1c9abd2100e1fbf080ce6fc48724e92587229a5e8e88970fe9cff78c2"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "dermoscopy-manifest",
+      "name": "dermoscopy-manifest",
+      "description": "Dermoscopy anchors: 1,000 images, 5 lesion types. Source: ISIC 2018 Task 3 / HAM10000. 1000 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/derm_probes_n1000/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "443baae88fb6bfcb6e9ef600029d7119b8f226a21f9b70b4a150d0255ebd7db4"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "histopathology-manifest",
+      "name": "histopathology-manifest",
+      "description": "Histopathology anchors: 999 patches, 9 tissue classes. Source: NCT-CRC-HE-100K (CRC-VAL-HE-7K). 999 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/histopath_probes_n1000/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "1cfa9bef9c4b096057a36ac0522ad8c7fe4bd75630bbbd156b751ecb41366850"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "openi_cxr-manifest",
+      "name": "openi_cxr-manifest",
+      "description": "OpenI chest radiographs used for the unified evaluation (Section 5.3). Source: OpenI Indiana University CXR. 3295 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/openi_probes_full/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "f7daceacd9983b9f6a4258f60f02504764080e42090f3dee54eece5a7fb6334c"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "skin_tone-manifest",
+      "name": "skin_tone-manifest",
+      "description": "Dermoscopy subset with Fitzpatrick skin type, for the subgroup analysis. Source: ISIC archive collection 413. 900 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/isic_skintone/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "0a0e454a1614e1296215c0c3b0db834e434b487f34add377cbacb09ebb038310"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "sex_age-manifest",
+      "name": "sex_age-manifest",
+      "description": "Dermoscopy subset with patient sex and approximate age, for the subgroup analysis. Source: HAM10000. 1000 records.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/isic_sexage/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "35ad5a194083b3e132aae450e1c0ca90516247970b653ed5d6d2828a6af80a66"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "roco_cxr_captions",
+      "name": "roco_cxr_captions",
+      "description": "Captions of the 354-pair chest-radiograph subset of the ROCO test split (retrieval pool).",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/roco_cxr/captions.json",
+      "encodingFormat": "application/json",
+      "sha256": "a042282cd0866588a8d75b19d9dfdd0e69016d555c2ed210431127b133ea4122"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "roco_cxr_filter",
+      "name": "roco_cxr_filter",
+      "description": "Filter definition for the ROCO-CXR pool.",
+      "contentUrl": "https://raw.githubusercontent.com/machine-intelligence-lab-wvu/MedTEC-Bench/main/data/roco_cxr/manifest.json",
+      "encodingFormat": "application/json",
+      "sha256": "083bcd13595589e437d652ca3e477101d2c0135b0342fe672390e46dc792d70a"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "cxr",
+      "name": "cxr",
+      "description": "Chest X-ray anchors: 1,000 frontal single-label images, 5 findings.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "cxr/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "cxr-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "cxr/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "cxr-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "cxr/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "cxr-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "brain_mri",
+      "name": "brain_mri",
+      "description": "Brain MRI anchors: 1,000 axial slices, 4 dementia stages.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "brain_mri/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "brain_mri-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "brain_mri/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "brain_mri-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "brain_mri/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "brain_mri-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "abdominal_ct",
+      "name": "abdominal_ct",
+      "description": "Abdominal CT anchors: 900 scans (150 per finding), 6 findings.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "abdominal_ct/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "abdominal_ct-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "abdominal_ct/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "abdominal_ct-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "abdominal_ct/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "abdominal_ct-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "fundus",
+      "name": "fundus",
+      "description": "Retinal fundus anchors: 1,004 images, 7 ocular disease classes.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "fundus/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "fundus-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fundus/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "fundus-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "fundus/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "fundus-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "dermoscopy",
+      "name": "dermoscopy",
+      "description": "Dermoscopy anchors: 1,000 images, 5 lesion types.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "dermoscopy/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "dermoscopy-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "dermoscopy/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "dermoscopy-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "dermoscopy/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "dermoscopy-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "histopathology",
+      "name": "histopathology",
+      "description": "Histopathology anchors: 999 patches, 9 tissue classes.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "histopathology/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "histopathology-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "histopathology/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "histopathology-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "histopathology/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "histopathology-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "openi_cxr",
+      "name": "openi_cxr",
+      "description": "OpenI chest radiographs used for the unified evaluation (Section 5.3).",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "openi_cxr/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "openi_cxr-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "openi_cxr/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "openi_cxr-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "openi_cxr/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "openi_cxr-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "skin_tone",
+      "name": "skin_tone",
+      "description": "Dermoscopy subset with Fitzpatrick skin type, for the subgroup analysis.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "skin_tone/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "skin_tone-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "skin_tone/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "skin_tone-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "skin_tone/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "skin_tone-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "cr:RecordSet",
+      "@id": "sex_age",
+      "name": "sex_age",
+      "description": "Dermoscopy subset with patient sex and approximate age, for the subgroup analysis.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "sex_age/image_id",
+          "name": "image_id",
+          "description": "Image identifier in the source dataset.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "sex_age-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].image_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "sex_age/disease_category",
+          "name": "disease_category",
+          "description": "Ground-truth label used to select positive and negative prompts.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "sex_age-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].disease_category"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "sex_age/source",
+          "name": "source",
+          "description": "Source dataset of the anchor image.",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "sex_age-manifest"
+            },
+            "extract": {
+              "jsonPath": "$[*].source"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

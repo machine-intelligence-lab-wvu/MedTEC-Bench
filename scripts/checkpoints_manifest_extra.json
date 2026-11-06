@@ -1,0 +1,13 @@
+{
+  "merlin": {
+    "revision": "8789c761787c7686e45c7bc95036adb804c1cfa0",
+    "files": [
+      {
+        "path": "i3_resnet_clinical_longformer_best_clip_04-02-2024_23-21-36_epoch_99.pt",
+        "bytes": 1084889630,
+        "sha256": "e274ec09ba6cf86ab4e5b9923a346e1ef35b4150607896264941875975674ff6"
+      }
+    ],
+    "provenance": "Run 2026-07-25 in an environment since removed; revision is the Hub main commit current on that date, sha256 from Hub LFS metadata."
+  }
+}
