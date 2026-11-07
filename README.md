@@ -28,7 +28,7 @@ DS ≤ 0 is recorded as a probe failure (collapse). All headline values carry bo
 
 ## Main findings
 
-Across 11 models and six imaging modalities (chest X-ray, brain MRI, abdomen CT, retinal fundus, dermoscopy, histopathology):
+Across 12 models and six imaging modalities (chest X-ray, brain MRI, abdomen CT, retinal fundus, dermoscopy, histopathology):
 
 - **Chest-radiograph specialists fail at the domain level.** MedCLIP, CheXzero and BioViL do not reliably separate chest radiographs from everyday objects (BioViL L1 DS = −0.253).
 - **Broad-biomedical and general-domain models fail at the clinical levels.** They pass L1–L3 but collapse on fine-grained findings (L4) and negation (L5).
@@ -55,7 +55,7 @@ Chest radiography, n = 1,000 stratified anchors:
 configs/prompts/             MedTEC prompt inventories, one JSON per modality
 configs/prompts/variants/    Prompt-robustness styles (report, ontology, alt_clinical)
 configs/prompts/variants/lit Literature-grounded negation subtypes (NegEx, ConText, Panicek & Hricak)
-src/models/                  Unified loader for the 11-model panel
+src/models/                  Unified loader for the 12-model panel
 src/benchmarks/              MedTEC-Bench probe construction and evaluation
 src/metrics/                 Discrimination score and collapse metrics
 scripts/                     Probe selection, evaluation, analysis and table export
@@ -120,7 +120,7 @@ python scripts/run_openi_zeroshot.py
 python scripts/run_geometry.py --corpus openi
 ```
 
-The full panel (11 models × 6 modalities × 5 levels, plus retrieval, AUROC and bootstrap) takes roughly 10–14 GPU-hours on a single 48 GB GPU.
+The full panel (47 model–modality pairs × 5 levels = 235 cells, plus retrieval, AUROC and bootstrap) takes roughly 10–14 GPU-hours on a single 48 GB GPU.
 
 ## Extended experiments
 
